@@ -1,0 +1,152 @@
+﻿<UserControl x:Class="TorPlayground.StatOptimizer.View.ConfigurationView"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:converters="clr-namespace:TorPlayground.StatOptimizer.Converters"
+	xmlns:c="clr-namespace:TorPlayground.StatOptimizer.Controls"
+	xmlns:vm="clr-namespace:TorPlayground.StatOptimizer.ViewModel"
+	d:DataContext="{d:DesignInstance vm:ConfigurationViewModel}"
+	mc:Ignorable="d">
+	
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="../Styles/Generic.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+			<converters:EmptyStringToZeroConverter x:Key="EmptyStringToZeroConverter" />
+		</ResourceDictionary>
+	</UserControl.Resources>
+
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+		</Grid.RowDefinitions>
+		<Grid.Resources>
+			<Style TargetType="c:LabeledTextBox">
+				<Setter Property="Width" Value="200"/>
+				<Setter Property="LabelWidth" Value="145"/>
+				<Setter Property="Margin" Value="0,1"/>
+			</Style>
+			<Style TargetType="StackPanel" x:Key="Correction">
+				<Setter Property="Opacity" Value="1"/>
+				<Style.Triggers>
+					<DataTrigger Binding="{Binding IsOutdated}" Value="True">
+						<Setter Property="Opacity" Value="0.5"/>
+					</DataTrigger>
+				</Style.Triggers>
+			</Style>
+			<Style TargetType="Separator">
+				<Setter Property="Background" Value="#444444"/>
+			</Style>
+		</Grid.Resources>
+		<StackPanel Grid.Column="0" Grid.ColumnSpan="2">
+			<c:LabeledTextBox Text="{Binding Level}" Label="Level:" IsReadOnly="True" />
+			<Separator Height="2" Margin="0,3"></Separator>
+
+			<Grid>
+				<Grid.Resources>
+					<Style TargetType="c:DelayedTextBox">
+						<Setter Property="HorizontalAlignment" Value="Left"/>
+						<Setter Property="DataType" Value="Integer"/>
+						<Setter Property="MaxLength" Value="4"/>
+						<Setter Property="Width" Value="55"/>
+						<Setter Property="Margin" Value="0,1"/>
+						<Setter Property="HorizontalContentAlignment" Value="Right"/>
+					</Style>
+					<Style TargetType="MenuItem">
+						<Setter Property="FontSize" Value="12"/>
+					</Style>
+				</Grid.Resources>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="145" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition />
+					<RowDefinition />
+				</Grid.RowDefinitions>
+				<TextBlock Grid.Column="0" Grid.Row="0" Text="MH min/max/power:" Padding="0,0,5,0">
+					<TextBlock.ContextMenu>
+						<ContextMenu>
+							<MenuItem Header="Set to 216" Command="{Binding SetMainHandCommand}" CommandParameter="216"></MenuItem>
+							<MenuItem Header="Set to 220" Command="{Binding SetMainHandCommand}" CommandParameter="220"></MenuItem>
+							<MenuItem Header="Set to 224" Command="{Binding SetMainHandCommand}" CommandParameter="224"></MenuItem>
+						</ContextMenu>
+					</TextBlock.ContextMenu>
+				</TextBlock>
+				<c:DelayedTextBox Grid.Column="1" Grid.Row="0" Text="{Binding MainHandMin, Converter={StaticResource EmptyStringToZeroConverter}}" />
+				<c:DelayedTextBox Grid.Column="2" Grid.Row="0" Text="{Binding MainHandMax, Converter={StaticResource EmptyStringToZeroConverter}}" />
+				<c:DelayedTextBox Grid.Column="3" Grid.Row="0" Text="{Binding MainHandPower, Converter={StaticResource EmptyStringToZeroConverter}}" />
+				<TextBlock Grid.Column="0" Grid.Row="1" Text="OH min/max/power:" Padding="0,0,5,0">
+					<TextBlock.ContextMenu>
+						<ContextMenu>
+							<MenuItem Header="Set to 216" Command="{Binding SetOffHandCommand}" CommandParameter="216"></MenuItem>
+							<MenuItem Header="Set to 220" Command="{Binding SetOffHandCommand}" CommandParameter="220"></MenuItem>
+							<MenuItem Header="Set to 224" Command="{Binding SetOffHandCommand}" CommandParameter="224"></MenuItem>
+						</ContextMenu>
+					</TextBlock.ContextMenu>
+				</TextBlock>
+				<c:DelayedTextBox Grid.Column="1" Grid.Row="1" Text="{Binding OffHandMin, Converter={StaticResource EmptyStringToZeroConverter}}" />
+				<c:DelayedTextBox Grid.Column="2" Grid.Row="1" Text="{Binding OffHandMax, Converter={StaticResource EmptyStringToZeroConverter}}" />
+				<c:DelayedTextBox Grid.Column="3" Grid.Row="1" Text="{Binding OffHandPower, Converter={StaticResource EmptyStringToZeroConverter}}" />
+			</Grid>
+			<c:LabeledTextBox Text="{Binding OffHandMultiplier, Mode=TwoWay}" Label="OH multiplier:" DataType="Double" MaxLength="4" />
+			<Separator Height="2" Margin="0,3"></Separator>
+			<c:LabeledTextBox Text="{Binding BaseAccuracy, Mode=TwoWay}" Label="Base accuracy:" DataType="Double" MaxLength="4" />
+			<c:LabeledTextBox Text="{Binding BaseOffHandAccuracy, Mode=TwoWay}" Label="Base OH accuracy:" DataType="Double" MaxLength="4" />
+			<Separator Height="2" Margin="0,3"></Separator>
+			<c:LabeledTextBox Text="{Binding BaseCritical, Mode=TwoWay}" Label="Base critical:" DataType="Double" MaxLength="4" />
+			<c:LabeledTextBox Text="{Binding BaseSurge, Mode=TwoWay}" Label="Base surge:" DataType="Double" MaxLength="4" />
+			<Separator Height="2" Margin="0,3"></Separator>
+			<c:LabeledTextBox Text="{Binding BaseMasteryPoints, Mode=TwoWay}" Label="Base mastery points:" DataType="Integer" MaxLength="5" ToolTip="Mastery you can't remove and replace with other stat (e.g. mastery on stims, armorings, mods)." />
+			<c:LabeledTextBox Text="{Binding MasteryPoints}" Label="Overall buffed mastery:" IsReadOnly="True" ToolTip="This number should be euqal to number on the character sheet (when all stims and buffs are on)." />
+		</StackPanel>
+		<StackPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+			<Separator Height="2" Margin="0,3,0,18" />
+			<c:LabeledTextBox Text="{Binding Budget}" Label="Budget:" IsReadOnly="True" />
+			<Separator Height="2" Margin="0,3" Background="#aaaaaa" />
+		</StackPanel>
+		<StackPanel Grid.Column="0" Grid.Row="2">
+			<c:LabeledTextBox Text="{Binding AccuracyPoints, Mode=TwoWay}" Label="Accuracy points:" DataType="Integer" MaxLength="5" />
+			<c:LabeledTextBox Text="{Binding AugmentMasteryPoints, Mode=TwoWay}" Label="Augment mastery points:" DataType="Integer" MaxLength="5" ToolTip="Mastery you can remove and replace with other stat (mastery on augments)." />
+			<c:LabeledTextBox Text="{Binding AlacrityPoints, Mode=TwoWay}" Label="Alacrity points:" DataType="Integer" MaxLength="5" />
+			<c:LabeledTextBox Text="{Binding CriticalPoints, Mode=TwoWay}" Label="Critical points:" DataType="Integer" MaxLength="5" />
+			<c:LabeledTextBox Text="{Binding PowerPoints, Mode=TwoWay}" Label="Power points:" DataType="Integer" MaxLength="5" />
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="2" DataContext="{Binding CorrectionViewModel}" Style="{StaticResource Correction}">
+			<ContentControl Content="{Binding AccuracyPoints}" Height="20" />
+			<ContentControl Content="{Binding AugmentMasteryPoints}" Height="20" />
+			<ContentControl Content="{Binding AlacrityPoints}" Height="20" />
+			<ContentControl Content="{Binding CriticalPoints}" Height="20" />
+			<ContentControl Content="{Binding PowerPoints}" Height="20" />
+		</StackPanel>
+		<Separator Height="2" Margin="0,3" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" />
+		<StackPanel Grid.Column="0" Grid.Row="4">
+			<c:LabeledTextBox Text="{Binding Accuracy, StringFormat='{}{0:P2}'}" Label="Accuracy:" IsReadOnly="True" />
+			<c:LabeledTextBox Text="{Binding Alacrity, StringFormat='{}{0:P2}'}" Label="Alacrity:" IsReadOnly="True" />
+			<c:LabeledTextBox Text="{Binding Critical, StringFormat='{}{0:P2}'}" Label="Critical:" IsReadOnly="True" />
+			<c:LabeledTextBox Text="{Binding Surge, StringFormat='{}{0:P2}'}" Label="Surge:" IsReadOnly="True" />
+			<c:LabeledTextBox Text="{Binding BonusDamage, StringFormat='{}{0:0.0}'}" Label="Bonus damage:" IsReadOnly="True" />
+			<c:LabeledTextBox Text="{Binding SpellBonusDamage, StringFormat='{}{0:0.0}'}" Label="Force/tech bonus damage:" IsReadOnly="True" />
+		</StackPanel>
+		<StackPanel Grid.Column="1" Grid.Row="4" DataContext="{Binding CorrectionViewModel}" Style="{StaticResource Correction}">
+			<ContentControl Content="{Binding Accuracy}" Height="18" />
+			<ContentControl Content="{Binding Alacrity}" Height="18" />
+			<ContentControl Content="{Binding Critical}" Height="18" />
+			<ContentControl Content="{Binding Surge}" Height="18" />
+			<ContentControl Content="{Binding BonusDamage}" Height="18" />
+			<ContentControl Content="{Binding ForceTechBonusDamage}" Height="18" />
+		</StackPanel>
+	</Grid>
+</UserControl>

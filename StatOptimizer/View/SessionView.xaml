@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="TorPlayground.StatOptimizer.View.SessionView"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:controls="clr-namespace:TorPlayground.StatOptimizer.Controls"
+	xmlns:vm="clr-namespace:TorPlayground.StatOptimizer.ViewModel"
+	d:DataContext="{d:DesignInstance vm:SessionViewModel}"
+	mc:Ignorable="d">
+	
+	<StackPanel>
+		<StackPanel.Resources>
+			<Style TargetType="TextBox">
+				<Setter Property="VerticalAlignment" Value="Top"/>
+				<Setter Property="Margin" Value="3,0"/>
+				<Setter Property="Width" Value="50"/>
+			</Style>
+		</StackPanel.Resources>
+		<controls:LabeledTextBox Text="{Binding Duration, StringFormat='{}{0:#.###}', Mode=TwoWay}" Label="Duration:" DataType="Double" Width="180" LabelWidth="120" MaxLength="8" />
+		<controls:LabeledTextBox Text="{Binding DamageReduction, Mode=TwoWay}" Label="Damage reduction:" DataType="Double" Width="180" LabelWidth="120" MaxLength="4" />
+		<StackPanel>
+			<ItemsControl ItemsSource="{Binding Abilities}">
+				<ItemsControl.ItemTemplate>
+					<DataTemplate>
+						<StackPanel>
+							<Separator Height="2" Margin="0,5" />
+							<StackPanel Orientation="Horizontal">
+								<Image Source="{Binding Icon}" Width="52" Height="52" ToolTip="{Binding Info}" />
+								<Grid Margin="10,0">
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="200" />
+										<ColumnDefinition Width="*" />
+									</Grid.ColumnDefinitions>
+									<Grid.RowDefinitions>
+										<RowDefinition Height="30" />
+										<RowDefinition Height="Auto" />
+									</Grid.RowDefinitions>
+									<TextBlock Text="{Binding Name}" FontSize="16" Foreground="Orange" />
+									<StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center">
+										<TextBlock Text="{Binding DamageMin, StringFormat='{} Min: {0:0.0},'}" Foreground="SlateGray" Width="75" TextAlignment="Right" />
+										<TextBlock Text="{Binding DamageMax, StringFormat='{} Max: {0:0.0},'}" Foreground="SlateGray" Width="75" TextAlignment="Right" />
+										<TextBlock Text="{Binding DamageAvg, StringFormat='{} Avg: {0:0.0}'}" Foreground="SlateGray" Width="75" TextAlignment="Right" />
+									</StackPanel>
+									<StackPanel Orientation="Horizontal" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1">
+										<controls:LabeledTextBox Text="{Binding Autocrit, Mode=TwoWay}" Label="Autocrit:" DataType="Double" Width="80" MaxLength="4" />
+										<controls:LabeledTextBox Text="{Binding Activations, Mode=TwoWay}" Label=",  activations:" DataType="Integer" Width="100" MaxLength="3" />
+										<controls:LabeledTextBox Text="{Binding DamageMultiplier, Mode=TwoWay}" Label=",  damage multiplier:" DataType="Double" Width="145" MaxLength="4" />
+										<controls:LabeledTextBox Text="{Binding ArmorReduction, Mode=TwoWay}" Label=",  armor reduction:" DataType="Double" Width="160" MaxLength="4" ToolTip="If ability ignores 20% armor, set it to 0.2, if ignores completely set it to 1." />
+									</StackPanel>
+								</Grid>
+							</StackPanel>
+						</StackPanel>
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+		</StackPanel>
+	</StackPanel>
+</UserControl>

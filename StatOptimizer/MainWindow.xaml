@@ -1,0 +1,85 @@
+﻿<mm:MetroWindow x:Class="TorPlayground.StatOptimizer.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:mm="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+	xmlns:view="clr-namespace:TorPlayground.StatOptimizer.View"
+	xmlns:controls="clr-namespace:TorPlayground.StatOptimizer.Controls"
+	xmlns:vm="clr-namespace:TorPlayground.StatOptimizer.ViewModel"
+	Icon="swtor.ico" TitlebarHeight="32" SaveWindowPosition="True"
+	SizeToContent="WidthAndHeight" ResizeMode="NoResize"
+	d:DataContext="{d:DesignInstance vm:MainViewModel}"
+	mc:Ignorable="d" Title="SWtOR 4.0: DPS Stat Opmtimization">
+
+	<mm:MetroWindow.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="../Styles/Generic.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</mm:MetroWindow.Resources>
+
+	<!--<mm:MetroWindow.RightWindowCommands>
+		<mm:WindowCommands>
+			<Button Content="load profile" />
+			<Button Content="save profile" />
+		</mm:WindowCommands>
+	</mm:MetroWindow.RightWindowCommands>-->
+
+	<Grid VerticalAlignment="Top" HorizontalAlignment="Stretch" x:Name="Grid">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<GroupBox Header="Configuration">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition />
+					<ColumnDefinition />
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition />
+					<RowDefinition />
+					<RowDefinition />
+				</Grid.RowDefinitions>
+				<view:ConfigurationView DataContext="{Binding ConfigurationViewModel}" Grid.ColumnSpan="2" />
+				<Separator Height="2" Margin="0,3" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" />
+				<controls:LabeledTextBox Grid.Column="0" Grid.Row="2" Text="{Binding Dps, StringFormat='{}{0:0.00}'}" Label="Estimated DPS:" Width="195" LabelWidth="125" IsReadOnly="True" />
+				<ContentControl Grid.Column="1" Grid.Row="2" Content="{Binding NewDps}">
+					<ContentControl.Style>
+						<Style TargetType="ContentControl">
+							<Setter Property="Opacity" Value="1"/>
+							<Style.Triggers>
+								<DataTrigger Binding="{Binding ConfigurationViewModel.CorrectionViewModel.IsOutdated}" Value="True">
+									<Setter Property="Opacity" Value="0.5"/>
+								</DataTrigger>
+							</Style.Triggers>
+						</Style>
+					</ContentControl.Style>
+				</ContentControl>
+			</Grid>
+		</GroupBox>
+		<Button Grid.Row="1" Grid.Column="0" Command="{Binding RecalculateCommand}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">Optimize</Button>
+		<GroupBox Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Header="Combat session">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<ComboBox ItemsSource="{Binding SessionViewModels}" SelectedItem="{Binding ActiveSessionViewModel}" Margin="0,0,0,10">
+					<ComboBox.ItemTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding Name}" />
+						</DataTemplate>
+					</ComboBox.ItemTemplate>
+				</ComboBox>
+				<view:SessionView DataContext="{Binding ActiveSessionViewModel}" Grid.Row="1" />
+			</Grid>
+		</GroupBox>
+	</Grid>
+</mm:MetroWindow>

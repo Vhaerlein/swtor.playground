@@ -1,0 +1,100 @@
+{
+	"Configuration": {
+		"Level": 65,
+		"StandardDamage": 4465,
+		"StandardHealth": 27510,
+		"DualWield" : 1,
+
+		"MainHand": {
+			"DamageMin": 794,
+			"DamageMax": 1191,
+			"Power": 1589
+		},
+
+		"OffHand": {
+			"DamageMin": 794,
+			"DamageMax": 1191,
+			"Power": 1589,
+			"Multiplier": 0.55
+		},
+
+		"BaseMasteryPoints": 4769,
+		"AugmentMasteryPoints": 0,
+
+		"AccuracyPoints": 685,
+		"AlacrityPoints": 736,
+		"CriticalPoints": 1161,
+		"PowerPoints": 2539,
+
+		"BaseAlacrity": 0.03,
+		"BaseCritical": 0.11,
+		"BaseSurge": 0.51,
+		"BaseOffHandAccuracy": 0.68,
+		"BaseAccuracy": 1.01,
+
+		"BonusDamageMultiplier": 1.05,
+		"MasteryMultiplier": 1.05
+	},
+	"Sessions": [
+		{
+			"Name": "Operation training dummy session [SWtOR 4.0].",
+			"Active": 1,
+			"Duration": 224.661,
+			"EnergyKineticDamageReduction": 0.39,
+			"ElementalInternalDamageReduction": 0.0,
+			"DefenseChance": 0.1,
+			"Abilities": [
+				{
+					"Id": "16141058824530033616",
+					"Activations": 20
+				},
+				{
+					"Id": "16140915566810767149",
+					"Activations": 21
+				},
+				{
+					"Id": "16141115856787288008",
+					"Activations": 61,
+					"SurgeBonus": 0.1
+				},
+				{
+					"Id": "16141164140889618336",
+					"Activations": 31,
+					"Autocrit": 1.0,
+					"ArmorReduction": 1.0,
+					"SurgeBonus": 0.1,
+					"DamageMultiplier": 1.05
+				},
+				{
+					"Id": "16140972878675383004",
+					"Activations": 10,
+					"ArmorReduction": 1.0,
+					"DamageMultiplier": 1
+				},
+				{
+					"Id": "16140944249323822669",
+					"Activations": 10
+				},
+				{
+					"Id": "16141118772211673815",
+					"Activations": 10
+				},
+				{
+					"Id": "16141016320264526909",
+					"Activations": 13,
+					"Autocrit": 0.5,
+					"ArmorReduction": 1.0
+				},
+				{
+					"Id": "16140965019692980555",
+					"Activations": 99,
+					"DamageMultiplier": 1.05
+				},
+				{
+					"Id" : "2480816059842560",
+					"Activations": 9
+				}
+			]
+		}
+	]
+}
