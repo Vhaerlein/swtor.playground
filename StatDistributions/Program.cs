@@ -11,8 +11,8 @@ namespace TorPlayground.StatDistributions
 	{
 		static void Main()
 		{
-			const double budgetMin = 2000.0;
-			const double budgetMax = 8000.0;
+			const double budgetMin = 1000.0;
+			const double budgetMax = 10000.0;
 			const double budgetStep = (budgetMax - budgetMin) / 30.0;
 
 			List<ConfigurationCorrection> budgetCorrections = new List<ConfigurationCorrection>();
@@ -22,12 +22,10 @@ namespace TorPlayground.StatDistributions
 			{
 				var budget = budgetMin + budgetStep * i;
 
-				Console.Write("Budget [{0}]:", budget);
-				profile.Configuration.BaseMasteryPoints = (int) budget + profile.Configuration.AccuracyPoints;
+				Console.Write("Budget [{0}]", budget);
+				profile.Configuration.BaseMasteryPoints = (int) budget;
 				var correction = DpsUtils.FindHighestDpsCorrection(profile, (int) budget);
 				budgetCorrections.Add(correction);
-
-				Console.Write(" {{a: {0}, c: {1}, m: {2}, p {3}, d: {4}}}, ", correction.AlacrityPoints, correction.CriticalPoints, correction.MasteryPoints, correction.PowerPoints, correction.Dps);
 				Console.WriteLine();
 			}
 			WriteBudget("Optimal distribution:", budgetCorrections);
@@ -42,9 +40,10 @@ namespace TorPlayground.StatDistributions
 			{
 				var budget = budgetMin + budgetStep*i;
 
-				Console.Write("All power budget [{0}]:", budget);
+				Console.Write("All power budget [{0}]", budget);
 
-				profile.Configuration.BaseMasteryPoints = (int) budget + profile.Configuration.AccuracyPoints;
+				profile.Configuration.BaseMasteryPoints = (int) budget;
+				profile.Configuration.AccuracyPoints = budgetCorrections[i].AccuracyPoints;
 				profile.Configuration.AlacrityPoints = budgetCorrections[i].AlacrityPoints;
 				profile.Configuration.CriticalPoints = budgetCorrections[i].CriticalPoints;
 				profile.Configuration.PowerPoints = budgetCorrections[i].PowerPoints + budgetCorrections[i].MasteryPoints;
@@ -53,16 +52,13 @@ namespace TorPlayground.StatDistributions
 				var correction = new ConfigurationCorrection
 				{
 					Dps = DpsUtils.CalculateDps(profile),
+					AccuracyPoints = profile.Configuration.AccuracyPoints,
 					PowerPoints = profile.Configuration.PowerPoints,
 					AlacrityPoints = profile.Configuration.AlacrityPoints,
 					CriticalPoints = profile.Configuration.CriticalPoints,
 					MasteryPoints = profile.Configuration.AugmentMasteryPoints
 				};
 				badBudgetCorrections.Add(correction);
-
-				Console.Write(" {{a: {0}, c: {1}, m: {2}, p {3}, d: {4}}}, ", correction.AlacrityPoints, correction.CriticalPoints,
-					correction.MasteryPoints, correction.PowerPoints, correction.Dps);
-				Console.WriteLine();
 			}
 			WriteBudget("Optimal (all power):", badBudgetCorrections, true);
 			#endregion
@@ -74,9 +70,10 @@ namespace TorPlayground.StatDistributions
 			{
 				var budget = budgetMin + budgetStep*i;
 
-				Console.Write("All mastery budget [{0}]:", budget);
+				Console.Write("All mastery budget [{0}]", budget);
 
-				profile.Configuration.BaseMasteryPoints = (int) budget + profile.Configuration.AccuracyPoints;
+				profile.Configuration.BaseMasteryPoints = (int) budget;
+				profile.Configuration.AccuracyPoints = budgetCorrections[i].AccuracyPoints;
 				profile.Configuration.AlacrityPoints = budgetCorrections[i].AlacrityPoints;
 				profile.Configuration.CriticalPoints = budgetCorrections[i].CriticalPoints;
 				profile.Configuration.AugmentMasteryPoints = budgetCorrections[i].PowerPoints + budgetCorrections[i].MasteryPoints;
@@ -85,16 +82,13 @@ namespace TorPlayground.StatDistributions
 				var correction = new ConfigurationCorrection
 				{
 					Dps = DpsUtils.CalculateDps(profile),
+					AccuracyPoints = profile.Configuration.AccuracyPoints,
 					PowerPoints = profile.Configuration.PowerPoints,
 					AlacrityPoints = profile.Configuration.AlacrityPoints,
 					CriticalPoints = profile.Configuration.CriticalPoints,
 					MasteryPoints = profile.Configuration.AugmentMasteryPoints
 				};
 				badBudgetCorrections.Add(correction);
-
-				Console.Write(" {{a: {0}, c: {1}, m: {2}, p {3}, d: {4}}}, ", correction.AlacrityPoints, correction.CriticalPoints,
-					correction.MasteryPoints, correction.PowerPoints, correction.Dps);
-				Console.WriteLine();
 			}
 			WriteBudget("Optimal (all mastery):", badBudgetCorrections, true);
 			#endregion
@@ -106,11 +100,12 @@ namespace TorPlayground.StatDistributions
 			{
 				var budget = budgetMin + budgetStep*i;
 
-				Console.Write("More critical/alacrity budget [{0}]:", budget);
+				Console.Write("More critical/alacrity budget [{0}]", budget);
 				int alacrity = budgetCorrections[i].AlacrityPoints/2;
 				int critical = budgetCorrections[i].CriticalPoints/2;
 
-				profile.Configuration.BaseMasteryPoints = (int) budget + profile.Configuration.AccuracyPoints;
+				profile.Configuration.BaseMasteryPoints = (int) budget;
+				profile.Configuration.AccuracyPoints = budgetCorrections[i].AccuracyPoints;
 				profile.Configuration.AlacrityPoints = alacrity*3;
 				profile.Configuration.CriticalPoints = critical*3;
 				profile.Configuration.AugmentMasteryPoints = budgetCorrections[i].MasteryPoints - (alacrity + critical) / 2;
@@ -129,16 +124,13 @@ namespace TorPlayground.StatDistributions
 				var correction = new ConfigurationCorrection
 				{
 					Dps = DpsUtils.CalculateDps(profile),
+					AccuracyPoints = profile.Configuration.AccuracyPoints,
 					PowerPoints = profile.Configuration.PowerPoints,
 					AlacrityPoints = profile.Configuration.AlacrityPoints,
 					CriticalPoints = profile.Configuration.CriticalPoints,
 					MasteryPoints = profile.Configuration.AugmentMasteryPoints
 				};
 				badBudgetCorrections.Add(correction);
-
-				Console.Write(" {{a: {0}, c: {1}, m: {2}, p {3}, d: {4}}}, ", correction.AlacrityPoints, correction.CriticalPoints,
-					correction.MasteryPoints, correction.PowerPoints, correction.Dps);
-				Console.WriteLine();
 			}
 			WriteBudget("More critical/alacrity:", badBudgetCorrections, true);
 			#endregion
@@ -155,7 +147,8 @@ namespace TorPlayground.StatDistributions
 				int critical = budgetCorrections[i].CriticalPoints/2;
 				int mastery = budgetCorrections[i].MasteryPoints;
 
-				profile.Configuration.BaseMasteryPoints = (int) budget + profile.Configuration.AccuracyPoints;
+				profile.Configuration.BaseMasteryPoints = (int) budget;
+				profile.Configuration.AccuracyPoints = budgetCorrections[i].AccuracyPoints;
 				profile.Configuration.AlacrityPoints = alacrity;
 				profile.Configuration.CriticalPoints = critical;
 				profile.Configuration.PowerPoints = budgetCorrections[i].PowerPoints + alacrity + critical;
@@ -164,16 +157,13 @@ namespace TorPlayground.StatDistributions
 				var correction = new ConfigurationCorrection
 				{
 					Dps = DpsUtils.CalculateDps(profile),
+					AccuracyPoints = profile.Configuration.AccuracyPoints,
 					PowerPoints = profile.Configuration.PowerPoints,
 					AlacrityPoints = profile.Configuration.AlacrityPoints,
 					CriticalPoints = profile.Configuration.CriticalPoints,
 					MasteryPoints = profile.Configuration.AugmentMasteryPoints
 				};
 				badBudgetCorrections.Add(correction);
-
-				Console.Write(" {{a: {0}, c: {1}, m: {2}, p {3}, d: {4}}}, ", correction.AlacrityPoints, correction.CriticalPoints,
-					correction.MasteryPoints, correction.PowerPoints, correction.Dps);
-				Console.WriteLine();
 			}
 			WriteBudget("More power:", badBudgetCorrections, true);
 			#endregion
@@ -190,6 +180,15 @@ namespace TorPlayground.StatDistributions
 				File.WriteAllText(fileName, $"{title}\n");
 			else
 				File.AppendAllText(fileName, $"\n\n{title}\n");
+
+			for (int i = 0; i < budgetCorrections.Count; i++)
+			{
+				var budget = budgetCorrections[i];
+				if (i > 0)
+					File.AppendAllText(fileName, "\t");
+				File.AppendAllText(fileName, budget.AccuracyPoints.ToString());
+			}
+			File.AppendAllText(fileName, "\n");
 
 			for (int i = 0; i < budgetCorrections.Count; i++)
 			{
