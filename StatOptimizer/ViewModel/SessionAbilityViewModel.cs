@@ -7,7 +7,7 @@ using TorPlayground.StatOptimizer.Utils;
 
 namespace TorPlayground.StatOptimizer.ViewModel
 {
-	public class SessionAbilityViewModel
+	public class SessionAbilityViewModel : NotifyPropertyChangedObject
 	{
 		public string Name => _sessionAbility.Ability.Name;
 
@@ -54,6 +54,48 @@ namespace TorPlayground.StatOptimizer.ViewModel
 			}
 		}
 
+		public double SurgeBonus
+		{
+			get { return _sessionAbility.SurgeBonus; }
+			set
+			{
+				_sessionAbility.SurgeBonus = value;
+				OnSessionAbilityUpdated();
+			}
+		}
+
+		public bool ForceOffHand
+		{
+			get { return _sessionAbility.ForceOffHand; }
+			set
+			{
+				_sessionAbility.ForceOffHand = value;
+				OnSessionAbilityUpdated();
+			}
+		}
+
+		public bool CanForceOffHand
+		{
+			get { return _canForceOffHand; }
+			set
+			{
+				_canForceOffHand = value; 
+				OnPropertyChanged();
+			}
+		}
+		private bool _canForceOffHand;
+
+		public bool DualWield
+		{
+			get { return _dualWield; }
+			set
+			{
+				_dualWield = value; 
+				OnPropertyChanged();
+			}
+		}
+		private bool _dualWield;
+
 		public double DamageMin => _sessionAbility.Ability.GetAbilityDamageMin(_configuration);
 		public double DamageMax => _sessionAbility.Ability.GetAbilityDamageMax(_configuration);
 		public double DamageAvg => (DamageMax + DamageMin) / 2.0;
@@ -86,6 +128,8 @@ namespace TorPlayground.StatOptimizer.ViewModel
 						sb.AppendFormat("\nCooldown: {0:0.#}", _sessionAbility.Ability.CooldownTime);
 					if (_sessionAbility.Ability.IgnoresAlacrity)
 						sb.Append("\nIgnores alacrity");
+
+					sb.AppendFormat("\n\n{0}", _sessionAbility.Ability.Description);
 					_info = sb.ToString();
 				}
 
@@ -104,6 +148,14 @@ namespace TorPlayground.StatOptimizer.ViewModel
 		{
 			_sessionAbility = sessionAbility;
 			_configuration = configuration;
+			UpdateCanForceOffHand();
+			configuration.DualWieldUpdated += UpdateCanForceOffHand;
+		}
+
+		private void UpdateCanForceOffHand()
+		{
+			DualWield = _configuration.DualWield;
+			CanForceOffHand = !_sessionAbility.HasOffHandActions && _configuration.DualWield;
 		}
 
 		private void OnSessionAbilityUpdated()

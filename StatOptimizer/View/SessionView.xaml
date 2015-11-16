@@ -15,6 +15,7 @@
 				<Setter Property="Margin" Value="3,0"/>
 				<Setter Property="Width" Value="50"/>
 			</Style>
+			<BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
 		</StackPanel.Resources>
 		<controls:LabeledTextBox Text="{Binding Duration, StringFormat='{}{0:#.###}', Mode=TwoWay}" Label="Duration:" DataType="Double" Width="180" LabelWidth="120" MaxLength="8" />
 		<controls:LabeledTextBox Text="{Binding DamageReduction, Mode=TwoWay}" Label="Damage reduction:" DataType="Double" Width="180" LabelWidth="120" MaxLength="4" />
@@ -25,7 +26,11 @@
 						<StackPanel>
 							<Separator Height="2" Margin="0,5" />
 							<StackPanel Orientation="Horizontal">
-								<Image Source="{Binding Icon}" Width="52" Height="52" ToolTip="{Binding Info}" />
+								<Image Source="{Binding Icon}" Width="52" Height="52">
+									<Image.ToolTip>
+										<TextBlock Text="{Binding Info}" MaxWidth="450" TextWrapping="Wrap" />
+									</Image.ToolTip>
+								</Image>
 								<Grid Margin="10,0">
 									<Grid.ColumnDefinitions>
 										<ColumnDefinition Width="200" />
@@ -42,10 +47,31 @@
 										<TextBlock Text="{Binding DamageAvg, StringFormat='{} Avg: {0:0.0}'}" Foreground="SlateGray" Width="75" TextAlignment="Right" />
 									</StackPanel>
 									<StackPanel Orientation="Horizontal" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1">
-										<controls:LabeledTextBox Text="{Binding Autocrit, Mode=TwoWay}" Label="Autocrit:" DataType="Double" Width="80" MaxLength="4" />
-										<controls:LabeledTextBox Text="{Binding Activations, Mode=TwoWay}" Label=",  activations:" DataType="Integer" Width="100" MaxLength="3" />
-										<controls:LabeledTextBox Text="{Binding DamageMultiplier, Mode=TwoWay}" Label=",  damage multiplier:" DataType="Double" Width="145" MaxLength="4" />
-										<controls:LabeledTextBox Text="{Binding ArmorReduction, Mode=TwoWay}" Label=",  armor reduction:" DataType="Double" Width="160" MaxLength="4" ToolTip="If ability ignores 20% armor, set it to 0.2, if ignores completely set it to 1." />
+										<controls:LabeledTextBox Text="{Binding Activations, Mode=TwoWay}" Label="x" DataType="Integer" MaxLength="3" InputWidth="30" />
+										<controls:LabeledTextBox Text="{Binding Autocrit, Mode=TwoWay}" Label=",  autocrit:" DataType="Double" MaxLength="4" InputWidth="30" />
+										<controls:LabeledTextBox Text="{Binding DamageMultiplier, Mode=TwoWay}" Label=",  damage multiplier:" DataType="Double" MaxLength="4" InputWidth="30" />
+										<controls:LabeledTextBox Text="{Binding SurgeBonus, Mode=TwoWay}" Label=",  surge bonus:" DataType="Double" MaxLength="4" InputWidth="30" />
+										<controls:LabeledTextBox Text="{Binding ArmorReduction, Mode=TwoWay}" Label=",  armor reduction:" DataType="Double" MaxLength="4" ToolTip="If ability ignores 20% armor, set it to 0.2, if ignores completely set it to 1." InputWidth="30" />
+										<CheckBox FlowDirection="RightToLeft" IsChecked="{Binding ForceOffHand, Mode=TwoWay}" IsEnabled="{Binding CanForceOffHand}" Visibility="{Binding DualWield, Converter={StaticResource BooleanToVisibilityConverter}}">
+											<CheckBox.Style>
+												<Style TargetType="CheckBox" BasedOn="{StaticResource {x:Type CheckBox}}">
+													<Setter Property="Opacity" Value="1"></Setter>
+													<Style.Triggers>
+														<DataTrigger Binding="{Binding CanForceOffHand}" Value="False">
+															<Setter Property="Opacity" Value="0.2"></Setter>
+														</DataTrigger>
+													</Style.Triggers>
+												</Style>
+											</CheckBox.Style>
+											<CheckBox.ToolTip>
+												<TextBlock FlowDirection="LeftToRight">
+													This ability doesn't have any action defined for offhand.<LineBreak />
+													Checking this will force to include offhand in calculations using mainhand<LineBreak />
+													AmountModifierPercent (with [StandardHealthPercent=0] and [Coefficient=0]).
+												</TextBlock>
+											</CheckBox.ToolTip>
+											<TextBlock FlowDirection="LeftToRight" Text=",  force offhand:" Margin="0,0,0,1"/>
+										</CheckBox>
 									</StackPanel>
 								</Grid>
 							</StackPanel>

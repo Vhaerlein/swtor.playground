@@ -15,6 +15,7 @@
 				<ResourceDictionary Source="../Styles/Generic.xaml" />
 			</ResourceDictionary.MergedDictionaries>
 			<converters:EmptyStringToZeroConverter x:Key="EmptyStringToZeroConverter" />
+			<BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
 		</ResourceDictionary>
 	</UserControl.Resources>
 
@@ -75,6 +76,7 @@
 				<Grid.RowDefinitions>
 					<RowDefinition />
 					<RowDefinition />
+					<RowDefinition />
 				</Grid.RowDefinitions>
 				<TextBlock Grid.Column="0" Grid.Row="0" Text="MH min/max/power:" Padding="0,0,5,0">
 					<TextBlock.ContextMenu>
@@ -88,7 +90,11 @@
 				<c:DelayedTextBox Grid.Column="1" Grid.Row="0" Text="{Binding MainHandMin, Converter={StaticResource EmptyStringToZeroConverter}}" />
 				<c:DelayedTextBox Grid.Column="2" Grid.Row="0" Text="{Binding MainHandMax, Converter={StaticResource EmptyStringToZeroConverter}}" />
 				<c:DelayedTextBox Grid.Column="3" Grid.Row="0" Text="{Binding MainHandPower, Converter={StaticResource EmptyStringToZeroConverter}}" />
-				<TextBlock Grid.Column="0" Grid.Row="1" Text="OH min/max/power:" Padding="0,0,5,0">
+
+				<TextBlock Grid.Column="0" Grid.Row="1" Text="Dual wield:" Padding="0,0,5,0"/>
+				<CheckBox IsChecked="{Binding DualWield}" Grid.Column="3" Grid.Row="1" Margin="0,1" />
+				
+				<TextBlock Grid.Column="0" Grid.Row="2" Text="OH min/max/power:" Padding="0,0,5,0">
 					<TextBlock.ContextMenu>
 						<ContextMenu>
 							<MenuItem Header="Set to 216" Command="{Binding SetOffHandCommand}" CommandParameter="216"></MenuItem>
@@ -97,11 +103,11 @@
 						</ContextMenu>
 					</TextBlock.ContextMenu>
 				</TextBlock>
-				<c:DelayedTextBox Grid.Column="1" Grid.Row="1" Text="{Binding OffHandMin, Converter={StaticResource EmptyStringToZeroConverter}}" />
-				<c:DelayedTextBox Grid.Column="2" Grid.Row="1" Text="{Binding OffHandMax, Converter={StaticResource EmptyStringToZeroConverter}}" />
-				<c:DelayedTextBox Grid.Column="3" Grid.Row="1" Text="{Binding OffHandPower, Converter={StaticResource EmptyStringToZeroConverter}}" />
+				<c:DelayedTextBox Grid.Column="1" Grid.Row="2" Text="{Binding OffHandMin, Converter={StaticResource EmptyStringToZeroConverter}}" Visibility="{Binding DualWield, Converter={StaticResource BooleanToVisibilityConverter}}" />
+				<c:DelayedTextBox Grid.Column="2" Grid.Row="2" Text="{Binding OffHandMax, Converter={StaticResource EmptyStringToZeroConverter}}" Visibility="{Binding DualWield, Converter={StaticResource BooleanToVisibilityConverter}}" />
+				<c:DelayedTextBox Grid.Column="3" Grid.Row="2" Text="{Binding OffHandPower, Converter={StaticResource EmptyStringToZeroConverter}}" />
 			</Grid>
-			<c:LabeledTextBox Text="{Binding OffHandMultiplier, Mode=TwoWay}" Label="OH multiplier:" DataType="Double" MaxLength="4" />
+			<c:LabeledTextBox Text="{Binding OffHandMultiplier, Mode=TwoWay}" Label="OH multiplier:" DataType="Double" MaxLength="4" Visibility="{Binding DualWield, Converter={StaticResource BooleanToVisibilityConverter}}" />
 			<Separator Height="2" Margin="0,3"></Separator>
 			<c:LabeledTextBox Text="{Binding BaseAccuracy, Mode=TwoWay}" Label="Base accuracy:" DataType="Double" MaxLength="4" />
 			<c:LabeledTextBox Text="{Binding BaseOffHandAccuracy, Mode=TwoWay}" Label="Base OH accuracy:" DataType="Double" MaxLength="4" />

@@ -22,6 +22,13 @@ namespace TorPlayground.StatOptimizer.Controls
 		}
 		public static readonly DependencyProperty LabelWidthProperty = DependencyProperty.Register("LabelWidth", typeof (double), typeof (LabeledTextBox), new FrameworkPropertyMetadata(Double.NaN));
 
+		public double InputWidth
+		{
+			get { return (double) GetValue(InputWidthProperty); }
+			set { SetValue(InputWidthProperty, value); }
+		}
+		public static readonly DependencyProperty InputWidthProperty = DependencyProperty.Register("InputWidth", typeof (double), typeof (LabeledTextBox), new FrameworkPropertyMetadata(Double.NaN));
+
 		public int MaxLength
 		{
 			get { return (int) GetValue(MaxLengthProperty); }

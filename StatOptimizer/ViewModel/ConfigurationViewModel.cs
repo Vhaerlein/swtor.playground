@@ -29,16 +29,15 @@ namespace TorPlayground.StatOptimizer.ViewModel
 		};
 
 		public CorrectionViewModel CorrectionViewModel { get; private set; }
-		public Configuration Configuration { get; }
 
 		public int Level
 		{
-			get { return Configuration.Level; }
+			get { return _configuration.Level; }
 			set
 			{
-				if (Configuration.Level != value)
+				if (_configuration.Level != value)
 				{
-					Configuration.Level = value;
+					_configuration.Level = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
@@ -47,10 +46,10 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public double BaseAccuracy 
 		{
-			get { return Configuration.BaseAccuracy; }
+			get { return _configuration.BaseAccuracy; }
 			set
 			{
-				Configuration.BaseAccuracy = value;
+				_configuration.BaseAccuracy = value;
 				OnPropertyChanged();
 				RaiseUpdateOnCalculatedProperties();
 			}
@@ -58,10 +57,10 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public double BaseOffHandAccuracy
 		{
-			get { return Configuration.BaseOffHandAccuracy; }
+			get { return _configuration.BaseOffHandAccuracy; }
 			set
 			{
-				Configuration.BaseOffHandAccuracy = value;
+				_configuration.BaseOffHandAccuracy = value;
 				OnPropertyChanged();
 				RaiseUpdateOnCalculatedProperties();
 			}
@@ -69,10 +68,10 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public double BaseCritical 
 		{
-			get { return Configuration.BaseCritical; }
+			get { return _configuration.BaseCritical; }
 			set
 			{
-				Configuration.BaseCritical = value;
+				_configuration.BaseCritical = value;
 				OnPropertyChanged();
 				RaiseUpdateOnCalculatedProperties();
 			}
@@ -80,10 +79,10 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public double BaseSurge
 		{
-			get { return Configuration.BaseSurge; }
+			get { return _configuration.BaseSurge; }
 			set
 			{
-				Configuration.BaseSurge = value;
+				_configuration.BaseSurge = value;
 				OnPropertyChanged();
 				RaiseUpdateOnCalculatedProperties();
 			}
@@ -91,12 +90,12 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public int BaseMasteryPoints
 		{
-			get { return Configuration.BaseMasteryPoints; }
+			get { return _configuration.BaseMasteryPoints; }
 			set
 			{
-				if (Configuration.BaseMasteryPoints != value)
+				if (_configuration.BaseMasteryPoints != value)
 				{
-					Configuration.BaseMasteryPoints = value;
+					_configuration.BaseMasteryPoints = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
@@ -105,12 +104,12 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public int MainHandMin
 		{
-			get { return Configuration.MainHand.DamageMin; }
+			get { return _configuration.MainHand.DamageMin; }
 			set
 			{
-				if (Configuration.MainHand.DamageMin != value)
+				if (_configuration.MainHand.DamageMin != value)
 				{
-					Configuration.MainHand.DamageMin = value;
+					_configuration.MainHand.DamageMin = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
@@ -119,12 +118,12 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public int MainHandMax
 		{
-			get { return Configuration.MainHand.DamageMax; }
+			get { return _configuration.MainHand.DamageMax; }
 			set
 			{
-				if (Configuration.MainHand.DamageMax != value)
+				if (_configuration.MainHand.DamageMax != value)
 				{
-					Configuration.MainHand.DamageMax = value;
+					_configuration.MainHand.DamageMax = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
@@ -133,12 +132,12 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public int MainHandPower
 		{
-			get { return Configuration.MainHand.Power; }
+			get { return _configuration.MainHand.Power; }
 			set
 			{
-				if (Configuration.MainHand.Power != value)
+				if (_configuration.MainHand.Power != value)
 				{
-					Configuration.MainHand.Power = value;
+					_configuration.MainHand.Power = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
@@ -147,12 +146,12 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public int OffHandMin
 		{
-			get { return Configuration.OffHand.DamageMin; }
+			get { return _configuration.OffHand.DamageMin; }
 			set
 			{
-				if (Configuration.OffHand.DamageMin != value)
+				if (_configuration.OffHand.DamageMin != value)
 				{
-					Configuration.OffHand.DamageMin = value;
+					_configuration.OffHand.DamageMin = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
@@ -161,12 +160,12 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public int OffHandMax
 		{
-			get { return Configuration.OffHand.DamageMax; }
+			get { return _configuration.OffHand.DamageMax; }
 			set
 			{
-				if (Configuration.OffHand.DamageMax != value)
+				if (_configuration.OffHand.DamageMax != value)
 				{
-					Configuration.OffHand.DamageMax = value;
+					_configuration.OffHand.DamageMax = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
@@ -175,12 +174,12 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public int OffHandPower
 		{
-			get { return Configuration.OffHand.Power; }
+			get { return _configuration.OffHand.Power; }
 			set
 			{
-				if (Configuration.OffHand.Power != value)
+				if (_configuration.OffHand.Power != value)
 				{
-					Configuration.OffHand.Power = value;
+					_configuration.OffHand.Power = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
@@ -189,10 +188,10 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public double OffHandMultiplier
 		{
-			get { return Configuration.OffHand.Multiplier; }
+			get { return _configuration.OffHand.Multiplier; }
 			set
 			{
-				Configuration.OffHand.Multiplier = value;
+				_configuration.OffHand.Multiplier = value;
 				OnPropertyChanged();
 				RaiseUpdateOnCalculatedProperties();
 			}
@@ -200,28 +199,28 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public int AugmentMasteryPoints
 		{
-			get { return Configuration.AugmentMasteryPoints; }
+			get { return _configuration.AugmentMasteryPoints; }
 			set
 			{
-				if (Configuration.AugmentMasteryPoints != value)
+				if (_configuration.AugmentMasteryPoints != value)
 				{
-					Configuration.AugmentMasteryPoints = value;
+					_configuration.AugmentMasteryPoints = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
 			}
 		}
 
-		public int MasteryPoints => (int) Math.Round(Configuration.MasteryPoints * Configuration.MasteryMultiplier);
+		public int MasteryPoints => (int) Math.Round(_configuration.MasteryPoints * _configuration.MasteryMultiplier);
 
 		public int AccuracyPoints
 		{
-			get { return Configuration.AccuracyPoints; }
+			get { return _configuration.AccuracyPoints; }
 			set
 			{
-				if (Configuration.AccuracyPoints != value)
+				if (_configuration.AccuracyPoints != value)
 				{
-					Configuration.AccuracyPoints = value;
+					_configuration.AccuracyPoints = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
@@ -230,12 +229,12 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public int AlacrityPoints
 		{
-			get { return Configuration.AlacrityPoints; }
+			get { return _configuration.AlacrityPoints; }
 			set
 			{
-				if (Configuration.AlacrityPoints != value)
+				if (_configuration.AlacrityPoints != value)
 				{
-					Configuration.AlacrityPoints = value;
+					_configuration.AlacrityPoints = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
@@ -244,12 +243,12 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public int CriticalPoints
 		{
-			get { return Configuration.CriticalPoints; }
+			get { return _configuration.CriticalPoints; }
 			set
 			{
-				if (Configuration.CriticalPoints != value)
+				if (_configuration.CriticalPoints != value)
 				{
-					Configuration.CriticalPoints = value;
+					_configuration.CriticalPoints = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
@@ -258,12 +257,26 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public int PowerPoints
 		{
-			get { return Configuration.PowerPoints; }
+			get { return _configuration.PowerPoints; }
 			set
 			{
-				if (Configuration.PowerPoints != value)
+				if (_configuration.PowerPoints != value)
 				{
-					Configuration.PowerPoints = value;
+					_configuration.PowerPoints = value;
+					OnPropertyChanged();
+					RaiseUpdateOnCalculatedProperties();
+				}
+			}
+		}
+
+		public bool DualWield
+		{
+			get { return _configuration.DualWield; }
+			set
+			{
+				if (_configuration.DualWield != value)
+				{
+					_configuration.DualWield = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
@@ -287,20 +300,22 @@ namespace TorPlayground.StatOptimizer.ViewModel
 			handler?.Invoke();
 		}
 
-		public double Accuracy => Configuration.Accuracy;
-		public double Alacrity => Configuration.Alacrity;
-		public double Critical => Configuration.Critical;
-		public double Surge => Configuration.Surge;
-		public double BonusDamage => Configuration.BonusDamage;
-		public double SpellBonusDamage => Configuration.SpellBonusDamage;
-		public int Budget => Configuration.Budget;
+		public double Accuracy => _configuration.Accuracy;
+		public double Alacrity => _configuration.Alacrity;
+		public double Critical => _configuration.Critical;
+		public double Surge => _configuration.Surge;
+		public double BonusDamage => _configuration.BonusDamage;
+		public double SpellBonusDamage => _configuration.SpellBonusDamage;
+		public int Budget => _configuration.Budget;
 
 		public CommandHandler SetMainHandCommand { get; private set; }
 		public CommandHandler SetOffHandCommand { get; private set; }
 
+		private readonly Configuration _configuration;
+
 		public ConfigurationViewModel(Configuration configuration)
 		{
-			Configuration = configuration;
+			_configuration = configuration;
 			CorrectionViewModel = new CorrectionViewModel(configuration);
 			SetMainHandCommand = new CommandHandler(p =>
 			{

@@ -16,7 +16,7 @@
 			<ColumnDefinition Width="*" />
 		</Grid.ColumnDefinitions>
 		<TextBlock Grid.Column="0" Text="{Binding Label, ElementName=Control}" Width="{Binding LabelWidth, ElementName=Control}" Padding="0,0,5,0" />
-		<c:DelayedTextBox Grid.Column="1" MaxLength="{Binding MaxLength, ElementName=Control}" Width="NaN" DataType="{Binding DataType, ElementName=Control}">
+		<c:DelayedTextBox Grid.Column="1" MaxLength="{Binding MaxLength, ElementName=Control}" Width="{Binding InputWidth, ElementName=Control}" DataType="{Binding DataType, ElementName=Control}">
 			<TextBox.Style>
 				<Style TargetType="TextBox">
 					<Setter Property="HorizontalContentAlignment" Value="Right" />

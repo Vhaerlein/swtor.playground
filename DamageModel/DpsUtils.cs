@@ -180,7 +180,7 @@ namespace TorPlayground.DamageModel
 		{
 			double damage = 
 			(
-				from token in ability.Ability.GetAbilityTokenDamageList(configuration, DamageRange.Average, ability.ForceOffhand)
+				from token in ability.Ability.GetAbilityTokenDamageList(configuration, DamageRange.Average, ability.ForceOffHand)
 				let tokenDamage = token.Sum
 				(
 					action =>

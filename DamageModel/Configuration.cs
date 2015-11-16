@@ -3,7 +3,25 @@
 	public partial class Configuration
 	{
 		public int Level { get; set; }
-		public bool DualWield { get; set; }
+
+		public delegate void DualWieldUpdatedHandler();
+		public event DualWieldUpdatedHandler DualWieldUpdated;
+
+		public bool DualWield
+		{
+			get { return _dualWield; }
+			set
+			{
+				if (_dualWield != value)
+				{
+					_dualWield = value;
+					var handler = DualWieldUpdated;
+					handler?.Invoke();
+				}
+			}
+		}
+		private bool _dualWield;
+
 
 		public Hand MainHand
 		{

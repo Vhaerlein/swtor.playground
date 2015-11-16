@@ -40,6 +40,15 @@ namespace TorPlayground.Resources
 
 		public static Ability GetAbility(string id)
 		{
+			var node = Abilities.Descendants("Ability").FirstOrDefault(a => a.Attribute("Id").Value == id || a.Attribute("NameId").Value == id || a.Attribute("Sid").Value == id);
+			if (node != null)
+				return (Ability) new XmlSerializer(typeof (Ability)).Deserialize(node.CreateReader());
+
+			return null;
+		}
+
+		public static Ability GetAbilityById(string id)
+		{
 			var node = Abilities.Descendants("Ability").FirstOrDefault(a => a.Attribute("Id").Value == id);
 			if (node != null)
 				return (Ability) new XmlSerializer(typeof (Ability)).Deserialize(node.CreateReader());
