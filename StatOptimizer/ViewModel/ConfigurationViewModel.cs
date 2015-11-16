@@ -110,7 +110,7 @@ namespace TorPlayground.StatOptimizer.ViewModel
 			{
 				if (Configuration.MainHand.DamageMin != value)
 				{
-					Configuration.MainHand.DamageMax = value;
+					Configuration.MainHand.DamageMin = value;
 					OnPropertyChanged();
 					RaiseUpdateOnCalculatedProperties();
 				}
