@@ -94,22 +94,22 @@ namespace TorPlayground.DamageModel
 				a => GetAbilityDamage(configuration, a, session.EnergyKineticDamageReduction, session.ElementalInternalDamageReduction, session.DefenseChance)
 				* a.Activations
 				* a.DamageMultiplier
-				* (a.Ability.IgnoresAlacrity ? 1 : (1 + configuration.Alacrity))
+				* (a.Ability.IgnoresAlacrity ? 1 : 1 + configuration.Alacrity)
 			)
 			/ session.Duration;
 		}
 
-		public static double GetAbilityDamageMin(this Ability ability, Configuration configuration)
+		public static double GetAbilityDamageMin(this Ability ability, Configuration configuration, bool forceOffhand = false)
 		{
-			return ability?.GetAbilityTokenDamageList(configuration, DamageRange.Minimum).Sum(d => d.Sum(t => t.Damage) * d.Multiplier) ?? 0;
+			return ability?.GetAbilityTokenDamageList(configuration, DamageRange.Minimum, forceOffhand).Sum(d => d.Sum(t => t.Damage) * d.Multiplier) ?? 0;
 		}
 
 		public static double GetAbilityDamageMax(this Ability ability, Configuration configuration, bool forceOffhand = false)
 		{
-			return ability?.GetAbilityTokenDamageList(configuration, DamageRange.Maximum).Sum(d => d.Sum(t => t.Damage) * d.Multiplier) ?? 0;
+			return ability?.GetAbilityTokenDamageList(configuration, DamageRange.Maximum, forceOffhand).Sum(d => d.Sum(t => t.Damage) * d.Multiplier) ?? 0;
 		}
 
-		public static List<TokenDamage> GetAbilityTokenDamageList(this Ability ability, Configuration configuration, DamageRange range)
+		public static List<TokenDamage> GetAbilityTokenDamageList(this Ability ability, Configuration configuration, DamageRange range, bool forceOffhand = false)
 		{
 			if (ability == null)
 				return null;
@@ -125,7 +125,7 @@ namespace TorPlayground.DamageModel
 
 				var tokenDamage = new TokenDamage { Multiplier = token.Multiplier };
 				tokenDamage.AddRange(mainHandActions.Select(action => new ActionDamage(false, GetActionDamage(action, configuration, range),
-					action.DamageType == DamageType.Weapon ? configuration.MainHand.DamageType : action.DamageType, action.Type)));
+					action.DamageType == DamageType.Weapon ? configuration.MainHand.DamageType : action.DamageType)));
 
 				// Offhand (only for weapon damage type)
 				if (configuration.DualWield)
@@ -134,7 +134,13 @@ namespace TorPlayground.DamageModel
 
 					if (offHandActions.Count > 0)
 						tokenDamage.AddRange(offHandActions.Select(action => new ActionDamage(true, GetActionDamage(action, configuration, range, true),
-							action.DamageType == DamageType.Weapon ? configuration.OffHand.DamageType : action.DamageType, action.Type)));
+							action.DamageType == DamageType.Weapon ? configuration.OffHand.DamageType : action.DamageType)));
+					else if (forceOffhand)
+					{
+						tokenDamage.AddRange(mainHandActions.Where(a => a.Type == ActionType.WeaponDamage).Select(action => 
+							new ActionDamage(true, GetActionDamage(action, configuration, range, true, true),
+							action.DamageType == DamageType.Weapon ? configuration.OffHand.DamageType : action.DamageType)));
+					}
 				}
 
 				damage.Add(tokenDamage);
@@ -143,7 +149,7 @@ namespace TorPlayground.DamageModel
 			return damage;
 		}
 
-		private static double GetActionDamage(Action action, Configuration configuration, DamageRange range, bool offHand = false)
+		private static double GetActionDamage(Action action, Configuration configuration, DamageRange range, bool offHand = false, bool forcedOffhand = false)
 		{
 			var hand = offHand ? configuration.OffHand : configuration.MainHand;
 			double damage = 0;
@@ -157,15 +163,16 @@ namespace TorPlayground.DamageModel
 							? hand.DamageMax
 							: hand.DamageAvg));
 			}
-
-			damage += action.Coefficient * (action.Type == ActionType.WeaponDamage ? configuration.BonusDamage : configuration.SpellBonusDamage)
-				+ (range == DamageRange.Minimum
-					? action.StandardHealthPercentMin : 
-					(range == DamageRange.Maximum
-						? action.StandardHealthPercentMax
-						: action.StandardHealthPercentAvg))
-				* configuration.StandardDamage;
-
+			if (!forcedOffhand)
+			{
+				damage += action.Coefficient * (action.Type == ActionType.WeaponDamage ? configuration.BonusDamage : configuration.SpellBonusDamage)
+					+ (range == DamageRange.Minimum
+						? action.StandardHealthPercentMin : 
+						(range == DamageRange.Maximum
+							? action.StandardHealthPercentMax
+							: action.StandardHealthPercentAvg))
+					* configuration.StandardDamage;
+			}
 			return damage;
 		}
 
@@ -173,7 +180,7 @@ namespace TorPlayground.DamageModel
 		{
 			double damage = 
 			(
-				from token in ability.Ability.GetAbilityTokenDamageList(configuration, DamageRange.Average)
+				from token in ability.Ability.GetAbilityTokenDamageList(configuration, DamageRange.Average, ability.ForceOffhand)
 				let tokenDamage = token.Sum
 				(
 					action =>

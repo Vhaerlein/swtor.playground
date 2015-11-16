@@ -14,6 +14,7 @@ namespace TorPlayground.DamageModel
 		public double DamageMultiplier { get; set; }
 		public double Autocrit { get; set; }
 		public double SurgeBonus { get; set; }
+		public bool ForceOffhand { get; set; }
 
 		/// <summary>
 		/// Basic target armor rating multiplier is 1 - 39% = 0.61. 

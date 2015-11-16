@@ -18,13 +18,13 @@
 			"Multiplier": 0.55
 		},
 
-		"BaseMasteryPoints": 4769,
+		"BaseMasteryPoints": 4713,
 		"AugmentMasteryPoints": 0,
 
 		"AccuracyPoints": 685,
 		"AlacrityPoints": 736,
-		"CriticalPoints": 1161,
-		"PowerPoints": 2539,
+		"CriticalPoints": 1169,
+		"PowerPoints": 2641,
 
 		"BaseAlacrity": 0.03,
 		"BaseCritical": 0.11,
@@ -69,7 +69,8 @@
 					"Id": "16140972878675383004",
 					"Activations": 10,
 					"ArmorReduction": 1.0,
-					"DamageMultiplier": 1
+					"DamageMultiplier": 1,
+					"ForceOffhand" : 1
 				},
 				{
 					"Id": "16140944249323822669",

@@ -36,14 +36,18 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Amount.cs" />
-    <Compile Include="AmountModifier.cs" />
-    <Compile Include="AmountType.cs" />
-    <Compile Include="Character.cs" />
-    <Compile Include="EntryType.cs" />
-    <Compile Include="LogEntry.cs" />
-    <Compile Include="Mitigation.cs" />
-    <Compile Include="MitigationType.cs" />
+    <Compile Include="Combat\AbilityActivation.cs" />
+    <Compile Include="Log\Amount.cs" />
+    <Compile Include="Log\AmountModifier.cs" />
+    <Compile Include="Log\AmountType.cs" />
+    <Compile Include="Log\Character.cs" />
+    <Compile Include="Combat\Combat.cs" />
+    <Compile Include="Combat\CombatAbility.cs" />
+    <Compile Include="Log\CombatLog.cs" />
+    <Compile Include="Log\EntryType.cs" />
+    <Compile Include="Log\LogEntry.cs" />
+    <Compile Include="Log\Mitigation.cs" />
+    <Compile Include="Log\MitigationType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
