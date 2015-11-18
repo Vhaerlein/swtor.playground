@@ -300,29 +300,36 @@ namespace TorPlayground.StatOptimizer.ViewModel
 					return;
 				}
 
-				var sessions = combats.Where(c => c.Duration > 120 || c.Targets.Max(t => t.DamageDone > 1000000)).Select(c => c.ToSession(_profile.DefaultValues)).ToList();
-				
-				if (sessions.Count == 0)
+				try
 				{
-					MessageBox.Show("File doesn't contain any suitable combat session (duration >= 120s and/or damage >= 1 000 000).", "Parse combat log", MessageBoxButton.OK, MessageBoxImage.Information);
-					return;
-				}
+					var sessions = combats.Where(c => c.Duration > 120 || c.Targets.Max(t => t.DamageDone > 1000000)).Select(c => c.ToSession(_profile.DefaultValues)).ToList();
 
-				_profile.HasUnsavedChanges = true;
-
-				foreach (var session in sessions)
-				{
-					_profile.Sessions.Add(session);
-					var sessionViewModel = new SessionViewModel(session, _profile.Configuration, _profile.DefaultValues); 
-					sessionViewModel.SessionUpdated += () =>
+					if (sessions.Count == 0)
 					{
-						ConfigurationViewModel.CorrectionViewModel.IsOutdated = true;
-						UpdateDps();
-					};
-					SessionViewModels.Add(sessionViewModel);
+						MessageBox.Show("File doesn't contain any suitable combat session (duration >= 120s and/or damage >= 1 000 000).", "Parse combat log", MessageBoxButton.OK, MessageBoxImage.Information);
+						return;
+					}
+
+					_profile.HasUnsavedChanges = true;
+
+					foreach (var session in sessions)
+					{
+						_profile.Sessions.Add(session);
+						var sessionViewModel = new SessionViewModel(session, _profile.Configuration, _profile.DefaultValues); 
+						sessionViewModel.SessionUpdated += () =>
+						{
+							ConfigurationViewModel.CorrectionViewModel.IsOutdated = true;
+							UpdateDps();
+						};
+						SessionViewModels.Add(sessionViewModel);
+					}
+					if (ActiveSessionViewModel == null)
+						ActiveSessionViewModel = SessionViewModels.FirstOrDefault();
 				}
-				if (ActiveSessionViewModel == null)
-					ActiveSessionViewModel = SessionViewModels.FirstOrDefault();
+				catch (Exception e)
+				{
+					MessageBox.Show($"Error parsing combat log: {e.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+				}
 			}
 		}
 

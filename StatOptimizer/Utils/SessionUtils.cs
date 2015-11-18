@@ -23,6 +23,12 @@ namespace TorPlayground.StatOptimizer.Utils
 
 			foreach (var ability in combat.Abilities.Where(a => a.Targets.Any(t => t.DamageDone > 0 && t.Character != combat.Player)))
 			{
+				var sessionAbility = new SessionAbility { Id = ability.Id };
+
+				// not in db
+				if (sessionAbility.Ability == null)
+					continue;
+
 				var hittingActions = ability.Activations.SelectMany(activation => activation.Actions.Where(a => a.Amount > 0 && !a.IsCritical)).ToList();
 				var criticalActions = ability.Activations.SelectMany(activation => activation.Actions.Where(a => a.Amount > 0 && a.IsCritical)).ToList();
 				int maximumCritical = criticalActions.Count > 0 ? criticalActions.Max(aa => aa.Amount) : 0;
@@ -30,11 +36,9 @@ namespace TorPlayground.StatOptimizer.Utils
 				int minimum = hittingActions.Count > 0 ? hittingActions.Min(aa => aa.Amount) : 0;
 				int average = hittingActions.Count > 0 ? (int) hittingActions.Average(aa => aa.Amount) : 0;
 				double surge = maximum > 0 && maximumCritical > 0 ? (maximumCritical - maximum) / (double) maximum : 0;
-				var sessionAbility = new SessionAbility
-				{
-					Id = ability.Id,
-					Activations = ability.Activations.Count,
-					Info =
+				
+				sessionAbility.Activations = ability.Activations.Count;
+				sessionAbility.Info =
 						$"Activations: {ability.Activations.Count}\n" +
 						$"Total hits: {ability.Activations.Sum(a => a.Actions.Count)}\n" +
 						$"Hits per activation: {((double) ability.Activations.Sum(a => a.Actions.Count)/ability.Activations.Count)} [{string.Join("/", ability.Activations.Select(a => a.Actions.Count).Distinct().OrderBy(n => n))}]\n" +
@@ -43,8 +47,7 @@ namespace TorPlayground.StatOptimizer.Utils
 						$"Maximum hit damage: {maximum}\n" +
 						$"Minimum hit damage: {minimum}\n" +
 						$"Average hit damage: {average}\n" +
-						$"Total Damage: {ability.Targets.Sum(t => t.DamageDone)}"
-				};
+						$"Total Damage: {ability.Targets.Sum(t => t.DamageDone)}";
 
 				var abilityDefauls = defaultValues?.Abilities.FirstOrDefault(a => a.Id == ability.Id);
 				if (abilityDefauls != null)

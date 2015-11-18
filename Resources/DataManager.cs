@@ -39,11 +39,14 @@ namespace TorPlayground.Resources
 			return bitmap ?? Properties.Resources._default;
 		}
 
+		private static readonly Dictionary<string, XElement> Cache = new Dictionary<string, XElement>();
+
 		public static Ability GetAbility(string id)
 		{
-			var node = Abilities.Descendants("Ability").FirstOrDefault(a => a.Attribute("Id").Value == id || a.Attribute("NameId").Value == id || a.Attribute("Sid").Value == id);
-			if (node != null)
-				return (Ability) new XmlSerializer(typeof (Ability)).Deserialize(node.CreateReader());
+			if (!Cache.ContainsKey(id))
+				Cache[id] = Abilities.Descendants("Ability").FirstOrDefault(a => a.Attribute("Id").Value == id || a.Attribute("NameId").Value == id || a.Attribute("Sid").Value == id);
+			if (Cache[id] != null)
+				return (Ability) new XmlSerializer(typeof (Ability)).Deserialize(Cache[id].CreateReader());
 
 			return null;
 		}
