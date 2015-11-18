@@ -8,6 +8,9 @@
 	xmlns:controls="clr-namespace:TorPlayground.StatOptimizer.Controls"
 	xmlns:vm="clr-namespace:TorPlayground.StatOptimizer.ViewModel"
 	Icon="swtor.ico" TitlebarHeight="32" SaveWindowPosition="True"
+	BorderThickness="0" 
+	GlowBrush="Black" MaxHeight="921"
+	Closing="MainWindow_OnClosing"
 	SizeToContent="WidthAndHeight" ResizeMode="NoResize"
 	d:DataContext="{d:DesignInstance vm:MainViewModel}"
 	mc:Ignorable="d" Title="SWtOR 4.0: DPS Stat Opmtimization">
@@ -16,16 +19,55 @@
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
 				<ResourceDictionary Source="../Styles/Generic.xaml" />
+				<ResourceDictionary Source="../Resources/Icons.xaml" />
 			</ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
 	</mm:MetroWindow.Resources>
 
-	<!--<mm:MetroWindow.RightWindowCommands>
+	<mm:MetroWindow.RightWindowCommands>
 		<mm:WindowCommands>
-			<Button Content="load profile" />
-			<Button Content="save profile" />
+			<Button Command="{Binding LoadProfileCommand}">
+				<StackPanel Orientation="Horizontal">
+					<Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+						<Rectangle.OpacityMask>
+							<VisualBrush Stretch="Fill" Visual="{StaticResource appbar_cabinet_out}" />
+						</Rectangle.OpacityMask>
+					</Rectangle>
+					<TextBlock Margin="5,0,0,0" VerticalAlignment="Center" Text="load profile" />
+				</StackPanel>
+			</Button>
+			<Button Command="{Binding SaveProfileCommand}">
+				<StackPanel Orientation="Horizontal">
+					<Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+						<Rectangle.OpacityMask>
+							<VisualBrush Stretch="Fill" Visual="{StaticResource appbar_cabinet_in}" />
+						</Rectangle.OpacityMask>
+					</Rectangle>
+					<TextBlock Margin="5,0,0,0" VerticalAlignment="Center" Text="save profile" />
+				</StackPanel>
+			</Button>
+			<Button Command="{Binding SaveProfileAsCommand}">
+				<StackPanel Orientation="Horizontal">
+					<Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+						<Rectangle.OpacityMask>
+							<VisualBrush Stretch="Fill" Visual="{StaticResource appbar_cabinet_in}" />
+						</Rectangle.OpacityMask>
+					</Rectangle>
+					<TextBlock Margin="5,0,0,0" VerticalAlignment="Center" Text="save profile as" />
+				</StackPanel>
+			</Button>
+			<Button Command="{Binding ParseCombatLogCommand}">
+				<StackPanel Orientation="Horizontal">
+					<Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+						<Rectangle.OpacityMask>
+							<VisualBrush Stretch="Fill" Visual="{StaticResource appbar_people_arrow_right}" />
+						</Rectangle.OpacityMask>
+					</Rectangle>
+					<TextBlock Margin="5,0,0,0" VerticalAlignment="Center" Text="parse combat log" />
+				</StackPanel>
+			</Button>
 		</mm:WindowCommands>
-	</mm:MetroWindow.RightWindowCommands>-->
+	</mm:MetroWindow.RightWindowCommands>
 
 	<Grid VerticalAlignment="Top" HorizontalAlignment="Stretch" x:Name="Grid">
 		<Grid.ColumnDefinitions>
@@ -64,21 +106,42 @@
 				</ContentControl>
 			</Grid>
 		</GroupBox>
-		<Button Grid.Row="1" Grid.Column="0" Command="{Binding RecalculateCommand}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">Optimize</Button>
+		<StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+			<Button Command="{Binding RecalculateCommand}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">Optimize (current session)</Button>
+			<Button Command="{Binding RecalculateAllCommand}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">Optimize (all sessions)</Button>
+		</StackPanel>
 		<GroupBox Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Header="Combat session">
 			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="Auto" />
+				</Grid.ColumnDefinitions>
 				<Grid.RowDefinitions>
 					<RowDefinition Height="Auto" />
 					<RowDefinition Height="*" />
 				</Grid.RowDefinitions>
-				<ComboBox ItemsSource="{Binding SessionViewModels}" SelectedItem="{Binding ActiveSessionViewModel}" Margin="0,0,0,10">
+				<ComboBox ItemsSource="{Binding SessionViewModels}" SelectedItem="{Binding ActiveSessionViewModel}">
 					<ComboBox.ItemTemplate>
 						<DataTemplate>
 							<TextBlock Text="{Binding Name}" />
 						</DataTemplate>
 					</ComboBox.ItemTemplate>
 				</ComboBox>
-				<view:SessionView DataContext="{Binding ActiveSessionViewModel}" Grid.Row="1" />
+				<Button Command="{Binding DeleteSessionCommand}" Grid.Column="1" Grid.Row="0" Content="Delete" Margin="5,0,0,0">
+					<Button.Style>
+						<Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+							<Setter Property="IsEnabled" Value="True" />
+							<Setter Property="Opacity" Value="1" />
+							<Style.Triggers>
+								<DataTrigger Binding="{Binding ActiveSessionViewModel}" Value="{x:Null}">
+									<Setter Property="IsEnabled" Value="False" />
+									<Setter Property="Opacity" Value="0.2" />
+								</DataTrigger>
+							</Style.Triggers>
+						</Style>
+					</Button.Style>
+				</Button>
+				<view:SessionView DataContext="{Binding ActiveSessionViewModel}" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Margin="0,10,0,0" />
 			</Grid>
 		</GroupBox>
 	</Grid>

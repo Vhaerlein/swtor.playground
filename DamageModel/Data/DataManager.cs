@@ -145,20 +145,11 @@ namespace TorPlayground.DamageModel.Data
 			StandardHealth = new ReadOnlyDictionary<int, int>(standardHealth);
 		}
 
-		public static Profile Profile
-		{
-			get
-			{
-				Directory.CreateDirectory("data");
-				if (!File.Exists(@"data/profile.json"))
-					File.WriteAllText(@"data/profile.json", Properties.Resources.Profile);
-				return GetProfile(@"data/profile.json");
-			}
-		}
+		public static Profile DefaultProfile => Profile.Parse(Properties.Resources.Profile);
 
-		public static Profile GetProfile(string filePath)
+		public static Profile LoadProfile(string filePath)
 		{
-			if (!File.Exists(filePath))
+			if (string.IsNullOrEmpty(filePath) || !File.Exists(filePath))
 				return null;
 
 			try
@@ -174,6 +165,23 @@ namespace TorPlayground.DamageModel.Data
 			{
 				return null;
 			}
+		}
+
+		public static bool SaveProfile(Profile profile, string filePath)
+		{
+			if (profile == null)
+				return false;
+
+			try
+			{
+				File.WriteAllText(filePath, profile.ToJson());
+			}
+			catch (Exception)
+			{
+				return false;
+			}
+
+			return true;
 		}
 	}
 }

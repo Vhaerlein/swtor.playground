@@ -11,22 +11,29 @@ namespace TorPlayground.StatDistributions
 	{
 		static void Main()
 		{
+			const string profilePath = @"data/profile.json";
 			const double budgetMin = 1000.0;
 			const double budgetMax = 10000.0;
 			const double budgetStep = (budgetMax - budgetMin) / 30.0;
 
 			List<ConfigurationCorrection> budgetCorrections = new List<ConfigurationCorrection>();
-			Profile profile = DataManager.Profile;
+			if (!File.Exists(profilePath))
+			{
+				Directory.CreateDirectory("data");
+				DataManager.SaveProfile(DataManager.DefaultProfile, profilePath);
+			}
+			Profile profile = DataManager.LoadProfile(profilePath);
+
+			Console.WriteLine($"Calculating distributions based on \"{profilePath}\"...");
 
 			for (int i = 0; i <= 30; i ++)
 			{
 				var budget = budgetMin + budgetStep * i;
 
-				Console.Write("Budget [{0}]", budget);
+				Console.WriteLine("Budget [{0}]", budget);
 				profile.Configuration.BaseMasteryPoints = (int) budget;
 				var correction = DpsUtils.FindHighestDpsCorrection(profile, (int) budget);
 				budgetCorrections.Add(correction);
-				Console.WriteLine();
 			}
 			WriteBudget("Optimal distribution:", budgetCorrections);
 
@@ -35,12 +42,12 @@ namespace TorPlayground.StatDistributions
 
 			#region All power
 			badBudgetCorrections.Clear();
-			profile = DataManager.Profile;
+			profile = DataManager.LoadProfile(profilePath);
 			for (int i = 0; i <= 30; i ++)
 			{
 				var budget = budgetMin + budgetStep*i;
 
-				Console.Write("All power budget [{0}]", budget);
+				Console.WriteLine("All power budget [{0}]", budget);
 
 				profile.Configuration.BaseMasteryPoints = (int) budget;
 				profile.Configuration.AccuracyPoints = budgetCorrections[i].AccuracyPoints;
@@ -65,12 +72,12 @@ namespace TorPlayground.StatDistributions
 
 			#region All mastery
 			badBudgetCorrections.Clear();
-			profile = DataManager.Profile;
+			profile = DataManager.LoadProfile(profilePath);
 			for (int i = 0; i <= 30; i ++)
 			{
 				var budget = budgetMin + budgetStep*i;
 
-				Console.Write("All mastery budget [{0}]", budget);
+				Console.WriteLine("All mastery budget [{0}]", budget);
 
 				profile.Configuration.BaseMasteryPoints = (int) budget;
 				profile.Configuration.AccuracyPoints = budgetCorrections[i].AccuracyPoints;
@@ -95,12 +102,12 @@ namespace TorPlayground.StatDistributions
 
 			#region More critical/alacrity
 			badBudgetCorrections.Clear();
-			profile = DataManager.Profile;
+			profile = DataManager.DefaultProfile;
 			for (int i = 0; i <= 30; i ++)
 			{
 				var budget = budgetMin + budgetStep*i;
 
-				Console.Write("More critical/alacrity budget [{0}]", budget);
+				Console.WriteLine("More critical/alacrity budget [{0}]", budget);
 				int alacrity = budgetCorrections[i].AlacrityPoints/2;
 				int critical = budgetCorrections[i].CriticalPoints/2;
 
@@ -137,12 +144,12 @@ namespace TorPlayground.StatDistributions
 
 			#region More power
 			badBudgetCorrections.Clear();
-			profile = DataManager.Profile;
+			profile = DataManager.LoadProfile(profilePath);
 			for (int i = 0; i <= 30; i ++)
 			{
 				var budget = budgetMin + budgetStep*i;
 
-				Console.Write("More power budget [{0}]:", budget);
+				Console.WriteLine("More power budget [{0}]", budget);
 				int alacrity = budgetCorrections[i].AlacrityPoints/2;
 				int critical = budgetCorrections[i].CriticalPoints/2;
 				int mastery = budgetCorrections[i].MasteryPoints;

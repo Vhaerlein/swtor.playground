@@ -14,7 +14,7 @@
 			<ResourceDictionary.MergedDictionaries>
 				<ResourceDictionary Source="../Styles/Generic.xaml" />
 			</ResourceDictionary.MergedDictionaries>
-			<converters:EmptyStringToZeroConverter x:Key="EmptyStringToZeroConverter" />
+			<converters:NonNumericStringToZeroConverter x:Key="EmptyStringToZeroConverter" />
 			<BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
 		</ResourceDictionary>
 	</UserControl.Resources>
@@ -91,8 +91,7 @@
 				<c:DelayedTextBox Grid.Column="2" Grid.Row="0" Text="{Binding MainHandMax, Converter={StaticResource EmptyStringToZeroConverter}}" />
 				<c:DelayedTextBox Grid.Column="3" Grid.Row="0" Text="{Binding MainHandPower, Converter={StaticResource EmptyStringToZeroConverter}}" />
 
-				<TextBlock Grid.Column="0" Grid.Row="1" Text="Dual wield:" Padding="0,0,5,0"/>
-				<CheckBox IsChecked="{Binding DualWield}" Grid.Column="3" Grid.Row="1" Margin="0,1" />
+				<CheckBox IsChecked="{Binding DualWield}" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Margin="0,1" Content="dual wield" />
 				
 				<TextBlock Grid.Column="0" Grid.Row="2" Text="OH min/max/power:" Padding="0,0,5,0">
 					<TextBlock.ContextMenu>
@@ -116,7 +115,7 @@
 			<c:LabeledTextBox Text="{Binding BaseSurge, Mode=TwoWay}" Label="Base surge:" DataType="Double" MaxLength="4" />
 			<Separator Height="2" Margin="0,3"></Separator>
 			<c:LabeledTextBox Text="{Binding BaseMasteryPoints, Mode=TwoWay}" Label="Base mastery points:" DataType="Integer" MaxLength="5" ToolTip="Mastery you can't remove and replace with other stat (e.g. mastery on stims, armorings, mods)." />
-			<c:LabeledTextBox Text="{Binding MasteryPoints}" Label="Overall buffed mastery:" IsReadOnly="True" ToolTip="This number should be euqal to number on the character sheet (when all stims and buffs are on)." />
+			<c:LabeledTextBox Text="{Binding MasteryPoints, StringFormat='{}{0:0}'}" Label="Overall buffed mastery:" IsReadOnly="True" ToolTip="This number should be euqal to number on the character sheet (when all stims and buffs are on)." />
 		</StackPanel>
 		<StackPanel Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
 			<Separator Height="2" Margin="0,3,0,18" />

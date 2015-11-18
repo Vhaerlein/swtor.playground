@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Newtonsoft.Json;
 using TorPlayground.Resources;
 using TorPlayground.Resources.Abilities;
 
@@ -8,6 +9,7 @@ namespace TorPlayground.DamageModel
 	{
 		public string Id { get; set; }
 
+		[JsonIgnore]
 		public Ability Ability => _ability ?? (_ability = DataManager.GetAbility(Id));
 		private Ability _ability;
 
@@ -16,7 +18,9 @@ namespace TorPlayground.DamageModel
 		public double Autocrit { get; set; }
 		public double SurgeBonus { get; set; }
 		public bool ForceOffHand { get; set; }
+		public string Info { get; set; }
 
+		[JsonIgnore]
 		public bool HasOffHandActions => Ability.Tokens.Any(t => t.Type == TokenType.Damage && t.Coefficients.Any(a => a.Type == ActionType.WeaponDamage && !a.IgnoreDualWieldModifier || a.Type == ActionType.SpellDamage));
 
 		/// <summary>

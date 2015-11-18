@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
@@ -29,10 +30,10 @@ namespace TorPlayground.Resources
 			if (string.IsNullOrEmpty(iconName))
 				return Properties.Resources._default;
 
-			string resourceKey = iconName.ToLower();
+			string resourceKey = ResourceKeys.FirstOrDefault(k => string.Equals(k, iconName, StringComparison.InvariantCultureIgnoreCase));
 			Bitmap bitmap = null;
 
-			if (ResourceKeys.Contains(resourceKey))
+			if (resourceKey != null)
 				bitmap = Properties.Resources.ResourceManager.GetObject(resourceKey) as Bitmap;
 
 			return bitmap ?? Properties.Resources._default;

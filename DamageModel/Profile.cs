@@ -6,20 +6,24 @@ namespace TorPlayground.DamageModel
 {
 	public class Profile
 	{
+		public bool HasUnsavedChanges { get; set; }
+
 		protected class ProfileInternal
 		{
 			public Configuration Configuration { get; set; }
 			public List<Session> Sessions { get; set; }
+			public Session DefaultValues { get; set; }
 		}
 
-		public Configuration Configuration => _profile.Configuration;
+		public Configuration Configuration => _profile.Configuration ?? (_profile.Configuration = new Configuration());
 		public List<Session> Sessions => _profile.Sessions ?? (_profile.Sessions = new List<Session>());
+		public Session DefaultValues => _profile.DefaultValues ?? (_profile.DefaultValues = new Session());
 
 		public Session ActiveSession
 		{
 			get
 			{
-				return Sessions?.FirstOrDefault(s => s.Active);
+				return Sessions?.FirstOrDefault(s => s.Active) ?? Sessions?.FirstOrDefault();
 			}
 		}
 
@@ -33,10 +37,6 @@ namespace TorPlayground.DamageModel
 		internal static Profile Parse(string input)
 		{
 			var profile = JsonConvert.DeserializeObject<ProfileInternal>(input);
-
-			if(profile.Configuration == null)
-				return null;
-
 			return new Profile(profile);
 		}
 
@@ -50,6 +50,11 @@ namespace TorPlayground.DamageModel
 		public void UpdateDpsEstimation()
 		{
 			Dps = DpsUtils.CalculateDps(this);
+		}
+
+		public void UpdateDpsEstimationAllSessions()
+		{
+			Dps = Sessions.Select(session => DpsUtils.CalculateDps(session, Configuration)).Average();
 		}
 	}
 }

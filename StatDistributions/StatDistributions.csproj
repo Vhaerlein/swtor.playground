@@ -50,10 +50,6 @@
       <Project>{F36D2B70-0426-402E-8CF8-15887180B962}</Project>
       <Name>DamageModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Resources\Resources.csproj">
-      <Project>{890ce87b-f727-40c6-9d14-758c687f625b}</Project>
-      <Name>Resources</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

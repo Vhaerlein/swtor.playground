@@ -1,4 +1,5 @@
-﻿using TorPlayground.Resources.Abilities;
+﻿using Newtonsoft.Json;
+using TorPlayground.Resources.Abilities;
 
 namespace TorPlayground.DamageModel
 {
@@ -6,6 +7,8 @@ namespace TorPlayground.DamageModel
 	{
 		public int DamageMin { get; set; }
 		public int DamageMax { get; set; }
+
+		[JsonIgnore]
 		public double DamageAvg => (DamageMin + DamageMax) / 2.0;
 
 		public int Power

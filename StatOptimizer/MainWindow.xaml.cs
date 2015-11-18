@@ -1,4 +1,5 @@
-﻿using TorPlayground.DamageModel.Data;
+﻿using System.ComponentModel;
+using System.Windows;
 using TorPlayground.StatOptimizer.ViewModel;
 
 namespace TorPlayground.StatOptimizer
@@ -8,10 +9,23 @@ namespace TorPlayground.StatOptimizer
 	/// </summary>
 	public partial class MainWindow
 	{
+		private readonly MainViewModel _viewModel = new MainViewModel();
 		public MainWindow()
 		{
-			DataContext = new MainViewModel(DataManager.Profile);
+			DataContext = _viewModel;
 			InitializeComponent();
+		}
+
+		private void MainWindow_OnClosing(object sender, CancelEventArgs e)
+		{
+			if (_viewModel.HasUnsavedChanges())
+			{
+				var result = MessageBox.Show("Do you want to save your changes before exit?", "Unsaved data", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
+				if (result == MessageBoxResult.Yes)
+					_viewModel.SaveProfile();
+				else if (result == MessageBoxResult.Cancel)
+					e.Cancel = true;
+			}
 		}
 	}
 }

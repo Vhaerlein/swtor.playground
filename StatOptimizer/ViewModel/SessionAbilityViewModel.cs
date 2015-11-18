@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using System.Text;
+using System.Windows.Input;
 using System.Windows.Media;
 using TorPlayground.DamageModel;
 using TorPlayground.Resources.Abilities;
@@ -129,7 +130,7 @@ namespace TorPlayground.StatOptimizer.ViewModel
 					if (_sessionAbility.Ability.IgnoresAlacrity)
 						sb.Append("\nIgnores alacrity");
 
-					sb.AppendFormat("\n\n{0}", _sessionAbility.Ability.Description);
+					sb.AppendFormat("\n\n{0}", _sessionAbility.Ability.Description.Replace("<<1>>", $"{DamageMin:0}-{DamageMax:0}"));
 					_info = sb.ToString();
 				}
 
@@ -138,18 +139,40 @@ namespace TorPlayground.StatOptimizer.ViewModel
 		}
 		private string _info;
 
+		public string ParseInfo => _sessionAbility.Info;
+
 		private readonly SessionAbility _sessionAbility;
 		private readonly Configuration _configuration;
+		private readonly Session _defaultValues;
 
 		public delegate void SessionAbilityUpdatedHandler();
 		public event SessionAbilityUpdatedHandler SessionAbilityUpdated;
 
-		public SessionAbilityViewModel(SessionAbility sessionAbility, Configuration configuration)
+		public ICommand SaveAsDefaultCommand { get; set; }
+
+		public SessionAbilityViewModel(SessionAbility sessionAbility, Configuration configuration, Session defaultValues)
 		{
 			_sessionAbility = sessionAbility;
 			_configuration = configuration;
+			_defaultValues = defaultValues;
 			UpdateCanForceOffHand();
 			configuration.DualWieldUpdated += UpdateCanForceOffHand;
+			SaveAsDefaultCommand = new CommandHandler(SaveAsDefault);
+		}
+
+		private void SaveAsDefault()
+		{
+			var ability = _defaultValues.Abilities.FirstOrDefault(a => a.Ability.NameId == _sessionAbility.Ability.NameId);
+			if (ability == null)
+			{
+				ability = new SessionAbility {Id = _sessionAbility.Ability.NameId};
+				_defaultValues.Abilities.Add(ability);
+			}
+			ability.SurgeBonus = SurgeBonus;
+			ability.Autocrit = Autocrit;
+			ability.DamageMultiplier = DamageMultiplier;
+			ability.ArmorReduction = ArmorReduction;
+			ability.ForceOffHand = ForceOffHand;
 		}
 
 		private void UpdateCanForceOffHand()

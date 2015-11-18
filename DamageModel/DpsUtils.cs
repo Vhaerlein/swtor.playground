@@ -13,6 +13,12 @@ namespace TorPlayground.DamageModel
 			return FindHighestDpsCorrection(profile, profile.Configuration.Budget);
 		}
 
+		public static ConfigurationCorrection FindHighestDpsCorrection(Profile profile, Session session)
+		{
+			var budget = profile.Configuration.Budget;
+			return FindHighestDpsCorrection(session, profile.Configuration.Clone(), new ConfigurationCorrection(), budget, budget / 10, budget);
+		}
+
 		public static ConfigurationCorrection FindHighestDpsCorrection(Profile profile, int budget)
 		{
 			return FindHighestDpsCorrection(profile.ActiveSession, profile.Configuration.Clone(), new ConfigurationCorrection(), budget, budget / 10, budget);
@@ -89,6 +95,9 @@ namespace TorPlayground.DamageModel
 
 		public static double CalculateDps(Session session, Configuration configuration)
 		{
+			if (session == null)
+				return 0;
+
 			return session.Abilities.Sum
 			(
 				a => GetAbilityDamage(configuration, a, session.EnergyKineticDamageReduction, session.ElementalInternalDamageReduction, session.DefenseChance)

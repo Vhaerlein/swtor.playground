@@ -9,7 +9,14 @@ namespace TorPlayground.DamageModel
 		public double Duration { get; set; }
 		public double EnergyKineticDamageReduction { get; set; }
 		public double ElementalInternalDamageReduction { get; set; }
-		public List<SessionAbility> Abilities { get; set; }
+
+		public List<SessionAbility> Abilities
+		{
+			get { return _abilities ?? (_abilities = new List<SessionAbility>()); }
+			set { _abilities = value; }
+		}
+		private List<SessionAbility> _abilities;
+
 		public double DefenseChance { get; set; }
 
 		public Session()
@@ -17,7 +24,7 @@ namespace TorPlayground.DamageModel
 			Duration = -1;
 			DefenseChance = 0.1;
 			EnergyKineticDamageReduction = 0.39;
-			ElementalInternalDamageReduction = 0.25;
+			ElementalInternalDamageReduction = 0.0;
 		}
 	}
 }

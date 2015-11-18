@@ -8,25 +8,41 @@
 	d:DataContext="{d:DesignInstance vm:SessionViewModel}"
 	mc:Ignorable="d">
 	
-	<StackPanel>
-		<StackPanel.Resources>
+	<Grid>
+		<Grid.Resources>
 			<Style TargetType="TextBox">
 				<Setter Property="VerticalAlignment" Value="Top"/>
 				<Setter Property="Margin" Value="3,0"/>
 				<Setter Property="Width" Value="50"/>
 			</Style>
 			<BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
-		</StackPanel.Resources>
-		<controls:LabeledTextBox Text="{Binding Duration, StringFormat='{}{0:#.###}', Mode=TwoWay}" Label="Duration:" DataType="Double" Width="180" LabelWidth="120" MaxLength="8" />
-		<controls:LabeledTextBox Text="{Binding DamageReduction, Mode=TwoWay}" Label="Damage reduction:" DataType="Double" Width="180" LabelWidth="120" MaxLength="4" />
-		<StackPanel>
+		</Grid.Resources>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="308" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<controls:LabeledTextBox Grid.Column="0" Grid.Row="0" Text="{Binding Duration, StringFormat='{}{0:#.###}', Mode=TwoWay}" Label="Duration (seconds):" DataType="Double" Width="190" LabelWidth="130" MaxLength="8" />
+		<controls:LabeledTextBox Grid.Column="0" Grid.Row="1" Text="{Binding DefenseChance, Mode=TwoWay}" Label="Defense chance:" DataType="Double" Width="190" LabelWidth="130" MaxLength="4" />
+		<controls:LabeledTextBox Grid.Column="1" Grid.Row="0" Text="{Binding EnergyKineticDamageReduction, Mode=TwoWay}" Label="Energy/Kinetic damage reduction:" DataType="Double" Width="270" LabelWidth="210" MaxLength="4" />
+		<controls:LabeledTextBox Grid.Column="1" Grid.Row="1" Text="{Binding ElementalInternalDamageReduction, Mode=TwoWay}" Label="Elemental/Internal damage reduction:" DataType="Double" Width="270" LabelWidth="210" MaxLength="4" />
+		<ScrollViewer Grid.Column="0" Grid.Row="2"  Grid.ColumnSpan="2" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
 			<ItemsControl ItemsSource="{Binding Abilities}">
 				<ItemsControl.ItemTemplate>
 					<DataTemplate>
 						<StackPanel>
 							<Separator Height="2" Margin="0,5" />
 							<StackPanel Orientation="Horizontal">
-								<Image Source="{Binding Icon}" Width="52" Height="52">
+								<StackPanel.ContextMenu>
+									<ContextMenu>
+										<MenuItem Command="{Binding SaveAsDefaultCommand}" Header="Save as default values" />
+									</ContextMenu>
+								</StackPanel.ContextMenu>
+								<Image Source="{Binding Icon}" Width="52" Height="52" ToolTipService.ShowDuration="30000">
 									<Image.ToolTip>
 										<TextBlock Text="{Binding Info}" MaxWidth="450" TextWrapping="Wrap" />
 									</Image.ToolTip>
@@ -40,7 +56,7 @@
 										<RowDefinition Height="30" />
 										<RowDefinition Height="Auto" />
 									</Grid.RowDefinitions>
-									<TextBlock Text="{Binding Name}" FontSize="16" Foreground="Orange" />
+									<TextBlock Text="{Binding Name}" FontSize="16" Foreground="Orange" ToolTip="{Binding ParseInfo}" ToolTipService.ShowDuration="30000" />
 									<StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center">
 										<TextBlock Text="{Binding DamageMin, StringFormat='{} Min: {0:0.0},'}" Foreground="SlateGray" Width="75" TextAlignment="Right" />
 										<TextBlock Text="{Binding DamageMax, StringFormat='{} Max: {0:0.0},'}" Foreground="SlateGray" Width="75" TextAlignment="Right" />
@@ -65,9 +81,9 @@
 											</CheckBox.Style>
 											<CheckBox.ToolTip>
 												<TextBlock FlowDirection="LeftToRight">
-													This ability doesn't have any action defined for offhand.<LineBreak />
-													Checking this will force to include offhand in calculations using mainhand<LineBreak />
-													AmountModifierPercent (with [StandardHealthPercent=0] and [Coefficient=0]).
+														This ability doesn't have any action defined for offhand.<LineBreak />
+														Checking this will force to include offhand in calculations using mainhand<LineBreak />
+														AmountModifierPercent (with [StandardHealthPercent=0] and [Coefficient=0]).
 												</TextBlock>
 											</CheckBox.ToolTip>
 											<TextBlock FlowDirection="LeftToRight" Text=",  force offhand:" Margin="0,0,0,1"/>
@@ -79,6 +95,6 @@
 					</DataTemplate>
 				</ItemsControl.ItemTemplate>
 			</ItemsControl>
-		</StackPanel>
-	</StackPanel>
+		</ScrollViewer>
+	</Grid>
 </UserControl>

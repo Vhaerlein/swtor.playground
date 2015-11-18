@@ -211,7 +211,7 @@ namespace TorPlayground.StatOptimizer.ViewModel
 			}
 		}
 
-		public int MasteryPoints => (int) Math.Round(_configuration.MasteryPoints * _configuration.MasteryMultiplier);
+		public double MasteryPoints => _configuration.MasteryPoints * _configuration.MasteryMultiplier;
 
 		public int AccuracyPoints
 		{

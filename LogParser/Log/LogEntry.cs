@@ -34,6 +34,7 @@ namespace TorPlayground.LogParser.Log
 		public string AbilityId { get; private set; }
 		public EntryType Type { get; private set; }
 		public string Action { get; private set; }
+		public string ActionId { get; private set; }
 		public Amount Amount { get; private set; }
 		public Mitigation Mitigation { get; private set; }
 
@@ -93,6 +94,7 @@ namespace TorPlayground.LogParser.Log
 				entry.Type = Enum.TryParse(match.Groups["EntryType"].Value, true, out type) ? type : EntryType.Unknown;
 
 				entry.Action = match.Groups["Action"].Value;
+				entry.ActionId = match.Groups["ActionId"].Value;
 
 				if (match.Groups["Amount"].Success)
 				{
@@ -104,7 +106,8 @@ namespace TorPlayground.LogParser.Log
 						Type = match.Groups["AmountType"].Success && Enum.TryParse(match.Groups["AmountType"].Value, true, out amountType) ? amountType : AmountType.Generic,
 						Modifier = match.Groups["AmountModifier"].Success && Enum.TryParse(match.Groups["AmountModifier"].Value, true, out amountModifier)
 							? amountModifier
-							: AmountModifier.None
+							: AmountModifier.None,
+						IsCritical = match.Groups["IsCritical"].Success
 					};
 				}
 

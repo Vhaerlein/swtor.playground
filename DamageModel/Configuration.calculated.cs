@@ -1,7 +1,11 @@
-﻿namespace TorPlayground.DamageModel
+﻿using System;
+using Newtonsoft.Json;
+
+namespace TorPlayground.DamageModel
 {
 	public partial class Configuration
 	{
+		[JsonIgnore]
 		public double Alacrity
 		{
 			get
@@ -13,6 +17,7 @@
 		}
 		private double? _alacrity;
 
+		[JsonIgnore]
 		public double Accuracy
 		{
 			get
@@ -24,6 +29,7 @@
 		}
 		private double? _accuracy;
 
+		[JsonIgnore]
 		public double OffHandAccuracy
 		{
 			get
@@ -34,6 +40,7 @@
 			}
 		}
 
+		[JsonIgnore]
 		public double MasteryCritical
 		{
 			get
@@ -45,6 +52,7 @@
 		}
 		private double? _masteryCritical;
 
+		[JsonIgnore]
 		public double CriticalCritical
 		{
 			get
@@ -56,6 +64,7 @@
 		}
 		private double? _criticalCritical;
 
+		[JsonIgnore]
 		public double BonusDamage
 		{
 			get
@@ -67,6 +76,7 @@
 		}
 		private double? _bonusDamage;
 
+		[JsonIgnore]
 		public double SpellBonusDamage
 		{
 			get
@@ -78,10 +88,19 @@
 		}
 		private double? _spellBonusDamage;
 
+		[JsonIgnore]
 		public double Critical => MasteryCritical + CriticalCritical + BaseCritical;
+
+		[JsonIgnore]
 		public double Surge => BaseSurge + CriticalCritical;
+
+		[JsonIgnore]
 		public int MasteryPoints => BaseMasteryPoints + AugmentMasteryPoints;
-		public int BuffedMasteryPoints => (int) ((BaseMasteryPoints + AugmentMasteryPoints) * MasteryMultiplier);
+
+		[JsonIgnore]
+		public int BuffedMasteryPoints => (int) Math.Round((BaseMasteryPoints + AugmentMasteryPoints) * MasteryMultiplier);
+
+		[JsonIgnore]
 		public int Budget => AlacrityPoints + CriticalPoints + PowerPoints + AugmentMasteryPoints + AccuracyPoints;
 	}
 }

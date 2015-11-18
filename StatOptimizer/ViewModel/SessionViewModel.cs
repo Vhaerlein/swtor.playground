@@ -5,30 +5,50 @@ namespace TorPlayground.StatOptimizer.ViewModel
 {
 	public class SessionViewModel
 	{
-		private readonly Session _session;
+		public Session Session { get; }
 
 		public string Name
 		{
-			get { return _session.Name; }
-			set { _session.Name = value; }
+			get { return Session.Name; }
+			set { Session.Name = value; }
 		}
 
 		public double Duration
 		{
-			get { return _session.Duration; }
+			get { return Session.Duration; }
 			set
 			{
-				_session.Duration = value;
+				Session.Duration = value;
 				OnSessionUpdated();
 			}
 		}
 
-		public double DamageReduction
+		public double EnergyKineticDamageReduction
 		{
-			get { return _session.EnergyKineticDamageReduction; }
+			get { return Session.EnergyKineticDamageReduction; }
 			set
 			{
-				_session.EnergyKineticDamageReduction = value;
+				Session.EnergyKineticDamageReduction = value;
+				OnSessionUpdated();
+			}
+		}
+
+		public double ElementalInternalDamageReduction
+		{
+			get { return Session.ElementalInternalDamageReduction; }
+			set
+			{
+				Session.ElementalInternalDamageReduction = value;
+				OnSessionUpdated();
+			}
+		}
+
+		public double DefenseChance
+		{
+			get { return Session.DefenseChance; }
+			set
+			{
+				Session.DefenseChance = value;
 				OnSessionUpdated();
 			}
 		}
@@ -37,20 +57,20 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		public bool Active 
 		{
-			get { return _session.Active; } 
-			set { _session.Active = value; } 
+			get { return Session.Active; } 
+			set { Session.Active = value; } 
 		}
 
 		public delegate void SessionUpdatedHandler();
 		public event SessionUpdatedHandler SessionUpdated;
 
-		public SessionViewModel(Session session, Configuration configuration)
+		public SessionViewModel(Session session, Configuration configuration, Session defaultValues)
 		{
-			_session = session;
+			Session = session;
 			Abilities = new ObservableCollection<SessionAbilityViewModel>();
 			foreach (var sessionAbility in session.Abilities)
 			{
-				var ability = new SessionAbilityViewModel(sessionAbility, configuration);
+				var ability = new SessionAbilityViewModel(sessionAbility, configuration, defaultValues);
 				ability.SessionAbilityUpdated += OnSessionUpdated;
 				Abilities.Add(ability);
 			}

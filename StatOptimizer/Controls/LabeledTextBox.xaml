@@ -8,7 +8,7 @@
 	mc:Ignorable="d" x:Name="Control" HorizontalAlignment="Left"
 	d:DesignHeight="300" d:DesignWidth="300">
 	<UserControl.Resources>
-		<converters:EmptyStringToZeroConverter x:Key="EmptyStringToZeroConverter" />
+		<converters:NonNumericStringToZeroConverter x:Key="NonNumericStringToZeroConverter" />
 	</UserControl.Resources>
 	<Grid Width="{Binding Width, ElementName=Control}">
 		<Grid.ColumnDefinitions>
@@ -18,10 +18,10 @@
 		<TextBlock Grid.Column="0" Text="{Binding Label, ElementName=Control}" Width="{Binding LabelWidth, ElementName=Control}" Padding="0,0,5,0" />
 		<c:DelayedTextBox Grid.Column="1" MaxLength="{Binding MaxLength, ElementName=Control}" Width="{Binding InputWidth, ElementName=Control}" DataType="{Binding DataType, ElementName=Control}">
 			<TextBox.Style>
-				<Style TargetType="TextBox">
+				<Style TargetType="c:DelayedTextBox">
 					<Setter Property="HorizontalContentAlignment" Value="Right" />
 					<Setter Property="Visibility" Value="Visible" />
-					<Setter Property="Text" Value="{Binding Text, ElementName=Control, Mode=TwoWay, Converter={StaticResource EmptyStringToZeroConverter}}" />
+					<Setter Property="Text" Value="{Binding Text, ElementName=Control, Mode=TwoWay, Converter={StaticResource NonNumericStringToZeroConverter}}" />
 					<Style.Triggers>
 						<DataTrigger Binding="{Binding DataType, ElementName=Control}" Value="String">
 							<Setter Property="Text" Value="{Binding Text, ElementName=Control, Mode=TwoWay}" />

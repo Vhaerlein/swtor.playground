@@ -8,6 +8,7 @@ namespace TorPlayground.LogParser.Combat
 	{
 		public string Name { get; internal set; }
 		public string Id { get; internal set; }
+		public string NameId { get; internal set; }
 
 		public IReadOnlyList<AbilityActivation> Activations
 		{
@@ -30,11 +31,17 @@ namespace TorPlayground.LogParser.Combat
 				_activationsInternal.Add(new AbilityActivation());
 
 			var activation = _activationsInternal.LastOrDefault();
-			
-			// for some reason there was no ability activate event
+
+			if (activation != null && activation.TriggeredActivation
+				&& entry.Type == EntryType.ApplyEffect && entry.Action == entry.AbilityName && entry.AbilityId == entry.ActionId)
+			{
+				activation = new AbilityActivation(true);
+				_activationsInternal.Add(activation);
+			}
+
 			if (activation == null)
 			{
-				activation = new AbilityActivation();
+				activation = new AbilityActivation(true);
 				_activationsInternal.Add(activation);
 			}
 
