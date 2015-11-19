@@ -41,7 +41,7 @@ namespace TorPlayground.StatOptimizer.Utils
 				sessionAbility.Info =
 						$"Activations: {ability.Activations.Count}\n" +
 						$"Total hits: {ability.Activations.Sum(a => a.Actions.Count)}\n" +
-						$"Hits per activation: {((double) ability.Activations.Sum(a => a.Actions.Count)/ability.Activations.Count)} [{string.Join("/", ability.Activations.Select(a => a.Actions.Count).Distinct().OrderBy(n => n))}]\n" +
+						$"Hits per activation: {(double) ability.Activations.Sum(a => a.Actions.Count)/ability.Activations.Count} [{string.Join("/", ability.Activations.Select(a => a.Actions.Count).Distinct().OrderBy(n => n))}]\n" +
 						$"Maximum critical hit damage: {maximumCritical}\n" +
 						$"Surge: {surge:P}\n" +
 						$"Maximum hit damage: {maximum}\n" +

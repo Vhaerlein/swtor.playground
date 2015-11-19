@@ -216,22 +216,22 @@ namespace TorPlayground.DamageModel
 
 		public static double GetAccuracy(double level, double accuracy)
 		{
-			return 30 * (1 - Math.Pow(1 - (0.01 / 0.3), (accuracy / Math.Max(level, 20.0)) / 1)) / 100;
+			return 30 * (1 - Math.Pow(1 - 0.01 / 0.3, accuracy / Math.Max(level, 20.0) / 1)) / 100;
 		}
 
 		public static double GetAlacrity(double level, int alacrity)
 		{
-			return 30 * (1 - Math.Pow(1 - (0.01 / 0.3), (alacrity / Math.Max(level, 20.0)) / 1.25)) / 100;
+			return 30 * (1 - Math.Pow(1 - 0.01 / 0.3, alacrity / Math.Max(level, 20.0) / 1.25)) / 100;
 		}
 
 		public static double GetCriticalFromRating(double level, double critical)
 		{
-			return 30 * (1 - Math.Pow(1 - (0.01 / 0.3), (critical / Math.Max(level, 20.0)) / 0.8)) / 100;
+			return 30 * (1 - Math.Pow(1 - 0.01 / 0.3, critical / Math.Max(level, 20.0) / 0.8)) / 100;
 		}
 
 		public static double GetCriticalFromMastery(double level, double mastery)
 		{
-			return 20 * (1 - Math.Pow(1 - (0.01 / 0.2), (mastery / Math.Max(level, 20.0)) / 5.5)) / 100;
+			return 20 * (1 - Math.Pow(1 - 0.01 / 0.2, mastery / Math.Max(level, 20.0) / 5.5)) / 100;
 		}
 
 		public static double GetBonusDamage(double power, double mastery)
