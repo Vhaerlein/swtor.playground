@@ -1,0 +1,7 @@
+*/bin/*
+*/obj/*
+deploy/*
+bin/*
+*.csproj.DotSettings
+*.csproj.user
+*.suo
