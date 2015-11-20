@@ -7,7 +7,7 @@ StatOptimizer:
 
 Application searching optimal stat distribution for any dps class.
 
-- Adrenals/relics are not included in dps mathematical model.
+- Adrenals/relics are not included in dps mathematical model
 - All parameters can be changed from UI (mastery, power, etc...)
 - Save/Load profile (app will remember last used profile)
 - Profile is Json file, if needed can be edited outside application
@@ -22,7 +22,7 @@ Some number tuning is required after data is loaded from combat log. E.g. sentin
 
 StatDistributions:
 
-Simple console app to build optimal stat distributions for budgets from 1000 to 10000 (assuming mastery points == all other points)
+Simple console app to build optimal stat distributions for budgets from 1000 to 10000 (assuming mastery points == all other points).
 
 --
 
