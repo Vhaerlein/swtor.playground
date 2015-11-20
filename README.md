@@ -20,3 +20,7 @@ Some number tuning is required after data is loaded from combat log. E.g. sentin
 StatDistributions:
 
 Simple console app to build optimal stat distributions for budgets from 1000 to 10000 (assuming mastery points == all other points)
+
+--
+
+Latest compiled version can be always found under "Releases" section.
