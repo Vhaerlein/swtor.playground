@@ -32,10 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NCalc">
+      <HintPath>..\packages\ncalc.1.3.8\lib\NCalc.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
@@ -45,9 +49,12 @@
       <DependentUpon>Configuration.cs</DependentUpon>
     </Compile>
     <Compile Include="ConfigurationCorrection.cs" />
+    <Compile Include="Config\DamageModelConfig.cs" />
     <Compile Include="DamageRange.cs" />
     <Compile Include="Data\DataManager.cs" />
     <Compile Include="DpsUtils.cs" />
+    <Compile Include="Formulas.cs" />
+    <Compile Include="Config\FormulasConfigurationSection.cs" />
     <Compile Include="Hand.cs" />
     <Compile Include="Profile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

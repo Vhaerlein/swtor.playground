@@ -18,7 +18,7 @@ namespace TorPlayground.StatOptimizer
 
 		private void MainWindow_OnClosing(object sender, CancelEventArgs e)
 		{
-			if (_viewModel.HasUnsavedChanges())
+			if (_viewModel.HasUnsavedChanges)
 			{
 				var result = MessageBox.Show("Do you want to save your changes before exit?", "Unsaved data", MessageBoxButton.YesNoCancel, MessageBoxImage.Question);
 				if (result == MessageBoxResult.Yes)

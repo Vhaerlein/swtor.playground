@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="16141156376422503593" Status="Changed">
+    <Fqn NodeId="16141156376422503593">abl.companion.unique.hk51.healer.channel_heal</Fqn>
+    <Name Id="3751568033710080">Procedural Scan</Name>
+    <Description Id="3751568033710081">Heals a friendly target for &lt;&lt;1&gt;&gt; over 3 seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140976386616812022" Status="Changed">
+    <Fqn NodeId="16140976386616812022">abl.companion.unique.hk51.healer.single_target_heal</Fqn>
+    <Name Id="3751121357111296">Kolto Quick Scan</Name>
+    <Description Id="3751121357111297">Executes a quick Kolto scan on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141009962921845577" Status="Changed">
+    <Fqn NodeId="16141009962921845577">abl.companion.unique.hk51.healer.single_target_hot</Fqn>
+    <Name Id="3751117062144000">Kolto Drip</Name>
+    <Description Id="3751117062144001">Slowly heals the target for &lt;&lt;1&gt;&gt; over 17.5 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141100334301648608" Status="Changed">
+    <Fqn NodeId="16141100334301648608">abl.companion.unique.mtx.akk_dog.healer.channel_heal</Fqn>
+    <Name Id="3758762103930880">Kolto Collar Scan</Name>
+    <Description Id="3758762103930881">Your creature uses its Kolto Collar to heal a friendly target for &lt;&lt;1&gt;&gt; over 3 seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141111404026889840" Status="Changed">
+    <Fqn NodeId="16141111404026889840">abl.companion.unique.mtx.akk_dog.healer.single_target_heal</Fqn>
+    <Name Id="3755832936235008">Kolto Collar Dart</Name>
+    <Description Id="3755832936235009">Your creature fires a Kolto Dart from its collar, healing the target for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140934060718322668" Status="Changed">
+    <Fqn NodeId="16140934060718322668">abl.companion.unique.mtx.akk_dog.healer.single_target_hot</Fqn>
+    <Name Id="3755837231202304">Affectionate Slobber</Name>
+    <Description Id="3755837231202305">Slowly heals the target for &lt;&lt;1&gt;&gt; over 17.5 seconds and cleanses physical and mental effects each time it heals the target. What an incredible smell!</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141089061024553041" Status="Changed">
+    <Fqn NodeId="16141089061024553041">abl.companion.unique.mtx.treek.healer.aoe_cast_heal</Fqn>
+    <Name Id="3692353319600128">Fektur Sleesh</Name>
+    <Description Id="3692353319600129">Treek tosses a medicinal berry at the ground near a friendly target, healing all group members within 8 meters of the friendly target for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.14">0.1</effParam_StandardHealthPercentMax>
+            <effParam_HealingPowerCoefficient OldValue="1">1.6</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141095245462873761" Status="Changed">
+    <Fqn NodeId="16141095245462873761">abl.companion.unique.mtx.treek.healer.st_channel_heal</Fqn>
+    <Name Id="3692237355483136">Fektur Sling</Name>
+    <Description Id="3692237355483137">Treek heals a target group member for &lt;&lt;1&gt;&gt; over the channel duration and an additional &lt;&lt;2&gt;&gt; at the end of the channel. Treek may not heal herself with this ability.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.03">0.47</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.03">0.47</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.59">0.94</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+      <Token Id="2">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.087">0.07</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.087">0.07</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.87">1.4</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141153937158832020" Status="Changed">
+    <Fqn NodeId="16141153937158832020">abl.companion.unique.mtx.treek.healer.st_cleanse_hot</Fqn>
+    <Name Id="3692267420254208">Fektur Dart</Name>
+    <Description Id="3692267420254209">Treek injects a friendly group member with medicine that heals for &lt;&lt;1&gt;&gt; over 12 seconds and cleanses one negative mental or physical effect with each tick.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0325">0.026</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0325">0.026</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.325">0.52</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141058669706716827" Status="Changed">
+    <Fqn NodeId="16141058669706716827">abl.companion.unique.mtx.treek.healer.twoforone_01</Fqn>
+    <Name Id="3741745443504128">Fektur Bug</Name>
+    <Description Id="3741745443504129">Treek sends a fektur bug at an enemy target. The fektur bug lands on the target and evaluates it for up to 8 seconds. If the target attacks a party member, the fektur bug flies to that party member and heals them for &lt;&lt;4&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="4">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.165">0.1</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.075">0.08</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="1.12">1.79</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141005329505230120" Status="Changed">
+    <Fqn NodeId="16141005329505230120">abl.companion.weapon_set.assault_cannon.healer.channel_heal</Fqn>
+    <Name Id="3770448709943296">Progressive Kolto Scan</Name>
+    <Description Id="3770448709943297">Heals a friendly target for &lt;&lt;1&gt;&gt; over 3 seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141012522978496126" Status="Changed">
+    <Fqn NodeId="16141012522978496126">abl.companion.weapon_set.assault_cannon.healer.single_target_heal</Fqn>
+    <Name Id="3569439945523200">Kolto Quick Scan</Name>
+    <Description Id="3569439945523201">Executes a quick Kolto scan on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140962724025250837" Status="Changed">
+    <Fqn NodeId="16140962724025250837">abl.companion.weapon_set.assault_cannon.healer.single_target_hot</Fqn>
+    <Name Id="3569491485130752">Kolto Drip</Name>
+    <Description Id="3569491485130753">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140955512897736743" Status="Changed">
+    <Fqn NodeId="16140955512897736743">abl.companion.weapon_set.blaster.healer.channel_heal</Fqn>
+    <Name Id="3770547494191104">Progressive Kolto Scan</Name>
+    <Description Id="3770547494191105">Heals a friendly target for &lt;&lt;1&gt;&gt; over 3 seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140989095774017666" Status="Changed">
+    <Fqn NodeId="16140989095774017666">abl.companion.weapon_set.blaster.healer.single_target_heal</Fqn>
+    <Name Id="3569448535457792">Kolto Quick Scan</Name>
+    <Description Id="3569448535457793">Executes a quick Kolto scan on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141148505327301719" Status="Changed">
+    <Fqn NodeId="16141148505327301719">abl.companion.weapon_set.blaster.healer.single_target_hot</Fqn>
+    <Name Id="3569495780098048">Kolto Drip</Name>
+    <Description Id="3569495780098049">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141154470441244574" Status="Changed">
+    <Fqn NodeId="16141154470441244574">abl.companion.weapon_set.blaster.healer.single_target_shield</Fqn>
+    <Name Id="3569564499574784">Preventative Measures</Name>
+    <Description Id="3569564499574785">Places a Kolto-powered shield around the target, preventing a moderate amount of damage for up to 20 seconds.</Description>
+    <AbsorbCoEfficients>
+      <AbsorbCoEfficient Id="0">
+        <effParam_StandardHealthPercentMax OldValue="0.118">0.1225</effParam_StandardHealthPercentMax>
+        <effParam_StandardHealthPercentMin OldValue="0.118">0.1225</effParam_StandardHealthPercentMin>
+        <effParam_HealingPowerCoefficient OldValue="2.36">2.45</effParam_HealingPowerCoefficient>
+      </AbsorbCoEfficient>
+    </AbsorbCoEfficients>
+  </Ability>
+  <Ability Id="16140919662245205083" Status="Changed">
+    <Fqn NodeId="16140919662245205083">abl.companion.weapon_set.droid.healer.channel_heal</Fqn>
+    <Name Id="3770770832490496">Progressive Kolto Scan</Name>
+    <Description Id="3770770832490497">Heals a friendly target for &lt;&lt;1&gt;&gt; over 3 seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141027648552353398" Status="Changed">
+    <Fqn NodeId="16141027648552353398">abl.companion.weapon_set.droid.healer.single_target_heal</Fqn>
+    <Name Id="3569461420359680">Quick Kolto Burst</Name>
+    <Description Id="3569461420359681">Executes a quick Kolto scan on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141177153758447801" Status="Changed">
+    <Fqn NodeId="16141177153758447801">abl.companion.weapon_set.dual_blaster.healer.channel_heal</Fqn>
+    <Name Id="3770556084125696">Progressive Kolto Scan</Name>
+    <Description Id="3770556084125697">Heals a friendly target for &lt;&lt;1&gt;&gt; over 3 seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141090048186175893" Status="Changed">
+    <Fqn NodeId="16141090048186175893">abl.companion.weapon_set.dual_blaster.healer.single_target_heal</Fqn>
+    <Name Id="3569465715326976">Kolto Quick Scan</Name>
+    <Description Id="3569465715326977">Executes a quick Kolto scan on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141124596170546785" Status="Changed">
+    <Fqn NodeId="16141124596170546785">abl.companion.weapon_set.dual_blaster.healer.single_target_hot</Fqn>
+    <Name Id="3569508664999936">Kolto Drip</Name>
+    <Description Id="3569508664999937">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141085263719305943" Status="Changed">
+    <Fqn NodeId="16141085263719305943">abl.companion.weapon_set.dualsaber.healer.channel_heal</Fqn>
+    <Name Id="3770719292882944">Ameliorating Force</Name>
+    <Description Id="3770719292882945">Heals a friendly target for &lt;&lt;1&gt;&gt; health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141071240232228275" Status="Changed">
+    <Fqn NodeId="16141071240232228275">abl.companion.weapon_set.dualsaber.healer.single_target_heal</Fqn>
+    <Name Id="3569470010294272">Soothe</Name>
+    <Description Id="3569470010294273">Executes a quick force heal on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType OldValue="3">2</effParam_SpellType>
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140918100037553499" Status="Changed">
+    <Fqn NodeId="16140918100037553499">abl.companion.weapon_set.dualsaber.healer.single_target_hot</Fqn>
+    <Name Id="3569512959967232">Mending</Name>
+    <Description Id="3569512959967233">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141039303037729679" Status="Changed">
+    <Fqn NodeId="16141039303037729679">abl.companion.weapon_set.dualsaber_dark.healer.channel_heal</Fqn>
+    <Name Id="3770732177784832">Enlivening Force</Name>
+    <Description Id="3770732177784833">Heals a friendly target for &lt;&lt;1&gt;&gt; health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141140569234411955" Status="Changed">
+    <Fqn NodeId="16141140569234411955">abl.companion.weapon_set.dualsaber_dark.healer.single_target_heal</Fqn>
+    <Name Id="3590480990306304">Soothe</Name>
+    <Description Id="3590480990306305">Executes a quick force heal on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141080357759059548" Status="Changed">
+    <Fqn NodeId="16141080357759059548">abl.companion.weapon_set.dualsaber_dark.healer.single_target_hot</Fqn>
+    <Name Id="3590485285273600">Mending</Name>
+    <Description Id="3590485285273601">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140946566082856652" Status="Changed">
+    <Fqn NodeId="16140946566082856652">abl.companion.weapon_set.dualwield_lightsaber.healer.channel_heal</Fqn>
+    <Name Id="3770723587850240">Ameliorating Force</Name>
+    <Description Id="3770723587850241">Heals a friendly target for &lt;&lt;1&gt;&gt; health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141181099052386470" Status="Changed">
+    <Fqn NodeId="16141181099052386470">abl.companion.weapon_set.dualwield_lightsaber.healer.single_target_heal</Fqn>
+    <Name Id="3569474305261568">Soothe</Name>
+    <Description Id="3569474305261569">Executes a quick force heal on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141095209659964231" Status="Changed">
+    <Fqn NodeId="16141095209659964231">abl.companion.weapon_set.dualwield_lightsaber.healer.single_target_hot</Fqn>
+    <Name Id="3569521549901824">Mending</Name>
+    <Description Id="3569521549901825">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141168073621953002" Status="Changed">
+    <Fqn NodeId="16141168073621953002">abl.companion.weapon_set.dualwield_lightsaber_dark.healer.channel_heal</Fqn>
+    <Name Id="3770736472752128">Enlivening Force</Name>
+    <Description Id="3770736472752129">Heals a friendly target for &lt;&lt;1&gt;&gt; health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140997823289598149" Status="Changed">
+    <Fqn NodeId="16140997823289598149">abl.companion.weapon_set.dualwield_lightsaber_dark.healer.single_target_heal</Fqn>
+    <Name Id="3590635609128960">Soothe</Name>
+    <Description Id="3590635609128961">Executes a quick force heal on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141046953262226420" Status="Changed">
+    <Fqn NodeId="16141046953262226420">abl.companion.weapon_set.dualwield_lightsaber_dark.healer.single_target_hot</Fqn>
+    <Name Id="3590644199063552">Mending</Name>
+    <Description Id="3590644199063553">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140930281590345890" Status="Changed">
+    <Fqn NodeId="16140930281590345890">abl.companion.weapon_set.lightsaber.healer.channel_heal</Fqn>
+    <Name Id="3770714997915648">Ameliorating Force</Name>
+    <Description Id="3770714997915649">Heals a friendly target for &lt;&lt;1&gt;&gt; health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141128057361382100" Status="Changed">
+    <Fqn NodeId="16141128057361382100">abl.companion.weapon_set.lightsaber.healer.single_target_heal</Fqn>
+    <Name Id="3569482895196160">Soothe</Name>
+    <Description Id="3569482895196161">Executes a quick force heal on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141131722950732192" Status="Changed">
+    <Fqn NodeId="16141131722950732192">abl.companion.weapon_set.lightsaber.healer.single_target_hot</Fqn>
+    <Name Id="3569525844869120">Mending</Name>
+    <Description Id="3569525844869121">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141132685189673140" Status="Changed">
+    <Fqn NodeId="16141132685189673140">abl.companion.weapon_set.lightsaber_dark.healer.channel_heal</Fqn>
+    <Name Id="3770727882817536">Enlivening Force</Name>
+    <Description Id="3770727882817537">Heals a friendly target for &lt;&lt;1&gt;&gt; health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140920873606404873" Status="Changed">
+    <Fqn NodeId="16140920873606404873">abl.companion.weapon_set.lightsaber_dark.healer.single_target_heal</Fqn>
+    <Name Id="3590158867759104">Soothe</Name>
+    <Description Id="3590158867759105">Executes a quick force heal on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140967788464395529" Status="Changed">
+    <Fqn NodeId="16140967788464395529">abl.companion.weapon_set.lightsaber_dark.healer.single_target_hot</Fqn>
+    <Name Id="3590163162726400">Mending</Name>
+    <Description Id="3590163162726401">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141158421101123449" Status="Changed">
+    <Fqn NodeId="16141158421101123449">abl.companion.weapon_set.probe_droid.healer.channel_heal</Fqn>
+    <Name Id="3771256163794944">Progressive Kolto Scan</Name>
+    <Description Id="3771256163794945">Heals a friendly target for &lt;&lt;1&gt;&gt; over 3 seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141132385433822287" Status="Changed">
+    <Fqn NodeId="16141132385433822287">abl.companion.weapon_set.probe_droid.healer.single_target_heal</Fqn>
+    <Name Id="3756202303422464">Quick Kolto Burst</Name>
+    <Description Id="3756202303422465">Executes a quick Kolto scan on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141036785083745646" Status="Changed">
+    <Fqn NodeId="16141036785083745646">abl.companion.weapon_set.sniper_rifle.healer.channel_heal</Fqn>
+    <Name Id="3770560379092992">Progressive Kolto Scan</Name>
+    <Description Id="3770560379092993">Heals a friendly target for &lt;&lt;1&gt;&gt; over 3 seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141075962341469257" Status="Changed">
+    <Fqn NodeId="16141075962341469257">abl.companion.weapon_set.sniper_rifle.healer.single_target_heal</Fqn>
+    <Name Id="3569487190163456">Kolto Quick Scan</Name>
+    <Description Id="3569487190163457">Executes a quick Kolto scan on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141136286858807865" Status="Changed">
+    <Fqn NodeId="16141136286858807865">abl.companion.weapon_set.sniper_rifle.healer.single_target_hot</Fqn>
+    <Name Id="3569530139836416">Kolto Drip</Name>
+    <Description Id="3569530139836417">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141109143307747823" Status="Changed">
+    <Fqn NodeId="16141109143307747823">abl.companion.weapon_set.techblade.healer.channel_heal</Fqn>
+    <Name Id="3770564674060288">Progressive Kolto Scan</Name>
+    <Description Id="3770564674060289">Heals a friendly target for &lt;&lt;1&gt;&gt; over 3 seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141181158229599209" Status="Changed">
+    <Fqn NodeId="16141181158229599209">abl.companion.weapon_set.techblade.healer.single_target_heal</Fqn>
+    <Name Id="3589445903187968">Kolto Quick Scan</Name>
+    <Description Id="3589445903187969">Executes a quick Kolto scan on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140958923437091869" Status="Changed">
+    <Fqn NodeId="16140958923437091869">abl.companion.weapon_set.techblade.healer.single_target_hot</Fqn>
+    <Name Id="3589454493122560">Kolto Drip</Name>
+    <Description Id="3589454493122561">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141048312510505994" Status="Changed">
+    <Fqn NodeId="16141048312510505994">abl.companion.weapon_set.techblade_dark.healer.channel_heal</Fqn>
+    <Name Id="3779287752638464">Enlivening Force</Name>
+    <Description Id="3779287752638465">Heals a friendly target for &lt;&lt;1&gt;&gt; health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType OldValue="3">2</effParam_SpellType>
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140903923319957770" Status="Changed">
+    <Fqn NodeId="16140903923319957770">abl.companion.weapon_set.techblade_dark.healer.single_target_heal</Fqn>
+    <Name Id="3632717698695168">Soothe</Name>
+    <Description Id="3632717698695169">Executes a quick force heal on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType OldValue="3">2</effParam_SpellType>
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141050915546696554" Status="Changed">
+    <Fqn NodeId="16141050915546696554">abl.companion.weapon_set.techblade_dark.healer.single_target_hot</Fqn>
+    <Name Id="3632721993662464">Mending</Name>
+    <Description Id="3632721993662465">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType OldValue="3">2</effParam_SpellType>
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141004915525049238" Status="Changed">
+    <Fqn NodeId="16141004915525049238">abl.companion.weapon_set.techstaff.healer.channel_heal</Fqn>
+    <Name Id="3770573263994880">Progressive Kolto Scan</Name>
+    <Description Id="3770573263994881">Heals a friendly target for &lt;&lt;1&gt;&gt; over 3 seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.012">0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.012">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.24">0.59</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140963865559342954" Status="Changed">
+    <Fqn NodeId="16140963865559342954">abl.companion.weapon_set.techstaff.healer.single_target_heal</Fqn>
+    <Name Id="3594221906821120">Kolto Quick Scan</Name>
+    <Description Id="3594221906821121">Executes a quick Kolto scan on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0675">0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0275">0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.95">1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141139360558191250" Status="Changed">
+    <Fqn NodeId="16141139360558191250">abl.companion.weapon_set.techstaff.healer.single_target_hot</Fqn>
+    <Name Id="3594226201788416">Kolto Drip</Name>
+    <Description Id="3594226201788417">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0175">0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0175">0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.35">0.61</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141173136010486415" Status="Removed">
+    <Fqn NodeId="16141173136010486415">abl.qa.gameplay_persistence.string_test.force_leap</Fqn>
+    <Base62Id>ZwBxbN2</Base62Id>
+    <Name Id="3306398968446976">Force Leap</Name>
+    <Description Id="3306398968446977">Jumps to a distant target, dealing &lt;&lt;1&gt;&gt; damage with the main-hand weapon, immoblizing the target for 2 seconds and interrupting the target's current action. Builds 3 focus. Cannot be used against targets in cover.</Description>
+    <DBURL>https://torcommunity.com/database/ability/ZwBxbN2/force+leap</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IsSpecialAbility>True</effParam_IsSpecialAbility>
+            <effParam_IgnoreDualWieldModifier>True</effParam_IgnoreDualWieldModifier>
+            <effParam_FlurryBlowsMin>1</effParam_FlurryBlowsMin>
+            <effParam_FlurryBlowsMax>1</effParam_FlurryBlowsMax>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.091</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierFixedMax>0</effParam_AmountModifierFixedMax>
+            <effParam_AmountModifierFixedMin>0</effParam_AmountModifierFixedMin>
+            <effParam_AmountModifierPercent>-0.39</effParam_AmountModifierPercent>
+            <effParam_Coefficient>0.91</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>2</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>2</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>3</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>forceLeap</Icon>
+    <MinRange>10</MinRange>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>15</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141173136010486415</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+</Abilities>

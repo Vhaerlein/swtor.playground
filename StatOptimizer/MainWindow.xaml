@@ -13,7 +13,7 @@
 	Closing="MainWindow_OnClosing"
 	SizeToContent="WidthAndHeight" ResizeMode="NoResize"
 	d:DataContext="{d:DesignInstance vm:MainViewModel}"
-	mc:Ignorable="d" Title="SWtOR 4.0: DPS Stat Opmtimization">
+	mc:Ignorable="d" Title="{Binding Title}">
 
 	<mm:MetroWindow.Resources>
 		<ResourceDictionary>

@@ -70,25 +70,30 @@ namespace TorPlayground.StatOptimizer.ViewModel
 			PowerPoints.Difference = correction.PowerPoints - _configuration.PowerPoints;
 			PowerPoints.NewValue = correction.PowerPoints;
 
-			Accuracy.NewValue = DpsUtils.GetAccuracy(_configuration.Level, correction.AccuracyPoints) + _configuration.BaseAccuracy;
+			var updatedConfiguration = _configuration.Clone();
+
+			updatedConfiguration.AccuracyPoints = correction.AccuracyPoints;
+			updatedConfiguration.AlacrityPoints = correction.AlacrityPoints;
+			updatedConfiguration.CriticalPoints = correction.CriticalPoints;
+			updatedConfiguration.AugmentMasteryPoints = correction.MasteryPoints;
+			updatedConfiguration.PowerPoints = correction.PowerPoints;
+
+			Accuracy.NewValue = updatedConfiguration.Accuracy;
 			Accuracy.Difference = Accuracy.NewValue - _configuration.Accuracy;
 
-			Alacrity.NewValue = DpsUtils.GetAlacrity(_configuration.Level, correction.AlacrityPoints) + _configuration.BaseAlacrity;
+			Alacrity.NewValue = updatedConfiguration.Alacrity;
 			Alacrity.Difference = Alacrity.NewValue - _configuration.Alacrity;
 
-			var newMasteryTotal = (_configuration.BaseMasteryPoints + correction.MasteryPoints) * _configuration.MasteryMultiplier;
-
-			Critical.NewValue = DpsUtils.GetCriticalFromRating(_configuration.Level, correction.CriticalPoints) 
-				+ DpsUtils.GetCriticalFromMastery(_configuration.Level, newMasteryTotal) + _configuration.BaseCritical;
+			Critical.NewValue = updatedConfiguration.Critical;
 			Critical.Difference = Critical.NewValue - _configuration.Critical;
 
-			Surge.NewValue = _configuration.BaseSurge + DpsUtils.GetCriticalFromRating(_configuration.Level, correction.CriticalPoints);
+			Surge.NewValue = updatedConfiguration.Surge;
 			Surge.Difference = Surge.NewValue - _configuration.Surge;
 
-			BonusDamage.NewValue = DpsUtils.GetBonusDamage(correction.PowerPoints, newMasteryTotal) * _configuration.BonusDamageMultiplier;
+			BonusDamage.NewValue = updatedConfiguration.BonusDamage;
 			BonusDamage.Difference = BonusDamage.NewValue - _configuration.BonusDamage;
 
-			ForceTechBonusDamage.NewValue = DpsUtils.GetSpellBonusDamage(correction.PowerPoints, _configuration.MainHand.Power + _configuration.OffHand.Power, newMasteryTotal) * _configuration.BonusDamageMultiplier;
+			ForceTechBonusDamage.NewValue = updatedConfiguration.SpellBonusDamage;
 			ForceTechBonusDamage.Difference = ForceTechBonusDamage.NewValue - _configuration.SpellBonusDamage;
 		}
 	}

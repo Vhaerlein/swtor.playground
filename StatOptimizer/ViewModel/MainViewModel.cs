@@ -50,7 +50,7 @@ namespace TorPlayground.StatOptimizer.ViewModel
 			{
 				if (_activeSessionViewModel != value)
 				{
-					_profile.HasUnsavedChanges = true;
+					HasUnsavedChanges = true;
 
 					_profile.Sessions.ForEach(s => s.Active = false);
 					_activeSessionViewModel = value;
@@ -89,6 +89,18 @@ namespace TorPlayground.StatOptimizer.ViewModel
 		public ICommand SaveProfileAsCommand { get; private set; }
 		public ICommand DeleteSessionCommand { get; private set; }
 
+		public string Title => $"SWtOR 4.0: DPS Stat Opmtimization{(HasUnsavedChanges ? "*": "")}{(Resources.DataManager.ExternalXml ? " (external xml)" : "")}";
+
+		public bool HasUnsavedChanges
+		{
+			get { return _profile.HasUnsavedChanges; }
+			set
+			{
+				_profile.HasUnsavedChanges = value;
+				OnPropertyChanged(nameof(Title));
+			}
+		}
+
 		private Profile _profile;
 
 		public MainViewModel()
@@ -104,6 +116,11 @@ namespace TorPlayground.StatOptimizer.ViewModel
 			SaveProfileCommand = new CommandHandler(SaveProfile);
 			SaveProfileAsCommand = new CommandHandler(SaveProfileAs);
 			DeleteSessionCommand = new CommandHandler(DeleteSession);
+
+			if (Formulas.HasErrors)
+			{
+				MessageBox.Show($"{string.Join("\n", Formulas.Errors)}\n\nDefault formula{(Formulas.Errors.Count > 1 ? "s" : "")} will be used.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+			}
 
 			try
 			{
@@ -147,7 +164,7 @@ namespace TorPlayground.StatOptimizer.ViewModel
 			{
 				CurrentProfilePath = filePath;
 				MessageBox.Show($"Profile saved to \"{filePath}\".", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
-				_profile.HasUnsavedChanges = false;
+				HasUnsavedChanges = false;
 			}
 		}
 
@@ -204,13 +221,12 @@ namespace TorPlayground.StatOptimizer.ViewModel
 			ActiveSessionViewModel = SessionViewModels.FirstOrDefault(s => s.Active) ?? SessionViewModels.First();
 
 			NewDps = new ValueCorrectionViewModel(ValueType.Double);
-			CalculateDpsAndCorrection();
-			_profile.HasUnsavedChanges = false;
+			HasUnsavedChanges = false;
 		}
 
 		private void OnConfigurationChanged()
 		{
-			_profile.HasUnsavedChanges = true;
+			HasUnsavedChanges = true;
 			ConfigurationViewModel.CorrectionViewModel.IsOutdated = true;
 			UpdateDps();
 		}
@@ -229,10 +245,10 @@ namespace TorPlayground.StatOptimizer.ViewModel
 
 		private async void CalculateDpsAndCorrection()
 		{
-			UpdateDps();
 			Mouse.OverrideCursor = Cursors.Wait;
 			await Task.Run(() =>
 			{
+				UpdateDps();
 				var correction = DpsUtils.FindHighestDpsCorrection(_profile);
 				ConfigurationViewModel.CorrectionViewModel.UpdateCorrection(correction);
 				NewDps.NewValue = correction.Dps;
@@ -310,7 +326,7 @@ namespace TorPlayground.StatOptimizer.ViewModel
 						return;
 					}
 
-					_profile.HasUnsavedChanges = true;
+					HasUnsavedChanges = true;
 
 					foreach (var session in sessions)
 					{
@@ -331,11 +347,6 @@ namespace TorPlayground.StatOptimizer.ViewModel
 					MessageBox.Show($"Error parsing combat log: {e.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
 				}
 			}
-		}
-
-		public bool HasUnsavedChanges()
-		{
-			return _profile.HasUnsavedChanges;
 		}
 	}
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace TorPlayground.DamageModel
 {
@@ -11,7 +10,7 @@ namespace TorPlayground.DamageModel
 			get
 			{
 				if (_alacrity == null)
-					_alacrity = DpsUtils.GetAlacrity(Level, AlacrityPoints);
+					_alacrity = this.GetAlacrity();
 				return _alacrity.Value + BaseAlacrity;
 			}
 		}
@@ -23,7 +22,7 @@ namespace TorPlayground.DamageModel
 			get
 			{
 				if (_accuracy == null)
-					_accuracy = DpsUtils.GetAccuracy(Level, AccuracyPoints);
+					_accuracy = this.GetAccuracy();
 				return _accuracy.Value + BaseAccuracy;
 			}
 		}
@@ -35,7 +34,7 @@ namespace TorPlayground.DamageModel
 			get
 			{
 				if (_accuracy == null)
-					_accuracy = DpsUtils.GetAccuracy(Level, AccuracyPoints);
+					_accuracy = this.GetAccuracy();
 				return _accuracy.Value + BaseOffHandAccuracy;
 			}
 		}
@@ -46,7 +45,7 @@ namespace TorPlayground.DamageModel
 			get
 			{
 				if (_masteryCritical == null)
-					_masteryCritical = DpsUtils.GetCriticalFromMastery(Level, MasteryPoints * MasteryMultiplier);
+					_masteryCritical = this.GetCriticalFromMastery();
 				return _masteryCritical.Value;
 			}
 		}
@@ -58,11 +57,23 @@ namespace TorPlayground.DamageModel
 			get
 			{
 				if (_criticalCritical == null)
-					_criticalCritical = DpsUtils.GetCriticalFromRating(Level, CriticalPoints);
+					_criticalCritical = this.GetCriticalFromRating();
 				return _criticalCritical.Value;
 			}
 		}
 		private double? _criticalCritical;
+
+		[JsonIgnore]
+		public double CriticalSurge
+		{
+			get
+			{
+				if (_criticalSurge == null)
+					_criticalSurge = this.GetSurge();
+				return _criticalSurge.Value;
+			}
+		}
+		private double? _criticalSurge;
 
 		[JsonIgnore]
 		public double BonusDamage
@@ -70,7 +81,7 @@ namespace TorPlayground.DamageModel
 			get
 			{
 				if (_bonusDamage == null)
-					_bonusDamage = DpsUtils.GetBonusDamage(PowerPoints, MasteryPoints * MasteryMultiplier) * BonusDamageMultiplier;
+					_bonusDamage = this.GetBonusDamage() * BonusDamageMultiplier;
 				return _bonusDamage.Value;
 			}
 		}
@@ -82,7 +93,7 @@ namespace TorPlayground.DamageModel
 			get
 			{
 				if (_spellBonusDamage == null)
-					_spellBonusDamage = DpsUtils.GetSpellBonusDamage(PowerPoints, MainHand.Power + OffHand.Power, MasteryPoints * MasteryMultiplier) * BonusDamageMultiplier;
+					_spellBonusDamage = this.GetSpellBonusDamage() * BonusDamageMultiplier;
 				return _spellBonusDamage.Value;
 			}
 		}
@@ -92,13 +103,13 @@ namespace TorPlayground.DamageModel
 		public double Critical => MasteryCritical + CriticalCritical + BaseCritical;
 
 		[JsonIgnore]
-		public double Surge => BaseSurge + CriticalCritical;
+		public double Surge => BaseSurge + CriticalSurge;
 
 		[JsonIgnore]
 		public int MasteryPoints => BaseMasteryPoints + AugmentMasteryPoints;
 
 		[JsonIgnore]
-		public int BuffedMasteryPoints => (int) Math.Round((BaseMasteryPoints + AugmentMasteryPoints) * MasteryMultiplier);
+		public double BuffedMasteryPoints => MasteryPoints * MasteryMultiplier;
 
 		[JsonIgnore]
 		public int Budget => AlacrityPoints + CriticalPoints + PowerPoints + AugmentMasteryPoints + AccuracyPoints;

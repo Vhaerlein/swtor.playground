@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Resources;
 using System.Xml.Linq;
@@ -16,13 +17,22 @@ namespace TorPlayground.Resources
 		private static readonly List<string> ResourceKeys;
 		private static readonly XDocument Abilities;
 
+		public static bool ExternalXml { get; }
+
 		static DataManager()
 		{
 			ResourceManager mgr = Properties.Resources.ResourceManager;
 			ResourceKeys = (from DictionaryEntry o in mgr.GetResourceSet(CultureInfo.CurrentCulture, true, true) select (string) o.Key).ToList();
 			mgr.ReleaseAllResources();
 
-			Abilities = XDocument.Parse(Properties.Resources.Abilities);
+			var abilities = Properties.Resources.Abilities;
+			if (File.Exists("xml/abilities.xml"))
+			{
+				abilities = File.ReadAllText("xml/abilities.xml");
+				ExternalXml = true;
+			}
+
+			Abilities = XDocument.Parse(abilities);
 		}
 
 		public static Bitmap GetIcon(string iconName)

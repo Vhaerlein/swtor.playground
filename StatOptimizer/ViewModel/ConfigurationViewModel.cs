@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using TorPlayground.DamageModel;
@@ -211,7 +210,7 @@ namespace TorPlayground.StatOptimizer.ViewModel
 			}
 		}
 
-		public double MasteryPoints => _configuration.MasteryPoints * _configuration.MasteryMultiplier;
+		public double MasteryPoints => _configuration.BuffedMasteryPoints;
 
 		public int AccuracyPoints
 		{

@@ -130,6 +130,7 @@
 				{
 					_criticalPoints = value;
 					_criticalCritical = null;
+					_criticalSurge = null;
 				}
 			}
 		}
