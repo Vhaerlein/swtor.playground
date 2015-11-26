@@ -28,7 +28,7 @@ Simple console app to build optimal stat distributions for budgets from 1000 to 
 
 --
 
-**StatOptimizer**
+**ClassAbilityXmlMerger**
 
 Quick and dirty class ability xml merger (xml files can be obtained from torcommunity.com).
 Version 4.0.2 full xml and 4.0.2a update xml are included (located in "xml" folder).
