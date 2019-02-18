@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="16140992544931925288" Status="Changed">
+    <Fqn NodeId="16140992544931925288">abl.mtx.pack.nightlife.superpack</Fqn>
+    <Name Id="3488046020296704">Opening Pack</Name>
+    <Description Id="3488046020296705" OldValue="Right-click to open this Grand Nightlife Pack. This pack contains 4 items: 1 Super Rare or better bonus item, 1 Rare or better bonus item, 1 Fortuitous Dye Kit, and 1 Major or Minor XP Boost. This pack contains boxes of complete Armor sets, Mounts, Weapons, Color Crystals and Toys from the Nightlife Shipment.">Right-click to open this Grand Nightlife Pack. This pack contains 4 items: 1 Super Rare or better bonus item, 1 Rare or better bonus item, 1 Expanded Dye Kit, and 1 Major or Minor XP Boost. This pack contains boxes of complete Armor sets, Mounts, Weapons, Color Crystals or Toys from the Nightlife Shipment.</Description>
+  </Ability>
+  <Ability Id="16140940702921509100" Status="Changed">
+    <Fqn NodeId="16140940702921509100">abl.placeables.stronghold.technological.imperial_command_center</Fqn>
+    <Name Id="3623410504564736">Issuing Orders to the Empire</Name>
+    <Description Id="3623410504564737"></Description>
+    <ChannelingTime Status="Removed">30</ChannelingTime>
+  </Ability>
+  <Ability Id="16141046379699251460" Status="Changed">
+    <Fqn NodeId="16141046379699251460">abl.player.mount.grant_mount</Fqn>
+    <Name Id="1797435223441408">Grant Vehicle</Name>
+    <Description Id="1797435223441409"></Description>
+    <Icon OldValue="mount.speederbike.anteater.02">bravado</Icon>
+    <CastingTime OldValue="1">3</CastingTime>
+  </Ability>
+  <Ability Id="16141087803787521049" Status="Changed">
+    <Fqn NodeId="16141087803787521049">abl.quest.exp.02.rishi.world.hub_1.beasts_burden.beast_collar</Fqn>
+    <Name Id="3379340398034944">Collar</Name>
+    <Description Id="3379340398034945">Once applied, the collared beast obeys basic commands, including directing the beast to a home location.</Description>
+    <Icon Status="New">device</Icon>
+  </Ability>
+  <Ability Id="16141103479159235523" Status="New">
+    <Fqn NodeId="16141103479159235523">abl.mtx.pack.explorer.outer_rim_platinum</Fqn>
+    <Name Id="3635298974040064">Opening Pack</Name>
+    <Description Id="3635298974040065">Right-click to open this Outer Rim Platinum Pack. This pack contains 1 select Super Rare or better Bonus Item from the Outer Rim Explorer's Packs.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141041877199786046" Status="New">
+    <Fqn NodeId="16141041877199786046">abl.mtx.pack.explorer.wild_space_platinum</Fqn>
+    <Name Id="3635320448876544">Opening Pack</Name>
+    <Description Id="3635320448876545">Right-click to open this Wild Space Platinum Pack. This pack contains 1 select Super Rare or better Bonus Item from the Wild Space Explorer's Packs.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141164217334238053" Status="New">
+    <Fqn NodeId="16141164217334238053">abl.mtx.pack.superpack.strongholds</Fqn>
+    <Name Id="3634671908814848">Opening Pack</Name>
+    <Description Id="3634671908814849">Right-click to open this Grand Strongholds Pack. Contains one Stronghold Decoration, drawn randomly from the Stronghold, Shadow, and Decoration Packs found on the Cartel Market.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141147965173029407" Status="New">
+    <Fqn NodeId="16141147965173029407">abl.mtx.pack.superpack.weapons_2</Fqn>
+    <Name Id="3643437937065984">Opening Pack</Name>
+    <Description Id="3643437937065985">Right-click to open this Grand Weapons Pack. Contains one Weapon, drawn randomly from the Starfighter, Stronghold, and Shadow Packs found on the Cartel Market.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141109501818723061" Status="New">
+    <Fqn NodeId="16141109501818723061">abl.mtx.toy.gree_hypergate</Fqn>
+    <Name Id="3645177398820864">Gree Hypergate</Name>
+    <Description Id="3645177398820865">You regenerate health and your class' energy pool while harnessing the power of the Gree.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_toy_gree_hypergate</Icon>
+    <ChannelingTime>15</ChannelingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141078832299759184" Status="New">
+    <Fqn NodeId="16141078832299759184">abl.mtx.unlock.unlock_mount</Fqn>
+    <Name Id="3631626777001984">Grant Vehicle</Name>
+    <Description Id="3631626777001985"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>bravado</Icon>
+    <CastingTime>3</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140921136808277197" Status="New">
+    <Fqn NodeId="16140921136808277197">abl.player.mount.creature.nexu.nexu_mount_s5</Fqn>
+    <Name Id="3648484523638784">Gladatorial Nexu </Name>
+    <Description Id="3648484523638785">Summons the Gladatorial Nexu creature mount. Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mount_giradda_rancor</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140990751516776207" Status="New">
+    <Fqn NodeId="16140990751516776207">abl.player.mount.mtx.tank.landslide</Fqn>
+    <Name Id="3644541743661056">Landslide Assault Speeder</Name>
+    <Description Id="3644541743661057">Activates the Landslide Assault Speeder, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill. Use the Mount Flourish Key binding to activate this mount's flourish.  
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%
+</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_tank_landslide</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141069566978079561" Status="New">
+    <Fqn NodeId="16141069566978079561">abl.player.mount.mtx.vectron.ranger</Fqn>
+    <Name Id="3629401983942656">Vectron Ranger</Name>
+    <Description Id="3629401983942657">Activates the Vectron Ranger, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill. Use the Mount Flourish Key binding to activate this mount's flourish.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110% </Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_vectron_ranger</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+</Abilities>

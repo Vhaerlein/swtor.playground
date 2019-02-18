@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="16141107529510466072" Status="Changed">
+    <Fqn NodeId="16141107529510466072">abl.player.mount.mtx.hyrotti.yh12</Fqn>
+    <Name Id="3564002516926464" OldValue="Hyrotti YH-12">Hyrotii YH-12</Name>
+    <Description Id="3564002516926465" OldValue="Activates the Hyrotti YH-12, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.  &#xA;&#xA;Speeder Piloting Rank 1:  90%&#xA;Speeder Piloting Rank 2:  100%&#xA;Speeder Piloting Rank 3:  110%&#xA;">Activates the Hyrotii YH-12, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.  
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%
+</Description>
+  </Ability>
+  <Ability Id="16140976687627134618" Status="Changed">
+    <Fqn NodeId="16140976687627134618">abl.player.mount.mtx.hyrotti.yh33</Fqn>
+    <Name Id="3564006811893760" OldValue="Hyrotti YH-33">Hyrotii YH-33</Name>
+    <Description Id="3564006811893761" OldValue="Activates the Hyrotti YH-33, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.  &#xA;&#xA;Speeder Piloting Rank 1:  90%&#xA;Speeder Piloting Rank 2:  100%&#xA;Speeder Piloting Rank 3:  110%&#xA;">Activates the Hyrotii YH-33, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.  
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%
+</Description>
+  </Ability>
+  <Ability Id="16141025277285309366" Status="Changed">
+    <Fqn NodeId="16141025277285309366">abl.player.mount.mtx.speederbike.hyrotti_yh_99</Fqn>
+    <Name Id="3401545378955264" OldValue="Hyrotti YH-99">Hyrotii YH-99</Name>
+    <Description Id="3401545378955265" OldValue="Activates the Hyrotti YH-99, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill. &#xA;&#xA;Speeder Piloting Rank 1:  90%&#xA;Speeder Piloting Rank 2:  100%&#xA;Speeder Piloting Rank 3:  110%">Activates the Hyrotii YH-99, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill. 
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+  </Ability>
+  <Ability Id="16140987284889609338" Status="New">
+    <Fqn NodeId="16140987284889609338">abl.itm.vanity_pet.dog.vorn_a01_v01_eu_posa</Fqn>
+    <Base62Id>UYJnlsA</Base62Id>
+    <Name Id="3698456468127744">Snowline Vorn Tiger</Name>
+    <Description Id="3698456468127745">Summons a small Snowline Vorn Tiger which will follow and passively observe you on your adventures. </Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>vorn.a01_v01_eu_posa</Icon>
+    <GCD>1.5</GCD>
+    <OverridesGCD>true</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>397315809489773116</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141066225326434092" Status="New">
+    <Fqn NodeId="16141066225326434092">abl.player.mount.creature.nexu.nexu_mount_s5a</Fqn>
+    <Base62Id>B2UZW36</Base62Id>
+    <Name Id="3709215361204224">Giradda's Special Pet Nexu</Name>
+    <Description Id="3709215361204225">Summons the Giradda's Special Pet Nexu creature mount. Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>cat_nexu_mount_a01</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141127231936358311" Status="New">
+    <Fqn NodeId="16141127231936358311">abl.player.mount.mtx.zakuul.zak_dropship</Fqn>
+    <Base62Id>fsVpjR2</Base62Id>
+    <Name Id="3679691756011520">Zakuul Personal Dropship</Name>
+    <Description Id="3679691756011521">Activates the Zakuul Personal Dropship, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Use the Mount Flourish Key binding to activate this mount's flourish.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_zakuul_dropship</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+</Abilities>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="16141124664572085544" Status="Changed">
+    <Fqn NodeId="16141124664572085544">abl.jedi_consular.skill.seer.resplendence</Fqn>
+    <Name Id="812985769525248">Resplendence</Name>
+    <Description Id="812985769525249" OldValue="Healing Trance critical hits grant 1 charge of Resplendence, which improves the effectiveness of your next Vindicate or Salvation.&#xA;Vindicate: Restores 5 additional Force and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.&#xA;Salvation: Consumes 5 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.">Healing Trance critical hits grant 1 charge of Resplendence, which improves the effectiveness of your next Vindicate or Salvation.
+Vindicate: Restores 10 additional Force and consumes 1 charge.
+Salvation: Consumes 10 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.</Description>
+  </Ability>
+  <Ability Id="16140940771676259787" Status="Changed">
+    <Fqn NodeId="16140940771676259787">abl.jedi_consular.skill.seer.salvation</Fqn>
+    <Name Id="812990064492544">Salvation</Name>
+    <Description Id="812990064492545">Applies a periodic healing effect to up to 8 allies within 8 meters of the targeted area, which heals for &lt;&lt;1&gt;&gt; over &lt;&lt;2&gt;&gt; seconds. Once a target has received the periodic healing effect, the target may leave the area and will continue to be healed by the effect.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.01">0.012</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.01">0.012</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.21">0.24</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141082962393902841" Status="Changed">
+    <Fqn NodeId="16141082962393902841">abl.jedi_consular.skill.seer.wandering_mend</Fqn>
+    <Name Id="3347287057104896">Wandering Mend</Name>
+    <Description Id="3347287057104897">Places a mending Force on a friendly target that heals them for &lt;&lt;1&gt;&gt; health the next time they take damage. After healing the target, Wandering Mend travels to another friendly target within 20 meters. Wandering Mend lasts up to &lt;&lt;2&gt;&gt; seconds on each target and travels up to 3 times, healing up to 4 targets. Wandering Mend can only be placed on one target at a time.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.14">0.144</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.1">0.104</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="2.4">2.49</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="60">65</ForceCost>
+  </Ability>
+  <Ability Id="16141016677326372106" Status="Changed">
+    <Fqn NodeId="16141016677326372106">abl.jedi_consular.vindicate</Fqn>
+    <Name Id="3613175597498368">Vindicate</Name>
+    <Description Id="3613175597498369" OldValue="Restores 30 Force and heals a friendly target for &lt;&lt;2&gt;&gt; health.">Calls upon the light energy surrounding you, restoring 50 Force.</Description>
+    <Tokens>
+      <Token Id="2" OldValue="100000.0110.0070.17">
+        <ablCoefficients />
+      </Token>
+    </Tokens>
+    <TargetRule OldValue="Friendly">Self</TargetRule>
+    <CastingTime Status="Removed">2</CastingTime>
+  </Ability>
+  <Ability Id="16141072108466099380" Status="Changed">
+    <Fqn NodeId="16141072108466099380">abl.sith_inquisitor.consuming_darkness</Fqn>
+    <Name Id="3613119762923520">Consuming Darkness</Name>
+    <Description Id="3613119762923521" OldValue="Restores 30 Force and heals a friendly target for &lt;&lt;2&gt;&gt; health.">Consumes the dark energy around you, restoring 50 Force.</Description>
+    <Tokens>
+      <Token Id="2" OldValue="100000.0110.0070.17">
+        <ablCoefficients />
+      </Token>
+    </Tokens>
+    <TargetRule OldValue="Friendly">Self</TargetRule>
+    <CastingTime Status="Removed">2</CastingTime>
+  </Ability>
+  <Ability Id="16141061930666388872" Status="Changed">
+    <Fqn NodeId="16141061930666388872">abl.sith_inquisitor.skill.corruption.force_surge</Fqn>
+    <Name Id="808677917327360">Force Surge</Name>
+    <Description Id="808677917327361" OldValue="Innervate critical heals grant 1 charge of Force Surge, which improves the effectiveness of your next Consuming Darkness or Revivification.&#xA;Consuming Darkness: Restores 5 additional Force and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.&#xA;Revivification: Consumes 5 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.">Innervate critical heals grant 1 charge of Force Surge, which improves the effectiveness of your next Consuming Darkness or Revivification.
+Consuming Darkness: Restores 10 additional Force and consumes 1 charge.
+Revivification: Consumes 10 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.</Description>
+  </Ability>
+  <Ability Id="16141012138626181515" Status="Changed">
+    <Fqn NodeId="16141012138626181515">abl.sith_inquisitor.skill.corruption.revivification</Fqn>
+    <Name Id="808703687131136">Revivification</Name>
+    <Description Id="808703687131137">Applies a periodic healing effect to up to 8 allies within 8 meters of the targeted area, which heals for &lt;&lt;1&gt;&gt; over &lt;&lt;2&gt;&gt; seconds. Once a target has received the periodic healing effect, the target may leave the area and will continue to be healed by the effect.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.01">0.012</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.01">0.012</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.21">0.24</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141141796785834825" Status="Changed">
+    <Fqn NodeId="16141141796785834825">abl.sith_inquisitor.skill.corruption.roaming_mend</Fqn>
+    <Name Id="3401283385950208">Roaming Mend</Name>
+    <Description Id="3401283385950209">Places a mending Force on a friendly target that heals them for &lt;&lt;1&gt;&gt; health the next time they take damage. After healing the target, Roaming Mend travels to another friendly target within 20 meters. Roaming Mend lasts up to &lt;&lt;2&gt;&gt; seconds on each target and travels up to 3 times, healing up to 4 targets. Roaming Mend can only be placed on one target at a time.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.14">0.144</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.1">0.104</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="2.4">2.49</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="60">65</ForceCost>
+  </Ability>
+  <Ability Id="16141105618594426249" Status="New">
+    <Fqn NodeId="16141105618594426249">abl.itm.loot.pvp.warzone_major</Fqn>
+    <Name Id="3660927043895296">Major Warzone Commendation Grant</Name>
+    <Description Id="3660927043895297">Grants 1000 Warzone Commendations, for use to purchase PvP gear and items.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_pack_boost_req_starfighter_fleet_major</Icon>
+    <CooldownTime>0.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141105618594426249</SharedCooldown>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141106481325684692" Status="New">
+    <Fqn NodeId="16141106481325684692">abl.itm.loot.pvp.warzone_medium</Fqn>
+    <Name Id="3660931338862592">Medium Warzone Commendation Grant</Name>
+    <Description Id="3660931338862593">Grants 500 Warzone Commendations, for use to purchase PvP gear and items.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_pack_boost_req_starfighter_fleet_minor</Icon>
+    <CooldownTime>0.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141106481325684692</SharedCooldown>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141153709692234854" Status="New">
+    <Fqn NodeId="16141153709692234854">abl.itm.loot.pvp.warzone_minor</Fqn>
+    <Name Id="3660935633829888">Minor Warzone Commendation Grant</Name>
+    <Description Id="3660935633829889">Grants 100 Warzone Commendations, for use to purchase PvP gear and items.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_pack_boost_req_starfighter_fleet_minor</Icon>
+    <CooldownTime>0.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141153709692234854</SharedCooldown>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141010032429343221" Status="New">
+    <Fqn NodeId="16141010032429343221">abl.test.jjary.damage_self</Fqn>
+    <Name Id="3662808239570944"></Name>
+    <Description Id="3662808239570945"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>empire</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140921094580461073" Status="Removed">
+    <Fqn NodeId="16140921094580461073">abl.jedi_consular.skill.seer.amnesty</Fqn>
+    <Name Id="3218098735808512">Amnesty</Name>
+    <Description Id="3218098735808513">Vindicate grants Amnesty, healing the target for an additional &lt;&lt;1&gt;&gt; over 6 seconds. This can only occur once every 15 seconds.</Description>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>1</effParam_SpellType>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.009</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.009</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>0.17</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>energydrain</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Friendly</TargetRule>
+  </Ability>
+  <Ability Id="16140961276695748147" Status="Removed">
+    <Fqn NodeId="16140961276695748147">abl.sith_inquisitor.skill.corruption.reverse_corruptions</Fqn>
+    <Name Id="3210230355722240">Reverse Corruptions</Name>
+    <Description Id="3210230355722241">Consuming Darkness grants Reverse Corruptions, healing the target for an additional &lt;&lt;1&gt;&gt; over 6 seconds. This can only occur once every 15 seconds.</Description>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>1</effParam_SpellType>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.009</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.009</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>0.17</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>consumption</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Friendly</TargetRule>
+  </Ability>
+</Abilities>

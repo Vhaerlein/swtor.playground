@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="16140961267940862720" Status="Changed">
+    <Fqn NodeId="16140961267940862720">abl.mtx.consumable.gc_boosts.generic.tier2</Fqn>
+    <Name Id="4070142937923584">Tier 2 Command Boost</Name>
+    <Description Id="4070142937923585" OldValue="Increases command points gained in Command Ranks 90-189 by 15% for 2 hours. Does not affect Command Stash disintegrations. Cannot be combined with any other Command Boost. (Cooldown: 1 hour)">Increases command points gained in Command Ranks 90-179 by 15% for 2 hours. Does not affect Command Stash disintegrations. Cannot be combined with any other Command Boost. (Cooldown: 1 hour)</Description>
+  </Ability>
+  <Ability Id="16140962367452488919" Status="Changed">
+    <Fqn NodeId="16140962367452488919">abl.mtx.consumable.gc_boosts.generic.tier3</Fqn>
+    <Name Id="4070147232890880">Tier 3 Command Boost</Name>
+    <Description Id="4070147232890881" OldValue="Increases command points gained in Command Ranks 190-300 by 15% for 2 hours. Does not affect Command Stash disintegrations. Cannot be combined with any other Command Boost. (Cooldown: 1 hour)">Increases command points gained in Command Ranks 180-300 by 15% for 2 hours. Does not affect Command Stash disintegrations. Cannot be combined with any other Command Boost. (Cooldown: 1 hour)</Description>
+  </Ability>
+  <Ability Id="16141123237201776744" Status="New">
+    <Fqn NodeId="16141123237201776744">abl.mtx.consumable.gc_boosts.generic.special_major</Fqn>
+    <Base62Id>Q10tdH0</Base62Id>
+    <Name Id="4086128806199296">Superior Command Boost</Name>
+    <Description Id="4086128806199297">Increases command points gained in Command Ranks 1-179 by 100% for 3 hours. Does not affect Command Stash disintegrations. Cannot be combined with any other Command Boost. (Cooldown: 1 hour)</Description>
+    <DBURL>https://torcommunity.com/database/ability/Q10tdH0/superior+command+boost</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>commandboostmajor_special</Icon>
+    <CooldownTime>3600</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141123237201776744</SharedCooldown>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141162275369137975" Status="New">
+    <Fqn NodeId="16141162275369137975">abl.mtx.consumable.gc_boosts.generic.special_major_legacy</Fqn>
+    <Base62Id>DpTGvP1</Base62Id>
+    <Name Id="4086133101166592">Superior Command Boost</Name>
+    <Description Id="4086133101166593">Increases command points gained in Command Ranks 1-179 by 100% for 2 hours. Does not affect Command Stash disintegrations. Cannot be combined with any other Command Boost. (Cooldown: 1 hour)</Description>
+    <DBURL>https://torcommunity.com/database/ability/DpTGvP1/superior+command+boost</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>commandboostmajor_special</Icon>
+    <CooldownTime>3600</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141162275369137975</SharedCooldown>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+</Abilities>

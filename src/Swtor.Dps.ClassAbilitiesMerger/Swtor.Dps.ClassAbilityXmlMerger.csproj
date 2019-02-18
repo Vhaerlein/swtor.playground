@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net472</TargetFramework>
+		<Title>Class ability xml merger</Title>
+		<Description>Command line tool to merge torcommunity changed abilities xml</Description>
+	</PropertyGroup>
+</Project>

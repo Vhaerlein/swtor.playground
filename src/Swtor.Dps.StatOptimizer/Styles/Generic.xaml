@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:converters="clr-namespace:Swtor.Dps.StatOptimizer.Converters"
+	xmlns:vm="clr-namespace:Swtor.Dps.StatOptimizer.ViewModel">
+
+	<converters:GreaterThanOrEqualToZeroConverter x:Key="GreaterThanOrEqualToZeroConverter" />
+	<DataTemplate DataType="{x:Type vm:ValueCorrectionViewModel}">
+		<StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+			<TextBlock Text="{Binding NewValueString}" Width="50" Margin="5,0" TextAlignment="Right" />
+			<TextBlock Text="{Binding DifferenceString}" Width="50" Margin="5,0" TextAlignment="Right">
+				<TextBlock.Style>
+					<Style TargetType="TextBlock">
+						<Setter Property="Foreground" Value="PaleVioletRed"/>
+						<Style.Triggers>
+							<DataTrigger Binding="{Binding Difference, Converter={StaticResource GreaterThanOrEqualToZeroConverter}}" Value="True">
+								<Setter Property="Foreground" Value="LightGreen"/>
+							</DataTrigger>
+						</Style.Triggers>
+					</Style>
+				</TextBlock.Style>
+			</TextBlock>
+		</StackPanel>
+	</DataTemplate>
+</ResourceDictionary>

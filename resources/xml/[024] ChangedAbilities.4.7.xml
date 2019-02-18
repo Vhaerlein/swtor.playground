@@ -1,0 +1,3094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="16141164716516254857" Status="Changed">
+    <Fqn NodeId="16141164716516254857">abl.companion.unique.mtx.bogstalker.tank.aoe_attack</Fqn>
+    <Name Id="3894620509437952">Overcharge Equipment</Name>
+    <Description Id="3894620509437953">Your creature's control helm overcharges unleashing an electric discharge dealing &lt;&lt;1&gt;&gt; internal damage to up to 5 enemies 5m around the impact. Generates a moderate amount of threat and reduces incoming damage by 50% for 10 seconds. Does not hit sleeping, lifted, or incapacitated enemies.</Description>
+    <Icon OldValue="utilitybeltwithmanyslots">abl_jc_sa_resonating_vibrations</Icon>
+  </Ability>
+  <Ability Id="16140905801016069362" Status="Changed">
+    <Fqn NodeId="16140905801016069362">abl.companion.unique.mtx.treek.aoe_cast_heal</Fqn>
+    <Name Id="3278215393050624">Fektur Sleesh</Name>
+    <Description Id="3278215393050625">Treek tosses a medicinal berry at the ground near a friendly target, healing all group members within 8 meters of the friendly target for &lt;&lt;1&gt;&gt;. Requires Fektur Stance.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.07">0.08</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.03">0.04</effParam_StandardHealthPercentMin>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141089061024553041" Status="Changed">
+    <Fqn NodeId="16141089061024553041">abl.companion.unique.mtx.treek.healer.aoe_cast_heal</Fqn>
+    <Name Id="3692353319600128">Fektur Sleesh</Name>
+    <Description Id="3692353319600129">Treek tosses a medicinal berry at the ground near a friendly target, healing all group members within 8 meters of the friendly target for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMin OldValue="0.06">0.065</effParam_StandardHealthPercentMin>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141153937158832020" Status="Changed">
+    <Fqn NodeId="16141153937158832020">abl.companion.unique.mtx.treek.healer.st_cleanse_hot</Fqn>
+    <Name Id="3692267420254208">Fektur Dart</Name>
+    <Description Id="3692267420254209">Treek injects a friendly group member with medicine that heals for &lt;&lt;1&gt;&gt; over 12 seconds and cleanses one negative mental or physical effect with each tick.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.026">0.036</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.026">0.036</effParam_StandardHealthPercentMin>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141052535435224428" Status="Changed">
+    <Fqn NodeId="16141052535435224428">abl.exp.seasons.01.ep_12.weapon.on_weapon</Fqn>
+    <Name Id="3858370985459712">Attuned</Name>
+    <Description Id="3858370985459713">Grants special abilities based on your decisions.</Description>
+    <IsHidden OldValue="false">true</IsHidden>
+  </Ability>
+  <Ability Id="16141181590606273098" Status="Changed">
+    <Fqn NodeId="16141181590606273098">abl.exp.seasons.01.ep_12.weapon.tags.absorb</Fqn>
+    <Name Id="3858512719380480">Serenity</Name>
+    <Description Id="3858512719380481">Satele Shan's lingering influence fills you with a serene sense of calm.</Description>
+    <IsHidden OldValue="false">true</IsHidden>
+  </Ability>
+  <Ability Id="16140952972378345186" Status="Changed">
+    <Fqn NodeId="16140952972378345186">abl.exp.seasons.01.ep_12.weapon.tags.both</Fqn>
+    <Name Id="3858517014347776">Unity</Name>
+    <Description Id="3858517014347777">You have harnessed the unified beliefs of Satele Shan and Darth Marr.</Description>
+    <IsHidden OldValue="false">true</IsHidden>
+  </Ability>
+  <Ability Id="16141025939841031594" Status="Changed">
+    <Fqn NodeId="16141025939841031594">abl.exp.seasons.01.ep_12.weapon.tags.enrage</Fqn>
+    <Name Id="3858521309315072">Sacrifice</Name>
+    <Description Id="3858521309315073">You are prepared to lose everything to achieve ultimate victory.</Description>
+    <IsHidden OldValue="false">true</IsHidden>
+  </Ability>
+  <Ability Id="16141059788184663353" Status="Changed">
+    <Fqn NodeId="16141059788184663353">abl.exp.seasons.01.ep_12.weapon.tags.hot</Fqn>
+    <Name Id="3858525604282368">Resilience</Name>
+    <Description Id="3858525604282369">No matter the challenge, you will endure.</Description>
+    <IsHidden OldValue="false">true</IsHidden>
+  </Ability>
+  <Ability Id="16140948285023950324" Status="Changed">
+    <Fqn NodeId="16140948285023950324">abl.exp.seasons.01.ep_12.weapon.tags.move_speed</Fqn>
+    <Name Id="3858529899249664">Transcendence</Name>
+    <Description Id="3858529899249665">You have moved beyond the limits of your past.</Description>
+    <IsHidden OldValue="false">true</IsHidden>
+  </Ability>
+  <Ability Id="16141086742190290633" Status="Changed">
+    <Fqn NodeId="16141086742190290633">abl.exp.seasons.01.ep_12.weapon.tags.reflect</Fqn>
+    <Name Id="3858534194216960">Vengeance</Name>
+    <Description Id="3858534194216961">Darth Marr's lingering influence makes you hunger for vengeance.</Description>
+    <IsHidden OldValue="false">true</IsHidden>
+  </Ability>
+  <Ability Id="16141152229906793349" Status="Changed">
+    <Fqn NodeId="16141152229906793349">abl.exp.seasons.01.ep_16.boss.arcann.ground_strike</Fqn>
+    <Name Id="3877444935221248">Ground Strike</Name>
+    <Description Id="3877444935221249"></Description>
+    <CastingTime OldValue="2">3</CastingTime>
+    <CooldownTime OldValue="8">12</CooldownTime>
+  </Ability>
+  <Ability Id="16141089879178291745" Status="Changed">
+    <Fqn NodeId="16141089879178291745">abl.exp.seasons.01.ep_16.boss.arcann.guard_break</Fqn>
+    <Name Id="3880288203571200">Guard Break</Name>
+    <Description Id="3880288203571201">Channel force energy through the ground at your target, causing energy to erupt upwards under your target's feet. This attack cannot be stopped by a raised shield.</Description>
+    <CastingTime OldValue="2">4</CastingTime>
+    <CooldownTime OldValue="12">20</CooldownTime>
+  </Ability>
+  <Ability Id="16140991986066361162" Status="Changed">
+    <Fqn NodeId="16140991986066361162">abl.exp.seasons.01.ep_16.boss.arcann.shield.shield_bash</Fqn>
+    <Name Id="3879304656060416" OldValue="Shield Bash">Empowered Bash</Name>
+    <Description Id="3879304656060417" OldValue="Slam your shield into an enemy in front of you, discharging any force energy absorbed by the shield into your target.">Requires 10 or more charges of Absorbed Force Energy.
+
+Slam your shield into an enemy in front of you, discharging any force energy absorbed by the shield into your target.</Description>
+    <DBURL OldValue="https://torcommunity.com/database/ability/IelfKx1/shield+bash">https://torcommunity.com/database/ability/IelfKx1/empowered+bash</DBURL>
+  </Ability>
+  <Ability Id="16140958981561624182" Status="Changed">
+    <Fqn NodeId="16140958981561624182">abl.exp.seasons.01.ep_16.boss.kj_931.microwave_laser</Fqn>
+    <Name Id="3873094133350400">Microwave Laser</Name>
+    <Description Id="3873094133350401"></Description>
+    <GCD OldValue="15">16</GCD>
+  </Ability>
+  <Ability Id="16141108288160219977" Status="Changed">
+    <Fqn NodeId="16141108288160219977">abl.exp.seasons.01.ep_16.boss.kj_931.microwave_laser_initial_leap</Fqn>
+    <Name Id="3873098428317696" OldValue="microwave_laser_initial_leap">Reposition</Name>
+    <Description Id="3873098428317697"></Description>
+    <DBURL OldValue="https://torcommunity.com/database/ability/IKFd178/microwave_laser_initial_leap">https://torcommunity.com/database/ability/IKFd178/reposition</DBURL>
+  </Ability>
+  <Ability Id="16141066594130930006" Status="Changed">
+    <Fqn NodeId="16141066594130930006">abl.exp.seasons.01.ep_16.boss.kj_931.mortar_volley</Fqn>
+    <Name Id="3872969579298816">Mortar Volley</Name>
+    <Description Id="3872969579298817"></Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.08">0.088</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.08">0.088</effParam_StandardHealthPercentMin>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140976692251682943" Status="Changed">
+    <Fqn NodeId="16140976692251682943">abl.exp.seasons.01.ep_16.boss.kj_931.pulse_cannon</Fqn>
+    <Name Id="3872759125901312">Pulse Cannon</Name>
+    <Description Id="3872759125901313"></Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.0555">0.09</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0555">0.09</effParam_StandardHealthPercentMin>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141021139512776769" Status="Changed">
+    <Fqn NodeId="16141021139512776769">abl.mtx.pack.alliance.anarchist</Fqn>
+    <Name Id="3831656288878592">Opening Pack</Name>
+    <Description Id="3831656288878593">Right-click to open this Anarchist Pack. This pack contains 4 items, including: 2 from Armor Lootboxes, Mounts or Vehicles, Weapons, Crystals, Stronghold Decorations, a Droid Companion, or the Grand Chance Cube, 1 Companion Gift, and 1 Scrap material.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140933286483777901" Status="Changed">
+    <Fqn NodeId="16140933286483777901">abl.mtx.pack.alliance.avenger</Fqn>
+    <Name Id="3831673468747776">Opening Pack</Name>
+    <Description Id="3831673468747777">Right-click to open this Revenge Pack. This pack contains 4 items, including: 2 from Armor Lootboxes, Mounts or Vehicles, Weapons, Crystals, Stronghold Decorations, Titles, Pets, Tunings, a Droid Companion, or the Grand Chance Cube, 1 Companion Gift, and 1 Scrap material.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141139283311281060" Status="Changed">
+    <Fqn NodeId="16141139283311281060">abl.mtx.pack.alliance.battler</Fqn>
+    <Name Id="3831682058682368">Opening Pack</Name>
+    <Description Id="3831682058682369" OldValue="Right-click to open this Revenge Pack. This pack contains 4 items, including: 2 from Armor Lootboxes, Mounts or Vehicles, Weapons, Crystals, Stronghold Decorations, Titles, Pets, Tunings, a Droid Companion, or the Grand Chance Cube, 1 Companion Gift, and 1 Scrap material.">Right-click to open this Battler Pack. This pack contains 4 items, including: 2 from Armor Lootboxes, Mounts or Vehicles, Weapons, Crystals, Stronghold Decorations, Titles, Pets, Tunings, a Droid Companion, or the Grand Chance Cube, 1 Companion Gift, and 1 Scrap material.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140978378087267135" Status="Changed">
+    <Fqn NodeId="16140978378087267135">abl.mtx.pack.alliance.deceptor</Fqn>
+    <Name Id="3831677763715072">Opening Pack</Name>
+    <Description Id="3831677763715073">Right-click to open this GEMINI Pack. This pack contains 4 items, including: 2 from Armor Lootboxes, Mounts or Vehicles, Weapons, Crystals, Stronghold Decorations, Titles, Pets, Tunings, Emotes, a Creature Companion, or the Grand Chance Cube, 1 Companion Gift, and 1 Scrap Material.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140946295843930907" Status="Changed">
+    <Fqn NodeId="16140946295843930907">abl.mtx.pack.alliance.disavowed</Fqn>
+    <Name Id="3831660583845888">Opening Pack</Name>
+    <Description Id="3831660583845889">Right-click to open this Disavowed Pack. This pack contains 4 items, including: 2 from Armor Lootboxes, Mounts or Vehicles, Weapons, Crystals, Stronghold Decorations, a Creature Companion, or the Grand Chance Cube, 1 Companion Gift, and 1 Scrap material.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141103355330865914" Status="Changed">
+    <Fqn NodeId="16141103355330865914">abl.mtx.pack.alliance.force</Fqn>
+    <Name Id="3673352384282624">Opening Pack</Name>
+    <Description Id="3673352384282625">Right-click to open this Force Alliance Pack. This pack contains 3 items, including 1 Armor Lootbox, Mount or Vehicle, Rest and Recharge, Droid Companion or Stronghold Decoration, 1 companion gift, and 1 Scrap Material.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141146220362341752" Status="Changed">
+    <Fqn NodeId="16141146220362341752">abl.mtx.pack.alliance.force_platinum</Fqn>
+    <Name Id="3675405378650112">Opening Pack</Name>
+    <Description Id="3675405378650113">Right-click to open this Force Alliance Platinum Pack. This pack contains 1 Super Rare or better Bonus Item from the Underworld Alliance Packs.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141176244515704221" Status="Changed">
+    <Fqn NodeId="16141176244515704221">abl.mtx.pack.alliance.hk</Fqn>
+    <Name Id="3831686353649664">Opening Pack</Name>
+    <Description Id="3831686353649665">Right-click to open this HK Alliance Pack. This pack contains 4 items, including: 2 from Armor Lootboxes, Mounts or Vehicles, Weapons, Crystals, Stronghold Decorations, or a Creature Companion, 1 companion gift, and 1 scrap material.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140940026751818540" Status="Changed">
+    <Fqn NodeId="16140940026751818540">abl.mtx.pack.alliance.plunderer</Fqn>
+    <Name Id="3831669173780480">Opening Pack</Name>
+    <Description Id="3831669173780481">Right-click to open this Plunderer Pack. This pack contains 4 items, including: 2 from Armor Lootboxes, Mounts or Vehicles, Weapons, Crystals, Tunings, Stronghold Decorations, Pets, Title, or a Creature Companion, 1 companion gift, and 1 scrap material.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140986896387388215" Status="Changed">
+    <Fqn NodeId="16140986896387388215">abl.mtx.pack.alliance.research</Fqn>
+    <Name Id="3675461213224960">Opening Pack</Name>
+    <Description Id="3675461213224961">Right-click to open this Research Alliance Pack. This pack contains 2 items, including 1 Armor Lootbox, Mount or Vehicle, Rest and Recharge, Droid Companion or Stronghold Decoration, and 1 companion gift.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140929617352995437" Status="Changed">
+    <Fqn NodeId="16140929617352995437">abl.mtx.pack.alliance.research_platinum</Fqn>
+    <Name Id="3675465508192256">Opening Pack</Name>
+    <Description Id="3675465508192257">Right-click to open this Research Alliance Platinum Pack. This pack contains 1 Super Rare or better Bonus Item from the Research Alliance Packs.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140955303480242192" Status="Changed">
+    <Fqn NodeId="16140955303480242192">abl.mtx.pack.alliance.strategy</Fqn>
+    <Name Id="3675409673617408">Opening Pack</Name>
+    <Description Id="3675409673617409">Right-click to open this Strategy Alliance Pack. This pack contains 4 items, including: 2 from Armor Lootboxes, Mounts or Vehicles, Weapons, Crystals, Stronghold Decorations, or a Creature Companion, 1 companion gift, and 1 scrap material.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141009631891282714" Status="Changed">
+    <Fqn NodeId="16141009631891282714">abl.mtx.pack.alliance.strategy_platinum</Fqn>
+    <Name Id="3675413968584704">Opening Pack</Name>
+    <Description Id="3675413968584705">Right-click to open this Strategy Alliance Platinum Pack. This pack contains 1 Super Rare or better Bonus Item from the Underworld Alliance Packs.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140967704278603587" Status="Changed">
+    <Fqn NodeId="16140967704278603587">abl.mtx.pack.alliance.underworld</Fqn>
+    <Name Id="3668859848491008">Opening Pack</Name>
+    <Description Id="3668859848491009">Right-click to open this Underworld Alliance Pack. This pack contains 2 items, including 1 Armor Lootbox, Mount or Vehicle, Rest and Recharge, Creature Companion or Stronghold Decoration, and 1 companion gift.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141005114787883557" Status="Changed">
+    <Fqn NodeId="16141005114787883557">abl.mtx.pack.alliance.underworld_platinum</Fqn>
+    <Name Id="3668868438425600">Opening Pack</Name>
+    <Description Id="3668868438425601">Right-click to open this Underworld Alliance Platinum Pack. This pack contains 1 Super Rare or better Bonus Item from the Underworld Alliance Packs.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141082513472176665" Status="Changed">
+    <Fqn NodeId="16141082513472176665">abl.mtx.pack.alliance.visionary</Fqn>
+    <Name Id="3831664878813184">Opening Pack</Name>
+    <Description Id="3831664878813185">Right-click to open this Visionary Pack. This pack contains 4 items, including: 2 from Armor Lootboxes, Mounts or Vehicles, Weapons, Crystals, Stronghold Decorations, a Droid Companion, or the Grand Chance Cube, 1 Companion Gift, and 1 Scrap material.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141002506322041770" Status="Changed">
+    <Fqn NodeId="16141002506322041770">abl.mtx.pack.archon_pack</Fqn>
+    <Name Id="3284030778769408">Opening Pack</Name>
+    <Description Id="3284030778769409">Right-click to open this Archon's Contraband Pack. This pack contains 6 items, including 1 boost item, 1 companion gift, 1 rare crafting material, 2 rare bonus items, and 1 Contraband Resell Corporation item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141012065932938231" Status="Changed">
+    <Fqn NodeId="16141012065932938231">abl.mtx.pack.black_market_pack</Fqn>
+    <Name Id="3126126306131968">Opening Pack</Name>
+    <Description Id="3126126306131969">Right-click to open this Black Market Cartel Pack.  This pack contains 3 items, including 1 boost item, 1 companion gift, and 1 rare bonus item.</Description>
+    <Icon Status="Removed">mtx01_iconpack6</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141030364980793426" Status="Changed">
+    <Fqn NodeId="16141030364980793426">abl.mtx.pack.blockade_runner_pack</Fqn>
+    <Name Id="3126134896066560">Opening Pack</Name>
+    <Description Id="3126134896066561">Right-click to open this Blockade Runner's Cartel Pack.  This pack contains 5 items, including 1 boost item, 1 companion gift, 1 rare crafting material, and 2 rare bonus items.</Description>
+    <Icon Status="Removed">mtx01_iconpack7</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141180353949098500" Status="Changed">
+    <Fqn NodeId="16141180353949098500">abl.mtx.pack.booster_opening</Fqn>
+    <Name Id="3059575787880448">booster_opening</Name>
+    <Description Id="3059575787880449">You receive your Cartel Pack of goods from orbit.  Anything could be inside!</Description>
+    <Icon Status="Removed">mtx001_iconpack1</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140967165520967245" Status="Changed">
+    <Fqn NodeId="16140967165520967245">abl.mtx.pack.contractor_pack</Fqn>
+    <Name Id="3314907298660352">Opening Pack</Name>
+    <Description Id="3314907298660353">Right-click to open this Contractor's Bounty Pack. This pack contains 4 items, including 1 boost item, 1 companion gift,1 rare bonus item, and 1 Bounty Supply Corporation item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140953813769357229" Status="Changed">
+    <Fqn NodeId="16140953813769357229">abl.mtx.pack.crime_lord_pack</Fqn>
+    <Name Id="3126130601099264">Opening Pack</Name>
+    <Description Id="3126130601099265">Right-click to open this Crime Lord's Cartel Pack.  This pack contains 5 items, including 1 boost item, 1 companion gift, 1 rare crafting material, and 2 rare bonus items.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141099492425020130" Status="Changed">
+    <Fqn NodeId="16141099492425020130">abl.mtx.pack.dogfighter_pack</Fqn>
+    <Name Id="3351165412573184">Opening Pack</Name>
+    <Description Id="3351165412573185">Right-click to open this Dogfighter's Starfighter Pack. This pack contains 6 items, including 1 boost item or warzone consumable item, 1 companion gift, 1 rare crafting material, 2 rare bonus items, and 1 Interplanetary Component Exchange item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141060233376498149" Status="Changed">
+    <Fqn NodeId="16141060233376498149">abl.mtx.pack.dye_kit</Fqn>
+    <Name Id="3284786693013504">Opening Kit</Name>
+    <Description Id="3284786693013505">Right-click to open this Dye Kit.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141100515093856057" Status="Changed">
+    <Fqn NodeId="16141100515093856057">abl.mtx.pack.enforcer_pack</Fqn>
+    <Name Id="3243636611350528">Opening Pack</Name>
+    <Description Id="3243636611350529">Right-click to open this Enforcer's Contraband Pack.  This pack contains 6 items, including 1 boost item, 1 companion gift, 1 rare crafting material, 2 rare bonus items, and 1 Contraband Resale Corporation item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141044824226925636" Status="Changed">
+    <Fqn NodeId="16141044824226925636">abl.mtx.pack.event.dvl_cm</Fqn>
+    <Name Id="3905190423953408">Opening Pack</Name>
+    <Description Id="3905190423953409">Right-click to open this Dark vs. Light Pack. This pack contains 4 items, including 1 from Mounts, Armor, Crystal, Tunings, Dyes, Weapons or Stronghold Decorations, 1 companion gift, and 1 Scrap Material and 1 Grand Chance Cube.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140960868942470274" Status="Changed">
+    <Fqn NodeId="16140960868942470274">abl.mtx.pack.event.dvl_reward</Fqn>
+    <Name Id="3906908410871808">Opening Pack</Name>
+    <Description Id="3906908410871809">Right-click to open this Dark vs. Light Pack. This pack contains 2 items, including 1 Armor Lootbox, Weapon, Mounts or Stronghold Decoration, 1 companion gift, or 1 consumable experience boost. </Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141149996442567304" Status="Changed">
+    <Fqn NodeId="16141149996442567304">abl.mtx.pack.explorer.core_worlds</Fqn>
+    <Name Id="3563637444706304">Opening Pack</Name>
+    <Description Id="3563637444706305">Right-click to open this Core Worlds Explorer's Pack. This pack contains 4 items, including 1 rare bonus item or Stronghold Decoration, 1 boost item, 1 companion gift, and 1 scrap material.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141014320062401152" Status="Changed">
+    <Fqn NodeId="16141014320062401152">abl.mtx.pack.explorer.deep_core</Fqn>
+    <Name Id="3563633149739008">Opening Pack</Name>
+    <Description Id="3563633149739009">Right-click to open this Deep Core Explorer's Pack. This pack contains 6 items, including 1 boost item, 1 companion gift, 1 scrap material, 2 rare bonus items or Stronghold decorations, and 1 Esstran Exports item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140979404364906148" Status="Changed">
+    <Fqn NodeId="16140979404364906148">abl.mtx.pack.explorer.deep_core_platinum</Fqn>
+    <Name Id="3591322803896320">Opening Pack</Name>
+    <Description Id="3591322803896321">Right-click to open this Deep Core Platinum Pack. This pack contains 1 Super Rare or better Bonus Item from the Deep Core Explorer's Packs.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140961539254316882" Status="Changed">
+    <Fqn NodeId="16140961539254316882">abl.mtx.pack.explorer.mid_rim</Fqn>
+    <Name Id="3563641739673600">Opening Pack</Name>
+    <Description Id="3563641739673601">Right-click to open this Mid Rim Explorer's Pack. This pack contains 6 items, including 1 boost item, 1 companion gift, 1 scrap material, 2 rare bonus items or Stronghold decorations, and 1 Esstran Exports item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141053687000809025" Status="Changed">
+    <Fqn NodeId="16141053687000809025">abl.mtx.pack.explorer.mid_rim_platinum</Fqn>
+    <Name Id="3630346876747776">Opening Pack</Name>
+    <Description Id="3630346876747777">Right-click to open this Mid Rim Platinum Pack. This pack contains 1 select Super Rare or better Bonus Item from the Mid Rim Explorer's Packs.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140905587548266761" Status="Changed">
+    <Fqn NodeId="16140905587548266761">abl.mtx.pack.explorer.outer_rim</Fqn>
+    <Name Id="3563646034640896">Opening Pack</Name>
+    <Description Id="3563646034640897">Right-click to open this Outer Rim Explorer's Pack. This pack contains 6 items, including 1 boost item, 1 companion gift, 1 scrap material, 2 rare bonus items or Stronghold decorations, and 1 Esstran Exports item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141103479159235523" Status="Changed">
+    <Fqn NodeId="16141103479159235523">abl.mtx.pack.explorer.outer_rim_platinum</Fqn>
+    <Name Id="3635298974040064">Opening Pack</Name>
+    <Description Id="3635298974040065">Right-click to open this Outer Rim Platinum Pack. This pack contains 1 select Super Rare or better Bonus Item from the Outer Rim Explorer's Packs.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141010612294949473" Status="Changed">
+    <Fqn NodeId="16141010612294949473">abl.mtx.pack.explorer.wild_space</Fqn>
+    <Name Id="3563650329608192">Opening Pack</Name>
+    <Description Id="3563650329608193">Right-click to open this Wild Space Explorer's Pack. This pack contains 6 items, including 1 boost item, 1 companion gift, 1 scrap material, 2 rare bonus items or Stronghold decorations, and 1 Esstran Exports item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141041877199786046" Status="Changed">
+    <Fqn NodeId="16141041877199786046">abl.mtx.pack.explorer.wild_space_platinum</Fqn>
+    <Name Id="3635320448876544">Opening Pack</Name>
+    <Description Id="3635320448876545">Right-click to open this Wild Space Platinum Pack. This pack contains 1 select Super Rare or better Bonus Item from the Wild Space Explorer's Packs.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141136595999651939" Status="Changed">
+    <Fqn NodeId="16141136595999651939">abl.mtx.pack.freelancer_pack</Fqn>
+    <Name Id="3314911593627648">Opening Pack</Name>
+    <Description Id="3314911593627649">Right-click to open this Freelancer's Bounty Pack. This pack contains 6 items, including 1 boost item, 1 companion gift, 1 rare crafting material, 2 rare bonus items, and 1 Bounty Supply Corporation item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141127896742120841" Status="Changed">
+    <Fqn NodeId="16141127896742120841">abl.mtx.pack.galactic_ace_pack</Fqn>
+    <Name Id="3351174002507776">Opening Pack</Name>
+    <Description Id="3351174002507777">Right-click to open this Galactic Ace's Starfighter Pack. This pack contains 6 items, including 1 boost item or warzone consumable item, 1 companion gift, 1 rare crafting material, 2 rare bonus items, and 1 Interplanetary Component Exchange item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141040658049334349" Status="Changed">
+    <Fqn NodeId="16141040658049334349">abl.mtx.pack.grand_chance_cube</Fqn>
+    <Name Id="3836273378721792">Rolling the Chance Cube!</Name>
+    <Description Id="3836273378721793">Test your luck against the Grand Chance Cube to win an item selected from the sweep of all Cartel Market releases!  Contains one item drawn from Armor, Mounts, Decorations, Color Crystals, Emotes, Pets, Titles, Toys, Weapons, and Companion Customizations. </Description>
+    <Icon Status="Removed">mtx_chance_cube</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141172704662722874" Status="Changed">
+    <Fqn NodeId="16141172704662722874">abl.mtx.pack.holiday.life_day_pack</Fqn>
+    <Name Id="3187097661865984">Opening Pack</Name>
+    <Description Id="3187097661865985">Right-click to open this Life Day Pack.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141142991055854639" Status="Changed">
+    <Fqn NodeId="16141142991055854639">abl.mtx.pack.hotshot_pack</Fqn>
+    <Name Id="3351182592442368">Opening Pack</Name>
+    <Description Id="3351182592442369">Right-click to open this Hotshot's Starfighter Pack. This pack contains 6 items, including 1 boost item or warzone consumable item, 1 companion gift, 1 rare crafting material, 2 rare bonus items, and 1 Interplanetary Component Exchange item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141127904104449612" Status="Changed">
+    <Fqn NodeId="16141127904104449612">abl.mtx.pack.nightlife.club_vertica_pack</Fqn>
+    <Name Id="3419180514672640">Opening Pack</Name>
+    <Description Id="3419180514672641">Right-click to open this Club Vertica Nightlife Pack. This pack contains 5 items, including 1 boost item, 1 companion gift, 1 scrap material, and 2 rare bonus items.</Description>
+    <Icon Status="Removed">mtx_nightlife_club_vertica</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140988516450832202" Status="Changed">
+    <Fqn NodeId="16140988516450832202">abl.mtx.pack.nightlife.star_cluster_pack</Fqn>
+    <Name Id="3418944291471360">Opening Pack</Name>
+    <Description Id="3418944291471361">Right-click to open this Star Cluster's Nightlife Pack. This pack contains 5 items, including 1 boost item, 1 companion gift, 1 scrap material, 2 rare bonus items.</Description>
+    <Icon Status="Removed">mtx_nightlife_star_cluster</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140992544931925288" Status="Changed">
+    <Fqn NodeId="16140992544931925288">abl.mtx.pack.nightlife.superpack</Fqn>
+    <Name Id="3488046020296704">Opening Pack</Name>
+    <Description Id="3488046020296705">Right-click to open this Grand Nightlife Pack. This pack contains 4 items: 1 Super Rare or better bonus item, 1 Rare or better bonus item, 1 Expanded Dye Kit, and 1 Major or Minor XP Boost. This pack contains boxes of complete Armor sets, Mounts, Weapons, Color Crystals or Toys from the Nightlife Shipment.</Description>
+    <Icon Status="Removed">mtx_nightlife_star_cluster</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141105563739506006" Status="Changed">
+    <Fqn NodeId="16141105563739506006">abl.mtx.pack.opportunist_pack</Fqn>
+    <Name Id="3338383589900288">Opening Pack</Name>
+    <Description Id="3338383589900289">Right-click to open this Opportunist's Bounty Pack. This pack contains 6 items, including 1 boost item or warzone consumable item, 1 companion gift, 1 rare crafting material, 2 rare bonus items, and 1 Bounty Supply Corporation item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141108409897174501" Status="Changed">
+    <Fqn NodeId="16141108409897174501">abl.mtx.pack.pursuer_pack</Fqn>
+    <Name Id="3322517980708864">Opening Pack</Name>
+    <Description Id="3322517980708865">Right-click to open this Pursuer's Bounty Pack. This pack contains 6 items, including 1 boost item, 1 companion gift, 1 rare crafting material, 2 rare bonus items, and 1 Bounty Supply Corporation item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141005246947664424" Status="Changed">
+    <Fqn NodeId="16141005246947664424">abl.mtx.pack.regulator_pack</Fqn>
+    <Name Id="3243632316383232">Opening Pack</Name>
+    <Description Id="3243632316383233">Right-click to open this Regulator's Contraband Pack.  This pack contains 4 items, including 1 boost item, 1 companion gift,1 rare bonus item, and 1 Contraband Resale Corporation item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141077617043796431" Status="Changed">
+    <Fqn NodeId="16141077617043796431">abl.mtx.pack.shadow.acolyte</Fqn>
+    <Name Id="3501326059175936">Opening Pack</Name>
+    <Description Id="3501326059175937">Right-click to open this Acolyte's Shadow Pack. This pack contains 6 items, including 1 boost item, 1 companion gift, 1 scrap material, 2 rare bonus items or Stronghold decorations, and 1 Freebooter's Trade Union item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141133383369281943" Status="Changed">
+    <Fqn NodeId="16141133383369281943">abl.mtx.pack.shadow.apprentice</Fqn>
+    <Name Id="3501330354143232">Opening Pack</Name>
+    <Description Id="3501330354143233">Right-click to open this Apprentice's Shadow Pack. This pack contains 6 items, including 1 boost item, 1 companion gift, 1 scrap material, 2 rare bonus items or Stronghold decorations, and 1 Freebooter's Trade Union item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141158924349753195" Status="Changed">
+    <Fqn NodeId="16141158924349753195">abl.mtx.pack.shadow.initiate</Fqn>
+    <Name Id="3501343239045120">Opening Pack</Name>
+    <Description Id="3501343239045121">Right-click to open this Initiate's Shadow Pack. This pack contains 4 items, including 1 rare bonus item or Stronghold Decoration, 1 boost item, 1 companion gift, and 1 scrap material.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141075683306742806" Status="Changed">
+    <Fqn NodeId="16141075683306742806">abl.mtx.pack.shadow.master</Fqn>
+    <Name Id="3501338944077824">Opening Pack</Name>
+    <Description Id="3501338944077825">Right-click to open this Master's Shadow Pack. This pack contains 6 items, including 1 boost item, 1 companion gift, 1 scrap material, 2 rare bonus items or Stronghold decorations, and 1 Freebooter's Trade Union item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141161184276118154" Status="Changed">
+    <Fqn NodeId="16141161184276118154">abl.mtx.pack.shadow.pilgrim</Fqn>
+    <Name Id="3501317469241344">Opening Pack</Name>
+    <Description Id="3501317469241345">Right-click to open this Pilgrim's Shadow Pack. This pack contains 6 items, including 1 boost item, 1 companion gift, 1 scrap material, 2 rare bonus items or Stronghold decorations, and 1 Freebooter's Trade Union item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141048934843391251" Status="Changed">
+    <Fqn NodeId="16141048934843391251">abl.mtx.pack.skip_tracer_pack</Fqn>
+    <Name Id="3126139191033856">Opening Pack</Name>
+    <Description Id="3126139191033857">Right-click to open this Skip Tracer's Cartel Pack.  This pack contains 5 items, including 1 boost item, 1 companion gift, 1 rare crafting material, and 2 rare bonus items.</Description>
+    <Icon Status="Removed">mtx01_iconpack8</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141165159946898756" Status="Changed">
+    <Fqn NodeId="16141165159946898756">abl.mtx.pack.space_jockey_pack</Fqn>
+    <Name Id="3351178297475072">Opening Pack</Name>
+    <Description Id="3351178297475073">Right-click to open this Space Jockey's Starfighter Pack. This pack contains 6 items, including 1 boost item or warzone consumable item, 1 companion gift, 1 rare crafting material, 2 rare bonus items, and 1 Interplanetary Component Exchange item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140928340395578047" Status="Changed">
+    <Fqn NodeId="16140928340395578047">abl.mtx.pack.space_pirate_pack</Fqn>
+    <Name Id="3126147780968448">Opening Pack</Name>
+    <Description Id="3126147780968449">Right-click to open this Space Pirate's Cartel Pack.  This pack contains 5 items, including 1 boost item, 1 companion gift, 1 rare crafting material, and 2 rare bonus items.</Description>
+    <Icon Status="Removed">mtx01_iconpack9</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141053282900757362" Status="Changed">
+    <Fqn NodeId="16141053282900757362">abl.mtx.pack.stronghold.architect</Fqn>
+    <Name Id="3487973005852672">Opening Pack</Name>
+    <Description Id="3487973005852673">Right-click to open this Architect's Stronghold Pack. This pack contains 7 items, including 1 boost item, 1 companion gift, 1 scrap material, 2 rare bonus items, 1 Binary Star Reality item and 1 bonus Stronghold decoration.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141114055685141713" Status="Changed">
+    <Fqn NodeId="16141114055685141713">abl.mtx.pack.stronghold.builder</Fqn>
+    <Name Id="3462327756128256">Opening Pack</Name>
+    <Description Id="3462327756128257">Right-click to open this Builder's Stronghold Pack. This pack contains 4 items, including 1 rare bonus item or Stronghold Decoration, 1 boost item or companion gift, 1 scrap material, and 1 Binary Star Reailty item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141134497423771409" Status="Changed">
+    <Fqn NodeId="16141134497423771409">abl.mtx.pack.stronghold.constable</Fqn>
+    <Name Id="3462834562269184">Opening Pack</Name>
+    <Description Id="3462834562269185">Right-click to open this Constable's Stronghold Pack. This pack contains 7 items, including 1 boost item, 1 companion gift, 1 scrap material, 2 rare bonus items, 1 Binary Star Reality item and 1 bonus Stronghold decoration.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141035123944059008" Status="Changed">
+    <Fqn NodeId="16141035123944059008">abl.mtx.pack.stronghold.gatekeeper</Fqn>
+    <Name Id="3462319166193664">Opening Pack</Name>
+    <Description Id="3462319166193665">Right-click to open this Gatekeeper's Stronghold Pack. This pack contains 7 items, including 1 boost item, 1 companion gift, 1 scrap material, 2 rare bonus items, 1 Binary Star Reality item and 1 bonus Stronghold decoration.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141033090296612105" Status="Changed">
+    <Fqn NodeId="16141033090296612105">abl.mtx.pack.stronghold.seneschal</Fqn>
+    <Name Id="3476685831798784">Opening Pack</Name>
+    <Description Id="3476685831798785">Right-click to open this Seneschal's Stronghold Pack. This pack contains 7 items, including 1 boost item, 1 companion gift, 1 scrap material, 2 rare bonus items, 1 Binary Star Reality item and 1 bonus Stronghold decoration.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141070102279667552" Status="Changed">
+    <Fqn NodeId="16141070102279667552">abl.mtx.pack.superpack.bsg.armor_bronze</Fqn>
+    <Name Id="3726558439145472">Opening Pack</Name>
+    <Description Id="3726558439145473">Right-click to open this Bronze Armor Pack. Contains one Bronze, Silver, or Gold Quality Full Armor Set, drawn randomly from all Cartel Market Armors.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140973835423446451" Status="Changed">
+    <Fqn NodeId="16140973835423446451">abl.mtx.pack.superpack.bsg.armor_gold</Fqn>
+    <Name Id="3726567029080064">Opening Pack</Name>
+    <Description Id="3726567029080065">Right-click to open this Gold Armor Pack. Contains one Gold Quality Full Armor Set, and one Bonus Armor Piece, drawn randomly from all Cartel Market Armors.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141057935000663744" Status="Changed">
+    <Fqn NodeId="16141057935000663744">abl.mtx.pack.superpack.bsg.armor_silver</Fqn>
+    <Name Id="3726562734112768">Opening Pack</Name>
+    <Description Id="3726562734112769">Right-click to open this Silver Armor Pack. Contains one Silver or Gold Quality Full Armor Set, drawn randomly from all Cartel Market Armors.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141135832566307886" Status="Changed">
+    <Fqn NodeId="16141135832566307886">abl.mtx.pack.superpack.bsg.companion_customization</Fqn>
+    <Name Id="3757018347208704">Opening Pack</Name>
+    <Description Id="3757018347208705">Right-click to open this Grand Companion Customization Pack. Contains one Companion Customization, drawn randomly from all Cartel Market Companion Customizations.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141027066380636138" Status="Changed">
+    <Fqn NodeId="16141027066380636138">abl.mtx.pack.superpack.bsg.crystals</Fqn>
+    <Name Id="3750399802605568">Opening Pack</Name>
+    <Description Id="3750399802605569">Right-click to open this Grand Crystals Pack. Contains one Crystal, drawn randomly from all Cartel Market Crystals.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141121178204160518" Status="Changed">
+    <Fqn NodeId="16141121178204160518">abl.mtx.pack.superpack.bsg.decoration_bronze</Fqn>
+    <Name Id="3726962166071296">Opening Pack</Name>
+    <Description Id="3726962166071297">Right-click to open this Bronze Decoration Pack. Contains one Bronze, Silver, or Gold Quality Stronghold Decoration or Stronghold Label, drawn randomly from all Cartel Market Decorations.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141030065763141022" Status="Changed">
+    <Fqn NodeId="16141030065763141022">abl.mtx.pack.superpack.bsg.decoration_gold</Fqn>
+    <Name Id="3726966461038592">Opening Pack</Name>
+    <Description Id="3726966461038593">Right-click to open this Gold Decoration Pack. Contains one Gold Quality Stronghold Decoration, drawn randomly from all Cartel Market Decorations.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141156941340645634" Status="Changed">
+    <Fqn NodeId="16141156941340645634">abl.mtx.pack.superpack.bsg.decoration_silver</Fqn>
+    <Name Id="3726970756005888">Opening Pack</Name>
+    <Description Id="3726970756005889">Right-click to open this Silver Decoration Pack. Contains one Silver or Gold Quality Stronghold Decoration or Stronghold Label, drawn randomly from all Cartel Market Decorations.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141046806782064418" Status="Changed">
+    <Fqn NodeId="16141046806782064418">abl.mtx.pack.superpack.bsg.dyes</Fqn>
+    <Name Id="3750404097572864">Opening Pack</Name>
+    <Description Id="3750404097572865">Right-click to open this Grand Dyes Pack. Contains one Dye Module drawn randomly from all Cartel Market Dye Modules.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140952247219329463" Status="Changed">
+    <Fqn NodeId="16140952247219329463">abl.mtx.pack.superpack.bsg.emotes</Fqn>
+    <Name Id="3745207187144704">Opening Pack</Name>
+    <Description Id="3745207187144705">Right-click to open this Grand Emotes Pack. Contains one emote, drawn randomly from all Cartel Market emotes.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140978628145954585" Status="Changed">
+    <Fqn NodeId="16140978628145954585">abl.mtx.pack.superpack.bsg.mount_bronze</Fqn>
+    <Name Id="3726579913981952">Opening Pack</Name>
+    <Description Id="3726579913981953">Right-click to open this Bronze Mount Pack. Contains one Bronze, Silver, or Gold Quality Vehicle or Mount, drawn randomly from all Cartel Market Vehicles and Mounts.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141052998803062347" Status="Changed">
+    <Fqn NodeId="16141052998803062347">abl.mtx.pack.superpack.bsg.mount_gold</Fqn>
+    <Name Id="3726575619014656">Opening Pack</Name>
+    <Description Id="3726575619014657">Right-click to open this Gold Mount Pack. Contains one Gold Quality Vehicle or Mount, drawn randomly from all Cartel Market Vehicles and Mounts.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141002807951284267" Status="Changed">
+    <Fqn NodeId="16141002807951284267">abl.mtx.pack.superpack.bsg.mount_silver</Fqn>
+    <Name Id="3726571324047360">Opening Pack</Name>
+    <Description Id="3726571324047361">Right-click to open this Silver Mount Pack. Contains one Silver or Gold Quality Vehicle or Mount, drawn randomly from all Cartel Market Vehicles and Mounts.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140918548984850824" Status="Changed">
+    <Fqn NodeId="16140918548984850824">abl.mtx.pack.superpack.bsg.pets</Fqn>
+    <Name Id="3744575826952192">Opening Pack</Name>
+    <Description Id="3744575826952193">Right-click to open this Grand Pets Pack. Contains one pet, drawn randomly from all Cartel Market pets.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140990025671512048" Status="Changed">
+    <Fqn NodeId="16140990025671512048">abl.mtx.pack.superpack.bsg.starfighter</Fqn>
+    <Name Id="3750464227115008">Opening Pack</Name>
+    <Description Id="3750464227115009">Right-click to open this Grand Galactic Starfighter Pack. Contains one Galactic Starfighter item drawn randomly from all Cartel Market Galactic Starfighter items.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140968254327913093" Status="Changed">
+    <Fqn NodeId="16140968254327913093">abl.mtx.pack.superpack.bsg.titles</Fqn>
+    <Name Id="3745202892177408">Opening Pack</Name>
+    <Description Id="3745202892177409">Right-click to open this Grand Titles Pack. Contains one title, drawn randomly from all Cartel Market titles.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141109996499129465" Status="Changed">
+    <Fqn NodeId="16141109996499129465">abl.mtx.pack.superpack.bsg.toys</Fqn>
+    <Name Id="3745215777079296">Opening Pack</Name>
+    <Description Id="3745215777079297">Right-click to open this Grand Toys Pack. Contains one toy, drawn randomly from all Cartel Market toys.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141084217194722334" Status="Changed">
+    <Fqn NodeId="16141084217194722334">abl.mtx.pack.superpack.bsg.weapons</Fqn>
+    <Name Id="3744648841396224">Opening Pack</Name>
+    <Description Id="3744648841396225">Right-click to open this Grand Weapons Pack. Contains one Weapon, drawn randomly from all Cartel Market Weapons.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140976781357137011" Status="Changed">
+    <Fqn NodeId="16140976781357137011">abl.mtx.pack.superpack.cc_skin</Fqn>
+    <Name Id="3410796738510848">Opening Pack</Name>
+    <Description Id="3410796738510849">Right-click to open this Grand Companion Customization Pack. This pack contains assorted companion customizations from the Cartel, Contraband, and Bounty Packs.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141009485498782720" Status="Changed">
+    <Fqn NodeId="16141009485498782720">abl.mtx.pack.superpack.crystals</Fqn>
+    <Name Id="3410779558641664">Opening Pack</Name>
+    <Description Id="3410779558641665">Right-click to open this Grand Crystal Pack. Contains one Color Crystal, drawn randomly from the Cartel, Contraband, and Bounty Packs found on the Cartel Market.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140939338973591755" Status="Changed">
+    <Fqn NodeId="16140939338973591755">abl.mtx.pack.superpack.crystals_2</Fqn>
+    <Name Id="3630299632107520">Opening Pack</Name>
+    <Description Id="3630299632107521">Right-click to open this Grand Crystal Pack. Contains one Color Crystal, drawn randomly from the Starfighter, Stronghold, and Shadow Packs found on the Cartel Market.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140940152819249669" Status="Changed">
+    <Fqn NodeId="16140940152819249669">abl.mtx.pack.superpack.decorations</Fqn>
+    <Name Id="3663216261464064">Opening Pack</Name>
+    <Description Id="3663216261464065">Right-click to open this Grand Decorations Pack.</Description>
+    <Icon Status="Removed">mtx_superpack_decorations</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141014300897902737" Status="Changed">
+    <Fqn NodeId="16141014300897902737">abl.mtx.pack.superpack.dyes</Fqn>
+    <Name Id="3410775263674368">Opening Pack</Name>
+    <Description Id="3410775263674369">Right-click to open this Grand Dye Module Kit. Contains one Dye Module, drawn randomly from the Cartel, Contraband, and Bounty Packs found on the Cartel Market.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140972356115058852" Status="Changed">
+    <Fqn NodeId="16140972356115058852">abl.mtx.pack.superpack.dyes_2</Fqn>
+    <Name Id="3630312517009408">Opening Pack</Name>
+    <Description Id="3630312517009409">Right-click to open this Grand Dye Module Kit. Contains one Dye Module, drawn randomly from the Starfighter, Stronghold, and Shadow Packs found on the Cartel Market.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141155373468391779" Status="Changed">
+    <Fqn NodeId="16141155373468391779">abl.mtx.pack.superpack.emotes</Fqn>
+    <Name Id="3410783853608960">Opening Pack</Name>
+    <Description Id="3410783853608961">Right-click to open this Grand Emotes Pack. Contains one Emote, drawn randomly from the Cartel, Contraband, and Bounty Packs found on the Cartel Market.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141046404037453552" Status="Changed">
+    <Fqn NodeId="16141046404037453552">abl.mtx.pack.superpack.emotes_2</Fqn>
+    <Name Id="3630303927074816">Opening Pack</Name>
+    <Description Id="3630303927074817">Right-click to open this Grand Emotes Pack. Contains one Emote, drawn randomly from the Starfighter, Stronghold, and Shadow Packs found on the Cartel Market.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140930633757712690" Status="Changed">
+    <Fqn NodeId="16140930633757712690">abl.mtx.pack.superpack.grand_starfighter</Fqn>
+    <Name Id="3662288548528128">Opening Pack</Name>
+    <Description Id="3662288548528129">Contains a selection of items drawn randomly from the Dogfighter's, Wingman's, Galactic Ace's, Hotshot's and Space Jockey's Starfighter's Packs found on the Cartel Market.</Description>
+    <Icon Status="Removed">mtx_superpack_starfighter</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141048062193429638" Status="Changed">
+    <Fqn NodeId="16141048062193429638">abl.mtx.pack.superpack.grand_stronghold</Fqn>
+    <Name Id="3672922887553024">Opening Pack</Name>
+    <Description Id="3672922887553025">Right-click to open this Grand Stronghold Pack. This pack contains 4 items, including 1 boost item, 1 reputation item, 1 complete armor set, and 1 rare bonus item.</Description>
+    <Icon Status="Removed">mtx_superpack_stronghold</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140998312084775491" Status="Changed">
+    <Fqn NodeId="16140998312084775491">abl.mtx.pack.superpack.gsf</Fqn>
+    <Name Id="3410805328445440">Opening Pack</Name>
+    <Description Id="3410805328445441">Right-click to open this Grand Starfighter Pack. This pack contains assorted Galactic Starfighter upgrades from the Starfighter Packs.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141000390118226876" Status="Changed">
+    <Fqn NodeId="16141000390118226876">abl.mtx.pack.superpack.kotor</Fqn>
+    <Name Id="3585172410728448">Opening Pack</Name>
+    <Description Id="3585172410728449">Right-click to open this Galactic Legends Pack. This pack contains 1 random complete armor set, plus a chance to obtain an additional armor set.</Description>
+    <Icon Status="Removed">mtx_kotor_superpack</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141044867603741569" Status="Changed">
+    <Fqn NodeId="16141044867603741569">abl.mtx.pack.superpack.mounts</Fqn>
+    <Name Id="3410036529299456">Opening Pack</Name>
+    <Description Id="3410036529299457">Right-click to open this Grand Mounts Pack. Contains one Mount, drawn randomly from the Cartel, Contraband, and Bounty Packs found on the Cartel Market.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141079699937023331" Status="Changed">
+    <Fqn NodeId="16141079699937023331">abl.mtx.pack.superpack.mounts_2</Fqn>
+    <Name Id="3630308222042112">Opening Pack</Name>
+    <Description Id="3630308222042113">Right-click to open this Grand Mounts Pack. Contains one Mount, drawn randomly from the Starfighter, Stronghold, and Shadow Packs found on the Cartel Market.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141115894552071104" Status="Changed">
+    <Fqn NodeId="16141115894552071104">abl.mtx.pack.superpack.pets</Fqn>
+    <Name Id="3410788148576256">Opening Pack</Name>
+    <Description Id="3410788148576257">Right-click to open this Grand Pets Pack. Contains one Pet, drawn randomly from the Cartel, Contraband, and Bounty Packs found on the Cartel Market.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141137282641637892" Status="Changed">
+    <Fqn NodeId="16141137282641637892">abl.mtx.pack.superpack.pets_2</Fqn>
+    <Name Id="3630316811976704">Opening Pack</Name>
+    <Description Id="3630316811976705">Right-click to open this Grand Pets Pack. Contains one Pet, drawn randomly from the Starfighter, Stronghold, and Shadow Packs found on the Cartel Market.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140961264682917094" Status="Changed">
+    <Fqn NodeId="16140961264682917094">abl.mtx.pack.superpack.rest_recharge</Fqn>
+    <Name Id="3410792443543552">Opening Pack</Name>
+    <Description Id="3410792443543553">Right-click to open this Grand Rest &amp; Recharge Pack. This pack contains assorted Rest &amp; Recharge items from the Cartel, Contraband, and Bounty Packs.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141083783198484709" Status="Changed">
+    <Fqn NodeId="16141083783198484709">abl.mtx.pack.superpack.superpack</Fqn>
+    <Name Id="3360433951997952">Opening Pack</Name>
+    <Description Id="3360433951997953">Right-click to open this Grand Acquisitions Pack. This pack contains 4 items, including 1 boost item, 1 reputation item, 1 complete armor set, and 1 rare bonus item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140970187298626127" Status="Changed">
+    <Fqn NodeId="16140970187298626127">abl.mtx.pack.superpack.weapons</Fqn>
+    <Name Id="3410801033478144">Opening Pack</Name>
+    <Description Id="3410801033478145">Right-click to open this Grand Weapons Pack. Contains one Weapon, drawn randomly from the Cartel, Contraband, and Bounty Packs found on the Cartel Market.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141147965173029407" Status="Changed">
+    <Fqn NodeId="16141147965173029407">abl.mtx.pack.superpack.weapons_2</Fqn>
+    <Name Id="3643437937065984">Opening Pack</Name>
+    <Description Id="3643437937065985">Right-click to open this Grand Weapons Pack. Contains one Weapon, drawn randomly from the Starfighter, Stronghold, and Shadow Packs found on the Cartel Market.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16140944264629304859" Status="Changed">
+    <Fqn NodeId="16140944264629304859">abl.mtx.pack.supreme_mogul_pack</Fqn>
+    <Name Id="3291293568466944">Opening Pack</Name>
+    <Description Id="3291293568466945">Right-click to open this Supreme Mogul's Contraband Pack.  This pack contains 6 items, including 1 boost item, 1 companion gift, 1 rare crafting material, 2 rare bonus items, and 1 Contraband Resell Corporation item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141131475158352734" Status="Changed">
+    <Fqn NodeId="16141131475158352734">abl.mtx.pack.tracker_pack</Fqn>
+    <Name Id="3328518050021376">Opening Pack</Name>
+    <Description Id="3328518050021377">Right-click to open this Tracker's Bounty Pack. This pack contains 6 items, including 1 boost item or warzone consumable item, 1 companion gift, 1 rare crafting material, 2 rare bonus items, and 1 Bounty Supply Corporation item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141075463989081103" Status="Changed">
+    <Fqn NodeId="16141075463989081103">abl.mtx.pack.vice_commandant_pack</Fqn>
+    <Name Id="3267280406315008">Opening Pack</Name>
+    <Description Id="3267280406315009">Right-click to open this Vice Commandant's Contraband Pack.  This pack contains 6 items, including 1 boost item, 1 companion gift, 1 rare crafting material, 2 rare bonus items, and 1 Contraband Resale Corporation item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141040555442476752" Status="Changed">
+    <Fqn NodeId="16141040555442476752">abl.mtx.pack.wingman_pack</Fqn>
+    <Name Id="3351161117605888">Opening Pack</Name>
+    <Description Id="3351161117605889">Right-click to open this Wingman's Starfighter Pack. This pack contains 4 items, including 1 boost item or warzone consumable item, 1 companion gift,1 rare bonus item, and 1 Interplanetary Component Exchange item.</Description>
+    <Icon Status="Removed">mtx01_iconpack3</Icon>
+    <CastingTime Status="Removed">2.5</CastingTime>
+  </Ability>
+  <Ability Id="16141034312892930069" Status="Changed">
+    <Fqn NodeId="16141034312892930069">abl.npc.ability.skytrooper.cryo.carbonize_aura</Fqn>
+    <Name Id="3772020667973632">Carbonite Aura</Name>
+    <Description Id="3772020667973633"></Description>
+    <MaxRange OldValue="15">7.5</MaxRange>
+    <CooldownTime OldValue="20">30</CooldownTime>
+  </Ability>
+  <Ability Id="16141101435229730118" Status="Changed">
+    <Fqn NodeId="16141101435229730118">abl.npc.ability.skytrooper.cryo.cryo_blast</Fqn>
+    <Name Id="3772029257908224">Cryo Blast</Name>
+    <Description Id="3772029257908225">Fire a single cryo blast at the target. Has a short cast time.
+</Description>
+    <MaxRange OldValue="4">30</MaxRange>
+  </Ability>
+  <Ability Id="16140919079152513593" Status="Changed">
+    <Fqn NodeId="16140919079152513593">abl.quest.location.hutta.bronze.factory_recall.heroic_transport</Fqn>
+    <Name Id="3664255643549696">Heroic Transport</Name>
+    <Description Id="3664255643549697" OldValue="This pass allows you to travel to a safe area near the objective for the Man with the Steel Voice quest on Hutta.">This pass allows you to travel to a safe area near the objective for the Factory Recall Voice quest on Hutta.</Description>
+  </Ability>
+  <Ability Id="16140964575638023507" Status="Changed">
+    <Fqn NodeId="16140964575638023507">abl.quest.location.tatooine.world.republic.search_and_rescue.heroic_transport</Fqn>
+    <Name Id="3751430594756608">Heroic Transport</Name>
+    <Description Id="3751430594756609" OldValue="This pass allows you to travel to a safe area near the objective for the A Jawas Concern quest on Tatooine.">This pass allows you to travel to a safe area near the objective for the Search and Rescue quest on Tatooine.</Description>
+  </Ability>
+  <Ability Id="16140940271112705440" Status="New">
+    <Fqn NodeId="16140940271112705440">abl.companion.unique.mtx.iso_5.dps.aoe_attack</Fqn>
+    <Base62Id>e5LuWA8</Base62Id>
+    <Name Id="3909141793865728">Tactical Missile</Name>
+    <Description Id="3909141793865729">Fires missiles that hits all hostiles 4m around the enemy target dealing &lt;&lt;1&gt;&gt; weapon damage to up to 5 targets.</Description>
+    <DBURL>https://torcommunity.com/database/ability/e5LuWA8/tactical+missile</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>1</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.101</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.101</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>1.01</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>tacticalnuke</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>22.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140940271112705440</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141151509441275990" Status="New">
+    <Fqn NodeId="16141151509441275990">abl.companion.unique.mtx.iso_5.dps.execution_attack</Fqn>
+    <Base62Id>LkW1Gi7</Base62Id>
+    <Name Id="3909146088833024">Calculated Precision</Name>
+    <Description Id="3909146088833025">Fires a precision shot to a target with less than 30% health, dealing &lt;&lt;1&gt;&gt; weapon damage.</Description>
+    <DBURL>https://torcommunity.com/database/ability/LkW1Gi7/calculated+precision</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>4</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.428</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.428</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>4.27</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>rifleshot</Icon>
+    <MaxRange>30</MaxRange>
+    <CastingTime>1</CastingTime>
+    <CooldownTime>20</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141151509441275990</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141056578800065762" Status="New">
+    <Fqn NodeId="16141056578800065762">abl.companion.unique.mtx.iso_5.dps.single_stun</Fqn>
+    <Base62Id>uXpSVd0</Base62Id>
+    <Name Id="3909150383800320">Electro Dart</Name>
+    <Description Id="3909150383800321">Fires an electro dart stunning the target for 5 seconds. </Description>
+    <DBURL>https://torcommunity.com/database/ability/uXpSVd0/electro+dart</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>5</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>taserjolt</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>45</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141056578800065762</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141023598884276113" Status="New">
+    <Fqn NodeId="16141023598884276113">abl.companion.unique.mtx.iso_5.dps.single_target_attack</Fqn>
+    <Base62Id>aSUnmd1</Base62Id>
+    <Name Id="3909154678767616">Blast</Name>
+    <Description Id="3909154678767617">A powerful shot dealt to a single target, dealing &lt;&lt;1&gt;&gt; weapon damage.</Description>
+    <DBURL>https://torcommunity.com/database/ability/aSUnmd1/blast</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>1</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>3</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.229</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.229</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>2.29</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>terminate</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>7</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141023598884276113</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141069849196148771" Status="New">
+    <Fqn NodeId="16141069849196148771">abl.companion.unique.mtx.iso_5.dps.single_target_dot</Fqn>
+    <Base62Id>8xWQG82</Base62Id>
+    <Name Id="3909158973734912">Flame Burst</Name>
+    <Description Id="3909158973734913">Burns the target by dealing &lt;&lt;1&gt;&gt; weapon damage over a 10 second duration and causing the target to become sundered. Sundered targets have their armor reduced by 20% for 45 seconds.</Description>
+    <DBURL>https://torcommunity.com/database/ability/8xWQG82/flame+burst</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>1</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.042</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.042</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>0.42</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>5</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>5</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>45</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>3</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>scatterclip</Icon>
+    <MaxRange>30</MaxRange>
+    <ChannelingTime>1</ChannelingTime>
+    <CooldownTime>12</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141069849196148771</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141061516492629094" Status="New">
+    <Fqn NodeId="16141061516492629094">abl.companion.unique.mtx.iso_5.flurry</Fqn>
+    <Base62Id>PcH59EE</Base62Id>
+    <Name Id="3909189038505984">Colicoid Droid Flurry Attack</Name>
+    <Description Id="3909189038505985"></Description>
+    <DBURL>https://torcommunity.com/database/ability/PcH59EE/colicoid+droid+flurry+attack</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Icon>barrage</Icon>
+    <MaxRange>30</MaxRange>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141090682148137333" Status="New">
+    <Fqn NodeId="16141090682148137333">abl.companion.unique.mtx.iso_5.healer.aoe_hot</Fqn>
+    <Base62Id>TQdEp74</Base62Id>
+    <Name Id="3909163268702208">Kolto Area Scan</Name>
+    <Description Id="3909163268702209">Bursts an area 8m wide with a soothing, lingering Kolto cloud. Heals for &lt;&lt;1&gt;&gt; health over 6 seconds.</Description>
+    <DBURL>https://torcommunity.com/database/ability/TQdEp74/kolto+area+scan</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>3</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.047</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.047</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>0.95</effParam_HealingPowerCoefficient>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>6</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>healbomb</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>40</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141090682148137333</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141130944592594959" Status="New">
+    <Fqn NodeId="16141130944592594959">abl.companion.unique.mtx.iso_5.healer.channel_heal_2</Fqn>
+    <Base62Id>3yH0a8J</Base62Id>
+    <Name Id="3909562700660736">Kolto Shot</Name>
+    <Description Id="3909562700660737">Heals a friendly target for &lt;&lt;1&gt;&gt;.</Description>
+    <DBURL>https://torcommunity.com/database/ability/3yH0a8J/kolto+shot</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.036</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>0.59</effParam_HealingPowerCoefficient>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>koltodart</Icon>
+    <MaxRange>30</MaxRange>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141139844520067241" Status="New">
+    <Fqn NodeId="16141139844520067241">abl.companion.unique.mtx.iso_5.healer.single_target_heal</Fqn>
+    <Base62Id>gS25JYB</Base62Id>
+    <Name Id="3909171858636800">Quick Kolto Burst</Name>
+    <Description Id="3909171858636801">Executes a quick Kolto scan on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <DBURL>https://torcommunity.com/database/ability/gS25JYB/quick+kolto+burst</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.125</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.09</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>1.65</effParam_HealingPowerCoefficient>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>bodyguardhealproc</Icon>
+    <MaxRange>30</MaxRange>
+    <CastingTime>1.7</CastingTime>
+    <CooldownTime>10</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141139844520067241</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141139284858806328" Status="New">
+    <Fqn NodeId="16141139284858806328">abl.companion.unique.mtx.iso_5.healer.single_target_hot</Fqn>
+    <Base62Id>EA0S0A9</Base62Id>
+    <Name Id="3909176153604096">Kolto Scan Process</Name>
+    <Description Id="3909176153604097">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <DBURL>https://torcommunity.com/database/ability/EA0S0A9/kolto+scan+process</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>0.61</effParam_HealingPowerCoefficient>
+            <ablDescriptionTokenMultiplier>4</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>4</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>9</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>underworldmedicine</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>12</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141139284858806328</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140918282611549770" Status="New">
+    <Fqn NodeId="16140918282611549770">abl.companion.unique.mtx.iso_5.healer.single_target_mez</Fqn>
+    <Base62Id>IcQhvw8</Base62Id>
+    <Name Id="3909180448571392">Electro-Stasis</Name>
+    <Description Id="3909180448571393">Binds the target in a stasis field for up to 10 seconds. Damage to the target causes this effect to end prematurely. Targets may only be affected by Electro-Stasis once every 30 seconds. Target must not be suffering from periodic damage and have greater than 90% max health.</Description>
+    <DBURL>https://torcommunity.com/database/ability/IcQhvw8/electro-stasis</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>electricshield</Icon>
+    <MaxRange>30</MaxRange>
+    <CastingTime>0.5</CastingTime>
+    <CooldownTime>45</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140918282611549770</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140979654854596745" Status="New">
+    <Fqn NodeId="16140979654854596745">abl.companion.unique.mtx.iso_5.healer.single_target_shield</Fqn>
+    <Base62Id>YLXgFdA</Base62Id>
+    <Name Id="3909184743538688">Preventative Protocol</Name>
+    <Description Id="3909184743538689">Places a Kolto-powered shield around the target, preventing a moderate amount of damage for up to 20 seconds.</Description>
+    <DBURL>https://torcommunity.com/database/ability/YLXgFdA/preventative+protocol</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>recuperativenanotech</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>30</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140979654854596745</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <AbsorbCoEfficients>
+      <AbsorbCoEfficient Id="0">
+        <effParam_AmountMax>0</effParam_AmountMax>
+        <effParam_AmountMin>0</effParam_AmountMin>
+        <effParam_AmountPercent>1</effParam_AmountPercent>
+        <effParam_StandardHealthPercentMax>0.1225</effParam_StandardHealthPercentMax>
+        <effParam_StandardHealthPercentMin>0.1225</effParam_StandardHealthPercentMin>
+        <effParam_MaxDamageAbsorbed>0</effParam_MaxDamageAbsorbed>
+        <effParam_HealingPowerCoefficient>2.45</effParam_HealingPowerCoefficient>
+      </AbsorbCoEfficient>
+    </AbsorbCoEfficients>
+    <References />
+  </Ability>
+  <Ability Id="16141114607345512898" Status="New">
+    <Fqn NodeId="16141114607345512898">abl.companion.unique.mtx.iso_5.tamed_passive</Fqn>
+    <Base62Id>mh6oKJ7</Base62Id>
+    <Name Id="3909064484454400">tamed_passive</Name>
+    <Description Id="3909064484454401"></Description>
+    <DBURL>https://torcommunity.com/database/ability/mh6oKJ7/tamed_passive</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Icon>stimpack</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141173512858714938" Status="New">
+    <Fqn NodeId="16141173512858714938">abl.companion.unique.mtx.iso_5.tank.aoe_attack</Fqn>
+    <Base62Id>EaFZKyA</Base62Id>
+    <Name Id="3909193333473280">Electronics Overload</Name>
+    <Description Id="3909193333473281">Activates an explosive that deals &lt;&lt;1&gt;&gt; kinetic damage to up to 5 enemies 5m around the user. Generates a moderate amount of threat and reduces incoming damage by 50% for 10 seconds. Does not hit sleeping, lifted, or incapacitated enemies.</Description>
+    <DBURL>https://torcommunity.com/database/ability/EaFZKyA/electronics+overload</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>1</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>3</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0.5</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.106</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.106</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>1.06</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>3</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>abl_jc_sa_resonating_vibrations</Icon>
+    <MaxRange>4</MaxRange>
+    <CooldownTime>15</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141173512858714938</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141125619130495860" Status="New">
+    <Fqn NodeId="16141125619130495860">abl.companion.unique.mtx.iso_5.tank.aoe_pull_mk2</Fqn>
+    <Base62Id>TFCwCpB</Base62Id>
+    <Name Id="3909197628440576">Multi-Grapple</Name>
+    <Description Id="3909197628440577">Fires a multi-grapple line that fires in a wide cone in front of the companion and pulls the closest three targets and generates a high amount of threat. Only affects targets that are in combat and are not in cover or have Boss Immunity.</Description>
+    <DBURL>https://torcommunity.com/database/ability/TFCwCpB/multi-grapple</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>grapple</Icon>
+    <MinRange>4</MinRange>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>40</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141125619130495860</SharedCooldown>
+    <TargetArc>90</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140948880989294217" Status="New">
+    <Fqn NodeId="16140948880989294217">abl.companion.unique.mtx.iso_5.tank.aoe_taunt</Fqn>
+    <Base62Id>YGuR9ND</Base62Id>
+    <Name Id="3909206218375168">Provoking Flare</Name>
+    <Description Id="3909206218375169">Fires a flare taunting attacking enemies forcing them to attack your companion and generates a moderate amount of threat.</Description>
+    <DBURL>https://torcommunity.com/database/ability/YGuR9ND/provoking+flare</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>abl_bhtr_meco_supercharged_reserves</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>20</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140948880989294217</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140979705061969931" Status="New">
+    <Fqn NodeId="16140979705061969931">abl.companion.unique.mtx.iso_5.tank.single_target_attack</Fqn>
+    <Base62Id>2n02xu5</Base62Id>
+    <Name Id="3909210513342464">Powered Shot</Name>
+    <Description Id="3909210513342465">Blasts the target, dealing &lt;&lt;1&gt;&gt; weapon damage, heals for 25% of damage dealt and generates a moderate amount of threat.</Description>
+    <DBURL>https://torcommunity.com/database/ability/2n02xu5/powered+shot</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>1</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0.5</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.09</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.09</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>1.64</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0.25</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>abl_tr_co_blazing_celerity</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>7.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140979705061969931</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140997772109615511" Status="New">
+    <Fqn NodeId="16140997772109615511">abl.companion.unique.mtx.iso_5.tank.single_target_taunt</Fqn>
+    <Base62Id>bn7tVl4</Base62Id>
+    <Name Id="3909201923407872">Reinforcing Taunt</Name>
+    <Description Id="3909201923407873">Taunts the target, forcing it to attack the companion for 6 seconds. Also reinforces the companion by placing an absorb shield that absorbs a moderate amount of damage.</Description>
+    <DBURL>https://torcommunity.com/database/ability/bn7tVl4/reinforcing+taunt</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>abl_jc_sh_martial_prowess</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>12</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140997772109615511</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <AbsorbCoEfficients>
+      <AbsorbCoEfficient Id="0">
+        <effParam_AmountMax>0</effParam_AmountMax>
+        <effParam_AmountMin>0</effParam_AmountMin>
+        <effParam_AmountPercent>1</effParam_AmountPercent>
+        <effParam_StandardHealthPercentMax>0.05</effParam_StandardHealthPercentMax>
+        <effParam_StandardHealthPercentMin>0.05</effParam_StandardHealthPercentMin>
+        <effParam_MaxDamageAbsorbed>0</effParam_MaxDamageAbsorbed>
+        <effParam_HealingPowerCoefficient>1</effParam_HealingPowerCoefficient>
+      </AbsorbCoEfficient>
+    </AbsorbCoEfficients>
+    <References />
+  </Ability>
+  <Ability Id="16141046581534006138" Status="New">
+    <Fqn NodeId="16141046581534006138">abl.exp.seasons.01.ep_03.novo_tanek_boss.novo.force_rift_no_knockback</Fqn>
+    <Base62Id>UXjUqr8</Base62Id>
+    <Name Id="3926437627166720">Force Rift</Name>
+    <Description Id="3926437627166721"></Description>
+    <DBURL>https://torcommunity.com/database/ability/UXjUqr8/force+rift</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <MaxRange>6</MaxRange>
+    <CooldownTime>30</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141046581534006138</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140967561954656573" Status="New">
+    <Fqn NodeId="16140967561954656573">abl.exp.seasons.01.ep_16.boss.arcann.surrender_p1</Fqn>
+    <Base62Id>FG5ffNA</Base62Id>
+    <Name Id="3926343137886208">surrender_p1</Name>
+    <Description Id="3926343137886209"></Description>
+    <DBURL>https://torcommunity.com/database/ability/FG5ffNA/surrender_p1</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141120489845383534" Status="New">
+    <Fqn NodeId="16141120489845383534">abl.exp.seasons.01.ep_16.boss.arcann.valkorion_mark_dispel</Fqn>
+    <Base62Id>Rc43yKG</Base62Id>
+    <Name Id="3919346636161024">valkorion_mark_dispel</Name>
+    <Description Id="3919346636161025"></Description>
+    <DBURL>https://torcommunity.com/database/ability/Rc43yKG/valkorion_mark_dispel</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141012370024432570" Status="New">
+    <Fqn NodeId="16141012370024432570">abl.exp.seasons.01.ep_16.followers.player_turrets.carbonite_flurry</Fqn>
+    <Base62Id>kWDzAnR</Base62Id>
+    <Name Id="3926304483180544">Carbonite Stream</Name>
+    <Description Id="3926304483180545"></Description>
+    <DBURL>https://torcommunity.com/database/ability/kWDzAnR/carbonite+stream</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>abl_bh_pt_energy_burst</Icon>
+    <MaxRange>30</MaxRange>
+    <ChannelingTime>12</ChannelingTime>
+    <CooldownTime>14</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141012370024432570</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140968388473776128" Status="New">
+    <Fqn NodeId="16140968388473776128">abl.exp.seasons.01.ep_16.followers.player_turrets.missile_flurry</Fqn>
+    <Base62Id>0EZ95JB</Base62Id>
+    <Name Id="3926003835469824">Ranged Attack</Name>
+    <Description Id="3926003835469825"></Description>
+    <DBURL>https://torcommunity.com/database/ability/0EZ95JB/ranged+attack</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <MaxRange>50</MaxRange>
+    <CooldownTime>3</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140968388473776128</SharedCooldown>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141041636675786564" Status="New">
+    <Fqn NodeId="16141041636675786564">abl.exp.seasons.01.ep_16.followers.player_turrets.turret_buff</Fqn>
+    <Base62Id>H9VPWj9</Base62Id>
+    <Name Id="3925952295862272">turret_buff</Name>
+    <Description Id="3925952295862273"></Description>
+    <DBURL>https://torcommunity.com/database/ability/H9VPWj9/turret_buff</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140907319127750510" Status="New">
+    <Fqn NodeId="16140907319127750510">abl.exp.seasons.01.ep_16.followers.summon_senya_gault_torian</Fqn>
+    <Base62Id>RhSSHR0</Base62Id>
+    <Name Id="3908819671318528">summon_senya_gault_torian</Name>
+    <Description Id="3908819671318529"></Description>
+    <DBURL>https://torcommunity.com/database/ability/RhSSHR0/summon_senya_gault_torian</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140966720088865686" Status="New">
+    <Fqn NodeId="16140966720088865686">abl.exp.seasons.01.ep_16.followers.summon_senya_gault_vette</Fqn>
+    <Base62Id>bdjCeh6</Base62Id>
+    <Name Id="3908811081383936">summon_senya_gault_vette</Name>
+    <Description Id="3908811081383937"></Description>
+    <DBURL>https://torcommunity.com/database/ability/bdjCeh6/summon_senya_gault_vette</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141135786570928472" Status="New">
+    <Fqn NodeId="16141135786570928472">abl.exp.seasons.01.ep_16.followers.summon_senya_torian_vette</Fqn>
+    <Base62Id>MD7dVNA</Base62Id>
+    <Name Id="3908815376351232">summon_senya_torian_vette</Name>
+    <Description Id="3908815376351233"></Description>
+    <DBURL>https://torcommunity.com/database/ability/MD7dVNA/summon_senya_torian_vette</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141002714692356489" Status="New">
+    <Fqn NodeId="16141002714692356489">abl.exp.seasons.01.ep_16.followers.unsummon_followers</Fqn>
+    <Base62Id>YOdQHt3</Base62Id>
+    <Name Id="3908656462561280">unsummon_followers</Name>
+    <Description Id="3908656462561281"></Description>
+    <DBURL>https://torcommunity.com/database/ability/YOdQHt3/unsummon_followers</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140996588829274688" Status="New">
+    <Fqn NodeId="16140996588829274688">abl.exp.seasons.01.ep_16.player_abilities.carbonize_turret</Fqn>
+    <Base62Id>GFBrzl0</Base62Id>
+    <Name Id="3925260806127616">Portable Carbonite Turret</Name>
+    <Description Id="3925260806127617">Deploys a Portable Sentry Turret at your location to aid in combat. The Turret lasts 30 seconds and generates a high amount of threat with its attacks.</Description>
+    <DBURL>https://torcommunity.com/database/ability/GFBrzl0/portable+carbonite+turret</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>carbonize</Icon>
+    <CastingTime>2</CastingTime>
+    <CooldownTime>60</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140996588829274688</SharedCooldown>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141134866163011458" Status="New">
+    <Fqn NodeId="16141134866163011458">abl.exp.seasons.01.ep_16.player_abilities.grant_grenade</Fqn>
+    <Base62Id>WeyecD4</Base62Id>
+    <Name Id="3922387473006592">grant_grenade</Name>
+    <Description Id="3922387473006593"></Description>
+    <DBURL>https://torcommunity.com/database/ability/WeyecD4/grant_grenade</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>true</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140918675945581790" Status="New">
+    <Fqn NodeId="16140918675945581790">abl.exp.seasons.01.ep_16.player_abilities.grant_rocket</Fqn>
+    <Base62Id>tcmqV04</Base62Id>
+    <Name Id="3921408220463104">grant_rocket</Name>
+    <Description Id="3921408220463105"></Description>
+    <DBURL>https://torcommunity.com/database/ability/tcmqV04/grant_rocket</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>true</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141044390611270731" Status="New">
+    <Fqn NodeId="16141044390611270731">abl.exp.seasons.01.ep_16.player_abilities.grant_shield</Fqn>
+    <Base62Id>IpmojbA</Base62Id>
+    <Name Id="3922305868627968">grant_shield</Name>
+    <Description Id="3922305868627969"></Description>
+    <DBURL>https://torcommunity.com/database/ability/IpmojbA/grant_shield</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>true</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140995948606724036" Status="New">
+    <Fqn NodeId="16140995948606724036">abl.exp.seasons.01.ep_16.player_abilities.grant_turrets</Fqn>
+    <Base62Id>n1UvxKB</Base62Id>
+    <Name Id="3925131957108736">grant_turrets</Name>
+    <Description Id="3925131957108737"></Description>
+    <DBURL>https://torcommunity.com/database/ability/n1UvxKB/grant_turrets</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>true</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141047068738401689" Status="New">
+    <Fqn NodeId="16141047068738401689">abl.exp.seasons.01.ep_16.player_abilities.grenade</Fqn>
+    <Base62Id>cJK3GyA</Base62Id>
+    <Name Id="3922593631436800">Thermal Grenade</Name>
+    <Description Id="3922593631436801">Throws a grenade, dealing elemental damage over 10 seconds to up to 8 enemies within 8 meters of the targeted area. Additionally, standard and weak enemies are stunned by the flames.</Description>
+    <DBURL>https://torcommunity.com/database/ability/cJK3GyA/thermal+grenade</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients />
+        <ablDescriptionTokenMultiplier>3</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>10</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>basicgrenade</Icon>
+    <MaxRange>30</MaxRange>
+    <CastingTime>1</CastingTime>
+    <CooldownTime>30</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141047068738401689</SharedCooldown>
+    <TargetRule>Ground</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140945558256369982" Status="New">
+    <Fqn NodeId="16140945558256369982">abl.exp.seasons.01.ep_16.player_abilities.missile_turret</Fqn>
+    <Base62Id>Fa7AWd7</Base62Id>
+    <Name Id="3925286575931392">Portable Missile Turret</Name>
+    <Description Id="3925286575931393">Deploys a Portable Missile Turret at your location to aid in combat. The Turret lasts 30 seconds and deals a high amount of damage with it's attacks.</Description>
+    <DBURL>https://torcommunity.com/database/ability/Fa7AWd7/portable+missile+turret</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>missileblastsalvo</Icon>
+    <CastingTime>2</CastingTime>
+    <CooldownTime>60</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140945558256369982</SharedCooldown>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140966715865597062" Status="New">
+    <Fqn NodeId="16140966715865597062">abl.exp.seasons.01.ep_16.player_abilities.remove_player_abilities</Fqn>
+    <Base62Id>XeIIfh5</Base62Id>
+    <Name Id="3926514936578048">remove_player_abilities</Name>
+    <Description Id="3926514936578049"></Description>
+    <DBURL>https://torcommunity.com/database/ability/XeIIfh5/remove_player_abilities</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140914190774364981" Status="New">
+    <Fqn NodeId="16140914190774364981">abl.exp.seasons.01.ep_16.player_abilities.rocket</Fqn>
+    <Base62Id>DUigCzG</Base62Id>
+    <Name Id="3921378155692032">Anti-Personnel Rocket</Name>
+    <Description Id="3921378155692033">Fires an Anti-Personnel Rocket, which damages all hostiles within the radius of the explosion.</Description>
+    <DBURL>https://torcommunity.com/database/ability/DUigCzG/anti-personnel+rocket</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>tacticalnuke</Icon>
+    <MaxRange>30</MaxRange>
+    <CastingTime>1.8</CastingTime>
+    <CooldownTime>15</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140914190774364981</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141078637371174993" Status="New">
+    <Fqn NodeId="16141078637371174993">abl.exp.seasons.01.ep_16.player_abilities.shield</Fqn>
+    <Base62Id>KR0dQ80</Base62Id>
+    <Name Id="3922314458562560">Raise/Lower Shield</Name>
+    <Description Id="3922314458562561">Raising your shield blocks ability use and slows movement speed, but lets you block and redirect attacks in your forward arc.</Description>
+    <DBURL>https://torcommunity.com/database/ability/KR0dQ80/raise%2flower+shield</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>badge</Icon>
+    <GCD>1</GCD>
+    <OverridesGCD>true</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>-7523287456988240524</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141018544809063386" Status="New">
+    <Fqn NodeId="16141018544809063386">abl.exp.seasons.01.ep_16.player_abilities.tank_turret</Fqn>
+    <Base62Id>sZDM1D9</Base62Id>
+    <Name Id="3925136252076032">Portable Sentry Turret</Name>
+    <Description Id="3925136252076033">Deploys a Portable Sentry Turret at your location to aid in combat. The Turret lasts 30 seconds and generates a high amount of threat with its attacks.</Description>
+    <DBURL>https://torcommunity.com/database/ability/sZDM1D9/portable+sentry+turret</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>abl_bhtr_meco_burst_mode</Icon>
+    <CastingTime>2</CastingTime>
+    <CooldownTime>60</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141018544809063386</SharedCooldown>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141076713757387177" Status="New">
+    <Fqn NodeId="16141076713757387177">abl.exp.seasons.01.ep_16.player_abilities.thermal_grenade</Fqn>
+    <Base62Id>gQdMXy0</Base62Id>
+    <Name Id="3922404652875776">Thermal Grenade</Name>
+    <Description Id="3922404652875777">Throws a grenade, dealing &lt;&lt;1&gt;&gt; elemental damage over 9 seconds to up to 8 enemies within 8 meters of the targeted area. Additionally, standard and weak enemies are stunned by the flames.</Description>
+    <DBURL>https://torcommunity.com/database/ability/gQdMXy0/thermal+grenade</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>3</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.2</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.2</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>0</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>3</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>3</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>9</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>basicgrenade</Icon>
+    <MaxRange>30</MaxRange>
+    <CastingTime>10</CastingTime>
+    <CooldownTime>30</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141076713757387177</SharedCooldown>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Ground</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141096561831551918" Status="New">
+    <Fqn NodeId="16141096561831551918">abl.exp.seasons.01.ep_16.trash.knights.arcann_guards.passive</Fqn>
+    <Base62Id>hgCzukD</Base62Id>
+    <Name Id="3918436103094272">passive</Name>
+    <Description Id="3918436103094273"></Description>
+    <DBURL>https://torcommunity.com/database/ability/hgCzukD/passive</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140976378675706096" Status="New">
+    <Fqn NodeId="16140976378675706096">abl.exp.seasons.01.ep_16.trash.knights.taunt</Fqn>
+    <Base62Id>y5ntkJV</Base62Id>
+    <Name Id="3911774608818176">taunt</Name>
+    <Description Id="3911774608818177"></Description>
+    <DBURL>https://torcommunity.com/database/ability/y5ntkJV/taunt</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141176409747539566" Status="New">
+    <Fqn NodeId="16141176409747539566">abl.exp.seasons.01.ep_16.trash.turrets.flurry</Fqn>
+    <Base62Id>RiRgpsC</Base62Id>
+    <Name Id="3911534090649600">Blaster Bolt</Name>
+    <Description Id="3911534090649601"></Description>
+    <DBURL>https://torcommunity.com/database/ability/RiRgpsC/blaster+bolt</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <MaxRange>60</MaxRange>
+    <CooldownTime>1.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141176409747539566</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141174026125753851" Status="New">
+    <Fqn NodeId="16141174026125753851">abl.exp.seasons.01.ep_16.trash.turrets.shield</Fqn>
+    <Base62Id>zTxzDH1</Base62Id>
+    <Name Id="3911770313850880">Shielded</Name>
+    <Description Id="3911770313850881"></Description>
+    <DBURL>https://torcommunity.com/database/ability/zTxzDH1/shielded</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141074272498118659" Status="New">
+    <Fqn NodeId="16141074272498118659">abl.exp.seasons.01.ep_16.trash.turrets.taunt</Fqn>
+    <Base62Id>0t1o8O8</Base62Id>
+    <Name Id="3911486846009344">taunt</Name>
+    <Description Id="3911486846009345"></Description>
+    <DBURL>https://torcommunity.com/database/ability/0t1o8O8/taunt</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141079259769867268" Status="New">
+    <Fqn NodeId="16141079259769867268">abl.exp.seasons.02.ep_00.ambient.crab_passives</Fqn>
+    <Base62Id>10m2KX1</Base62Id>
+    <Name Id="3909322182492160">crab_passives</Name>
+    <Description Id="3909322182492161"></Description>
+    <DBURL>https://torcommunity.com/database/ability/10m2KX1/crab_passives</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Icon>animalinsectmouthpart</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141148163554664477" Status="New">
+    <Fqn NodeId="16141148163554664477">abl.exp.seasons.02.ep_00.ambient.young_crab_passives</Fqn>
+    <Base62Id>7U2VExC</Base62Id>
+    <Name Id="3909433851641856">young_crab_passives</Name>
+    <Description Id="3909433851641857"></Description>
+    <DBURL>https://torcommunity.com/database/ability/7U2VExC/young_crab_passives</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141077252052795981" Status="New">
+    <Fqn NodeId="16141077252052795981">abl.exp.seasons.02.ep_00.asteroid_base.soldier_droid_bell_ring</Fqn>
+    <Base62Id>JSAzRXT</Base62Id>
+    <Name Id="3909133203931136">Backhand</Name>
+    <Description Id="3909133203931137"></Description>
+    <DBURL>https://torcommunity.com/database/ability/JSAzRXT/backhand</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>backhand</Icon>
+    <MaxRange>4</MaxRange>
+    <CooldownTime>30</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141077252052795981</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141117038185332169" Status="New">
+    <Fqn NodeId="16141117038185332169">abl.exp.seasons.02.ep_00.asteroid_base.soldier_droid_hilt_strike</Fqn>
+    <Base62Id>oRqAIsD</Base62Id>
+    <Name Id="3909128908963840">Hilt Strike</Name>
+    <Description Id="3909128908963841">Hilt strike that stuns the target briefly. Will not stun if used by Standard/Weak mobs.</Description>
+    <DBURL>https://torcommunity.com/database/ability/oRqAIsD/hilt+strike</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>hiltStrike</Icon>
+    <MaxRange>4</MaxRange>
+    <CooldownTime>30</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141117038185332169</SharedCooldown>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141163240691646308" Status="New">
+    <Fqn NodeId="16141163240691646308">abl.exp.seasons.02.ep_00.asteroid_base.soldier_droid_melee_leap</Fqn>
+    <Base62Id>PBy2KxI</Base62Id>
+    <Name Id="3909107434127360">Leap</Name>
+    <Description Id="3909107434127361">Leaps to the target, immobilizing it for 1.5 seconds and dealing low damage.</Description>
+    <DBURL>https://torcommunity.com/database/ability/PBy2KxI/leap</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>forceCharge</Icon>
+    <MinRange>8</MinRange>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>30</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141163240691646308</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141017681464511278" Status="New">
+    <Fqn NodeId="16141017681464511278">abl.exp.seasons.02.ep_00.hk_55.charge_attack</Fqn>
+    <Base62Id>BilyW0G</Base62Id>
+    <Name Id="3913445351096320">Charging In</Name>
+    <Description Id="3913445351096321">Charge to a distant target, immobilizing it for 2 seconds.</Description>
+    <DBURL>https://torcommunity.com/database/ability/BilyW0G/charging+in</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>hk51shadowstrike</Icon>
+    <MinRange>4</MinRange>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>15</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141017681464511278</SharedCooldown>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140911910720499159" Status="New">
+    <Fqn NodeId="16140911910720499159">abl.exp.seasons.02.ep_00.hk_55.flurry</Fqn>
+    <Base62Id>rzQkgkT</Base62Id>
+    <Name Id="3913436761161728">Rifle Blast</Name>
+    <Description Id="3913436761161729">A series of ranged shots for an NPC</Description>
+    <DBURL>https://torcommunity.com/database/ability/rzQkgkT/rifle+blast</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>hk51rifleblast</Icon>
+    <MaxRange>30</MaxRange>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140918033104098654" Status="New">
+    <Fqn NodeId="16140918033104098654">abl.exp.seasons.02.ep_00.hk_55.full_auto</Fqn>
+    <Base62Id>NjNTpsE</Base62Id>
+    <Name Id="3913441056129024">Extreme Prejudice</Name>
+    <Description Id="3913441056129025">Fires a continuous stream of bolts that deal heavy damage for up to 4 seconds.</Description>
+    <DBURL>https://torcommunity.com/database/ability/NjNTpsE/extreme+prejudice</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>fullAuto</Icon>
+    <MaxRange>30</MaxRange>
+    <ChannelingTime>4</ChannelingTime>
+    <CooldownTime>6</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140918033104098654</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140968336592425138" Status="New">
+    <Fqn NodeId="16140968336592425138">abl.exp.seasons.02.ep_00.hk_55.instant_damage</Fqn>
+    <Base62Id>ib1h0IF</Base62Id>
+    <Name Id="3913449646063616">Rail Blast</Name>
+    <Description Id="3913449646063617">Blasts a target for &lt;&lt;1&gt;&gt; energy damage.</Description>
+    <DBURL>https://torcommunity.com/database/ability/ib1h0IF/rail+blast</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>2</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.125</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.125</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>1.25</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>hk51hunterkiller</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>6</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140968336592425138</SharedCooldown>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141030859936991167" Status="New">
+    <Fqn NodeId="16141030859936991167">abl.exp.seasons.02.ep_00.hk_55.long_cast_damage</Fqn>
+    <Base62Id>luSfMmC</Base62Id>
+    <Name Id="3913471120900096">Assassinate</Name>
+    <Description Id="3913471120900097">HK-55 takes careful aim at a target strong, standard, or weak enemy. Deals excessive damage. Not usable in combat.</Description>
+    <DBURL>https://torcommunity.com/database/ability/luSfMmC/assassinate</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>hk51assassinate</Icon>
+    <MaxRange>30</MaxRange>
+    <CastingTime>6</CastingTime>
+    <CooldownTime>30</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141030859936991167</SharedCooldown>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140929552929698887" Status="New">
+    <Fqn NodeId="16140929552929698887">abl.exp.seasons.02.ep_00.hk_55.ranged_execute</Fqn>
+    <Base62Id>HxJwzN8</Base62Id>
+    <Name Id="3913466825932800">Execute</Name>
+    <Description Id="3913466825932801">Deals &lt;&lt;1&gt;&gt; weapon damage to a target below 30% health.</Description>
+    <DBURL>https://torcommunity.com/database/ability/HxJwzN8/execute</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IsSpecialAbility>True</effParam_IsSpecialAbility>
+            <effParam_IgnoreDualWieldModifier>True</effParam_IgnoreDualWieldModifier>
+            <effParam_FlurryBlowsMin>1</effParam_FlurryBlowsMin>
+            <effParam_FlurryBlowsMax>1</effParam_FlurryBlowsMax>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.456</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.456</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierFixedMax>0</effParam_AmountModifierFixedMax>
+            <effParam_AmountModifierFixedMin>0</effParam_AmountModifierFixedMin>
+            <effParam_AmountModifierPercent>2.04</effParam_AmountModifierPercent>
+            <effParam_Coefficient>4.56</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>hk51calibratedshot</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>15</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140929552929698887</SharedCooldown>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141147951137610166" Status="New">
+    <Fqn NodeId="16141147951137610166">abl.exp.seasons.02.ep_00.hk_55.rest_and_recharge</Fqn>
+    <Base62Id>jjcKneA</Base62Id>
+    <Name Id="3913505480638464">Weapons Check</Name>
+    <Description Id="3913505480638465">Regenerates health while channeling. Not usable in combat.</Description>
+    <DBURL>https://torcommunity.com/database/ability/jjcKneA/weapons+check</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>hk51terminate</Icon>
+    <ChannelingTime>15</ChannelingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141068285844493418" Status="New">
+    <Fqn NodeId="16141068285844493418">abl.exp.seasons.02.ep_00.hk_55.single_stun</Fqn>
+    <Base62Id>QfGLGH6</Base62Id>
+    <Name Id="3913462530965504">Electro Dart</Name>
+    <Description Id="3913462530965505">Fires an electro dart stunning the target for 5 seconds. </Description>
+    <DBURL>https://torcommunity.com/database/ability/QfGLGH6/electro+dart</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>5</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablCoefficients />
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>taserjolt</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>45</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141068285844493418</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141063570583411546" Status="New">
+    <Fqn NodeId="16141063570583411546">abl.exp.seasons.02.ep_00.hk_55.stun_attack</Fqn>
+    <Base62Id>MbkVPSC</Base62Id>
+    <Name Id="3913458235998208">Blindside</Name>
+    <Description Id="3913458235998209">HK-51 takes advantage of a distracted target, firing a well placed decisive shot for &lt;&lt;1&gt;&gt; weapon damage. Can only be used on stunned targets.</Description>
+    <DBURL>https://torcommunity.com/database/ability/MbkVPSC/blindside</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IsSpecialAbility>True</effParam_IsSpecialAbility>
+            <effParam_IgnoreDualWieldModifier>False</effParam_IgnoreDualWieldModifier>
+            <effParam_FlurryBlowsMin>1</effParam_FlurryBlowsMin>
+            <effParam_FlurryBlowsMax>1</effParam_FlurryBlowsMax>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.248</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.248</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierFixedMax>0</effParam_AmountModifierFixedMax>
+            <effParam_AmountModifierFixedMin>0</effParam_AmountModifierFixedMin>
+            <effParam_AmountModifierPercent>0.65</effParam_AmountModifierPercent>
+            <effParam_Coefficient>2.48</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>hk51blindside</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>15</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141063570583411546</SharedCooldown>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140945205045572489" Status="New">
+    <Fqn NodeId="16140945205045572489">abl.exp.seasons.02.ep_00.hk_55.underwater.dispel_passives</Fqn>
+    <Base62Id>YJF9HI5</Base62Id>
+    <Name Id="3920506277330944">dispel_passives</Name>
+    <Description Id="3920506277330945"></Description>
+    <DBURL>https://torcommunity.com/database/ability/YJF9HI5/dispel_passives</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140906996901411497" Status="New">
+    <Fqn NodeId="16140906996901411497">abl.exp.seasons.02.ep_00.hk_55.underwater.passives</Fqn>
+    <Base62Id>gVhiFc5</Base62Id>
+    <Name Id="3920136910143488">passives</Name>
+    <Description Id="3920136910143489"></Description>
+    <DBURL>https://torcommunity.com/database/ability/gVhiFc5/passives</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>stimpack</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141050537457513703" Status="New">
+    <Fqn NodeId="16141050537457513703">abl.exp.seasons.02.ep_00.ignore_falling_damage</Fqn>
+    <Base62Id>vtJ8ul1</Base62Id>
+    <Name Id="3909854758436864">ignore_falling_damage</Name>
+    <Description Id="3909854758436865"></Description>
+    <DBURL>https://torcommunity.com/database/ability/vtJ8ul1/ignore_falling_damage</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>levitated</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141137666362998926" Status="New">
+    <Fqn NodeId="16141137666362998926">abl.exp.seasons.02.ep_00.riot_droid_bash</Fqn>
+    <Base62Id>Ze0z5HG</Base62Id>
+    <Name Id="3921137637523456">Backhand</Name>
+    <Description Id="3921137637523457"></Description>
+    <DBURL>https://torcommunity.com/database/ability/Ze0z5HG/backhand</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>backhand</Icon>
+    <MaxRange>4</MaxRange>
+    <CooldownTime>15</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141137666362998926</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140988394126552145" Status="New">
+    <Fqn NodeId="16140988394126552145">abl.exp.seasons.02.ep_00.riot_droid_flurry</Fqn>
+    <Base62Id>KQoT0sD</Base62Id>
+    <Name Id="3921081802948608">Basic Attack</Name>
+    <Description Id="3921081802948609"></Description>
+    <DBURL>https://torcommunity.com/database/ability/KQoT0sD/basic+attack</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <MaxRange>6</MaxRange>
+    <CooldownTime>0.75</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140988394126552145</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140931450028063760" Status="New">
+    <Fqn NodeId="16140931450028063760">abl.exp.seasons.02.ep_00.riot_droid_stab</Fqn>
+    <Base62Id>47pQhg2</Base62Id>
+    <Name Id="3921124752621568">Basic Attack</Name>
+    <Description Id="3921124752621569"></Description>
+    <DBURL>https://torcommunity.com/database/ability/47pQhg2/basic+attack</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <MaxRange>6</MaxRange>
+    <CooldownTime>9</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140931450028063760</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141061609583812582" Status="New">
+    <Fqn NodeId="16141061609583812582">abl.exp.seasons.02.ep_00.riot_shield_passive</Fqn>
+    <Base62Id>vXzuQ03</Base62Id>
+    <Name Id="3920867054583808">riot_shield_passive</Name>
+    <Description Id="3920867054583809"></Description>
+    <DBURL>https://torcommunity.com/database/ability/vXzuQ03/riot_shield_passive</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141030930987354063" Status="New">
+    <Fqn NodeId="16141030930987354063">abl.exp.seasons.02.ep_00.sea_floor.force_leap</Fqn>
+    <Base62Id>pmSOvXC</Base62Id>
+    <Name Id="3908755246809088">Force Leap</Name>
+    <Description Id="3908755246809089">Leaps to the target, immobilizing it for 1.5 seconds and dealing low damage.</Description>
+    <DBURL>https://torcommunity.com/database/ability/pmSOvXC/force+leap</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>forceCharge</Icon>
+    <MinRange>8</MinRange>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>30</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141030930987354063</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140923199865405588" Status="New">
+    <Fqn NodeId="16140923199865405588">abl.exp.seasons.02.ep_00.sea_floor.mon_cal_idle</Fqn>
+    <Base62Id>bC3MoY1</Base62Id>
+    <Name Id="3908935635435520">Underwater</Name>
+    <Description Id="3908935635435521"></Description>
+    <DBURL>https://torcommunity.com/database/ability/bC3MoY1/underwater</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>glass</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141020016514932243" Status="New">
+    <Fqn NodeId="16141020016514932243">abl.exp.seasons.02.ep_00.sea_floor.nautolan_idle</Fqn>
+    <Base62Id>4vxNh2F</Base62Id>
+    <Name Id="3908982880075776">Underwater</Name>
+    <Description Id="3908982880075777"></Description>
+    <DBURL>https://torcommunity.com/database/ability/4vxNh2F/underwater</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Icon>glass</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141132814639658080" Status="New">
+    <Fqn NodeId="16141132814639658080">abl.exp.seasons.02.ep_00.sea_floor.selkath_idle</Fqn>
+    <Base62Id>O7Jzn66</Base62Id>
+    <Name Id="3908841146155008">Underwater</Name>
+    <Description Id="3908841146155009"></Description>
+    <DBURL>https://torcommunity.com/database/ability/O7Jzn66/underwater</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>glass</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141080379364199254" Status="New">
+    <Fqn NodeId="16141080379364199254">abl.exp.seasons.02.ep_00.teleport_zoom_to_water</Fqn>
+    <Base62Id>Lii7zuL</Base62Id>
+    <Name Id="3909919182946304">teleport_zoom_to_water</Name>
+    <Description Id="3909919182946305"></Description>
+    <DBURL>https://torcommunity.com/database/ability/Lii7zuL/teleport_zoom_to_water</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <MaxRange>70</MaxRange>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141084990405554205" Status="New">
+    <Fqn NodeId="16141084990405554205">abl.flashpoint.star_fortress.boss.expert_boss.final_platform.atk_triple_impale_no_ach_grant</Fqn>
+    <Base62Id>7J23ba7</Base62Id>
+    <Name Id="3932502120988672">Impaling Strikes</Name>
+    <Description Id="3932502120988673"></Description>
+    <DBURL>https://torcommunity.com/database/ability/7J23ba7/impaling+strikes</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>bladerush</Icon>
+    <MaxRange>4</MaxRange>
+    <ChannelingTime>3</ChannelingTime>
+    <CooldownTime>27</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141084990405554205</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140945157895740410" Status="New">
+    <Fqn NodeId="16140945157895740410">abl.itm.relic.unique.dps_healer.ilvl_100</Fqn>
+    <Base62Id>zMstfOQ</Base62Id>
+    <Name Id="3914184085471232">Powerful Critical Surge</Name>
+    <Description Id="3914184085471233">Healing an ally or performing a damaging attack on an enemy both have a 30% chance to grant 413 Power and Critical Rating for 6 seconds. This effect can only occur once every 20 seconds.</Description>
+    <DBURL>https://torcommunity.com/database/ability/zMstfOQ/powerful+critical+surge</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>6</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>blackandorangesphere</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140940978987444717" Status="New">
+    <Fqn NodeId="16140940978987444717">abl.itm.relic.unique.tank.ilvl_100</Fqn>
+    <Base62Id>xQaNKKD</Base62Id>
+    <Name Id="3914188380438528">Shield Boost</Name>
+    <Description Id="3914188380438529">Incoming attacks have a 30% chance to increase Shield Rating and Absorb Rating by 413  for 6 seconds. This effect can only occur once every 20 seconds.</Description>
+    <DBURL>https://torcommunity.com/database/ability/xQaNKKD/shield+boost</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>6</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>shieldbooster</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141071498671142765" Status="New">
+    <Fqn NodeId="16141071498671142765">abl.itm.vanity_pet.foreststalker.shade_stalker_runt</Fqn>
+    <Base62Id>RRTvJ02</Base62Id>
+    <Name Id="3910726636797952">Shade Stalker Runt</Name>
+    <Description Id="3910726636797953">Summons a Shade Stalker Runt which will follow and passively observe you on your adventures. </Description>
+    <DBURL>https://torcommunity.com/database/ability/RRTvJ02/shade+stalker+runt</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>pet_event_shadestalker_runt</Icon>
+    <GCD>1.5</GCD>
+    <OverridesGCD>true</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>397315809489773116</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140931977392887214" Status="New">
+    <Fqn NodeId="16140931977392887214">abl.itm.vanity_pet.frigate.arcann_flagship</Fqn>
+    <Base62Id>hXKzl0T</Base62Id>
+    <Name Id="3921030263341056">Model Eternal Flagship</Name>
+    <Description Id="3921030263341057">Summons a Model Eternal Flagship which will follow and passively observe you on your adventures. </Description>
+    <DBURL>https://torcommunity.com/database/ability/hXKzl0T/model+eternal+flagship</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>pet_frigate_arcann_flagship</Icon>
+    <GCD>1.5</GCD>
+    <OverridesGCD>true</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>8362620829226336609</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141172780553594062" Status="New">
+    <Fqn NodeId="16141172780553594062">abl.itm.vanity_pet.frigate.arcann_flagship_passive</Fqn>
+    <Base62Id>pkGPqnF</Base62Id>
+    <Name Id="3921051738177536">arcann_flagship_passive</Name>
+    <Description Id="3921051738177537"></Description>
+    <DBURL>https://torcommunity.com/database/ability/pkGPqnF/arcann_flagship_passive</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141036355384026088" Status="New">
+    <Fqn NodeId="16141036355384026088">abl.itm.vanity_pet.probe.probe_zakuul_a01</Fqn>
+    <Base62Id>wADKtGB</Base62Id>
+    <Name Id="3913415286325248">Zakuul Miniprobe</Name>
+    <Description Id="3913415286325249">Summons a small probe droid which will follow and passively observe you on your adventures. </Description>
+    <DBURL>https://torcommunity.com/database/ability/wADKtGB/zakuul+miniprobe</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_pet_probe_zakuul_probe_a01</Icon>
+    <GCD>1.5</GCD>
+    <OverridesGCD>true</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>8362620829226336609</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141056165578047255" Status="New">
+    <Fqn NodeId="16141056165578047255">abl.mtx.companion.droid.iso_5.grant_iso_5</Fqn>
+    <Base62Id>5tzq90G</Base62Id>
+    <Name Id="3910365859545088">Activating Requisition...</Name>
+    <Description Id="3910365859545089">Activates your droid operator requisition.</Description>
+    <DBURL>https://torcommunity.com/database/ability/5tzq90G/activating+requisition...</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>bravado</Icon>
+    <CastingTime>2</CastingTime>
+    <CooldownTime>1</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141056165578047255</SharedCooldown>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140920472884377387" Status="New">
+    <Fqn NodeId="16140920472884377387">abl.mtx.pack.bundle.hypercrate_generic_new</Fqn>
+    <Base62Id>AtSQtg6</Base62Id>
+    <Name Id="3889608282603520">Opening Hypercrate</Name>
+    <Description Id="3889608282603521">Right-click to open this Hypercrate.</Description>
+    <DBURL>https://torcommunity.com/database/ability/AtSQtg6/opening+hypercrate</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140940980496468455" Status="New">
+    <Fqn NodeId="16140940980496468455">abl.npc.ability.saber.surge_no_knockdown</Fqn>
+    <Base62Id>vua9gqD</Base62Id>
+    <Name Id="3926441922134016">Surge</Name>
+    <Description Id="3926441922134017">Strikes all nearby targets with the lightsaber, throwing them away from the caster and stunning them briefly.</Description>
+    <DBURL>https://torcommunity.com/database/ability/vua9gqD/surge</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>surge</Icon>
+    <MaxRange>4</MaxRange>
+    <CooldownTime>60</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140940980496468455</SharedCooldown>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140902696345951847" Status="New">
+    <Fqn NodeId="16140902696345951847">abl.player.mount.mtx.czerka.ranger</Fqn>
+    <Base62Id>PrxOyBR</Base62Id>
+    <Name Id="3913995106910208">Czerka Ranger</Name>
+    <Description Id="3913995106910209">Activates the Czerka Ranger, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.  
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%
+</Description>
+    <DBURL>https://torcommunity.com/database/ability/PrxOyBR/czerka+ranger</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_czerka_ranger</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141028683622000595" Status="New">
+    <Fqn NodeId="16141028683622000595">abl.player.mount.mtx.makrin.arbor</Fqn>
+    <Base62Id>qoUkf11</Base62Id>
+    <Name Id="3917589994536960">Arbor Makrin</Name>
+    <Description Id="3917589994536961">Summons the Arbor Makrin creature mount. Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <DBURL>https://torcommunity.com/database/ability/qoUkf11/arbor+makrin</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_makrin_arbor</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141148286639078713" Status="New">
+    <Fqn NodeId="16141148286639078713">abl.player.mount.mtx.minas.scarab</Fqn>
+    <Base62Id>EVq6vD8</Base62Id>
+    <Name Id="3912418853912576">Minas Scarab</Name>
+    <Description Id="3912418853912577">Activates the Minas Scarab, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.  
+
+Use the Mount Flourish Key binding to activate this mount's flourish.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <DBURL>https://torcommunity.com/database/ability/EVq6vD8/minas+scarab</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_minas_scarab</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140950136931744339" Status="New">
+    <Fqn NodeId="16140950136931744339">abl.player.mount.mtx.skytrooper.overseers_dais</Fqn>
+    <Base62Id>KzqDoD1</Base62Id>
+    <Name Id="3912285709926400">Zakuul Overseer's Dais</Name>
+    <Description Id="3912285709926401">Activates the Zakuul Overseer's Dais, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill. 
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110% </Description>
+    <DBURL>https://torcommunity.com/database/ability/KzqDoD1/zakuul+overseer%27s+dais</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_skytrooper_overseer_dais</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141115334269799557" Status="New">
+    <Fqn NodeId="16141115334269799557">abl.player.mount.mtx.womprat.ravenous</Fqn>
+    <Base62Id>XGp3aU0</Base62Id>
+    <Name Id="3918719570935808">Ravenous Womp Rat</Name>
+    <Description Id="3918719570935809">Summons the Ravenous Womp Rat creature mount. Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <DBURL>https://torcommunity.com/database/ability/XGp3aU0/ravenous+womp+rat</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_womprat_wasteland</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140906315431146384" Status="New">
+    <Fqn NodeId="16140906315431146384">abl.test.qa.emulkey.250</Fqn>
+    <Base62Id>aFCXbC6</Base62Id>
+    <Name Id="3918668031328256">250</Name>
+    <Description Id="3918668031328257"></Description>
+    <DBURL>https://torcommunity.com/database/ability/aFCXbC6/250</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>alienskull</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141081831373399335" Status="New">
+    <Fqn NodeId="16141081831373399335">abl.test.qa.emulkey.open_character</Fqn>
+    <Base62Id>9zB2YB8</Base62Id>
+    <Name Id="3897944814125056">open character</Name>
+    <Description Id="3897944814125057"></Description>
+    <DBURL>https://torcommunity.com/database/ability/9zB2YB8/open+character</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>alienskull</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141073847373416317" Status="New">
+    <Fqn NodeId="16141073847373416317">abl.test.qa.emulkey.open_experience</Fqn>
+    <Base62Id>VKSA9Y5</Base62Id>
+    <Name Id="3897957699026944">open stash</Name>
+    <Description Id="3897957699026945"></Description>
+    <DBURL>https://torcommunity.com/database/ability/VKSA9Y5/open+stash</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>alienskull</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141175936867944552" Status="New">
+    <Fqn NodeId="16141175936867944552">abl.test.qa.emulkey.open_gui</Fqn>
+    <Base62Id>QCWOjlE</Base62Id>
+    <Name Id="3896974151516160">open gui</Name>
+    <Description Id="3896974151516161"></Description>
+    <DBURL>https://torcommunity.com/database/ability/QCWOjlE/open+gui</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>alienskull</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141076179758636010" Status="New">
+    <Fqn NodeId="16141076179758636010">abl.test.qa.emulkey.open_stash</Fqn>
+    <Base62Id>wbi8Cq4</Base62Id>
+    <Name Id="3897953404059648">open stash</Name>
+    <Description Id="3897953404059649"></Description>
+    <DBURL>https://torcommunity.com/database/ability/wbi8Cq4/open+stash</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>alienskull</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+</Abilities>

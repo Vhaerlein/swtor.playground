@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="189718" Status="Changed">
+    <Fqn NodeId="16140967935222461717">abl.agent.kolto_probe</Fqn>
+    <Name Id="814832605462528">Kolto Probe</Name>
+    <Description Id="814832605462529" OldValue="Summons a droid that heals a friendly target for &lt;&lt;1[%d/%d/%d]&gt;&gt; over &lt;&lt;2[%d/%d/%d]&gt;&gt; seconds. Stacks up to 2 times.">Summons a droid that heals a friendly target for &lt;&lt;1[%d/%d/%d]&gt;&gt; over &lt;&lt;2[%d/%d/%d]&gt;&gt; seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0185">0.023</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0185">0.023</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.37">0.47</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier OldValue="6">5</ablDescriptionTokenMultiplier>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="530978" Status="Changed">
+    <Fqn NodeId="16141167895569678310">abl.agent.skill.medic.surgical_precision</Fqn>
+    <Name Id="2280533144895488">Surgical Precision</Name>
+    <Description Id="2280533144895489" OldValue="Increases the healing dealt by Surgical Probe by 5% and increases the max stack limit of Tactical Advantage by 1. In addition, Surgical Probe immediately re-grants Tactical Advantage once every 10 seconds.">Increases the healing dealt by Surgical Probe and Kolto Injection by 5% and increases the max stack limit of Tactical Advantage by 1. In addition, Surgical Probe immediately re-grants Tactical Advantage once every 10 seconds.</Description>
+  </Ability>
+  <Ability Id="789784" Status="Changed">
+    <Fqn NodeId="16141054721972980023">abl.bounty_hunter.kolto_shot</Fqn>
+    <Name Id="3392096450904064">Kolto Shot</Name>
+    <Description Id="3392096450904065">Heals a friendly target for &lt;&lt;1&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0">0.0425</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0">0.0025</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="1">0.45</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="231439" Status="Changed">
+    <Fqn NodeId="16141003354024328215">abl.bounty_hunter.skill.arsenal.tracer_lock</Fqn>
+    <Name Id="994022936018944">Tracer Lock</Name>
+    <Description Id="994022936018945" OldValue="Tracer Missile grants Tracer Lock, increasing the damage dealt by the next Rail Shot by 6% or reducing the activation time of the next Healing Scan by 20%. Stacks up to 5 times.">Tracer Missile grants Tracer Lock, increasing the damage dealt by the next Rail Shot by 6% or reducing the activation time of the next Rapid Scan by 20%. Stacks up to 5 times.</Description>
+  </Ability>
+  <Ability Id="801667" Status="Changed">
+    <Fqn NodeId="16141158554336791000">abl.itm.setbonus.endgame.theal1.heavy.03_02</Fqn>
+    <Name Id="3443133547282432"></Name>
+    <Description Id="3443133547282433" OldValue="While in Combat Support Cylinder or Combat Support Cell the duration of Supercharged Gas and Supercharge Cells is increased by 5 seconds.">While in Combat Support Cylinder or Combat Support Cell the duration of Supercharged Gas and Supercharge Cells is increased by 3 seconds.</Description>
+  </Ability>
+  <Ability Id="817998" Status="Changed">
+    <Fqn NodeId="16141097842199652946">abl.itm.vanity_pet.astromech.astromech_pirate_a01_v01</Fqn>
+    <Name Id="3513274658193408">D4-V3 Pirate Astromech Droid</Name>
+    <Description Id="3513274658193409" OldValue="Summons a small astromech droid which will follow and passively observe you on your adventures. ">Summons a small pirate astromech droid which will follow and passively observe you on your adventures. </Description>
+  </Ability>
+  <Ability Id="189224" Status="Changed">
+    <Fqn NodeId="16140972679316748888">abl.jedi_consular.benevolence</Fqn>
+    <Name Id="812710891618304">Benevolence</Name>
+    <Description Id="812710891618305">Heals a friendly target for &lt;&lt;1&gt;&gt; health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.108">0.134</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.068">0.094</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="1.75">2.28</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="50">65</ForceCost>
+  </Ability>
+  <Ability Id="223737" Status="Changed">
+    <Fqn NodeId="16140924432183218666">abl.jedi_consular.noble_sacrifice</Fqn>
+    <Name Id="960943097905152">Noble Sacrifice</Name>
+    <Description Id="960943097905153" OldValue="Sacrifices 15% of your maximum health to restore 8% of your maximum Force. Each time this ability is used, your Force regeneration rate is reduced by 25% for the next &lt;&lt;1&gt;&gt; seconds. Stacks up to 4 times.">Restores 15 Force and deals &lt;&lt;1&gt;&gt; elemental damage to an enemy target or heals a friendly target for &lt;&lt;2&gt;&gt; health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken OldValue="10">0</ablParsedDescriptionToken>
+      </Token>
+    </Tokens>
+    <CastingTime Status="New">1.5</CastingTime>
+    <TargetRule OldValue="Self">Any</TargetRule>
+    <CooldownTime Status="Removed">1.5</CooldownTime>
+    <SharedCooldown Status="Removed">16140924432183218666</SharedCooldown>
+  </Ability>
+  <Ability Id="189247" Status="Changed">
+    <Fqn NodeId="16141059242457548004">abl.jedi_consular.rejuvenate</Fqn>
+    <Name Id="812809675866112">Rejuvenate</Name>
+    <Description Id="812809675866113">Immediately heals a target for a &lt;&lt;1&gt;&gt;, plus an additional &lt;&lt;2&gt;&gt; over &lt;&lt;3&gt;&gt; seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.06">0.07</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.02">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.8">0.99</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+      <Token Id="2">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.013">0.016</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.013">0.016</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.27">0.32</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="30">45</ForceCost>
+  </Ability>
+  <Ability Id="189280" Status="Changed">
+    <Fqn NodeId="16140973052868464274">abl.jedi_consular.skill.seer.deliverance</Fqn>
+    <Name Id="812951409786880">Deliverance</Name>
+    <Description Id="812951409786881">Heals a friendly target for &lt;&lt;1&gt;&gt; health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.1345">0.161</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0945">0.121</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="2.29">2.82</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="30">45</ForceCost>
+  </Ability>
+  <Ability Id="189283" Status="Changed">
+    <Fqn NodeId="16141138988703553639">abl.jedi_consular.skill.seer.healing_trance</Fqn>
+    <Name Id="812964294688768">Healing Trance</Name>
+    <Description Id="812964294688769">Heals a friendly target for &lt;&lt;1&gt;&gt; health and consumes 40 Force over the channel duration.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.046">0.044</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.046">0.044</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.92">0.88</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="189288" Status="Changed">
+    <Fqn NodeId="16141124664572085544">abl.jedi_consular.skill.seer.resplendence</Fqn>
+    <Name Id="812985769525248">Resplendence</Name>
+    <Description Id="812985769525249" OldValue="Healing Trance critical hits grant 1 charge of Resplendence, which improves the effectiveness of your next Noble Sacrifice or Salvation.&#xA;Noble Sacrifice: Activates without degenerating your Force or causing a global cooldown and consumes 1 charge.&#xA;Salvation: Consumes 5 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.">Healing Trance critical hits grant 1 charge of Resplendence, which improves the effectiveness of your next Noble Sacrifice or Salvation.
+Noble Sacrifice: Restores an additional 5 Force and consumes 1 charge.
+Salvation: Consumes 5 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.</Description>
+  </Ability>
+  <Ability Id="189289" Status="Changed">
+    <Fqn NodeId="16140940771676259787">abl.jedi_consular.skill.seer.salvation</Fqn>
+    <Name Id="812990064492544">Salvation</Name>
+    <Description Id="812990064492545">Applies a periodic healing effect to up to 8 allies within 8 meters of the targeted area, which heals for &lt;&lt;1&gt;&gt; over &lt;&lt;2&gt;&gt; seconds. Once a target has received the periodic healing effect, the target may leave the area and will continue to be healed by the effect.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.01">0.0105</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.01">0.0105</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.2">0.21</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="60">75</ForceCost>
+  </Ability>
+  <Ability Id="779351" Status="Changed">
+    <Fqn NodeId="16141082962393902841">abl.jedi_consular.skill.seer.wandering_mend</Fqn>
+    <Name Id="3347287057104896">Wandering Mend</Name>
+    <Description Id="3347287057104897">Places a mending Force on a friendly target that heals them for &lt;&lt;1&gt;&gt; health the next time they take damage. After healing the target, Wandering Mend travels to another friendly target within 20 meters. Wandering Mend lasts up to &lt;&lt;2&gt;&gt; seconds on each target and travels up to 3 times, healing up to 4 targets. Wandering Mend can only be placed on one target at a time.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.125">0.14</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.085">0.1</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="2.1">2.4</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="50">60</ForceCost>
+  </Ability>
+  <Ability Id="805790" Status="Changed">
+    <Fqn NodeId="16140916556896222352">abl.jedi_knight.skill.watchman.cauterize</Fqn>
+    <Name Id="3460841697443840">Cauterize</Name>
+    <Description Id="3460841697443841">Strikes the target for &lt;&lt;1&gt;&gt; weapon damage and deals an additional &lt;&lt;2&gt;&gt; elemental damage over &lt;&lt;3[%d seconds/%d second/%d seconds]&gt;&gt;. Requires two lightsabers.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.075">0.077</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.075">0.077</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="-0.5">-0.49</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="0.75">0.77</effParam_Coefficient>
+          </Action>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IgnoreDualWieldModifier OldValue="True">False</effParam_IgnoreDualWieldModifier>
+            <effParam_StandardHealthPercentMax OldValue="0.075">0</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.075">0</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="-0.5">-0.49</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="0.75">0</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+      <Token Id="2">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.034">0.054</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.034">0.054</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="0.34">0.54</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+      <Token Id="3">
+        <ablParsedDescriptionToken OldValue="9">6</ablParsedDescriptionToken>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="793770" Status="Changed">
+    <Fqn NodeId="16140933611231527384">abl.jedi_knight.skill.watchman.force_melt</Fqn>
+    <Name Id="3409216190545920">Force Melt</Name>
+    <Description Id="3409216190545921">Calls on the power of the Force to melt the target, causing it to burn for &lt;&lt;1&gt;&gt; elemental damage over &lt;&lt;2[%d seconds/%d second/%d seconds]&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.047">0.045</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.047">0.045</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="0.47">0.45</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <AmmoHeatCost OldValue="3">2</AmmoHeatCost>
+  </Ability>
+  <Ability Id="188177" Status="Changed">
+    <Fqn NodeId="16141106401919918224">abl.sith_inquisitor.consumption</Fqn>
+    <Name Id="808214060859392">Consumption</Name>
+    <Description Id="808214060859393" OldValue="Consumes 15% of your maximum health to restore 8% of your maximum Force. Each time this ability is used, your Force regeneration rate is reduced by 25% for the next &lt;&lt;1&gt;&gt; seconds. Stacks up to 4 times.">Restores 15 Force and deals &lt;&lt;1&gt;&gt; elemental damage to an enemy target or heals a friendly target for &lt;&lt;2&gt;&gt; health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients Status="New">
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>3</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>3</effParam_SpellType>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.027</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.027</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>0.027</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenType OldValue="ablDescriptionTokenTypeDuration">ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablParsedDescriptionToken Status="Removed">10</ablParsedDescriptionToken>
+      </Token>
+      <Token Id="2">
+        <ablCoefficients Status="New">
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>1</effParam_SpellType>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.024</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.004</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>0.29</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenType OldValue="ablDescriptionTokenTypeDuration">ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect OldValue="2">1</ablDescriptionTokenEffect>
+      </Token>
+    </Tokens>
+    <CastingTime Status="New">1.5</CastingTime>
+    <TargetRule OldValue="Self">Any</TargetRule>
+    <CooldownTime Status="Removed">1.5</CooldownTime>
+    <SharedCooldown Status="Removed">16141106401919918224</SharedCooldown>
+  </Ability>
+  <Ability Id="188178" Status="Changed">
+    <Fqn NodeId="16141177761697288857">abl.sith_inquisitor.dark_heal</Fqn>
+    <Name Id="808218355826688">Dark Heal</Name>
+    <Description Id="808218355826689">Heals a friendly target for &lt;&lt;1&gt;&gt; health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.108">0.134</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.068">0.094</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="1.75">2.28</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="50">65</ForceCost>
+  </Ability>
+  <Ability Id="794456" Status="Changed">
+    <Fqn NodeId="16140915821216130380">abl.sith_inquisitor.resurgence</Fqn>
+    <Name Id="3412162538110976">Resurgence</Name>
+    <Description Id="3412162538110977">Immediately heals the target for &lt;&lt;1&gt;&gt;, plus an additional &lt;&lt;2&gt;&gt; over &lt;&lt;3&gt;&gt; seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.06">0.07</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.02">0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.8">0.99</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+      <Token Id="2">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.013">0.016</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.013">0.016</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.27">0.32</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="30">45</ForceCost>
+  </Ability>
+  <Ability Id="794193" Status="Changed">
+    <Fqn NodeId="16141017099704152675">abl.sith_inquisitor.skill.corruption.dark_infusion</Fqn>
+    <Name Id="3411032961712128">Dark Infusion</Name>
+    <Description Id="3411032961712129">Heals a friendly target for &lt;&lt;1&gt;&gt; health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.1345">0.161</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0945">0.121</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="2.29">2.82</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="30">45</ForceCost>
+  </Ability>
+  <Ability Id="188285" Status="Changed">
+    <Fqn NodeId="16141061930666388872">abl.sith_inquisitor.skill.corruption.force_surge</Fqn>
+    <Name Id="808677917327360">Force Surge</Name>
+    <Description Id="808677917327361" OldValue="Innervate critical heals grant 1 charge of Force Surge, which improves the effectiveness of your next Consumption or Revivification.&#xA;Consumption: Activates without degenerating your Force or causing a global cooldown and consumes 1 charge.&#xA;Revivification: Consumes 5 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.">Innervate critical heals grant 1 charge of Force Surge, which improves the effectiveness of your next Consumption or Revivification.
+Consumption: Restores an additional 5 Force and consumes 1 charge.
+Revivification: Consumes 5 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.</Description>
+  </Ability>
+  <Ability Id="257137" Status="Changed">
+    <Fqn NodeId="16141143145991194120">abl.sith_inquisitor.skill.corruption.innervate</Fqn>
+    <Name Id="1104395005591552">Innervate</Name>
+    <Description Id="1104395005591553">Heals a friendly target for &lt;&lt;1&gt;&gt; health and consumes 40 Force over the channel duration.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.046">0.044</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.046">0.044</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.92">0.88</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="188291" Status="Changed">
+    <Fqn NodeId="16141012138626181515">abl.sith_inquisitor.skill.corruption.revivification</Fqn>
+    <Name Id="808703687131136">Revivification</Name>
+    <Description Id="808703687131137">Applies a periodic healing effect to up to 8 allies within 8 meters of the targeted area, which heals for &lt;&lt;1&gt;&gt; over &lt;&lt;2&gt;&gt; seconds. Once a target has received the periodic healing effect, the target may leave the area and will continue to be healed by the effect.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.01">0.0105</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.01">0.0105</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.2">0.21</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="60">75</ForceCost>
+  </Ability>
+  <Ability Id="791923" Status="Changed">
+    <Fqn NodeId="16141141796785834825">abl.sith_inquisitor.skill.corruption.roaming_mend</Fqn>
+    <Name Id="3401283385950208">Roaming Mend</Name>
+    <Description Id="3401283385950209">Places a mending Force on a friendly target that heals them for &lt;&lt;1&gt;&gt; health the next time they take damage. After healing the target, Roaming Mend travels to another friendly target within 20 meters. Roaming Mend lasts up to &lt;&lt;2&gt;&gt; seconds on each target and travels up to 3 times, healing up to 4 targets. Roaming Mend can only be placed on one target at a time.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.125">0.14</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.085">0.1</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="2.1">2.4</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="50">60</ForceCost>
+  </Ability>
+  <Ability Id="782687" Status="Changed">
+    <Fqn NodeId="16141113152532997283">abl.sith_warrior.skill.annihilation.force_gash</Fqn>
+    <Name Id="3361615068004352">Force Rend</Name>
+    <Description Id="3361615068004353">Summons dark Force power to rend the target, causing it to bleed for &lt;&lt;1&gt;&gt; internal damage over &lt;&lt;2[%d seconds/%d second/%d seconds]&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.047">0.045</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.047">0.045</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="0.47">0.45</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <AmmoHeatCost OldValue="3">2</AmmoHeatCost>
+  </Ability>
+  <Ability Id="804556" Status="Changed">
+    <Fqn NodeId="16141103997558890260">abl.sith_warrior.skill.annihilation.rupture</Fqn>
+    <Name Id="3455541707800576">Rupture</Name>
+    <Description Id="3455541707800577">Stabs the target for &lt;&lt;1&gt;&gt; weapon damage and deals an additional &lt;&lt;2&gt;&gt; internal damage over &lt;&lt;3[%d seconds/%d second/%d seconds]&gt;&gt;. Requires two lightsabers.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.075">0.077</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.075">0.077</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="-0.5">-0.49</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="0.75">0.77</effParam_Coefficient>
+          </Action>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IgnoreDualWieldModifier OldValue="True">False</effParam_IgnoreDualWieldModifier>
+            <effParam_StandardHealthPercentMax OldValue="0.075">0</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.075">0</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="-0.5">-0.49</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="0.75">0</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+      <Token Id="2">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.034">0.054</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.034">0.054</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="0.34">0.54</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+      <Token Id="3">
+        <ablParsedDescriptionToken OldValue="9">6</ablParsedDescriptionToken>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="531253" Status="Changed">
+    <Fqn NodeId="16140926552195505492">abl.smuggler.skill.sawbones.emergent_emergencies</Fqn>
+    <Name Id="2281714260901888">Emergent Emergencies</Name>
+    <Description Id="2281714260901889" OldValue="Increases the healing dealt by Emergency Medpac by 5% and increases the max stack limit of Upper Hand by 1. In addition, Emergency Medpac immediately regrants Upper Hand once every 10 seconds.">Increases the healing dealt by Emergency Medpac and Underworld Medicine by 5% and increases the max stack limit of Upper Hand by 1. In addition, Emergency Medpac immediately regrants Upper Hand once every 10 seconds.</Description>
+  </Ability>
+  <Ability Id="793118" Status="Changed">
+    <Fqn NodeId="16141171674478100600">abl.smuggler.slow_release_medpac</Fqn>
+    <Name Id="3406415871868928">Slow-release Medpac</Name>
+    <Description Id="3406415871868929" OldValue="Injects the target with slow-release medicine that heals for &lt;&lt;1[%d/%d/%d]&gt;&gt; over &lt;&lt;2[%d/%d/%d]&gt;&gt; seconds. Stacks up to 2 times.">Injects the target with slow-release medicine that heals for &lt;&lt;1[%d/%d/%d]&gt;&gt; over &lt;&lt;2[%d/%d/%d]&gt;&gt; seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.0185">0.023</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0185">0.023</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="0.37">0.47</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <TargetArc Status="New">360</TargetArc>
+  </Ability>
+  <Ability Id="793548" Status="Changed">
+    <Fqn NodeId="16141067618737264747">abl.trooper.med_shot</Fqn>
+    <Name Id="3408262707806208">Med Shot</Name>
+    <Description Id="3408262707806209">Fires a quick stream of bolts, causing &lt;&lt;1&gt;&gt; healing.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0">0.0425</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0">0.0025</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient OldValue="1">0.45</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="232416" Status="Changed">
+    <Fqn NodeId="16140952257753990220">abl.trooper.skill.gunnery.charged_barrel</Fqn>
+    <Name Id="998219119067136">Charged Barrel</Name>
+    <Description Id="998219119067137" OldValue="Grav Round grants Charged Barrel, increasing the damage dealt by the next High Impact Bolt by 6% and reducing the activation time of the next Advanced Medical Probe by 20%. Stacks up to 5 times.">Grav Round grants Charged Barrel, increasing the damage dealt by the next High Impact Bolt by 6% and reducing the activation time of the next Medical Probe by 20%. Stacks up to 5 times.</Description>
+  </Ability>
+  <Ability Id="790247" Status="New">
+    <Fqn NodeId="16141155277639998280">abl.bounty_hunter.rapid_scan</Fqn>
+    <Name Id="3394085020762112">Rapid Scan</Name>
+    <Description Id="3394085020762113">Heals a friendly target for &lt;&lt;1&gt;&gt;.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.104</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.064</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>diagnosticscan</Icon>
+    <MaxRange>30</MaxRange>
+    <EnergyCost>20</EnergyCost>
+    <CastingTime>1.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Friendly</TargetRule>
+  </Ability>
+  <Ability Id="329878" Status="New">
+    <Fqn NodeId="16141139537866833779">abl.bounty_hunter.skill.bodyguard.healing_scan</Fqn>
+    <Name Id="1416815221669888">Healing Scan</Name>
+    <Description Id="1416815221669889">Heals a friendly target for &lt;&lt;1&gt;&gt;.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.186</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.146</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>2.99</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>healingscan</Icon>
+    <MaxRange>30</MaxRange>
+    <EnergyCost>20</EnergyCost>
+    <CastingTime>2</CastingTime>
+    <CooldownTime>10.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141139537866833779</SharedCooldown>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Friendly</TargetRule>
+  </Ability>
+  <Ability Id="838836" Status="New">
+    <Fqn NodeId="16140945120212199385">abl.placeables.stronghold.technological.bounty_terminal</Fqn>
+    <Name Id="3602773186707456">Acquiring Bounties</Name>
+    <Description Id="3602773186707457"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <CastingTime>30</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="838930" Status="New">
+    <Fqn NodeId="16140955167985332146">abl.test.jjary.consumption</Fqn>
+    <Name Id="3603176913633280">Consumption</Name>
+    <Description Id="3603176913633281">Consumes 15% of your maximum health to restore 8% of your maximum Force. Each time this ability is used, your Force regeneration rate is reduced by 25% for the next &lt;&lt;1&gt;&gt; seconds. Stacks up to 4 times.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>10</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>consumption</Icon>
+    <CooldownTime>1.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140955167985332146</SharedCooldown>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="232110" Status="New">
+    <Fqn NodeId="16141002760491448206">abl.trooper.medical_probe</Fqn>
+    <Name Id="996904859074560">Medical Probe</Name>
+    <Description Id="996904859074561">Summons a probe that heals for &lt;&lt;1&gt;&gt;.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.104</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.064</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>1.63</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>resuscitationprobe</Icon>
+    <MaxRange>30</MaxRange>
+    <EnergyCost>20</EnergyCost>
+    <CastingTime>1.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Friendly</TargetRule>
+  </Ability>
+  <Ability Id="350637" Status="New">
+    <Fqn NodeId="16141175570821009605">abl.trooper.skill.combat_medic.advanced_medical_probe</Fqn>
+    <Name Id="1505974447767552">Advanced Medical Probe</Name>
+    <Description Id="1505974447767553">Summons a probe that heals for &lt;&lt;1&gt;&gt;.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.186</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.146</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>2.99</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>advancedmedicalprobe</Icon>
+    <MaxRange>30</MaxRange>
+    <EnergyCost>20</EnergyCost>
+    <CastingTime>2</CastingTime>
+    <CooldownTime>13.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141175570821009605</SharedCooldown>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Friendly</TargetRule>
+  </Ability>
+  <Ability Id="229244" Status="Removed">
+    <Fqn NodeId="16140968531121379995">abl.bounty_hunter.healing_scan</Fqn>
+    <Name Id="984595482804224">Healing Scan</Name>
+    <Description Id="984595482804225">Heals a friendly target for &lt;&lt;1&gt;&gt;.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.165</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.125</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>2.898</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>healingscan</Icon>
+    <MaxRange>30</MaxRange>
+    <EnergyCost>20</EnergyCost>
+    <CastingTime>2</CastingTime>
+    <CooldownTime>13.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140968531121379995</SharedCooldown>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Friendly</TargetRule>
+  </Ability>
+  <Ability Id="791948" Status="Removed">
+    <Fqn NodeId="16141108756614757758">abl.bounty_hunter.skill.bodyguard.rapid_scan</Fqn>
+    <Name Id="3401390760132608">Rapid Scan</Name>
+    <Description Id="3401390760132609">Heals a friendly target for &lt;&lt;1&gt;&gt;.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.114</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.074</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>1.873</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>diagnosticscan</Icon>
+    <MaxRange>30</MaxRange>
+    <EnergyCost>20</EnergyCost>
+    <CastingTime>1.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Friendly</TargetRule>
+  </Ability>
+  <Ability Id="232173" Status="Removed">
+    <Fqn NodeId="16141069425170611977">abl.trooper.advanced_medical_probe</Fqn>
+    <Name Id="997175442014208">Advanced Medical Probe</Name>
+    <Description Id="997175442014209">Summons a probe that heals for &lt;&lt;1&gt;&gt;.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.165</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.125</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>2.898</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>advancedmedicalprobe</Icon>
+    <MaxRange>30</MaxRange>
+    <EnergyCost>20</EnergyCost>
+    <CastingTime>2</CastingTime>
+    <CooldownTime>13.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141069425170611977</SharedCooldown>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Friendly</TargetRule>
+  </Ability>
+  <Ability Id="790102" Status="Removed">
+    <Fqn NodeId="16141103729474213456">abl.trooper.skill.combat_medic.medical_probe</Fqn>
+    <Name Id="3393462250504192">Medical Probe</Name>
+    <Description Id="3393462250504193">Summons a probe that heals for &lt;&lt;1&gt;&gt;.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.114</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.074</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>1.873</effParam_HealingPowerCoefficient>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>resuscitationprobe</Icon>
+    <MaxRange>30</MaxRange>
+    <EnergyCost>20</EnergyCost>
+    <CastingTime>1.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Friendly</TargetRule>
+  </Ability>
+</Abilities>

@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="16141003354024328215" Status="Changed">
+    <Fqn NodeId="16141003354024328215">abl.bounty_hunter.skill.arsenal.tracer_lock</Fqn>
+    <Name Id="994022936018944">Tracer Lock</Name>
+    <Description Id="994022936018945" OldValue="Tracer Missile grants Tracer Lock, increasing the damage dealt by the next Rail Shot by 6% or reducing the activation time of the next Rapid Scan by 20%. Stacks up to 5 times.">Tracer Missile grants Tracer Lock, increasing the damage dealt by the next Rail Shot by 6% or reducing the activation time of the next Healing Scan by 20%. Stacks up to 5 times.</Description>
+  </Ability>
+  <Ability Id="16141148425816377618" Status="Changed">
+    <Fqn NodeId="16141148425816377618">abl.daily_area.ziost.lair_boss.lair_boss.random_buff</Fqn>
+    <Name Id="3573387020468224">Ancient Protection</Name>
+    <Description Id="3573387020468225"></Description>
+    <IsPassive OldValue="true">false</IsPassive>
+    <TargetRule OldValue="Self">Any</TargetRule>
+  </Ability>
+  <Ability Id="16140935363846639272" Status="Changed">
+    <Fqn NodeId="16140935363846639272">abl.daily_area.ziost.lair_boss.lair_boss.real_ultimate_power</Fqn>
+    <Name Id="3553445487312896">Destruction of All</Name>
+    <Description Id="3553445487312897"></Description>
+    <CooldownTime Status="New">4</CooldownTime>
+    <SharedCooldown Status="New">16140935363846639272</SharedCooldown>
+  </Ability>
+  <Ability Id="16140980257310880092" Status="Changed">
+    <Fqn NodeId="16140980257310880092">abl.daily_area.ziost.world_arc.shared.dead_center.modified_walkhar</Fqn>
+    <Name Id="3526808100143104">Custom Walkhar Auspice</Name>
+    <Description Id="3526808100143105">This custom Walkhar Auspice has smaller intake dampeners and custom programming which allow for large bursts of speed in short intervals while also increasing movement speed and offering excellent knock-off protection.</Description>
+    <CastingTime Status="Removed">0.5</CastingTime>
+  </Ability>
+  <Ability Id="16140987417772945333" Status="Changed">
+    <Fqn NodeId="16140987417772945333">abl.itm.potion.medpac.ilvl_081.biochem_artifact_medpac</Fqn>
+    <Name Id="3409203305644032">Advanced Anodyne Medpac</Name>
+    <Description Id="3409203305644033">Restores &lt;&lt;1&gt;&gt; health and an additional &lt;&lt;2&gt;&gt; health over &lt;&lt;3[%d/%d/%d]&gt;&gt; seconds. Only usable once per fight. (Cooldown: 1.5 minutes)</Description>
+    <Icon Status="New">advanced_heavy_duty_medpac</Icon>
+  </Ability>
+  <Ability Id="16141117844780830846" Status="Changed">
+    <Fqn NodeId="16141117844780830846">abl.itm.potion.medpac.ilvl_081.biochem_medpac</Fqn>
+    <Name Id="3403826006589440">Anodyne Medpac</Name>
+    <Description Id="3403826006589441">Restores &lt;&lt;1&gt;&gt; health and an additional &lt;&lt;2&gt;&gt; health over &lt;&lt;3[%d/%d/%d]&gt;&gt; seconds. Only usable once per fight. (Cooldown: 1.5 minutes)</Description>
+    <Icon Status="New">advanced_heavy_duty_medpac</Icon>
+  </Ability>
+  <Ability Id="16141143032108263435" Status="Changed">
+    <Fqn NodeId="16141143032108263435">abl.itm.potion.medpac.ilvl_081.biochem_target_artifact_medpac</Fqn>
+    <Name Id="3409207600611328">Advanced Anodyne Med Unit</Name>
+    <Description Id="3409207600611329">Restores &lt;&lt;1&gt;&gt; health to you and your companion. Only usable once per fight. (Cooldown: 1.5 minutes)</Description>
+    <Icon Status="New">advanced_heavy_duty_medpac</Icon>
+  </Ability>
+  <Ability Id="16141090445877318224" Status="Changed">
+    <Fqn NodeId="16141090445877318224">abl.itm.potion.medpac.ilvl_081.biochem_target_medpac</Fqn>
+    <Name Id="3403834596524032">Anodyne Med Unit</Name>
+    <Description Id="3403834596524033">Restores &lt;&lt;1&gt;&gt; health to you and your companion. Only usable once per fight. (Cooldown: 1.5 minutes)</Description>
+    <Icon Status="New">advanced_heavy_duty_medpac</Icon>
+  </Ability>
+  <Ability Id="16141167489546760188" Status="Changed">
+    <Fqn NodeId="16141167489546760188">abl.itm.setbonus.endgame.mdps1.medium.03_03</Fqn>
+    <Name Id="3482200569806848"></Name>
+    <Description Id="3482200569806849" OldValue="Activating Ravage or Master Strike will grant Weaponmaster's/Challenger's Critical Bonus making your next Vicious Throw, Furious Strike and Annihilate or Dispatch, Concentrated Slice and Merciless Slash critically hit. This effect can't occur more than once every minute.">Activating Ravage, Master Strike, Dual Saber Throw, or Twin Saber Throw will grant Weaponmaster's/Challenger's Critical Bonus making your next Vicious Throw, Furious Strike and Annihilate or Dispatch, Concentrated Slice and Merciless Slash critically hit. This effect can't occur more than once every minute.</Description>
+  </Ability>
+  <Ability Id="16141148610255905106" Status="Changed">
+    <Fqn NodeId="16141148610255905106">abl.itm.setbonus.endgame.theal1.heavy.02_01</Fqn>
+    <Name Id="3227676512878592"></Name>
+    <Description Id="3227676512878593" OldValue="Increases the duration of Supercharged Gas and Supercharge Cells by 3 seconds.">Increases the duration of Supercharged Gas and Supercharged Cell by 3 seconds.</Description>
+  </Ability>
+  <Ability Id="16141011918271840498" Status="Changed">
+    <Fqn NodeId="16141011918271840498">abl.jedi_consular.forcequake</Fqn>
+    <Name Id="812732366454784">Forcequake</Name>
+    <Description Id="812732366454785" OldValue="Channels the Force into the ground at the target location, causing it to quake and tremble, consuming 60 Force and dealing &lt;&lt;1&gt;&gt; energy damage to up to 8 targets within 8 meters over the duration of the channel. Standard and weak targets have a 33% chance to be stunned by the storm each second.">Channels the Force into the ground at the target location, causing it to quake and tremble, consuming 60 Force and dealing &lt;&lt;1&gt;&gt; energy damage to up to 8 targets within 8 meters over the duration of the channel. Standard and weak targets have a 33% chance to be stunned by the quake each second.</Description>
+  </Ability>
+  <Ability Id="16141044328694510070" Status="Changed">
+    <Fqn NodeId="16141044328694510070">abl.jedi_consular.skill.combat.cascading_debris</Fqn>
+    <Name Id="3414228417380352">Cascading Debris</Name>
+    <Description Id="3414228417380353" OldValue="Deals &lt;&lt;1&gt;&gt; kinetic damage to the target and consumes 40 Force over the duration of the channel. Slows the movement speed of the target by 50% and stuns weak or standard enemies while channeled.&#xA;&#xA;Shares a cooldown with Telekinetic Throw.">Deals &lt;&lt;1&gt;&gt; kinetic damage to the target and consumes 40 Force over the duration of the channel. Slows the movement speed of the target by 50% and stuns weak or standard enemies while channeled. This ability can be channeled while moving.
+
+Shares a cooldown with Telekinetic Throw.</Description>
+  </Ability>
+  <Ability Id="16141003733855109053" Status="Changed">
+    <Fqn NodeId="16141003733855109053">abl.jedi_knight.skill.focus.felling_blow</Fqn>
+    <Name Id="1263403284824064">Felling Blow</Name>
+    <Description Id="1263403284824065">Force Leap and Zealous Leap make your next Force Sweep or Focused Burst used within &lt;&lt;1&gt;&gt; seconds an automatic critical hit.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140925803124970014" Status="Changed">
+    <Fqn NodeId="16140925803124970014">abl.jedi_knight.skill.focus.zealous_leap</Fqn>
+    <Name Id="1263330270380032">Zealous Leap</Name>
+    <Description Id="1263330270380033">Leaps to a target, dealing &lt;&lt;1&gt;&gt; weapon damage and immobilizing the target for 1 second. Strikes with both weapons if dual wielding.</Description>
+    <Tokens>
+      <Token Id="2">
+        <ablDescriptionTokenType OldValue="ablDescriptionTokenTypeRank">ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect OldValue="-1">4</ablDescriptionTokenEffect>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140919969146374506" Status="Changed">
+    <Fqn NodeId="16140919969146374506">abl.jedi_knight.skill.utility.inspiring_force</Fqn>
+    <Name Id="3430025307095040" OldValue="Inspring Force">Inspiring Force</Name>
+    <Description Id="3430025307095041">Freezing Force increases the movement speed of all allies within 8 meters, excluding yourself, by 50% for &lt;&lt;1&gt;&gt; seconds.</Description>
+  </Ability>
+  <Ability Id="16141115942778833453" Status="Changed">
+    <Fqn NodeId="16141115942778833453">abl.jedi_knight.skill.utility.unremitting</Fqn>
+    <Name Id="3588488125480960">Unremitting</Name>
+    <Description Id="3588488125480961" OldValue="Force Leap grants Unremitting, granting immunity to movement-impairing effects and effects that push and pull you around for &lt;&lt;1&gt;&gt; seconds.">Force Leap grants Unremitting, granting immunity to movement-impairing effects and effects that push or pull you around for &lt;&lt;1&gt;&gt; seconds.</Description>
+  </Ability>
+  <Ability Id="16140933611231527384" Status="Changed">
+    <Fqn NodeId="16140933611231527384">abl.jedi_knight.skill.watchman.force_melt</Fqn>
+    <Name Id="3409216190545920">Force Melt</Name>
+    <Description Id="3409216190545921">Calls on the power of the Force to melt the target, causing it to burn for &lt;&lt;1&gt;&gt; elemental damage over &lt;&lt;2[%d seconds/%d second/%d seconds]&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType OldValue="4">3</effParam_DamageType>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140968730585584331" Status="Changed">
+    <Fqn NodeId="16140968730585584331">abl.jedi_knight.skill.watchman.merciless_zeal</Fqn>
+    <Name Id="1262192104046592">Merciless Zeal</Name>
+    <Description Id="1262192104046593" OldValue="Your Cauterize, Overload Saber, adn Force Melt burns heal you for 15% of the damage they deal.">Your Cauterize, Overload Saber, and Force Melt burns heal you for 15% of the damage they deal.</Description>
+  </Ability>
+  <Ability Id="16140958302926704394" Status="Changed">
+    <Fqn NodeId="16140958302926704394">abl.jedi_knight.skill.watchman.overload_saber</Fqn>
+    <Name Id="1261719657644032">Overload Saber</Name>
+    <Description Id="1261719657644033">Charges your lightsabers with deadly energy for 15 seconds, causing your next 3 successful melee attacks to make the target burn for &lt;&lt;1&gt;&gt; elemental damage over 6 seconds. Stacks up to 3 times.  Requires Juyo Form.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType OldValue="4">3</effParam_DamageType>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140976044315413484" Status="Changed">
+    <Fqn NodeId="16140976044315413484">abl.jedi_knight.skill.watchman.plasma_blades</Fqn>
+    <Name Id="1262196399013888">Plasma Blades</Name>
+    <Description Id="1262196399013889" OldValue="Your burn effects have a 20% chance to build 1 focus when dealing damage. This effect cannot occur more than once every 3 seconds.">Your burn effects have a 20% chance to build 1 focus when dealing damage. This effect cannot occur more than once every second.</Description>
+  </Ability>
+  <Ability Id="16140979404364906148" Status="Changed">
+    <Fqn NodeId="16140979404364906148">abl.mtx.pack.explorer.deep_core_platinum</Fqn>
+    <Name Id="3591322803896320">Opening Pack</Name>
+    <Description Id="3591322803896321" OldValue="Right-click to open this Deep Core Platinum Pack. This pack contains 1 Extra Rare or better Bonus Item from the Deep Core Explorer's Packs.">Right-click to open this Deep Core Platinum Pack. This pack contains 1 Super Rare or better Bonus Item from the Deep Core Explorer's Packs.</Description>
+  </Ability>
+  <Ability Id="16140992544931925288" Status="Changed">
+    <Fqn NodeId="16140992544931925288">abl.mtx.pack.nightlife.superpack</Fqn>
+    <Name Id="3488046020296704">Opening Pack</Name>
+    <Description Id="3488046020296705" OldValue="Right-click to open this Grand Nightlife Pack. This pack contains 4 items: 1 super-rare bonus item, 1 rare or better bonus item, 1 Fortuitous Dye Kit, and 1 Major or Minor XP Boost.">Right-click to open this Grand Nightlife Pack. This pack contains 4 items: 1 Super Rare or better bonus item, 1 Rare or better bonus item, 1 Fortuitous Dye Kit, and 1 Major or Minor XP Boost. This pack contains boxes of complete Armor sets, Mounts, Weapons, Color Crystals and Toys from the Nightlife Shipment.</Description>
+  </Ability>
+  <Ability Id="16141000390118226876" Status="Changed">
+    <Fqn NodeId="16141000390118226876">abl.mtx.pack.superpack.kotor</Fqn>
+    <Name Id="3585172410728448">Opening Pack</Name>
+    <Description Id="3585172410728449" OldValue="Right-click to open this Grand KOTOR Pack. This pack contains 1 random complete armor set.">Right-click to open this Galactic Legends Pack. This pack contains 1 random complete armor set, plus a chance to obtain an additional armor set.</Description>
+  </Ability>
+  <Ability Id="16140971048652662176" Status="Changed">
+    <Fqn NodeId="16140971048652662176">abl.npc.ability.droid.battle_droid.knockback_shot_high_damage</Fqn>
+    <Name Id="2297412366368768" OldValue="">Knockback Blast</Name>
+    <Description Id="2297412366368769"></Description>
+  </Ability>
+  <Ability Id="16141176743500431303" Status="Changed">
+    <Fqn NodeId="16141176743500431303">abl.npc.ability.droid.battle_droid.knockback_shot_high_damage_low_knockback</Fqn>
+    <Name Id="3258484313292800" OldValue="">Knockback Blast</Name>
+    <Description Id="3258484313292801"></Description>
+  </Ability>
+  <Ability Id="16141085338205372235" Status="Changed">
+    <Fqn NodeId="16141085338205372235">abl.placeables.exp.02.rishi.ambient.hunt.anchored_rock_beast_call</Fqn>
+    <Name Id="3518024892022784">Investigating</Name>
+    <Description Id="3518024892022785"></Description>
+    <Icon Status="New">crewskill</Icon>
+  </Ability>
+  <Ability Id="16140974973764524458" Status="Changed">
+    <Fqn NodeId="16140974973764524458">abl.placeables.exp.02.rishi.ambient.hunt.cyberskull_datakey</Fqn>
+    <Name Id="3517170193530880">Imbedding Neural Key</Name>
+    <Description Id="3517170193530881"></Description>
+    <Icon Status="New">abl_si_as_profuse_horror</Icon>
+  </Ability>
+  <Ability Id="16141138657844762192" Status="Changed">
+    <Fqn NodeId="16141138657844762192">abl.placeables.exp.02.rishi.ambient.hunt.cyberskull_geo_trap</Fqn>
+    <Name Id="3517689884573696">Investigating</Name>
+    <Description Id="3517689884573697"></Description>
+    <Icon Status="New">abl_jk_se_concentrated_burst</Icon>
+  </Ability>
+  <Ability Id="16140947848364622514" Status="Changed">
+    <Fqn NodeId="16140947848364622514">abl.placeables.exp.02.rishi.ambient.hunt.grophet_databuff_1</Fqn>
+    <Name Id="3517174488498176">Imbedding Neural Data Packet</Name>
+    <Description Id="3517174488498177"></Description>
+    <Icon Status="New">copperdatadisk</Icon>
+  </Ability>
+  <Ability Id="16140951146899506267" Status="Changed">
+    <Fqn NodeId="16140951146899506267">abl.placeables.exp.02.rishi.ambient.hunt.grophet_databuff_2</Fqn>
+    <Name Id="3517178783465472">Imbedding Neural Data Packet</Name>
+    <Description Id="3517178783465473"></Description>
+    <Icon Status="New">silverdatadisk</Icon>
+  </Ability>
+  <Ability Id="16140950047387878924" Status="Changed">
+    <Fqn NodeId="16140950047387878924">abl.placeables.exp.02.rishi.ambient.hunt.grophet_databuff_3</Fqn>
+    <Name Id="3517187373400064">Imbedding Neural Data Packet</Name>
+    <Description Id="3517187373400065"></Description>
+    <Icon Status="New">golddatadisk</Icon>
+  </Ability>
+  <Ability Id="16141165004326095035" Status="Changed">
+    <Fqn NodeId="16141165004326095035">abl.placeables.exp.02.rishi.ambient.hunt.sea_pheromones</Fqn>
+    <Name Id="3517191668367360">Examining Sea Pheromones</Name>
+    <Description Id="3517191668367361"></Description>
+    <Icon Status="New">smokegrenade</Icon>
+  </Ability>
+  <Ability Id="16141180040611708977" Status="Changed">
+    <Fqn NodeId="16141180040611708977">abl.placeables.qtr.1x2.raid.denova.enemy.boss.puzzle.activate_probe_scanner</Fqn>
+    <Name Id="2835876711235584">Launching Probe</Name>
+    <Description Id="2835876711235585"></Description>
+    <Icon OldValue="remotecontrol">genericdatadisc</Icon>
+    <CastingTime Status="New">7</CastingTime>
+    <CooldownTime Status="Removed">1.5</CooldownTime>
+    <SharedCooldown Status="Removed">16141180040611708977</SharedCooldown>
+  </Ability>
+  <Ability Id="16141159502012822523" Status="Changed">
+    <Fqn NodeId="16141159502012822523">abl.placeables.stronghold.toys.warzone.throw_ball</Fqn>
+    <Name Id="3572596746485760">Throw the Custom Huttball</Name>
+    <Description Id="3572596746485761" OldValue="Throws the Custom Huttball to an ally. Must be carrying the ball to throw it.">Throws the Custom Huttball to an ally. Must be carrying the ball to throw it. Use the Throw the Custom Huttball ability to throw the Custom Huttball to a friend before the Custom Huttball explodes. There are three stages to help determine when the Custom Huttball will explode; Safe, Caution and Danger, each with a random duration.</Description>
+  </Ability>
+  <Ability Id="16141171267102651576" Status="Changed">
+    <Fqn NodeId="16141171267102651576">abl.player.mount.cutter.pvp_s4</Fqn>
+    <Name Id="3547217784733696">Baron Deathmark's Swashbuckling Cutter</Name>
+    <Description Id="3547217784733697">Activates Baron Deathmark's Swashbuckling Cutter. Movement speed increases based on the rank of your Speeder Piloting skill. Reduces incoming damage by 15% while mounted.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <Icon OldValue="mtx.mount.tempest.cutter">mount.pvp.season4.cutter</Icon>
+  </Ability>
+  <Ability Id="16141166739289263688" Status="Changed">
+    <Fqn NodeId="16141166739289263688">abl.player.mount.mtx.rancor.felucian</Fqn>
+    <Name Id="3564758431170560" OldValue="Felucian Rancor">Ridge Hunter Rancor</Name>
+    <Description Id="3564758431170561" OldValue="Summons the Felucian Rancor creature mount. Movement speed increases based on the rank of your Speeder Piloting skill.&#xA;&#xA;Speeder Piloting Rank 1:  90%&#xA;Speeder Piloting Rank 2:  100%&#xA;Speeder Piloting Rank 3:  110%">Summons the Ridge Hunter Rancor creature mount. Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+  </Ability>
+  <Ability Id="16140998545659585334" Status="Changed">
+    <Fqn NodeId="16140998545659585334">abl.player.mount.mtx.rark.k13e7</Fqn>
+    <Name Id="3558011037548544">Rark K-133T</Name>
+    <Description Id="3558011037548545" OldValue="Activates the Rark K-13E7, increasing movement speed and offering excellent protection against being knocked off.  Movement speed increases based on the rank of your Speeder Piloting skill.  &#xA;&#xA;Speeder Piloting Rank 1:  90%&#xA;Speeder Piloting Rank 2:  100%&#xA;Speeder Piloting Rank 3:  110%">Activates the Rark K-133T, increasing movement speed and offering excellent protection against being knocked off.  Movement speed increases based on the rank of your Speeder Piloting skill.  
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+  </Ability>
+  <Ability Id="16141079825954728480" Status="Changed">
+    <Fqn NodeId="16141079825954728480">abl.player.mount.mtx.vondell.ruby</Fqn>
+    <Name Id="3564109891108864">Vondell Ruby</Name>
+    <Description Id="3564109891108865" OldValue="Activates the Vondell Ruby, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.  &#xA;&#xA;Speeder Piloting Rank 1:  90%&#xA;Speeder Piloting Rank 2:  100%&#xA;Speeder Piloting Rank 3:  110%&#xA;">Activates the Vondell Ruby, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill. Use the Mount Flourish Key binding to activate this mount's flourish. 
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%
+</Description>
+    <Icon OldValue="mtx_mount_vondell_ruby">mtx_mount_season_7_vondell_ruby</Icon>
+  </Ability>
+  <Ability Id="16141148305602220114" Status="Changed">
+    <Fqn NodeId="16141148305602220114">abl.player.mount.security.toad_cobble_04</Fqn>
+    <Name Id="3561391176810496">Meirm Gray Fox</Name>
+    <Description Id="3561391176810497">Activates the Meirm Gray Fox, increasing movement speed and offering excellent protection against being knocked off.  Movement speed increases based on the rank of your Speeder Piloting skill.  
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <Icon Status="New">veh.pl.mt.speeder.toad.cobble.4</Icon>
+  </Ability>
+  <Ability Id="16141056428685320464" Status="Changed">
+    <Fqn NodeId="16141056428685320464">abl.sith_inquisitor.skill.darkness.depredating_volts</Fqn>
+    <Name Id="3408949902573568">Depredating Volts</Name>
+    <Description Id="3408949902573569" OldValue="Deals &lt;&lt;1&gt;&gt; energy damage to the target and consumes 40 Force over the duration of the channel. Slows the movement speed of the target by 50% and stuns weak or standard enemies while channeled.&#xA;&#xA;Shares a cooldown with Force Lightning.">Deals &lt;&lt;1&gt;&gt; energy damage to the target and consumes 40 Force over the duration of the channel. Slows the movement speed of the target by 50% and stuns weak or standard enemies while channeled. This ability can be channeled while moving.
+
+Shares a cooldown with Force Lightning.</Description>
+  </Ability>
+  <Ability Id="16141123064075961971" Status="Changed">
+    <Fqn NodeId="16141123064075961971">abl.sith_warrior.skill.annihilation.hemmorhage</Fqn>
+    <Name Id="1261148426993664">Hemorrhage</Name>
+    <Description Id="1261148426993665" OldValue="Your bleed effects have a 20% chance to build 1 rage when dealing damage. This effect cannot occur more than once every 3 seconds.">Your bleed effects have a 20% chance to build 1 rage when dealing damage. This effect cannot occur more than once every second.</Description>
+  </Ability>
+  <Ability Id="16141162241344950926" Status="Changed">
+    <Fqn NodeId="16141162241344950926">abl.sith_warrior.skill.annihilation.hungering</Fqn>
+    <Name Id="1261152721960960">Hungering</Name>
+    <Description Id="1261152721960961" OldValue="Your Rupture, Deadly Saber, adn Force Rend bleeds heal you for 15% of the damage they deal.">Your Rupture, Deadly Saber, and Force Rend bleeds heal you for 15% of the damage they deal.</Description>
+  </Ability>
+  <Ability Id="16140999959220785415" Status="Changed">
+    <Fqn NodeId="16140999959220785415">abl.sith_warrior.skill.utility.unstoppable</Fqn>
+    <Name Id="3585722166542336">Unstoppable</Name>
+    <Description Id="3585722166542337" OldValue="Force Charge grants Unstoppable, granting immunity to movement-impairing effects and effects that push and pull you around for &lt;&lt;1&gt;&gt; seconds.">Force Charge grants Unstoppable, granting immunity to movement-impairing effects and effects that push or pull you around for &lt;&lt;1&gt;&gt; seconds.</Description>
+  </Ability>
+  <Ability Id="16140952257753990220" Status="Changed">
+    <Fqn NodeId="16140952257753990220">abl.trooper.skill.gunnery.charged_barrel</Fqn>
+    <Name Id="998219119067136">Charged Barrel</Name>
+    <Description Id="998219119067137" OldValue="Grav Round grants Charged Barrel, increasing the damage dealt by the next High Impact Bolt by 6% and reducing the activation time of the next Medical Probe by 20%. Stacks up to 5 times.">Grav Round grants Charged Barrel, increasing the damage dealt by the next High Impact Bolt by 6% and reducing the activation time of the next Advanced Medical Probe by 20%. Stacks up to 5 times.</Description>
+  </Ability>
+  <Ability Id="16141162841621939326" Status="New">
+    <Fqn NodeId="16141162841621939326">abl.daily_area.ziost.world_arc.shared.dead_center.exh_modified_walkhar_trigger</Fqn>
+    <Name Id="3633061296078848"></Name>
+    <Description Id="3633061296078849"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>backflips</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+  </Ability>
+  <Ability Id="16141150913501267863" Status="New">
+    <Fqn NodeId="16141150913501267863">abl.daily_area.ziost.world_arc.shared.dead_center.modified_walkhar_planet</Fqn>
+    <Name Id="3632803598041088">Custom Walkhar Auspice</Name>
+    <Description Id="3632803598041089">This custom Walkhar Auspice has smaller intake dampeners and custom programming which allow for large bursts of speed in short intervals while also increasing movement speed and offering excellent knock-off protection.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <CastingTime>3</CastingTime>
+    <CooldownTime>3</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141150913501267863</SharedCooldown>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140952284924564661" Status="New">
+    <Fqn NodeId="16140952284924564661">abl.daily_area.ziost.world_boss.spawn_adds</Fqn>
+    <Name Id="3613167007563776"></Name>
+    <Description Id="3613167007563777"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <MaxRange>70</MaxRange>
+    <CooldownTime>999</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140952284924564661</SharedCooldown>
+    <TargetRule>Attackable</TargetRule>
+  </Ability>
+  <Ability Id="16141053687000809025" Status="New">
+    <Fqn NodeId="16141053687000809025">abl.mtx.pack.explorer.mid_rim_platinum</Fqn>
+    <Name Id="3630346876747776">Opening Pack</Name>
+    <Description Id="3630346876747777">Right-click to open this Mid Rim Platinum Pack. This pack contains 1 select Super Rare or better Bonus Item from the Mid Rim Explorer's Packs.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140939338973591755" Status="New">
+    <Fqn NodeId="16140939338973591755">abl.mtx.pack.superpack.crystals_2</Fqn>
+    <Name Id="3630299632107520">Opening Pack</Name>
+    <Description Id="3630299632107521">Right-click to open this Grand Crystal Pack. Contains one Color Crystal, drawn randomly from the Starfighter, Stronghold, and Shadow Packs found on the Cartel Market.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140972356115058852" Status="New">
+    <Fqn NodeId="16140972356115058852">abl.mtx.pack.superpack.dyes_2</Fqn>
+    <Name Id="3630312517009408">Opening Pack</Name>
+    <Description Id="3630312517009409">Right-click to open this Grand Dye Module Kit. Contains one Dye Module, drawn randomly from the Starfighter, Stronghold, and Shadow Packs found on the Cartel Market.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141046404037453552" Status="New">
+    <Fqn NodeId="16141046404037453552">abl.mtx.pack.superpack.emotes_2</Fqn>
+    <Name Id="3630303927074816">Opening Pack</Name>
+    <Description Id="3630303927074817">Right-click to open this Grand Emotes Pack. Contains one Emote, drawn randomly from the Starfighter, Stronghold, and Shadow Packs found on the Cartel Market.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141079699937023331" Status="New">
+    <Fqn NodeId="16141079699937023331">abl.mtx.pack.superpack.mounts_2</Fqn>
+    <Name Id="3630308222042112">Opening Pack</Name>
+    <Description Id="3630308222042113">Right-click to open this Grand Mounts Pack. Contains one Mount, drawn randomly from the Starfighter, Stronghold, and Shadow Packs found on the Cartel Market.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141137282641637892" Status="New">
+    <Fqn NodeId="16141137282641637892">abl.mtx.pack.superpack.pets_2</Fqn>
+    <Name Id="3630316811976704">Opening Pack</Name>
+    <Description Id="3630316811976705">Right-click to open this Grand Pets Pack. Contains one Pet, drawn randomly from the Starfighter, Stronghold, and Shadow Packs found on the Cartel Market.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140985080791050038" Status="New">
+    <Fqn NodeId="16140985080791050038">abl.placeables.daily_area.ziost.world.dead_center.repair_speeder</Fqn>
+    <Name Id="3622517151367168">Repairing</Name>
+    <Description Id="3622517151367169">Instantly uses the placeable and triggers the "On Use" hook.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>toolgun</Icon>
+    <CastingTime>2</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+  </Ability>
+  <Ability Id="16140940702921509100" Status="New">
+    <Fqn NodeId="16140940702921509100">abl.placeables.stronghold.technological.imperial_command_center</Fqn>
+    <Name Id="3623410504564736">Issuing Orders to the Empire</Name>
+    <Description Id="3623410504564737"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <ChannelingTime>30</ChannelingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+  </Ability>
+  <Ability Id="16141162033473179128" Status="New">
+    <Fqn NodeId="16141162033473179128">abl.pvp.ilum.kill_imp_bomber</Fqn>
+    <Name Id="2814474889199616"></Name>
+    <Description Id="2814474889199617"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+  </Ability>
+  <Ability Id="16141109781418180381" Status="New">
+    <Fqn NodeId="16141109781418180381">abl.pvp.ilum.kill_rep_bomber</Fqn>
+    <Name Id="2814479184166912"></Name>
+    <Description Id="2814479184166913"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+  </Ability>
+  <Ability Id="16141005018743837824" Status="New">
+    <Fqn NodeId="16141005018743837824">abl.quest.daily_area.ziost.world.eyes_into_the_past.exh_droid_area</Fqn>
+    <Name Id="3596798887198720"></Name>
+    <Description Id="3596798887198721"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>stimpack</Icon>
+    <MaxRange>100</MaxRange>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140966864549997419" Status="Removed">
+    <Fqn NodeId="16140966864549997419">abl.jedi_knight.skill.combat.defensive_forms</Fqn>
+    <Name Id="1705003232264192">Defensive Forms</Name>
+    <Description Id="1705003232264193">Builds &lt;&lt;4[%d/%d/%d]&gt;&gt; Centering when attacked. This effect cannot occur more than once every 1.5 seconds. Additionally improves the effect of your lightsaber forms while they are active:
+Shii-Cho Form: Further increases damage reduction by &lt;&lt;2[%d/%d/%d]&gt;&gt;%. 
+Juyo Form: Reduces internal and elemental damage taken by &lt;&lt;3[%d/%d/%d]&gt;&gt;%.
+Ataru Form: Increases your movement speed by &lt;&lt;1[%d/%d/%d]&gt;&gt;%.</Description>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>7.5</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>7.5</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>1</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="3">
+        <ablParsedDescriptionToken>2</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>2</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="4">
+        <ablParsedDescriptionToken>1</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>ricochet</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141024302318212927" Status="Removed">
+    <Fqn NodeId="16141024302318212927">abl.jedi_knight.skill.defense.guard_and_thrust</Fqn>
+    <Name Id="3186320272785408">Guard and Thrust</Name>
+    <Description Id="3186320272785409">Reduces the cooldown of Riposte by &lt;&lt;1[%d seconds/%d second/%d seconds]&gt;&gt; while Saber Ward is active.</Description>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>1.5</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1.5</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>standoff</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141093576937667791" Status="Removed">
+    <Fqn NodeId="16141093576937667791">abl.jedi_knight.skill.defense.momentum</Fqn>
+    <Name Id="2530075039760384">Momentum</Name>
+    <Description Id="2530075039760385">Force Leap and Zealous Leap have a &lt;&lt;1&gt;&gt;% chance to make the next Blade Storm activate without a focus cost.</Description>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>50</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>50</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>cc_follow</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141146200920376701" Status="Removed">
+    <Fqn NodeId="16141146200920376701">abl.jedi_knight.skill.defense.victory_rush</Fqn>
+    <Name Id="1281562406551552">Victory Rush</Name>
+    <Description Id="1281562406551553">Sundering Strike builds &lt;&lt;1&gt;&gt; additional focus.</Description>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>1</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>perforatingshot</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141167026820619719" Status="Removed">
+    <Fqn NodeId="16141167026820619719">abl.jedi_knight.skill.focus.force_guard</Fqn>
+    <Name Id="3187716137156608">Force Guard</Name>
+    <Description Id="3187716137156609">Reduces damage taken from Force attacks by &lt;&lt;1&gt;&gt;%. In addition, whenever you reflect Force damage with Saber Reflect, you build &lt;&lt;2&gt;&gt; focus.</Description>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>3</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>3</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>1</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>forcearmor</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <AbsorbCoEfficients>
+      <AbsorbCoEfficient Id="0">
+        <effParam_AmountMax>0</effParam_AmountMax>
+        <effParam_AmountMin>0</effParam_AmountMin>
+        <effParam_AmountPercent>0.06</effParam_AmountPercent>
+        <effParam_StandardHealthPercentMax>0</effParam_StandardHealthPercentMax>
+        <effParam_StandardHealthPercentMin>0</effParam_StandardHealthPercentMin>
+        <effParam_MaxDamageAbsorbed>0</effParam_MaxDamageAbsorbed>
+        <effParam_HealingPowerCoefficient>0</effParam_HealingPowerCoefficient>
+      </AbsorbCoEfficient>
+      <AbsorbCoEfficient Id="1">
+        <effParam_AmountMax>0</effParam_AmountMax>
+        <effParam_AmountMin>0</effParam_AmountMin>
+        <effParam_AmountPercent>0.03</effParam_AmountPercent>
+        <effParam_StandardHealthPercentMax>0</effParam_StandardHealthPercentMax>
+        <effParam_StandardHealthPercentMin>0</effParam_StandardHealthPercentMin>
+        <effParam_MaxDamageAbsorbed>0</effParam_MaxDamageAbsorbed>
+        <effParam_HealingPowerCoefficient>0</effParam_HealingPowerCoefficient>
+      </AbsorbCoEfficient>
+    </AbsorbCoEfficients>
+  </Ability>
+  <Ability Id="16141097771989344979" Status="Removed">
+    <Fqn NodeId="16141097771989344979">abl.jedi_knight.skill.focus.intervention</Fqn>
+    <Name Id="3187351064936448">Intervention</Name>
+    <Description Id="3187351064936449">Force Leap, Zealous Leap, and Guardian Leap have a &lt;&lt;1&gt;&gt;% chance to grant Intervention, which makes your next Freezing Force cost no focus and activate with a 0.5 second global cooldown.</Description>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>50</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>50</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>shockwave</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140957226930302127" Status="Removed">
+    <Fqn NodeId="16140957226930302127">abl.jedi_knight.skill.focus.second_wind</Fqn>
+    <Name Id="1416690667618304">Second Wind</Name>
+    <Description Id="1416690667618305">Resolute has a &lt;&lt;1&gt;&gt;% chance to heal you for 10% of your maximum health.</Description>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>50</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>50</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>unwaveringresolve</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140925765750291385" Status="Removed">
+    <Fqn NodeId="16140925765750291385">abl.jedi_knight.skill.focus.sokan</Fqn>
+    <Name Id="1416703552520192">Sokan</Name>
+    <Description Id="1416703552520193">Combat Focus has a &lt;&lt;1&gt;&gt;% chance to grant Sokan, granting immunity to all movement-slowing effects for the duration.</Description>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>50</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>50</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>quick_kick</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141173136010486415" Status="Removed">
+    <Fqn NodeId="16141173136010486415">abl.qa.gameplay_persistence.string_test.force_leap</Fqn>
+    <Name Id="3306398968446976">Force Leap</Name>
+    <Description Id="3306398968446977">Jumps to a distant target, dealing &lt;&lt;1&gt;&gt; damage with the main-hand weapon, immoblizing the target for &lt;&lt;2[%d seconds/%d second/%d seconds]&gt;&gt; and interrupting the target's current action. Builds 3 focus. Cannot be used against targets in cover.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IsSpecialAbility>True</effParam_IsSpecialAbility>
+            <effParam_IgnoreDualWieldModifier>True</effParam_IgnoreDualWieldModifier>
+            <effParam_FlurryBlowsMin>1</effParam_FlurryBlowsMin>
+            <effParam_FlurryBlowsMax>1</effParam_FlurryBlowsMax>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.091</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierFixedMax>0</effParam_AmountModifierFixedMax>
+            <effParam_AmountModifierFixedMin>0</effParam_AmountModifierFixedMin>
+            <effParam_AmountModifierPercent>-0.39</effParam_AmountModifierPercent>
+            <effParam_Coefficient>0.91</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>2</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>2</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>3</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>forceLeap</Icon>
+    <MinRange>10</MinRange>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>15</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141173136010486415</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+  </Ability>
+</Abilities>

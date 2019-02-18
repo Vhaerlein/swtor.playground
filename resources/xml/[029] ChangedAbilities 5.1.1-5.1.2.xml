@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="16140990818976549401" Status="Changed">
+    <Fqn NodeId="16140990818976549401">abl.exp.uprisings.denova.trench_runner.turret.mortar</Fqn>
+    <Name Id="3984247886970880">Missile Blast</Name>
+    <Description Id="3984247886970881">Fires a pair of highly explosive missiles at a target location.</Description>
+    <ChannelingTime Status="New">1</ChannelingTime>
+  </Ability>
+  <Ability Id="16141139884692707354" Status="Changed">
+    <Fqn NodeId="16141139884692707354">abl.itm.useable.xp_class_inhibitor</Fqn>
+    <Name Id="3578764319522816">White Acute Module</Name>
+    <Description Id="3578764319522817" OldValue="Removes Epic Story Mission bonus experience boosts while active.  All Legacy Boosts and XP Boost items retain their affect.  ">Removes bonus experience event boosts while active.  All Legacy Boosts and XP Boost items retain their affect.  </Description>
+    <CooldownTime Status="New">3</CooldownTime>
+    <GCD OldValue="-1">3</GCD>
+    <OverridesGCD OldValue="false">true</OverridesGCD>
+    <SharedCooldown Status="New">16141139884692707354</SharedCooldown>
+  </Ability>
+  <Ability Id="16141012934050245703" Status="New">
+    <Fqn NodeId="16141012934050245703">abl.companion.unique.mtx.iokath_tank.dps.aoe_attack</Fqn>
+    <Base62Id>HzO6LDU</Base62Id>
+    <Name Id="4079415772315648">Tactical Missile</Name>
+    <Description Id="4079415772315649">Fires a missile at the target, dealing &lt;&lt;1&gt;&gt; weapon damage to the target and up to 4 additional hostiles within 4 meters.</Description>
+    <DBURL>https://torcommunity.com/database/ability/HzO6LDU/tactical+missile</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IsSpecialAbility>True</effParam_IsSpecialAbility>
+            <effParam_IgnoreDualWieldModifier>True</effParam_IgnoreDualWieldModifier>
+            <effParam_FlurryBlowsMin>1</effParam_FlurryBlowsMin>
+            <effParam_FlurryBlowsMax>1</effParam_FlurryBlowsMax>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.101</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.101</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierFixedMax>0</effParam_AmountModifierFixedMax>
+            <effParam_AmountModifierFixedMin>0</effParam_AmountModifierFixedMin>
+            <effParam_AmountModifierPercent>-0.33</effParam_AmountModifierPercent>
+            <effParam_Coefficient>1.01</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>tacticalnuke</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>22.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141012934050245703</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141134005099935145" Status="New">
+    <Fqn NodeId="16141134005099935145">abl.companion.unique.mtx.iokath_tank.dps.execution_attack</Fqn>
+    <Base62Id>gRNrjTB</Base62Id>
+    <Name Id="4079420067282944">Calculated Precision</Name>
+    <Description Id="4079420067282945">Fires a precision shot at a target with less than 30% health, dealing &lt;&lt;1&gt;&gt; weapon damage.</Description>
+    <DBURL>https://torcommunity.com/database/ability/gRNrjTB/calculated+precision</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IsSpecialAbility>True</effParam_IsSpecialAbility>
+            <effParam_IgnoreDualWieldModifier>True</effParam_IgnoreDualWieldModifier>
+            <effParam_FlurryBlowsMin>1</effParam_FlurryBlowsMin>
+            <effParam_FlurryBlowsMax>1</effParam_FlurryBlowsMax>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.428</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.428</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierFixedMax>0</effParam_AmountModifierFixedMax>
+            <effParam_AmountModifierFixedMin>0</effParam_AmountModifierFixedMin>
+            <effParam_AmountModifierPercent>1.85</effParam_AmountModifierPercent>
+            <effParam_Coefficient>4.27</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>rifleshot</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>20</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141134005099935145</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141044689584781056" Status="New">
+    <Fqn NodeId="16141044689584781056">abl.companion.unique.mtx.iokath_tank.dps.single_stun</Fqn>
+    <Base62Id>0FTdKg0</Base62Id>
+    <Name Id="4079424362250240">Electro Dart</Name>
+    <Description Id="4079424362250241">Fires an electro dart stunning the target for 5 seconds. </Description>
+    <DBURL>https://torcommunity.com/database/ability/0FTdKg0/electro+dart</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>5</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>taserjolt</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>45</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141044689584781056</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140905831609821457" Status="New">
+    <Fqn NodeId="16140905831609821457">abl.companion.unique.mtx.iokath_tank.dps.single_target_attack</Fqn>
+    <Base62Id>4MaYxb5</Base62Id>
+    <Name Id="4079428657217536">Blast</Name>
+    <Description Id="4079428657217537">A powerful, single-target shot that deals &lt;&lt;1&gt;&gt; weapon damage.</Description>
+    <DBURL>https://torcommunity.com/database/ability/4MaYxb5/blast</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IsSpecialAbility>True</effParam_IsSpecialAbility>
+            <effParam_IgnoreDualWieldModifier>True</effParam_IgnoreDualWieldModifier>
+            <effParam_FlurryBlowsMin>1</effParam_FlurryBlowsMin>
+            <effParam_FlurryBlowsMax>1</effParam_FlurryBlowsMax>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.229</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.229</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierFixedMax>0</effParam_AmountModifierFixedMax>
+            <effParam_AmountModifierFixedMin>0</effParam_AmountModifierFixedMin>
+            <effParam_AmountModifierPercent>0.53</effParam_AmountModifierPercent>
+            <effParam_Coefficient>2.29</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>terminate</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>7</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140905831609821457</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141005731362643178" Status="New">
+    <Fqn NodeId="16141005731362643178">abl.companion.unique.mtx.iokath_tank.dps.single_target_dot</Fqn>
+    <Base62Id>wXngfp1</Base62Id>
+    <Name Id="4079437247152128">Toxin Burst</Name>
+    <Description Id="4079437247152129">Deals &lt;&lt;1&gt;&gt; internal damage over 10 seconds and causes the target to become sundered. Sundered targets have their armor reduced by 20% for 45 seconds.</Description>
+    <DBURL>https://torcommunity.com/database/ability/wXngfp1/toxin+burst</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>4</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.042</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.042</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>0.42</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>6</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>6</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>10</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="3">
+        <ablParsedDescriptionToken>45</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>3</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>scatterclip</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>12</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141005731362643178</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141009160646693228" Status="New">
+    <Fqn NodeId="16141009160646693228">abl.companion.unique.mtx.iokath_tank.flurry</Fqn>
+    <Base62Id>R16i650</Base62Id>
+    <Name Id="4078990570553344">Stock Shot</Name>
+    <Description Id="4078990570553345"></Description>
+    <DBURL>https://torcommunity.com/database/ability/R16i650/stock+shot</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Icon>barrage</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>1</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141009160646693228</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140927104120387353" Status="New">
+    <Fqn NodeId="16140927104120387353">abl.companion.unique.mtx.iokath_tank.healer.aoe_hot</Fqn>
+    <Base62Id>6VUHqgE</Base62Id>
+    <Name Id="4079441542119424">Kolto Area Scan</Name>
+    <Description Id="4079441542119425">Bursts an area 8m wide with a soothing, lingering Kolto cloud. Heals for &lt;&lt;1&gt;&gt; health over 6 seconds.</Description>
+    <DBURL>https://torcommunity.com/database/ability/6VUHqgE/kolto+area+scan</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>3</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.047</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.047</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>0.95</effParam_HealingPowerCoefficient>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>6</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>healbomb</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>40</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140927104120387353</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141051542831402589" Status="New">
+    <Fqn NodeId="16141051542831402589">abl.companion.unique.mtx.iokath_tank.healer.channel_heal</Fqn>
+    <Base62Id>NOwyUzR</Base62Id>
+    <Name Id="4079445837086720">Progressive Kolto Scan</Name>
+    <Description Id="4079445837086721">Heals a friendly target for &lt;&lt;1&gt;&gt; over the duration of the channel.</Description>
+    <DBURL>https://torcommunity.com/database/ability/NOwyUzR/progressive+kolto+scan</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>0.59</effParam_HealingPowerCoefficient>
+            <ablDescriptionTokenMultiplier>4</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>4</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>emergencystimpak</Icon>
+    <MaxRange>30</MaxRange>
+    <ChannelingTime>3</ChannelingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141044846657349997" Status="New">
+    <Fqn NodeId="16141044846657349997">abl.companion.unique.mtx.iokath_tank.healer.single_target_heal</Fqn>
+    <Base62Id>RIcfvC4</Base62Id>
+    <Name Id="4079450132054016">Quick Kolto Burst</Name>
+    <Description Id="4079450132054017">Executes a quick Kolto scan on the target, healing for &lt;&lt;1&gt;&gt;.</Description>
+    <DBURL>https://torcommunity.com/database/ability/RIcfvC4/quick+kolto+burst</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>1.63</effParam_HealingPowerCoefficient>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>bodyguardhealproc</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>8</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141044846657349997</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141054907072472488" Status="New">
+    <Fqn NodeId="16141054907072472488">abl.companion.unique.mtx.iokath_tank.healer.single_target_hot</Fqn>
+    <Base62Id>g6KXHEB</Base62Id>
+    <Name Id="4079454427021312">Kolto Scan Process</Name>
+    <Description Id="4079454427021313">Slowly heals the target for &lt;&lt;1&gt;&gt; over 9 seconds and cleanses physical and mental effects each time it heals the target.</Description>
+    <DBURL>https://torcommunity.com/database/ability/g6KXHEB/kolto+scan+process</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>0.61</effParam_HealingPowerCoefficient>
+            <ablDescriptionTokenMultiplier>4</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>4</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>9</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>underworldmedicine</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>12</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141054907072472488</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141045011057854171" Status="New">
+    <Fqn NodeId="16141045011057854171">abl.companion.unique.mtx.iokath_tank.healer.single_target_mez</Fqn>
+    <Base62Id>syDObVB</Base62Id>
+    <Name Id="4079458721988608">Electro-Stasis</Name>
+    <Description Id="4079458721988609">Binds the target in a stasis field for up to 10 seconds. Damage to the target causes this effect to end prematurely. Targets may only be affected by Electro-Stasis once every 30 seconds. Target must not be suffering from periodic damage and have greater than 90% max health.</Description>
+    <DBURL>https://torcommunity.com/database/ability/syDObVB/electro-stasis</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>electricshield</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>45</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141045011057854171</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140953505824435159" Status="New">
+    <Fqn NodeId="16140953505824435159">abl.companion.unique.mtx.iokath_tank.healer.single_target_shield</Fqn>
+    <Base62Id>rzNXULH</Base62Id>
+    <Name Id="4079463016955904">Preventative Protocol</Name>
+    <Description Id="4079463016955905">Places a Kolto-powered shield around the target, preventing a moderate amount of damage for up to 20 seconds.</Description>
+    <DBURL>https://torcommunity.com/database/ability/rzNXULH/preventative+protocol</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>recuperativenanotech</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>30</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140953505824435159</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <AbsorbCoEfficients>
+      <AbsorbCoEfficient Id="0">
+        <effParam_AmountMax>0</effParam_AmountMax>
+        <effParam_AmountMin>0</effParam_AmountMin>
+        <effParam_AmountPercent>1</effParam_AmountPercent>
+        <effParam_StandardHealthPercentMax>0.1225</effParam_StandardHealthPercentMax>
+        <effParam_StandardHealthPercentMin>0.1225</effParam_StandardHealthPercentMin>
+        <effParam_MaxDamageAbsorbed>0</effParam_MaxDamageAbsorbed>
+        <effParam_HealingPowerCoefficient>2.45</effParam_HealingPowerCoefficient>
+      </AbsorbCoEfficient>
+    </AbsorbCoEfficients>
+    <References />
+  </Ability>
+  <Ability Id="16141178269928141472" Status="New">
+    <Fqn NodeId="16141178269928141472">abl.companion.unique.mtx.iokath_tank.tamed_passive</Fqn>
+    <Base62Id>e39IwnD</Base62Id>
+    <Name Id="4078986275586048">companion.unique.mtx.iokath_tank.tamed_passive</Name>
+    <Description Id="4078986275586049"></Description>
+    <DBURL>https://torcommunity.com/database/ability/e39IwnD/companion.unique.mtx.iokath_tank.tamed_passive</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Icon>stimpack</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141049082685177994" Status="New">
+    <Fqn NodeId="16141049082685177994">abl.companion.unique.mtx.iokath_tank.tank.aoe_attack</Fqn>
+    <Base62Id>Ya2OAvF</Base62Id>
+    <Name Id="4079467311923200">Electronics Overload</Name>
+    <Description Id="4079467311923201">Activates an explosive that deals &lt;&lt;1&gt;&gt; energy damage to up to 5 enemies within 4 meters of the companion. Generates a moderate amount of additional threat and reduces incoming damage by 50% for 10 seconds. Does not hit sleeping, lifted, or incapacitated enemies.</Description>
+    <DBURL>https://torcommunity.com/database/ability/Ya2OAvF/electronics+overload</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>2</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0.5</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.126</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.086</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>1.06</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>10</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>abl_jc_sa_resonating_vibrations</Icon>
+    <MaxRange>4</MaxRange>
+    <CooldownTime>15</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141049082685177994</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141036532116303563" Status="New">
+    <Fqn NodeId="16141036532116303563">abl.companion.unique.mtx.iokath_tank.tank.aoe_pull</Fqn>
+    <Base62Id>oovb0p5</Base62Id>
+    <Name Id="4079471606890496">Multi-Grapple</Name>
+    <Description Id="4079471606890497">Fires a multi-grapple line that fires in a wide cone in front of the companion and pulls the closest three targets and generates a high amount of threat. Only affects targets that are in combat and are not in cover or have Boss Immunity.</Description>
+    <DBURL>https://torcommunity.com/database/ability/oovb0p5/multi-grapple</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>grapple</Icon>
+    <MinRange>4</MinRange>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>45</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141036532116303563</SharedCooldown>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140955546500998710" Status="New">
+    <Fqn NodeId="16140955546500998710">abl.companion.unique.mtx.iokath_tank.tank.aoe_pull_mk2</Fqn>
+    <Base62Id>DYQG58D</Base62Id>
+    <Name Id="4079475901857792">Multi-Grapple</Name>
+    <Description Id="4079475901857793">Fires a multi-grapple line that fires in a wide cone in front of the companion and pulls the closest three targets and generates a high amount of threat. Only affects targets that are in combat and are not in cover or have Boss Immunity.</Description>
+    <DBURL>https://torcommunity.com/database/ability/DYQG58D/multi-grapple</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>grapple</Icon>
+    <MinRange>4</MinRange>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>45</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140955546500998710</SharedCooldown>
+    <TargetArc>90</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140963698963241837" Status="New">
+    <Fqn NodeId="16140963698963241837">abl.companion.unique.mtx.iokath_tank.tank.aoe_taunt</Fqn>
+    <Base62Id>RTijEV7</Base62Id>
+    <Name Id="4079480196825088">Provoking Flare</Name>
+    <Description Id="4079480196825089">Fires a flare taunting attacking enemies and forcing them to attack your companion.</Description>
+    <DBURL>https://torcommunity.com/database/ability/RTijEV7/provoking+flare</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>abl_bhtr_meco_supercharged_reserves</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>20</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140963698963241837</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140995520490225973" Status="New">
+    <Fqn NodeId="16140995520490225973">abl.companion.unique.mtx.iokath_tank.tank.single_target_attack</Fqn>
+    <Base62Id>DS7ydze</Base62Id>
+    <Name Id="4079484491792384">Powered Shot</Name>
+    <Description Id="4079484491792385">Blasts the target, dealing &lt;&lt;1&gt;&gt; weapon damage, healing the companion for 25% of the damage dealt, and generating a moderate amount of additional threat.</Description>
+    <DBURL>https://torcommunity.com/database/ability/DS7ydze/powered+shot</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IsSpecialAbility>True</effParam_IsSpecialAbility>
+            <effParam_IgnoreDualWieldModifier>True</effParam_IgnoreDualWieldModifier>
+            <effParam_FlurryBlowsMin>1</effParam_FlurryBlowsMin>
+            <effParam_FlurryBlowsMax>1</effParam_FlurryBlowsMax>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_ThreatPercent>0.5</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.164</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.164</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierFixedMax>0</effParam_AmountModifierFixedMax>
+            <effParam_AmountModifierFixedMin>0</effParam_AmountModifierFixedMin>
+            <effParam_AmountModifierPercent>0.09</effParam_AmountModifierPercent>
+            <effParam_Coefficient>1.64</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0.25</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>abl_tr_co_blazing_celerity</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>7.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140995520490225973</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141062477829436503" Status="New">
+    <Fqn NodeId="16141062477829436503">abl.companion.unique.mtx.iokath_tank.tank.single_target_taunt</Fqn>
+    <Base62Id>LzeqV6D</Base62Id>
+    <Name Id="4079488786759680">Reinforcing Taunt</Name>
+    <Description Id="4079488786759681">Reinforces the companion with an absorb shield that absorbs a moderate amount of damage and taunts the target, forcing it to attack the companion for 6 seconds.</Description>
+    <DBURL>https://torcommunity.com/database/ability/LzeqV6D/reinforcing+taunt</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>6</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>abl_jc_sh_martial_prowess</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>12</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141062477829436503</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <AbsorbCoEfficients>
+      <AbsorbCoEfficient Id="0">
+        <effParam_AmountMax>0</effParam_AmountMax>
+        <effParam_AmountMin>0</effParam_AmountMin>
+        <effParam_AmountPercent>1</effParam_AmountPercent>
+        <effParam_StandardHealthPercentMax>0.05</effParam_StandardHealthPercentMax>
+        <effParam_StandardHealthPercentMin>0.05</effParam_StandardHealthPercentMin>
+        <effParam_MaxDamageAbsorbed>0</effParam_MaxDamageAbsorbed>
+        <effParam_HealingPowerCoefficient>1</effParam_HealingPowerCoefficient>
+      </AbsorbCoEfficient>
+    </AbsorbCoEfficients>
+    <References />
+  </Ability>
+  <Ability Id="16140992333161784211" Status="New">
+    <Fqn NodeId="16140992333161784211">abl.exp.seasons.02.ep_06.boss.pit_beasts.pack.area_cast_pack_hound_death</Fqn>
+    <Base62Id>asDf902</Base62Id>
+    <Name Id="4075442927566848">exp.seasons.02.ep_06.boss.pit_beasts.pack.area_cast_pack_hound_death</Name>
+    <Description Id="4075442927566849"></Description>
+    <DBURL>https://torcommunity.com/database/ability/asDf902/exp.seasons.02.ep_06.boss.pit_beasts.pack.area_cast_pack_hound_death</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141146742874011381" Status="New">
+    <Fqn NodeId="16141146742874011381">abl.itm.vanity_pet.dog.nexu_a02_v01</Fqn>
+    <Base62Id>yhiwkZH</Base62Id>
+    <Name Id="4082825976348672">Experimental Nexu</Name>
+    <Description Id="4082825976348673">Summons a small Nexu which will follow and passively observe you on your adventures. </Description>
+    <DBURL>https://torcommunity.com/database/ability/yhiwkZH/experimental+nexu</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_pet_dog_nexu_experimental</Icon>
+    <GCD>1.5</GCD>
+    <OverridesGCD>true</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>397315809489773116</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140931369791101624" Status="New">
+    <Fqn NodeId="16140931369791101624">abl.itm.vanity_pet.mousedroid.minimech_a01_v03</Fqn>
+    <Base62Id>k9fR090</Base62Id>
+    <Name Id="4082898990792704">Zakuul Minimech</Name>
+    <Description Id="4082898990792705">Summons a small Zakuul Minimech which will follow and passively observe you on your adventures. </Description>
+    <DBURL>https://torcommunity.com/database/ability/k9fR090/zakuul+minimech</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_pet_mousedroid_a01_v03</Icon>
+    <GCD>1.5</GCD>
+    <OverridesGCD>true</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>397315809489773116</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140962398300549418" Status="New">
+    <Fqn NodeId="16140962398300549418">abl.mtx.companion.droid.iokath_tank.grant_iokath</Fqn>
+    <Base62Id>AZ6aOy8</Base62Id>
+    <Name Id="4078354915393536">Activating Requisition...</Name>
+    <Description Id="4078354915393537">Activates your droid operator requisition.</Description>
+    <DBURL>https://torcommunity.com/database/ability/AZ6aOy8/activating+requisition...</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>bravado</Icon>
+    <CastingTime>2</CastingTime>
+    <CooldownTime>1</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140962398300549418</SharedCooldown>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140915499479309058" Status="New">
+    <Fqn NodeId="16140915499479309058">abl.mtx.pack.command.vigilant_defender</Fqn>
+    <Base62Id>0fiFw20</Base62Id>
+    <Name Id="4083659200004096">Opening Pack</Name>
+    <Description Id="4083659200004097">Right-click to open this Vigilant Defender Pack. This pack contains 4 items, including: 2 from Armor Lootboxes, Mounts or Vehicles, Weapons, Crystals, Stronghold Decorations, Pets, Titles, Emotes, Toys, Flair, Droid Companion, or the Grand Chance Cube, 1 Companion Gift, and 1 Scrap Material.</Description>
+    <DBURL>https://torcommunity.com/database/ability/0fiFw20/opening+pack</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141119911524164837" Status="New">
+    <Fqn NodeId="16141119911524164837">abl.mtx.pack.superpack.bsg.companion</Fqn>
+    <Base62Id>vUHXImA</Base62Id>
+    <Name Id="4088460973441024">Opening Pack</Name>
+    <Description Id="4088460973441025">Right-click to open this Grand Companion Pack. Contains one Companion, drawn randomly from all Cartel Market Companions.</Description>
+    <DBURL>https://torcommunity.com/database/ability/vUHXImA/opening+pack</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141010711973391860" Status="New">
+    <Fqn NodeId="16141010711973391860">abl.mtx.pack.superpack.grand_shadow</Fqn>
+    <Base62Id>ydRv9LP</Base62Id>
+    <Name Id="4088357894225920">Opening Pack</Name>
+    <Description Id="4088357894225921">Contains a selection of items drawn randomly from the Initiate's, Pilgrim's, Acolyte's, Apprentice's and Master's Shadow Packs found on the Cartel Market.</Description>
+    <DBURL>https://torcommunity.com/database/ability/ydRv9LP/opening+pack</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141006299027971693" Status="New">
+    <Fqn NodeId="16141006299027971693">abl.mtx.toy.holocall</Fqn>
+    <Base62Id>RPxdqh5</Base62Id>
+    <Name Id="4083388617064448">Holocall</Name>
+    <Description Id="4083388617064449">You take a call from your allies. You regenerate health and your class' energy pool while listening.</Description>
+    <DBURL>https://torcommunity.com/database/ability/RPxdqh5/holocall</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_toys_holocall</Icon>
+    <ChannelingTime>15</ChannelingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141068316388525129" Status="New">
+    <Fqn NodeId="16141068316388525129">abl.player.mount.mtx.hutt_skiff.huttese_litter_kotet</Fqn>
+    <Base62Id>IOIcNHD</Base62Id>
+    <Name Id="4080961960542208">Cartel Relaxation Skiff</Name>
+    <Description Id="4080961960542209">Activates the Cartel Relaxation Skiff, increasing movement speed and offering excellent protection against being knocked off.  Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%  </Description>
+    <DBURL>https://torcommunity.com/database/ability/IOIcNHD/cartel+relaxation+skiff</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_huttese_litter_kotet</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141129026118343847" Status="New">
+    <Fqn NodeId="16141129026118343847">abl.player.mount.mtx.ice_tromper.armored_tundra_icetromper</Fqn>
+    <Base62Id>fyv3kQK</Base62Id>
+    <Name Id="4081301262958592">Armored Tundra Ice Tromper</Name>
+    <Description Id="4081301262958593">Calls your Armored Tundra Ice Tromper mount. Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <DBURL>https://torcommunity.com/database/ability/fyv3kQK/armored+tundra+ice+tromper</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_tundra_icetromper</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141088193725129964" Status="New">
+    <Fqn NodeId="16141088193725129964">abl.player.mount.mtx.throne.jedi_emperor_throne_01</Fqn>
+    <Base62Id>xEGyDPH</Base62Id>
+    <Name Id="4083994207453184">Protector's Command Throne</Name>
+    <Description Id="4083994207453185">Activates the Protector's Command Throne,  increasing movement speed and offering excellent protection against being knocked off.  Movement speed increases based on the rank of your Speeder Piloting skill.  
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <DBURL>https://torcommunity.com/database/ability/xEGyDPH/protector%27s+command+throne</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_throne_protector_01</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140916702775618432" Status="New">
+    <Fqn NodeId="16140916702775618432">abl.player.mount.mtx.zakuul.zak_falcon</Fqn>
+    <Base62Id>W2iS4Z9</Base62Id>
+    <Name Id="4081344212631552">Zakuulan Falcon</Name>
+    <Description Id="4081344212631553">Activates the Zakuulan Falcon, increasing movement speed and offering excellent protection against being knocked off.  Movement speed increases based on the rank of your Speeder Piloting skill. 
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110% </Description>
+    <DBURL>https://torcommunity.com/database/ability/W2iS4Z9/zakuulan+falcon</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_zakuulan_falcon</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141104436071194532" Status="New">
+    <Fqn NodeId="16141104436071194532">abl.player.mount.vectron.colette</Fqn>
+    <Base62Id>f5z0aNN</Base62Id>
+    <Name Id="4076198841810944">Vectron Colette</Name>
+    <Description Id="4076198841810945">Activates the Vectron Colette, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill. 
+
+Use the Mount Flourish Key binding to activate this mount's flourish.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110% </Description>
+    <DBURL>https://torcommunity.com/database/ability/f5z0aNN/vectron+colette</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_vectron_colette</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+</Abilities>

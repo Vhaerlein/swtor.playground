@@ -1,0 +1,148 @@
+﻿<mm:MetroWindow x:Class="Swtor.Dps.StatOptimizer.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:mm="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+	xmlns:view="clr-namespace:Swtor.Dps.StatOptimizer.View"
+	xmlns:controls="clr-namespace:Swtor.Dps.StatOptimizer.Controls"
+	xmlns:viewModel="clr-namespace:Swtor.Dps.StatOptimizer.ViewModel"
+	Icon="/swtor.ico" TitlebarHeight="32" SaveWindowPosition="True"
+	BorderThickness="0"
+	GlowBrush="Black" MaxHeight="921"
+	Closing="MainWindow_OnClosing"
+	SizeToContent="WidthAndHeight" ResizeMode="NoResize"
+	d:DataContext="{d:DesignInstance viewModel:MainViewModel}"
+	mc:Ignorable="d" Title="{Binding Title}">
+
+	<mm:MetroWindow.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="../Styles/Generic.xaml" />
+				<ResourceDictionary Source="../Resources/Icons.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</mm:MetroWindow.Resources>
+
+	<mm:MetroWindow.RightWindowCommands>
+		<mm:WindowCommands>
+			<Button Command="{Binding LoadProfileCommand}">
+				<StackPanel Orientation="Horizontal">
+					<Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+						<Rectangle.OpacityMask>
+							<VisualBrush Stretch="Fill" Visual="{StaticResource appbar_cabinet_out}" />
+						</Rectangle.OpacityMask>
+					</Rectangle>
+					<TextBlock Margin="5,0,0,0" VerticalAlignment="Center" Text="load profile" />
+				</StackPanel>
+			</Button>
+			<Button Command="{Binding SaveProfileCommand}">
+				<StackPanel Orientation="Horizontal">
+					<Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+						<Rectangle.OpacityMask>
+							<VisualBrush Stretch="Fill" Visual="{StaticResource appbar_cabinet_in}" />
+						</Rectangle.OpacityMask>
+					</Rectangle>
+					<TextBlock Margin="5,0,0,0" VerticalAlignment="Center" Text="save profile" />
+				</StackPanel>
+			</Button>
+			<Button Command="{Binding SaveProfileAsCommand}">
+				<StackPanel Orientation="Horizontal">
+					<Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+						<Rectangle.OpacityMask>
+							<VisualBrush Stretch="Fill" Visual="{StaticResource appbar_cabinet_in}" />
+						</Rectangle.OpacityMask>
+					</Rectangle>
+					<TextBlock Margin="5,0,0,0" VerticalAlignment="Center" Text="save profile as" />
+				</StackPanel>
+			</Button>
+			<Button Command="{Binding ParseCombatLogCommand}">
+				<StackPanel Orientation="Horizontal">
+					<Rectangle Width="20" Height="20" Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+						<Rectangle.OpacityMask>
+							<VisualBrush Stretch="Fill" Visual="{StaticResource appbar_people_arrow_right}" />
+						</Rectangle.OpacityMask>
+					</Rectangle>
+					<TextBlock Margin="5,0,0,0" VerticalAlignment="Center" Text="parse combat log" />
+				</StackPanel>
+			</Button>
+		</mm:WindowCommands>
+	</mm:MetroWindow.RightWindowCommands>
+
+	<Grid VerticalAlignment="Top" HorizontalAlignment="Stretch">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<GroupBox Header="Configuration" VerticalAlignment="Top" Margin="3,3,0,3">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition />
+					<ColumnDefinition />
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition />
+					<RowDefinition />
+					<RowDefinition />
+				</Grid.RowDefinitions>
+				<view:ConfigurationView DataContext="{Binding ConfigurationViewModel}" Grid.ColumnSpan="2" />
+				<Separator Height="2" Margin="0,3" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" />
+				<controls:LabeledTextBox Grid.Column="0" Grid.Row="2" Text="{Binding Dps, StringFormat='{}{0:0.00}'}" Label="Estimated DPS:" Width="195" LabelWidth="125" IsReadOnly="True" />
+				<ContentControl Grid.Column="1" Grid.Row="2" Content="{Binding NewDps}">
+					<ContentControl.Style>
+						<Style TargetType="ContentControl">
+							<Setter Property="Opacity" Value="1"/>
+							<Style.Triggers>
+								<DataTrigger Binding="{Binding ConfigurationViewModel.CorrectionViewModel.IsOutdated}" Value="True">
+									<Setter Property="Opacity" Value="0.5"/>
+								</DataTrigger>
+							</Style.Triggers>
+						</Style>
+					</ContentControl.Style>
+				</ContentControl>
+			</Grid>
+		</GroupBox>
+		<StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+			<Button Command="{Binding RecalculateCommand}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">Optimize (current session)</Button>
+			<Button Command="{Binding RecalculateAllCommand}" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">Optimize (all sessions)</Button>
+		</StackPanel>
+		<GroupBox Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Header="Combat session" Margin="3">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="Auto" />
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<ComboBox ItemsSource="{Binding SessionViewModels}" SelectedItem="{Binding ActiveSessionViewModel}">
+					<ComboBox.ItemTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding Name}" />
+						</DataTemplate>
+					</ComboBox.ItemTemplate>
+				</ComboBox>
+				<Button Command="{Binding DeleteSessionCommand}" Grid.Column="1" Grid.Row="0" Content="Delete" Margin="5,0,0,0">
+					<Button.Style>
+						<Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+							<Setter Property="IsEnabled" Value="True" />
+							<Setter Property="Opacity" Value="1" />
+							<Style.Triggers>
+								<DataTrigger Binding="{Binding ActiveSessionViewModel}" Value="{x:Null}">
+									<Setter Property="IsEnabled" Value="False" />
+									<Setter Property="Opacity" Value="0.2" />
+								</DataTrigger>
+							</Style.Triggers>
+						</Style>
+					</Button.Style>
+				</Button>
+				<view:SessionView DataContext="{Binding ActiveSessionViewModel}" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Margin="0,10,0,0" />
+			</Grid>
+		</GroupBox>
+	</Grid>
+</mm:MetroWindow>

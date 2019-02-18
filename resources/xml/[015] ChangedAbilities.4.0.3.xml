@@ -1,0 +1,2242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="16140944631942560542" Status="Changed">
+    <Fqn NodeId="16140944631942560542">abl.agent.skill.marksmanship.penetrating_blasts</Fqn>
+    <Name Id="3394699201085440">Penetrating Blasts</Name>
+    <Description Id="3394699201085441">Fires a number of blasts that deal &lt;&lt;1&gt;&gt; weapon damage and sunder the target for 45 seconds. Sundered targets have their armor rating reduced by 20%. Consumes 20 energy over the duration of the channel.
+
+Replaces Series of Shots.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.085">0.08</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.085">0.08</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="-0.44">-0.47</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="0.847">0.8</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141018848449803841" Status="Changed">
+    <Fqn NodeId="16141018848449803841">abl.bounty_hunter.skill.shield_tech.firestorm</Fqn>
+    <Name Id="3178507727273984">Firestorm</Name>
+    <Description Id="3178507727273985">Incinerates everything in a 10-meter cone, generating 28 heat and dealing &lt;&lt;1&gt;&gt; elemental damage to up to 8 enemy targets over the duration. Affected targets are impaired for 45 seconds, reducing the Force and tech damage they deal by 5%.
+
+Replaces Flame Thrower.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.111">0.0985</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.111">0.0985</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="1.11">0.985</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141101807368274221" Status="Changed">
+    <Fqn NodeId="16141101807368274221">abl.companion.unique.hk51.dps.stun_attack</Fqn>
+    <Name Id="3751065522536448">Blindside</Name>
+    <Description Id="3751065522536449" OldValue="HK-51 takes advantage of a distracted target, firing a well placed decisive shot for extreme damage. Can only be used on targets impaired by Evasion Protocols.">HK-51 takes advantage of a distracted target, firing a well placed decisive shot for &lt;&lt;1&gt;&gt; weapon damage. Can only be used on targets impaired by Evasion Protocols.</Description>
+    <Tokens Status="New">
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IsSpecialAbility>True</effParam_IsSpecialAbility>
+            <effParam_IgnoreDualWieldModifier>False</effParam_IgnoreDualWieldModifier>
+            <effParam_FlurryBlowsMin>1</effParam_FlurryBlowsMin>
+            <effParam_FlurryBlowsMax>1</effParam_FlurryBlowsMax>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.248</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.248</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierFixedMax>0</effParam_AmountModifierFixedMax>
+            <effParam_AmountModifierFixedMin>0</effParam_AmountModifierFixedMin>
+            <effParam_AmountModifierPercent>0.65</effParam_AmountModifierPercent>
+            <effParam_Coefficient>2.48</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141158285450306734" Status="Changed">
+    <Fqn NodeId="16141158285450306734">abl.companion.unique.hk51.tank.instant_damage</Fqn>
+    <Name Id="3751069817503744">Provoking Rail Blast</Name>
+    <Description Id="3751069817503745" OldValue="Blasts a target for moderate damage and generates a moderate amount of threat.">Blasts a target for &lt;&lt;1&gt;&gt; energy damage and generates a moderate amount of threat.</Description>
+    <Tokens Status="New">
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>2</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.12</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.1</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>1.1</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141182173113338042" Status="Changed">
+    <Fqn NodeId="16141182173113338042">abl.companion.unique.hk51.tank.short_cast_taunt</Fqn>
+    <Name Id="3751104177242112">Calibrated Taunting Shot</Name>
+    <Description Id="3751104177242113" OldValue="Shoots the target for moderate damage while also taunting the target.">Shoots the target for &lt;&lt;1&gt;&gt; weapon damage while also taunting the target.</Description>
+    <Tokens Status="New">
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IsSpecialAbility>True</effParam_IsSpecialAbility>
+            <effParam_IgnoreDualWieldModifier>True</effParam_IgnoreDualWieldModifier>
+            <effParam_FlurryBlowsMin>1</effParam_FlurryBlowsMin>
+            <effParam_FlurryBlowsMax>1</effParam_FlurryBlowsMax>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.135</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.135</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierFixedMax>0</effParam_AmountModifierFixedMax>
+            <effParam_AmountModifierFixedMin>0</effParam_AmountModifierFixedMin>
+            <effParam_AmountModifierPercent>-0.12</effParam_AmountModifierPercent>
+            <effParam_Coefficient>1.35</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141095245462873761" Status="Changed">
+    <Fqn NodeId="16141095245462873761">abl.companion.unique.mtx.treek.healer.st_channel_heal</Fqn>
+    <Name Id="3692237355483136">Fektur Sling</Name>
+    <Description Id="3692237355483137">Treek heals a target group member for &lt;&lt;1&gt;&gt; over the channel duration and an additional &lt;&lt;2&gt;&gt; at the end of the channel. Treek may not heal herself with this ability.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_StandardHealthPercentMax OldValue="0.47">0.047</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.47">0.047</effParam_StandardHealthPercentMin>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141157993161935349" Status="Changed">
+    <Fqn NodeId="16141157993161935349">abl.creature.cat.cat_default_special_attack</Fqn>
+    <Name Id="2016452785733632">Maul</Name>
+    <Description Id="2016452785733633"></Description>
+    <IsHidden OldValue="false">true</IsHidden>
+  </Ability>
+  <Ability Id="16141046060248302008" Status="Changed">
+    <Fqn NodeId="16141046060248302008">abl.exp.01.makeb.heroic_weekly.transport_passes.counterstrike_transport_pass</Fqn>
+    <Name Id="3663246326235136">Heroic Transport</Name>
+    <Description Id="3663246326235137">This pass allows you to travel to a safe area near the objective for the Counterstrike quest on Makeb.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140950032047818512" Status="Changed">
+    <Fqn NodeId="16140950032047818512">abl.exp.01.makeb.heroic_weekly.transport_passes.deception_play_transport_pass</Fqn>
+    <Name Id="3663254916169728">Heroic Transport</Name>
+    <Description Id="3663254916169729">This pass allows you to travel to a safe area near the objective for the Deception Play quest on Makeb.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141178360148942540" Status="Changed">
+    <Fqn NodeId="16141178360148942540">abl.exp.01.makeb.heroic_weekly.transport_passes.false_history_transport_pass</Fqn>
+    <Name Id="3663233441333248">Heroic Transport</Name>
+    <Description Id="3663233441333249">This pass allows you to travel to a safe area near the objective for the False History quest on Makeb.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140914694951913388" Status="Changed">
+    <Fqn NodeId="16140914694951913388">abl.exp.01.makeb.heroic_weekly.transport_passes.for_the_record_transport_pass</Fqn>
+    <Name Id="3663267801071616">Heroic Transport</Name>
+    <Description Id="3663267801071617">This pass allows you to travel to a safe area near the objective for the For the Record quest on Makeb.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141020231810945656" Status="Changed">
+    <Fqn NodeId="16141020231810945656">abl.exp.01.makeb.heroic_weekly.transport_passes.savage_skies_transport_pass</Fqn>
+    <Name Id="3663263506104320">Heroic Transport</Name>
+    <Description Id="3663263506104321">This pass allows you to travel to a safe area near the objective for the Savage Skies quest on Makeb.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141168128809541007" Status="Changed">
+    <Fqn NodeId="16141168128809541007">abl.exp.01.makeb.heroic_weekly.transport_passes.sharing_the_blame_transport_pass</Fqn>
+    <Name Id="3663237736300544">Heroic Transport</Name>
+    <Description Id="3663237736300545">This pass allows you to travel to a safe area near the objective for the Sharing the Blame quest on Makeb.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140936016115574680" Status="Changed">
+    <Fqn NodeId="16140936016115574680">abl.exp.01.makeb.heroic_weekly.transport_passes.the_observer_transport_pass</Fqn>
+    <Name Id="3663259211137024">Heroic Transport</Name>
+    <Description Id="3663259211137025">This pass allows you to travel to a safe area near the objective for the The Observer quest on Makeb.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141052558211827496" Status="Changed">
+    <Fqn NodeId="16141052558211827496">abl.exp.01.makeb.heroic_weekly.transport_passes.the_specialists_transport_pass</Fqn>
+    <Name Id="3663229146365952">Heroic Transport</Name>
+    <Description Id="3663229146365953">This pass allows you to travel to a safe area near the objective for the The Specialists quest on Makeb.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141059205321635952" Status="Changed">
+    <Fqn NodeId="16141059205321635952">abl.exp.01.makeb.heroic_weekly.transport_passes.the_vipers_nest_transport_pass</Fqn>
+    <Name Id="3663250621202432">Heroic Transport</Name>
+    <Description Id="3663250621202433">This pass allows you to travel to a safe area near the objective for the The Vipers Nest quest on Makeb.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141021661352609595" Status="Changed">
+    <Fqn NodeId="16141021661352609595">abl.exp.01.makeb.heroic_weekly.transport_passes.weapons_test_transport_pass</Fqn>
+    <Name Id="3663242031267840">Heroic Transport</Name>
+    <Description Id="3663242031267841">This pass allows you to travel to a safe area near the objective for the Weapons Test quest on Makeb.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141139674770019496" Status="Changed">
+    <Fqn NodeId="16141139674770019496">abl.flashpoint.star_fortress.environmental.shrines.pickup_buff_research_abl</Fqn>
+    <Name Id="3766840937414656" OldValue="Prototype Medial Probe">Prototype Medical Probe</Name>
+    <Description Id="3766840937414657">Summons an advanced medical probe to quickly heal everyone in your group for a moderate amount followed by periodic healing for 6 seconds. Activating this ability will put it on cooldown for your entire group. The group may only have one Probe deployed at a time.</Description>
+    <DBURL OldValue="https://torcommunity.com/database/ability/g9IXo03/prototype+medial+probe">https://torcommunity.com/database/ability/g9IXo03/prototype+medical+probe</DBURL>
+  </Ability>
+  <Ability Id="16141118511290090349" Status="Changed">
+    <Fqn NodeId="16141118511290090349">abl.jedi_consular.double_strike</Fqn>
+    <Name Id="812728071487488">Double Strike</Name>
+    <Description Id="812728071487489">Strikes the target twice. Each hit deals &lt;&lt;1&gt;&gt; weapon damage.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.0775">0.072</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0775">0.072</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="-0.48">-0.52</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="0.775">0.72</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="25">20</ForceCost>
+  </Ability>
+  <Ability Id="16141152651698630423" Status="Changed">
+    <Fqn NodeId="16141152651698630423">abl.jedi_consular.skill.infiltration.clairvoyant_strike</Fqn>
+    <Name Id="980042817470464">Clairvoyant Strike</Name>
+    <Description Id="980042817470465">Strikes the target twice, dealing &lt;&lt;1&gt;&gt; weapon damage with each hit. Each use of this ability builds Clairvoyance, which gives Project a 50% chance to automatically trigger your Shadow Technique off of its normal rate limit. Stacks up to 2 times. Requires a double-bladed lightsaber or electrostaff.
+
+Replaces Double Strike.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.081">0.075</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.081">0.075</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="-0.46">-0.5</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="0.81">0.75</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="25">20</ForceCost>
+  </Ability>
+  <Ability Id="16141024193870809587" Status="Changed">
+    <Fqn NodeId="16141024193870809587">abl.jedi_consular.skill.infiltration.psychokinetic_blast</Fqn>
+    <Name Id="3401425119870976">Psychokinetic Blast</Name>
+    <Description Id="3401425119870977">Blasts the target with the psychokinetic power of the Force for &lt;&lt;1&gt;&gt; kinetic damage. Standard and weak targets are additionally stunned for 3 seconds.
+
+Replaces Project.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.226">0.214</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.186">0.174</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="2.06">1.94</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141085192670974334" Status="Changed">
+    <Fqn NodeId="16141085192670974334">abl.jedi_consular.spinning_strike</Fqn>
+    <Name Id="2295904832847872">Spinning Strike</Name>
+    <Description Id="2295904832847873">Issues a subduing strike, dealing &lt;&lt;1&gt;&gt; weapon damage. Only usable on targets at or below 30% max health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.266">0.254</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.266">0.254</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="0.77">0.7</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="2.657">2.54</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="25">20</ForceCost>
+  </Ability>
+  <Ability Id="16141124609735866578" Status="Changed">
+    <Fqn NodeId="16141124609735866578">abl.jedi_consular.whirling_blow</Fqn>
+    <Name Id="979716399955968">Whirling Blow</Name>
+    <Description Id="979716399955969">Deals &lt;&lt;1&gt;&gt; weapon damage to up to 8 targets within 5 meters. Requires a double-bladed lightsaber or electrostaff.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.078">0.072</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.078">0.072</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="-0.48">-0.52</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="0.78">0.72</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="25">20</ForceCost>
+  </Ability>
+  <Ability Id="16141164140889618336" Status="Changed">
+    <Fqn NodeId="16141164140889618336">abl.jedi_knight.skill.combat.clashing_blast</Fqn>
+    <Name Id="3409001442181120">Clashing Blast</Name>
+    <Description Id="3409001442181121">Unleashes a powerful blast of Force energy at the target, dealing &lt;&lt;1&gt;&gt; energy damage. The blast stuns standard and weak enemies for 5 seconds.
+
+Replaces Blade Storm.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.249">0.235</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.209">0.195</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="2.29">2.15</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140933611231527384" Status="Changed">
+    <Fqn NodeId="16140933611231527384">abl.jedi_knight.skill.watchman.force_melt</Fqn>
+    <Name Id="3409216190545920">Force Melt</Name>
+    <Description Id="3409216190545921">Calls on the power of the Force to build 3 focus and melt the target, causing it to burn for &lt;&lt;1&gt;&gt; elemental damage over 9 seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.045">0.042</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.045">0.042</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="0.45">0.42</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140955303480242192" Status="Changed">
+    <Fqn NodeId="16140955303480242192">abl.mtx.pack.alliance.strategy</Fqn>
+    <Name Id="3675409673617408">Opening Pack</Name>
+    <Description Id="3675409673617409" OldValue="Right-click to open this Strategy Alliance Pack. This pack contains 2 items, including 1 Armor Lootbox, Mount or Vehicle, Rest and Recharge, Creature Companion or Stronghold Decoration, and 1 companion gift.">Right-click to open this Strategy Alliance Pack. This pack contains 4 items, including: 2 from Armor Lootboxes, Mounts or Vehicles, Weapons, Crystals, Stronghold Decorations, or a Creature Companion, 1 companion gift, and 1 scrap material.</Description>
+  </Ability>
+  <Ability Id="16140961876818158244" Status="Changed">
+    <Fqn NodeId="16140961876818158244">abl.npc.ability.custom.boss.kilran.flashbang_teleport</Fqn>
+    <Name Id="2211392761364480" OldValue="flashbang_teleport">Flashbang</Name>
+    <Description Id="2211392761364481"></Description>
+    <DBURL OldValue="https://torcommunity.com/database/ability/f6BUz2E/flashbang_teleport">https://torcommunity.com/database/ability/f6BUz2E/flashbang</DBURL>
+  </Ability>
+  <Ability Id="16141086458974848133" Status="Changed">
+    <Fqn NodeId="16141086458974848133">abl.npc.ability.custom.boss.kilran.flashbang_teleport_phase_two</Fqn>
+    <Name Id="2294753781612544" OldValue="flashbang_teleport_phase_two">Flashbang</Name>
+    <Description Id="2294753781612545"></Description>
+    <DBURL OldValue="https://torcommunity.com/database/ability/XKGGX9D/flashbang_teleport_phase_two">https://torcommunity.com/database/ability/XKGGX9D/flashbang</DBURL>
+  </Ability>
+  <Ability Id="16141166537748209736" Status="Changed">
+    <Fqn NodeId="16141166537748209736">abl.player.force_summon_companion</Fqn>
+    <Name Id="2115537681252352">Summon Companion</Name>
+    <Description Id="2115537681252353"></Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141129303536586841" Status="Changed">
+    <Fqn NodeId="16141129303536586841">abl.player.mount.mtx.gree.red_green_sphere</Fqn>
+    <Name Id="3340887555833856">Cyan Sphere</Name>
+    <Description Id="3340887555833857" OldValue="Activates Cyan Sphere transport enclosure! Gree Ingenuity increases lateral translation rates based on Speeder Piloiting skill, while ensconsed aesthetics yield protection against yellow concave that approaches blue equilateral.&#xA;&#xA;Movement speed increased based on the rank of your Speeder Piloting skill.&#xA;&#xA;Speeder Piloting Rank 1: 90%&#xA;Speeder Piloting Rank 2: 100%&#xA;Speeder Piloting Rank 3: 110%">Activates Cyan Sphere transport enclosure! Gree Ingenuity increases lateral translation rates based on Speeder Piloting skill, while ensconsed aesthetics yield protection against yellow concave that approaches blue equilateral.
+
+Movement speed increased based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1: 90%
+Speeder Piloting Rank 2: 100%
+Speeder Piloting Rank 3: 110%</Description>
+  </Ability>
+  <Ability Id="16140949733363419458" Status="Changed">
+    <Fqn NodeId="16140949733363419458">abl.player.summon_companion</Fqn>
+    <Name Id="810675077120000">Summon Companion</Name>
+    <Description Id="810675077120001"></Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140991210690479484" Status="Changed">
+    <Fqn NodeId="16140991210690479484">abl.qtr.1x2.daily.the_black_hole.imperial.the_end_of_torvix.heroic_transport</Fqn>
+    <Name Id="3669418194239488">Heroic Transport</Name>
+    <Description Id="3669418194239489">This pass allows you to travel to a safe area near the objective for the End of Torvix quest on Corellia.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141102189133144518" Status="Changed">
+    <Fqn NodeId="16141102189133144518">abl.qtr.1x2.daily.the_black_hole.republic.chasing_the_shadow.heroic_transport</Fqn>
+    <Name Id="3669066006921216">Heroic Transport</Name>
+    <Description Id="3669066006921217">This pass allows you to travel to a safe area near the objective for the Chasing the Shadow quest on Corellia.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141060335394512295" Status="Changed">
+    <Fqn NodeId="16141060335394512295">abl.quest.location.alderaan.bronze.imperial.insufficient_staff.heroic_transport</Fqn>
+    <Name Id="3657396580777984">Heroic Transport</Name>
+    <Description Id="3657396580777985">This pass allows you to travel to a safe area near the objective for the Insufficient Staff quest on Alderaan.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141050345571868281" Status="Changed">
+    <Fqn NodeId="16141050345571868281">abl.quest.location.alderaan.bronze.imperial.spring_thaw.heroic_transport</Fqn>
+    <Name Id="3666141134192640">Heroic Transport</Name>
+    <Description Id="3666141134192641">This pass allows you to travel to a safe area near the objective for the Spring Thaw quest on Alderaan.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140915516272285477" Status="Changed">
+    <Fqn NodeId="16140915516272285477">abl.quest.location.alderaan.bronze.republic.into_the_killik_warrens.heroic_transport</Fqn>
+    <Name Id="3666158314061824">Heroic Transport</Name>
+    <Description Id="3666158314061825">This pass allows you to travel to a safe area near the objective for the Into the Killik Warrens quest on Alderaan.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141047409963969343" Status="Changed">
+    <Fqn NodeId="16141047409963969343">abl.quest.location.alderaan.bronze.republic.proof_of_treason.heroic_transport</Fqn>
+    <Name Id="3657418055614464">Heroic Transport</Name>
+    <Description Id="3657418055614465">This pass allows you to travel to a safe area near the objective for the Proof of Treason quest on Alderaan.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141093450900011298" Status="Changed">
+    <Fqn NodeId="16141093450900011298">abl.quest.location.alderaan.world.imperial.droid_repossession.heroic_transport</Fqn>
+    <Name Id="3666145429159936">Heroic Transport</Name>
+    <Description Id="3666145429159937">This pass allows you to travel to a safe area near the objective for the Droid Repossession quest on Alderaan.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140999404681679688" Status="Changed">
+    <Fqn NodeId="16140999404681679688">abl.quest.location.alderaan.world.imperial.reinforcements.heroic_transport</Fqn>
+    <Name Id="3666149724127232">Heroic Transport</Name>
+    <Description Id="3666149724127233">This pass allows you to travel to a safe area near the objective for the Reinforcements quest on Alderaan.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141127757212693840" Status="Changed">
+    <Fqn NodeId="16141127757212693840">abl.quest.location.alderaan.world.imperial.sabotage.heroic_transport</Fqn>
+    <Name Id="3666154019094528">Heroic Transport</Name>
+    <Description Id="3666154019094529">This pass allows you to travel to a safe area near the objective for the Sabotage quest on Alderaan.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140915749706359291" Status="Changed">
+    <Fqn NodeId="16140915749706359291">abl.quest.location.alderaan.world.imperial.shock_doctrine.heroic_transport</Fqn>
+    <Name Id="3657409465679872">Heroic Transport</Name>
+    <Description Id="3657409465679873">This pass allows you to travel to a safe area near the objective for the Shock Doctrine quest on Alderaan.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140947068770269320" Status="Changed">
+    <Fqn NodeId="16140947068770269320">abl.quest.location.alderaan.world.imperial.the_lanar_question.heroic_transport</Fqn>
+    <Name Id="3657405170712576">Heroic Transport</Name>
+    <Description Id="3657405170712577">This pass allows you to travel to a safe area near the objective for the The Lanar Question quest on Alderaan</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141076455746800061" Status="Changed">
+    <Fqn NodeId="16141076455746800061">abl.quest.location.alderaan.world.republic.looted_secrets.heroic_transport</Fqn>
+    <Name Id="3666171198963712">Heroic Transport</Name>
+    <Description Id="3666171198963713">This pass allows you to travel to a safe area near the objective for the Looted Secrets quest on Alderaan.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141100105215447485" Status="Changed">
+    <Fqn NodeId="16141100105215447485">abl.quest.location.alderaan.world.republic.red_handed.heroic_transport</Fqn>
+    <Name Id="3657426645549056">Heroic Transport</Name>
+    <Description Id="3657426645549057">This pass allows you to travel to a safe area near the objective for the Red Handed quest on Alderaan.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141137767801302072" Status="Changed">
+    <Fqn NodeId="16141137767801302072">abl.quest.location.alderaan.world.republic.special_delivery.heroic_transport</Fqn>
+    <Name Id="3657422350581760">Heroic Transport</Name>
+    <Description Id="3657422350581761">This pass allows you to travel to a safe area near the objective for the Special Delivery quest on Alderaan.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141156702959956041" Status="Changed">
+    <Fqn NodeId="16141156702959956041">abl.quest.location.alderaan.world.republic.survivors.heroic_transport</Fqn>
+    <Name Id="3666162609029120">Heroic Transport</Name>
+    <Description Id="3666162609029121">This pass allows you to travel to a safe area near the objective for the Survivors quest on Alderaan.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141066777427411490" Status="Changed">
+    <Fqn NodeId="16141066777427411490">abl.quest.location.alderaan.world.republic.turning_the_tide.heroic_transport</Fqn>
+    <Name Id="3666166903996416">Heroic Transport</Name>
+    <Description Id="3666166903996417">This pass allows you to travel to a safe area near the objective for the Turning the Tide quest on Alderaan.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141149674523752982" Status="Changed">
+    <Fqn NodeId="16141149674523752982">abl.quest.location.balmorra.bronze.project_hexapod.heroic_transport</Fqn>
+    <Name Id="3661403785265152">Heroic Transport</Name>
+    <Description Id="3661403785265153">This pass allows you to travel to a safe area near the objective for the Project Haxapod quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140938902618925686" Status="Changed">
+    <Fqn NodeId="16140938902618925686">abl.quest.location.balmorra.bronze.republic_sympathizers.heroic_transport</Fqn>
+    <Name Id="3659754517823488">Heroic Transport</Name>
+    <Description Id="3659754517823489">This pass allows you to travel to a safe area near the objective for the Resistance Sympathizers quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141005014793847155" Status="Changed">
+    <Fqn NodeId="16141005014793847155">abl.quest.location.balmorra.bronze.the_republics_last_gasp.heroic_transport</Fqn>
+    <Name Id="3661412375199744">Heroic Transport</Name>
+    <Description Id="3661412375199745">This pass allows you to travel to a safe area near the objective for the Republic's Last Gasp quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141174119074968126" Status="Changed">
+    <Fqn NodeId="16141174119074968126">abl.quest.location.balmorra.bronze.toxic_bombs.heroic_transport</Fqn>
+    <Name Id="3661416670167040">Heroic Transport</Name>
+    <Description Id="3661416670167041">This pass allows you to travel to a safe area near the objective for the Toxic Bombs quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141066155601284807" Status="Changed">
+    <Fqn NodeId="16141066155601284807">abl.quest.location.balmorra.world.a_question_of_motivation.heroic_transport</Fqn>
+    <Name Id="3661399490297856">Heroic Transport</Name>
+    <Description Id="3661399490297857">This pass allows you to travel to a safe area near the objective for the A Question of Motivation quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141041945329438687" Status="Changed">
+    <Fqn NodeId="16141041945329438687">abl.quest.location.balmorra.world.comrades_in_arms.heroic_transport</Fqn>
+    <Name Id="3659728748019712">Heroic Transport</Name>
+    <Description Id="3659728748019713">This pass allows you to travel to a safe area near the objective for the Comrades in Arms quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140901434417608257" Status="Changed">
+    <Fqn NodeId="16140901434417608257">abl.quest.location.balmorra.world.firestar.heroic_transport</Fqn>
+    <Name Id="3659741632921600">Heroic Transport</Name>
+    <Description Id="3659741632921601">This pass allows you to travel to a safe area near the objective for the Firestar quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141088564360982585" Status="Changed">
+    <Fqn NodeId="16141088564360982585">abl.quest.location.balmorra.world.settling_debts.heroic_transport</Fqn>
+    <Name Id="3659750222856192">Heroic Transport</Name>
+    <Description Id="3659750222856193">This pass allows you to travel to a safe area near the objective for the Settling Debts quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141072998453581663" Status="Changed">
+    <Fqn NodeId="16141072998453581663">abl.quest.location.balmorra_republic.bronze.acquired_taste.heroic_transport</Fqn>
+    <Name Id="3661665778270208">Heroic Transport</Name>
+    <Description Id="3661665778270209">This pass allows you to travel to a safe area near the objective for the Acquired Taste quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141078923275946646" Status="Changed">
+    <Fqn NodeId="16141078923275946646">abl.quest.location.balmorra_republic.bronze.hit_em_where_they_live.heroic_transport</Fqn>
+    <Name Id="3661670073237504">Heroic Transport</Name>
+    <Description Id="3661670073237505">This pass allows you to travel to a safe area near the objective for the Hit 'Em Where They Live quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141181423313035625" Status="Changed">
+    <Fqn NodeId="16141181423313035625">abl.quest.location.balmorra_republic.bronze.justice_for_the_lost.heroic_transport</Fqn>
+    <Name Id="3661674368204800">Heroic Transport</Name>
+    <Description Id="3661674368204801">This pass allows you to travel to a safe area near the objective for the Justice for the Lost quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141079851064569207" Status="Changed">
+    <Fqn NodeId="16141079851064569207">abl.quest.location.balmorra_republic.bronze.shifting_priorities.heroic_transport</Fqn>
+    <Name Id="3658105250381824">Heroic Transport</Name>
+    <Description Id="3658105250381825">This pass allows you to travel to a safe area near the objective for the Shifting Priorities quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141112368582599026" Status="Changed">
+    <Fqn NodeId="16141112368582599026">abl.quest.location.balmorra_republic.bronze.target_of_opportunity.heroic_transport</Fqn>
+    <Name Id="3658118135283712">Heroic Transport</Name>
+    <Description Id="3658118135283713">This pass allows you to travel to a safe area near the objective for the Target of Opportunity quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140936011803587195" Status="Changed">
+    <Fqn NodeId="16140936011803587195">abl.quest.location.balmorra_republic.world.colicoid_massacre.heroic_transport</Fqn>
+    <Name Id="3661657188335616">Heroic Transport</Name>
+    <Description Id="3661657188335617">This pass allows you to travel to a safe area near the objective for the Colicoid Massacre quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141172550508338510" Status="Changed">
+    <Fqn NodeId="16141172550508338510">abl.quest.location.balmorra_republic.world.industrial_sabotage.heroic_transport</Fqn>
+    <Name Id="3658027940970496">Heroic Transport</Name>
+    <Description Id="3658027940970497">This pass allows you to travel to a safe area near the objective for the Industrial Sabotage quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141070661382342364" Status="Changed">
+    <Fqn NodeId="16141070661382342364">abl.quest.location.balmorra_republic.world.local_predators.heroic_transport</Fqn>
+    <Name Id="3661661483302912">Heroic Transport</Name>
+    <Description Id="3661661483302913">This pass allows you to travel to a safe area near the objective for the Local Predators quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141083790259251973" Status="Changed">
+    <Fqn NodeId="16141083790259251973">abl.quest.location.balmorra_republic.world.the_mandalorian_terror.heroic_transport</Fqn>
+    <Name Id="3658092365479936">Heroic Transport</Name>
+    <Description Id="3658092365479937">This pass allows you to travel to a safe area near the objective for the Mandalorian Terror quest on Balmorra.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141171173731729984" Status="Changed">
+    <Fqn NodeId="16141171173731729984">abl.quest.location.belsavis.heroic_weekly.transport_passes.a_lesson_is_learned</Fqn>
+    <Name Id="3663667233030144">Heroic Transport</Name>
+    <Description Id="3663667233030145">This pass allows you to travel to a safe area near the objective for the A Lesson Is Learned quest on Belsavis.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141123808169305006" Status="Changed">
+    <Fqn NodeId="16141123808169305006">abl.quest.location.belsavis.heroic_weekly.transport_passes.a_rock_and_a_hard_place</Fqn>
+    <Name Id="3663632873291776">Heroic Transport</Name>
+    <Description Id="3663632873291777">This pass allows you to travel to a safe area near the objective for the A Rock and a Hard Place quest on Belsavis.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141047204113515864" Status="Changed">
+    <Fqn NodeId="16141047204113515864">abl.quest.location.belsavis.heroic_weekly.transport_passes.breakthrough</Fqn>
+    <Name Id="3663688707866624">Heroic Transport</Name>
+    <Description Id="3663688707866625">This pass allows you to travel to a safe area near the objective for the Breakthrough quest on Belsavis.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141057254294573476" Status="Changed">
+    <Fqn NodeId="16141057254294573476">abl.quest.location.belsavis.heroic_weekly.transport_passes.freeing_the_fallen</Fqn>
+    <Name Id="3663637168259072">Heroic Transport</Name>
+    <Description Id="3663637168259073">This pass allows you to travel to a safe area near the objective for the Freeing the Fallen quest on Belsavis.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140996742188298607" Status="Changed">
+    <Fqn NodeId="16140996742188298607">abl.quest.location.belsavis.heroic_weekly.transport_passes.jungle_flight</Fqn>
+    <Name Id="3663671527997440">Heroic Transport</Name>
+    <Description Id="3663671527997441">This pass allows you to travel to a safe area near the objective for the Jungle Fight quest on Belsavis.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141125346213142994" Status="Changed">
+    <Fqn NodeId="16141125346213142994">abl.quest.location.belsavis.heroic_weekly.transport_passes.lights_out</Fqn>
+    <Name Id="3663693002833920">Heroic Transport</Name>
+    <Description Id="3663693002833921">This pass allows you to travel to a safe area near the objective for the Lights Out quest on Belsavis.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141151748563491770" Status="Changed">
+    <Fqn NodeId="16141151748563491770">abl.quest.location.belsavis.heroic_weekly.transport_passes.old_enemies</Fqn>
+    <Name Id="3663645758193664">Heroic Transport</Name>
+    <Description Id="3663645758193665">This pass allows you to travel to a safe area near the objective for the Old Enemies quest on Belsavis.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141031788762691530" Status="Changed">
+    <Fqn NodeId="16141031788762691530">abl.quest.location.belsavis.heroic_weekly.transport_passes.open_communications</Fqn>
+    <Name Id="3663680117932032">Heroic Transport</Name>
+    <Description Id="3663680117932033">This pass allows you to travel to a safe area near the objective for the Open Communications quest on Belsavis.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140988339059594121" Status="Changed">
+    <Fqn NodeId="16140988339059594121">abl.quest.location.belsavis.heroic_weekly.transport_passes.republic_secrets</Fqn>
+    <Name Id="3663641463226368">Heroic Transport</Name>
+    <Description Id="3663641463226369">This pass allows you to travel to a safe area near the objective for the Republic Secrets quest on Belsavis.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141005087398366450" Status="Changed">
+    <Fqn NodeId="16141005087398366450">abl.quest.location.belsavis.heroic_weekly.transport_passes.the_engineers_tale</Fqn>
+    <Name Id="3663697297801216">Heroic Transport</Name>
+    <Description Id="3663697297801217">This pass allows you to travel to a safe area near the objective for the The Engineers Tale quest on Belsavis.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141028003636414877" Status="Changed">
+    <Fqn NodeId="16141028003636414877">abl.quest.location.belsavis.heroic_weekly.transport_passes.the_stasis_generator</Fqn>
+    <Name Id="3663701592768512">Heroic Transport</Name>
+    <Description Id="3663701592768513">This pass allows you to travel to a safe area near the objective for the The Stasis Generator quest on Belsavis.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141182006374207139" Status="Changed">
+    <Fqn NodeId="16141182006374207139">abl.quest.location.belsavis.heroic_weekly.transport_passes.the_tyrant</Fqn>
+    <Name Id="3663684412899328">Heroic Transport</Name>
+    <Description Id="3663684412899329">This pass allows you to travel to a safe area near the objective for the The Tyrant quest on Belsavis.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141156042381601181" Status="Changed">
+    <Fqn NodeId="16141156042381601181">abl.quest.location.corellia.bronze.imperial.corsec_crackdown.heroic_transport</Fqn>
+    <Name Id="3656511817515008">Heroic Transport</Name>
+    <Description Id="3656511817515009">This pass allows you to travel to a safe area near the objective for the Corsec Crackdown quest on Corellia.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141115566462820398" Status="Changed">
+    <Fqn NodeId="16141115566462820398">abl.quest.location.corellia.world.imperial.explosive_assault.heroic_transport</Fqn>
+    <Name Id="3656516112482304">Heroic Transport</Name>
+    <Description Id="3656516112482305">This pass allows you to travel to a safe area near the objective for the Explosive Assault quest on Corellia.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140947279901803650" Status="Changed">
+    <Fqn NodeId="16140947279901803650">abl.quest.location.corellia.world.imperial.prison_busting.heroic_transport</Fqn>
+    <Name Id="3656520407449600">Heroic Transport</Name>
+    <Description Id="3656520407449601">This pass allows you to travel to a safe area near the objective for the Prison Busting quest on Corellia.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141103591013370961" Status="Changed">
+    <Fqn NodeId="16141103591013370961">abl.quest.location.corellia.world.imperial.wookiee_revolt.heroic_transport</Fqn>
+    <Name Id="3656524702416896">Heroic Transport</Name>
+    <Description Id="3656524702416897">This pass allows you to travel to a safe area near the objective for the Wookiee Revolt quest on Corellia.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141060736867554271" Status="Changed">
+    <Fqn NodeId="16141060736867554271">abl.quest.location.corellia.world.republic.biological_warfare.heroic_transport</Fqn>
+    <Name Id="3657272026726400">Heroic Transport</Name>
+    <Description Id="3657272026726401">This pass allows you to travel to a safe area near the objective for the Biological Warfare quest on Corellia.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141095243381973459" Status="Changed">
+    <Fqn NodeId="16141095243381973459">abl.quest.location.corellia.world.republic.concierge.heroic_transport</Fqn>
+    <Name Id="3657276321693696">Heroic Transport</Name>
+    <Description Id="3657276321693697">This pass allows you to travel to a safe area near the objective for the Concierge quest on Corellia.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140982819413793873" Status="Changed">
+    <Fqn NodeId="16140982819413793873">abl.quest.location.corellia.world.republic.starfighters_of_corellia.heroic_transport</Fqn>
+    <Name Id="3657280616660992">Heroic Transport</Name>
+    <Description Id="3657280616660993">This pass allows you to travel to a safe area near the objective for the Starfighters of Corellia quest on Corellia.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140986198733682247" Status="Changed">
+    <Fqn NodeId="16140986198733682247">abl.quest.location.corellia.world.republic.under_new_management.heroic_transport</Fqn>
+    <Name Id="3657284911628288">Heroic Transport</Name>
+    <Description Id="3657284911628289">This pass allows you to travel to a safe area near the objective for the Under New Management quest on Corellia.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140981948600430177" Status="Changed">
+    <Fqn NodeId="16140981948600430177">abl.quest.location.coruscant.bronze.republics_most_wanted.heroic_transport</Fqn>
+    <Name Id="3656713680977920">Heroic Transport</Name>
+    <Description Id="3656713680977921">This pass allows you to travel to a safe area near the objective for the Republic's Most Wanted quest on Coruscant.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140959277487924925" Status="Changed">
+    <Fqn NodeId="16140959277487924925">abl.quest.location.coruscant.bronze.the_face_merchants.heroic_transport</Fqn>
+    <Name Id="3656722270912512">Heroic Transport</Name>
+    <Description Id="3656722270912513">This pass allows you to travel to a safe area near the objective for the The Face Merchants quest on Coruscant.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140999088772139756" Status="Changed">
+    <Fqn NodeId="16140999088772139756">abl.quest.location.coruscant.bronze.trouble_in_deed.heroic_transport</Fqn>
+    <Name Id="3656730860847104">Heroic Transport</Name>
+    <Description Id="3656730860847105">This pass allows you to travel to a safe area near the objective for the Trouble in Deed quest on Coruscant.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141059277427109987" Status="Changed">
+    <Fqn NodeId="16141059277427109987">abl.quest.location.coruscant.world.enemies_of_the_republic.heroic_transport</Fqn>
+    <Name Id="3656735155814400">Heroic Transport</Name>
+    <Description Id="3656735155814401">This pass allows you to travel to a safe area near the objective for the Enemies of the Republic quest on Coruscant.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141000178590214001" Status="Changed">
+    <Fqn NodeId="16141000178590214001">abl.quest.location.dromund_kaas.bronze.friends_of_old.heroic_transport</Fqn>
+    <Name Id="3649356401999872">Heroic Transport</Name>
+    <Description Id="3649356401999873">This pass allows you to travel to a safe area near the objective for the Friends of Old quest on Dromund Kaas.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141157161470166038" Status="Changed">
+    <Fqn NodeId="16141157161470166038">abl.quest.location.dromund_kaas.bronze.personal_challenge.heroic_transport</Fqn>
+    <Name Id="3649373581869056">Heroic Transport</Name>
+    <Description Id="3649373581869057">This pass allows you to travel to a safe area near the objective for the Personal Challenge quest on Dromund Kaas.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140981038186488682" Status="Changed">
+    <Fqn NodeId="16140981038186488682">abl.quest.location.dromund_kaas.bronze.possessed_hunter.heroic_transport</Fqn>
+    <Name Id="3649377876836352">Heroic Transport</Name>
+    <Description Id="3649377876836353">This pass allows you to travel to a safe area near the objective for the Possessed Hunter quest on Dromund Kaas.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140932135788356383" Status="Changed">
+    <Fqn NodeId="16140932135788356383">abl.quest.location.dromund_kaas.bronze.saving_face.heroic_transport</Fqn>
+    <Name Id="3649382171803648">Heroic Transport</Name>
+    <Description Id="3649382171803649">This pass allows you to travel to a safe area near the objective for the Saving Face quest on Dromund Kaas.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141177956579393083" Status="Changed">
+    <Fqn NodeId="16141177956579393083">abl.quest.location.dromund_kaas.bronze.shadow_spawn.heroic_transport</Fqn>
+    <Name Id="3649386466770944">Heroic Transport</Name>
+    <Description Id="3649386466770945">This pass allows you to travel to a safe area near the objective for the Shadow Spawn quest on Dromund Kaas.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140930571088588114" Status="Changed">
+    <Fqn NodeId="16140930571088588114">abl.quest.location.hoth.bronze.imperial.deconstruction_efforts.heroic_transport</Fqn>
+    <Name Id="3651508180615168">Heroic Transport</Name>
+    <Description Id="3651508180615169">This pass allows you to travel to a safe area near the objective for the Deconstruction Efforts quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141092088814087827" Status="Changed">
+    <Fqn NodeId="16141092088814087827">abl.quest.location.hoth.bronze.imperial.joint_training.heroic_transport</Fqn>
+    <Name Id="3651512475582464">Heroic Transport</Name>
+    <Description Id="3651512475582465">This pass allows you to travel to a safe area near the objective for the Joint Training quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141181138634708070" Status="Changed">
+    <Fqn NodeId="16141181138634708070">abl.quest.location.hoth.bronze.imperial.pirated_lock_box.heroic_transport</Fqn>
+    <Name Id="3664285708320768">Heroic Transport</Name>
+    <Description Id="3664285708320769">This pass allows you to travel to a safe area near the objective for the Pirated Lockbox quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141138857077533692" Status="Changed">
+    <Fqn NodeId="16141138857077533692">abl.quest.location.hoth.bronze.imperial.sensitive_material.heroic_transport</Fqn>
+    <Name Id="3664290003288064">Heroic Transport</Name>
+    <Description Id="3664290003288065">This pass allows you to travel to a safe area near the objective for the Sensitive Material quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141061853930269604" Status="Changed">
+    <Fqn NodeId="16141061853930269604">abl.quest.location.hoth.bronze.imperial.the_big_find.heroic_transport</Fqn>
+    <Name Id="3651516770549760">Heroic Transport</Name>
+    <Description Id="3651516770549761">This pass allows you to travel to a safe area near the objective for the The Big Find quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141127820838038506" Status="Changed">
+    <Fqn NodeId="16141127820838038506">abl.quest.location.hoth.bronze.imperial.the_brig_stompers.heroic_transport</Fqn>
+    <Name Id="3651521065517056">Heroic Transport</Name>
+    <Description Id="3651521065517057">This pass allows you to travel to a safe area near the objective for the The Brig Stompers quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141017334355637494" Status="Changed">
+    <Fqn NodeId="16141017334355637494">abl.quest.location.hoth.bronze.republic.better_droids.heroic_transport</Fqn>
+    <Name Id="3664311478124544">Heroic Transport</Name>
+    <Description Id="3664311478124545">This pass allows you to travel to a safe area near the objective for the Better Droids quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140996532692096569" Status="Changed">
+    <Fqn NodeId="16140996532692096569">abl.quest.location.hoth.bronze.republic.frostclaw.heroic_transport</Fqn>
+    <Name Id="3664320068059136">Heroic Transport</Name>
+    <Description Id="3664320068059137">This pass allows you to travel to a safe area near the objective for the Frostclaw quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140971093041320805" Status="Changed">
+    <Fqn NodeId="16140971093041320805">abl.quest.location.hoth.bronze.republic.gamorrean_menace.heroic_transport</Fqn>
+    <Name Id="3653621304524800">Heroic Transport</Name>
+    <Description Id="3653621304524801">This pass allows you to travel to a safe area near the objective for the Gamorrean Menace quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140941090250737172" Status="Changed">
+    <Fqn NodeId="16140941090250737172">abl.quest.location.hoth.bronze.republic.invisible_foes.heroic_transport</Fqn>
+    <Name Id="3653625599492096">Heroic Transport</Name>
+    <Description Id="3653625599492097">This pass allows you to travel to a safe area near the objective for the Invisible Foes quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141173740237864990" Status="Changed">
+    <Fqn NodeId="16141173740237864990">abl.quest.location.hoth.bronze.republic.prisoner_extraction.heroic_transport</Fqn>
+    <Name Id="3653617009557504">Heroic Transport</Name>
+    <Description Id="3653617009557505">This pass allows you to travel to a safe area near the objective for the Prisoner Extraction quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141053119099503030" Status="Changed">
+    <Fqn NodeId="16141053119099503030">abl.quest.location.hoth.bronze.republic.tech_diagrams.heroic_transport</Fqn>
+    <Name Id="3664315773091840">Heroic Transport</Name>
+    <Description Id="3664315773091841">This pass allows you to travel to a safe area near the objective for the Tech Diagrams quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140962477047716335" Status="Changed">
+    <Fqn NodeId="16140962477047716335">abl.quest.location.hoth.bronze.republic.the_terror_brigade.heroic_transport</Fqn>
+    <Name Id="3653629894459392">Heroic Transport</Name>
+    <Description Id="3653629894459393">This pass allows you to travel to a safe area near the objective for the The Terror Brigade quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141134907646560587" Status="Changed">
+    <Fqn NodeId="16141134907646560587">abl.quest.location.hoth.world.imperial.a_traitors_punishment.heroic_transport</Fqn>
+    <Name Id="3664298593222656">Heroic Transport</Name>
+    <Description Id="3664298593222657">This pass allows you to travel to a safe area near the objective for the A Traitor's Punishment quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141165199169834520" Status="Changed">
+    <Fqn NodeId="16141165199169834520">abl.quest.location.hoth.world.imperial.static.heroic_transport</Fqn>
+    <Name Id="3664307183157248">Heroic Transport</Name>
+    <Description Id="3664307183157249">This pass allows you to travel to a safe area near the objective for the Static quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141074807993977312" Status="Changed">
+    <Fqn NodeId="16141074807993977312">abl.quest.location.hoth.world.imperial.taking_the_heat.heroic_transport</Fqn>
+    <Name Id="3664294298255360">Heroic Transport</Name>
+    <Description Id="3664294298255361">This pass allows you to travel to a safe area near the objective for the Taking the Heat quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141148354351183432" Status="Changed">
+    <Fqn NodeId="16141148354351183432">abl.quest.location.hoth.world.republic.humanitarian_aid.heroic_transport</Fqn>
+    <Name Id="3664328657993728">Heroic Transport</Name>
+    <Description Id="3664328657993729">This pass allows you to travel to a safe area near the objective for the Humanitarian Aid quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141074433600134211" Status="Changed">
+    <Fqn NodeId="16141074433600134211">abl.quest.location.hoth.world.republic.signal_jam.heroic_transport</Fqn>
+    <Name Id="3664324363026432">Heroic Transport</Name>
+    <Description Id="3664324363026433">This pass allows you to travel to a safe area near the objective for the Signal Jam quest on Hoth.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140919079152513593" Status="Changed">
+    <Fqn NodeId="16140919079152513593">abl.quest.location.hutta.bronze.factory_recall.heroic_transport</Fqn>
+    <Name Id="3664255643549696">Heroic Transport</Name>
+    <Description Id="3664255643549697">This pass allows you to travel to a safe area near the objective for the Man with the Steel Voice quest on Hutta.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141061867584249954" Status="Changed">
+    <Fqn NodeId="16141061867584249954">abl.quest.location.hutta.bronze.hostage_situation.heroic_transport</Fqn>
+    <Name Id="3664259938516992">Heroic Transport</Name>
+    <Description Id="3664259938516993">This pass allows you to travel to a safe area near the objective for the Hostage Situation quest on Hutta.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140985617101453567" Status="Changed">
+    <Fqn NodeId="16140985617101453567">abl.quest.location.hutta.bronze.hostage_situation_cleanup.heroic_transport</Fqn>
+    <Name Id="3664264233484288">Heroic Transport</Name>
+    <Description Id="3664264233484289">This pass allows you to travel to a safe area near the objective for the Hostage Situation Cleanup quest on Hutta.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141130654099296981" Status="Changed">
+    <Fqn NodeId="16141130654099296981">abl.quest.location.hutta.world.the_man_with_the_steel_voice.heroic_transport</Fqn>
+    <Name Id="3664225578778624">Heroic Transport</Name>
+    <Description Id="3664225578778625">This pass allows you to travel to a safe area near the objective for the Man with the Steel Voice quest on Hutta.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141100001834678949" Status="Changed">
+    <Fqn NodeId="16141100001834678949">abl.quest.location.ilum.bronze.imperial.poisonous_strategy.heroic_transport</Fqn>
+    <Name Id="3646620507832320">Heroic Transport</Name>
+    <Description Id="3646620507832321">This pass allows you to travel to a safe area near the objective for the Poisonous Strategy quest on Ilum.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141030508840868546" Status="Changed">
+    <Fqn NodeId="16141030508840868546">abl.quest.location.ilum.bronze.republic.darkness_on_ilum.heroic_transport</Fqn>
+    <Name Id="3646624802799616">Heroic Transport</Name>
+    <Description Id="3646624802799617">This pass allows you to travel to a safe area near the objective for the Darkness on Ilum quest on Ilum.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141008176297524347" Status="Changed">
+    <Fqn NodeId="16141008176297524347">abl.quest.location.korriban.heroic_weekly.transport_passes.armed_and_dangerous</Fqn>
+    <Name Id="3669937885282304">Heroic Transport</Name>
+    <Description Id="3669937885282305">This pass allows you to travel to a safe area near the objective for the Armed and Dangerous quest on Korriban.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141181865083511919" Status="Changed">
+    <Fqn NodeId="16141181865083511919">abl.quest.location.korriban.heroic_weekly.transport_passes.the_hate_machine</Fqn>
+    <Name Id="3669933590315008">Heroic Transport</Name>
+    <Description Id="3669933590315009">This pass allows you to travel to a safe area near the objective for the The Hate Machine quest on Korriban.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141038077353007750" Status="Changed">
+    <Fqn NodeId="16141038077353007750">abl.quest.location.nar_shaddaa.bronze.imperial.a_pound_of_flesh.heroic_transport</Fqn>
+    <Name Id="3665900616024064">Heroic Transport</Name>
+    <Description Id="3665900616024065">This pass allows you to travel to a safe area near the objective for the A Pound of Flesh quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140917249958730568" Status="Changed">
+    <Fqn NodeId="16140917249958730568">abl.quest.location.nar_shaddaa.bronze.imperial.botched_interrogation.heroic_transport</Fqn>
+    <Name Id="3666480436609024">Heroic Transport</Name>
+    <Description Id="3666480436609025">This pass allows you to travel to a safe area near the objective for the Botched Interrogation quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140915925279628957" Status="Changed">
+    <Fqn NodeId="16140915925279628957">abl.quest.location.nar_shaddaa.bronze.imperial.building_a_better_beast.heroic_transport</Fqn>
+    <Name Id="3665904910991360">Heroic Transport</Name>
+    <Description Id="3665904910991361">This pass allows you to travel to a safe area near the objective for the Building a Better Beast quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140949575640594332" Status="Changed">
+    <Fqn NodeId="16140949575640594332">abl.quest.location.nar_shaddaa.bronze.imperial.crushing_the_jedi_freedom_fighters.heroic_transport</Fqn>
+    <Name Id="3665909205958656">Heroic Transport</Name>
+    <Description Id="3665909205958657">This pass allows you to travel to a safe area near the objective for the Crushing the Jedi Freedom Fighters quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141135952133467024" Status="Changed">
+    <Fqn NodeId="16141135952133467024">abl.quest.location.nar_shaddaa.bronze.imperial.glitch.heroic_transport</Fqn>
+    <Name Id="3665892026089472">Heroic Transport</Name>
+    <Description Id="3665892026089473">This pass allows you to travel to a safe area near the objective for the Glitch quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141157776509876901" Status="Changed">
+    <Fqn NodeId="16141157776509876901">abl.quest.location.nar_shaddaa.bronze.imperial.hunger_of_the_vrblthers.heroic_transport</Fqn>
+    <Name Id="3665913500925952">Heroic Transport</Name>
+    <Description Id="3665913500925953">This pass allows you to travel to a safe area near the objective for the Hunger of the Vrblthers quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140998581982577304" Status="Changed">
+    <Fqn NodeId="16140998581982577304">abl.quest.location.nar_shaddaa.bronze.imperial.terminal_injuries.heroic_transport</Fqn>
+    <Name Id="3665896321056768">Heroic Transport</Name>
+    <Description Id="3665896321056769">This pass allows you to travel to a safe area near the objective for the Terminal Injuries quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141079925884354738" Status="Changed">
+    <Fqn NodeId="16141079925884354738">abl.quest.location.nar_shaddaa.bronze.republic.breaking_down_shadow_town.heroic_transport</Fqn>
+    <Name Id="3667575653269504">Heroic Transport</Name>
+    <Description Id="3667575653269505">This pass allows you to travel to a safe area near the objective for the Breaking Down Shadow Town quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141120264662294683" Status="Changed">
+    <Fqn NodeId="16141120264662294683">abl.quest.location.nar_shaddaa.bronze.republic.hired_guns.heroic_transport</Fqn>
+    <Name Id="3667584243204096">Heroic Transport</Name>
+    <Description Id="3667584243204097">This pass allows you to travel to a safe area near the objective for the Hired Guns quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141105662790778769" Status="Changed">
+    <Fqn NodeId="16141105662790778769">abl.quest.location.nar_shaddaa.bronze.republic.lab_animals.heroic_transport</Fqn>
+    <Name Id="3667597128105984">Heroic Transport</Name>
+    <Description Id="3667597128105985">This pass allows you to travel to a safe area near the objective for the Lab Animals quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141083279613417560" Status="Changed">
+    <Fqn NodeId="16141083279613417560">abl.quest.location.nar_shaddaa.bronze.republic.mandalorian_rage.heroic_transport</Fqn>
+    <Name Id="3667601423073280">Heroic Transport</Name>
+    <Description Id="3667601423073281">This pass allows you to travel to a safe area near the objective for the Mandalorian Rage quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141165639120857711" Status="Changed">
+    <Fqn NodeId="16141165639120857711">abl.quest.location.nar_shaddaa.bronze.republic.nar_shaddaa_blood_sport.heroic_transport</Fqn>
+    <Name Id="3667588538171392">Heroic Transport</Name>
+    <Description Id="3667588538171393">This pass allows you to travel to a safe area near the objective for the Nar Shaddaa Blood Sport quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140966828227160144" Status="Changed">
+    <Fqn NodeId="16140966828227160144">abl.quest.location.nar_shaddaa.world.imperial.recruitment.heroic_transport</Fqn>
+    <Name Id="3665926385827840">Heroic Transport</Name>
+    <Description Id="3665926385827841">This pass allows you to travel to a safe area near the objective for the Recruitment quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141047636998555674" Status="Changed">
+    <Fqn NodeId="16141047636998555674">abl.quest.location.nar_shaddaa.world.republic.blood_money.heroic_transport</Fqn>
+    <Name Id="3667605718040576">Heroic Transport</Name>
+    <Description Id="3667605718040577">This pass allows you to travel to a safe area near the objective for the Blood Money quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141107239059670414" Status="Changed">
+    <Fqn NodeId="16141107239059670414">abl.quest.location.nar_shaddaa.world.republic.shadow_extraction.heroic_transport</Fqn>
+    <Name Id="3667614307975168">Heroic Transport</Name>
+    <Description Id="3667614307975169">This pass allows you to travel to a safe area near the objective for the Shadow Extraction quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141026514011167473" Status="Changed">
+    <Fqn NodeId="16141026514011167473">abl.quest.location.nar_shaddaa.world.republic.the_morgukai.heroic_transport</Fqn>
+    <Name Id="3667610013007872">Heroic Transport</Name>
+    <Description Id="3667610013007873">This pass allows you to travel to a safe area near the objective for the Morgukai quest on Nar Shaddaa.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141129679465224308" Status="Changed">
+    <Fqn NodeId="16141129679465224308">abl.quest.location.ord_mantell.bronze.cutting_off_the_head.heroic_transport</Fqn>
+    <Name Id="3663615693422592">Heroic Transport</Name>
+    <Description Id="3663615693422593">This pass allows you to travel to a safe area near the objective for the Cutting Off the Head quest on Ord Mantell.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141102222468106147" Status="Changed">
+    <Fqn NodeId="16141102222468106147">abl.quest.location.ord_mantell.world.buying_loyalty.heroic_transport</Fqn>
+    <Name Id="3663658643095552">Heroic Transport</Name>
+    <Description Id="3663658643095553">This pass allows you to travel to a safe area near the objective for the Buying Loyalty quest on Ord Mantell.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141124567793393635" Status="Changed">
+    <Fqn NodeId="16141124567793393635">abl.quest.location.ord_mantell.world.destroy_the_beacons.heroic_transport</Fqn>
+    <Name Id="3663675822964736">Heroic Transport</Name>
+    <Description Id="3663675822964737">This pass allows you to travel to a safe area near the objective for the Destroy the Beacons quest on Ord Mantell.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141003674751377470" Status="Changed">
+    <Fqn NodeId="16141003674751377470">abl.quest.location.taris.bronze.fall_of_the_locust.heroic_transport</Fqn>
+    <Name Id="3653561174982656">Heroic Transport</Name>
+    <Description Id="3653561174982657">This pass allows you to travel to a safe area near the objective for the Fall of the Locust quest on Taris.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141013326690888934" Status="Changed">
+    <Fqn NodeId="16141013326690888934">abl.quest.location.taris.bronze.fallen_stars.heroic_transport</Fqn>
+    <Name Id="3653565469949952">Heroic Transport</Name>
+    <Description Id="3653565469949953">This pass allows you to travel to a safe area near the objective for the Fallen Stars quest on Taris.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140980083249949922" Status="Changed">
+    <Fqn NodeId="16140980083249949922">abl.quest.location.taris.bronze.knight_fall.heroic_transport</Fqn>
+    <Name Id="3662340088135680">Heroic Transport</Name>
+    <Description Id="3662340088135681">This pass allows you to travel to a safe area near the objective for the Knight Fall quest on Taris.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141083853429614317" Status="Changed">
+    <Fqn NodeId="16141083853429614317">abl.quest.location.taris.bronze.mutations.heroic_transport</Fqn>
+    <Name Id="3662348678070272">Heroic Transport</Name>
+    <Description Id="3662348678070273">This pass allows you to travel to a safe area near the objective for the Mutations quest on Taris.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140949588524015640" Status="Changed">
+    <Fqn NodeId="16140949588524015640">abl.quest.location.taris.bronze.rakghoul_release.heroic_transport</Fqn>
+    <Name Id="3653574059884544">Heroic Transport</Name>
+    <Description Id="3653574059884545">This pass allows you to travel to a safe area near the objective for the Rakghoul Release quest on Taris.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141120447987457990" Status="Changed">
+    <Fqn NodeId="16141120447987457990">abl.quest.location.taris.bronze.total_elimination.heroic_transport</Fqn>
+    <Name Id="3653569764917248">Heroic Transport</Name>
+    <Description Id="3653569764917249">This pass allows you to travel to a safe area near the objective for the Total Elimination quest on Taris.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141038886891211213" Status="Changed">
+    <Fqn NodeId="16141038886891211213">abl.quest.location.taris_imperial.bronze.last_of_the_tarisian_pirates.heroic_transport</Fqn>
+    <Name Id="3662851189243904">Heroic Transport</Name>
+    <Description Id="3662851189243905">This pass allows you to travel to a safe area near the objective for the Last of the Tarisian Pirates quest on Taris.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140956734195873035" Status="Changed">
+    <Fqn NodeId="16140956734195873035">abl.quest.location.taris_imperial.world.blackout.heroic_transport</Fqn>
+    <Name Id="3651211827871744">Heroic Transport</Name>
+    <Description Id="3651211827871745">This pass allows you to travel to a safe area near the objective for the Blackout quest on Taris.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141090086230877459" Status="Changed">
+    <Fqn NodeId="16141090086230877459">abl.quest.location.taris_imperial.world.enclave_raid.heroic_transport</Fqn>
+    <Name Id="3651216122839040">Heroic Transport</Name>
+    <Description Id="3651216122839041">This pass allows you to travel to a safe area near the objective for the Enclave Raid quest on Taris.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141024564454800519" Status="Changed">
+    <Fqn NodeId="16141024564454800519">abl.quest.location.taris_imperial.world.highway_to_destruction.heroic_transport</Fqn>
+    <Name Id="3662846894276608">Heroic Transport</Name>
+    <Description Id="3662846894276609">This pass allows you to travel to a safe area near the objective for the Highway to Destruction quest on Taris.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141008836749761777" Status="Changed">
+    <Fqn NodeId="16141008836749761777">abl.quest.location.taris_imperial.world.spilling_chemicals.heroic_transport</Fqn>
+    <Name Id="3651113043623936">Heroic Transport</Name>
+    <Description Id="3651113043623937">This pass allows you to travel to a safe area near the objective for the Spilling Chemicals quest on Taris.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141021962175693473" Status="Changed">
+    <Fqn NodeId="16141021962175693473">abl.quest.location.taris_imperial.world.the_fathers_of_taris.heroic_transport</Fqn>
+    <Name Id="3651220417806336">Heroic Transport</Name>
+    <Description Id="3651220417806337">This pass allows you to travel to a safe area near the objective for the Fathers of Taris quest on Taris.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141075571240795686" Status="Changed">
+    <Fqn NodeId="16141075571240795686">abl.quest.location.tatooine.bronze.imperial.black_box.heroic_transport</Fqn>
+    <Name Id="3659943496384512">Heroic Transport</Name>
+    <Description Id="3659943496384513">This pass allows you to travel to a safe area near the objective for the Black Box quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140990747707928110" Status="Changed">
+    <Fqn NodeId="16140990747707928110">abl.quest.location.tatooine.bronze.imperial.calldownthethunder.heroic_transport</Fqn>
+    <Name Id="3667622897909760">Heroic Transport</Name>
+    <Description Id="3667622897909761">This pass allows you to travel to a safe area near the objective for the Call Down the Thunder quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140964126218515072" Status="Changed">
+    <Fqn NodeId="16140964126218515072">abl.quest.location.tatooine.bronze.republic.breaking_the_code.heroic_transport</Fqn>
+    <Name Id="3667635782811648">Heroic Transport</Name>
+    <Description Id="3667635782811649">This pass allows you to travel to a safe area near the objective for the Breaking the Code quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141171930926474805" Status="Changed">
+    <Fqn NodeId="16141171930926474805">abl.quest.location.tatooine.bronze.republic.down_the_hole.heroic_transport</Fqn>
+    <Name Id="3659904841678848">Heroic Transport</Name>
+    <Description Id="3659904841678849">This pass allows you to travel to a safe area near the objective for the Down the Hole quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140972628376159277" Status="Changed">
+    <Fqn NodeId="16140972628376159277">abl.quest.location.tatooine.bronze.republic.pirate_bullies.heroic_transport</Fqn>
+    <Name Id="3667640077778944">Heroic Transport</Name>
+    <Description Id="3667640077778945">This pass allows you to travel to a safe area near the objective for the Pirate Bullies quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141049043069259290" Status="Changed">
+    <Fqn NodeId="16141049043069259290">abl.quest.location.tatooine.bronze.republic.reap_the_whirlwind.heroic_transport</Fqn>
+    <Name Id="3659934906449920">Heroic Transport</Name>
+    <Description Id="3659934906449921">This pass allows you to travel to a safe area near the objective for the Reap the Whirlwind quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140963928659940748" Status="Changed">
+    <Fqn NodeId="16140963928659940748">abl.quest.location.tatooine.world.imperial.blood_and_sand.heroic_transport</Fqn>
+    <Name Id="3667627192877056">Heroic Transport</Name>
+    <Description Id="3667627192877057">This pass allows you to travel to a safe area near the objective for the Blood and Sand quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141018338758378388" Status="Changed">
+    <Fqn NodeId="16141018338758378388">abl.quest.location.tatooine.world.imperial.jawa_trade.heroic_transport</Fqn>
+    <Name Id="3659956381286400">Heroic Transport</Name>
+    <Description Id="3659956381286401">This pass allows you to travel to a safe area near the objective for the Jawa Trade quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140957474795116952" Status="Changed">
+    <Fqn NodeId="16140957474795116952">abl.quest.location.tatooine.world.imperial.prison_labor.heroic_transport</Fqn>
+    <Name Id="3659947791351808">Heroic Transport</Name>
+    <Description Id="3659947791351809">This pass allows you to travel to a safe area near the objective for the Prison Labor quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140996407433433105" Status="Changed">
+    <Fqn NodeId="16140996407433433105">abl.quest.location.tatooine.world.imperial.supply_lines.heroic_transport</Fqn>
+    <Name Id="3659952086319104">Heroic Transport</Name>
+    <Description Id="3659952086319105">This pass allows you to travel to a safe area near the objective for the Supply Lines quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141148430948915199" Status="Changed">
+    <Fqn NodeId="16141148430948915199">abl.quest.location.tatooine.world.imperial.war_on_spice.heroic_transport</Fqn>
+    <Name Id="3667631487844352">Heroic Transport</Name>
+    <Description Id="3667631487844353">This pass allows you to travel to a safe area near the objective for the War on Spice quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140952523330794694" Status="Changed">
+    <Fqn NodeId="16140952523330794694">abl.quest.location.tatooine.world.republic.a_jawas_concern.heroic_transport</Fqn>
+    <Name Id="3667644372746240">Heroic Transport</Name>
+    <Description Id="3667644372746241">This pass allows you to travel to a safe area near the objective for the A Jawas Concern quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140964575638023507" Status="Changed">
+    <Fqn NodeId="16140964575638023507">abl.quest.location.tatooine.world.republic.search_and_rescue.heroic_transport</Fqn>
+    <Name Id="3751430594756608">Heroic Transport</Name>
+    <Description Id="3751430594756609">This pass allows you to travel to a safe area near the objective for the A Jawas Concern quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141160506629482307" Status="Changed">
+    <Fqn NodeId="16141160506629482307">abl.quest.location.tatooine.world.republic.the_long_goodbye.heroic_transport</Fqn>
+    <Name Id="3659939201417216">Heroic Transport</Name>
+    <Description Id="3659939201417217">This pass allows you to travel to a safe area near the objective for the The Long Goodbye quest on Tatooine.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141017572833360365" Status="Changed">
+    <Fqn NodeId="16141017572833360365">abl.quest.location.tython.heroic_weekly.transport_passes.the_chamber_of_speech</Fqn>
+    <Name Id="3669998014824448">Heroic Transport</Name>
+    <Description Id="3669998014824449">This pass allows you to travel to a safe area near the objective for the The Chamber of Speach quest on Tython.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141106317954163410" Status="Changed">
+    <Fqn NodeId="16141106317954163410">abl.quest.location.voss.bronze.imperial.ancient_guardians.heroic_transport</Fqn>
+    <Name Id="3646087931887616">Heroic Transport</Name>
+    <Description Id="3646087931887617">This pass allows you to travel to a safe area near the objective for the Ancient Guardians quest on Voss.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141030767651368606" Status="Changed">
+    <Fqn NodeId="16141030767651368606">abl.quest.location.voss.bronze.imperial.cleanse_the_corrupted.heroic_transport</Fqn>
+    <Name Id="3646092226854912">Heroic Transport</Name>
+    <Description Id="3646092226854913">This pass allows you to travel to a safe area near the objective for the Cleanse the Corrupted quest on Voss.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140915111771853341" Status="Changed">
+    <Fqn NodeId="16140915111771853341">abl.quest.location.voss.bronze.imperial.rock_eaters.heroic_transport</Fqn>
+    <Name Id="3646096521822208">Heroic Transport</Name>
+    <Description Id="3646096521822209">This pass allows you to travel to a safe area near the objective for the Rock Eaters quest on Voss.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141064634995324078" Status="Changed">
+    <Fqn NodeId="16141064634995324078">abl.quest.location.voss.bronze.imperial.the_first_commandos_call.heroic_transport</Fqn>
+    <Name Id="3646100816789504">Heroic Transport</Name>
+    <Description Id="3646100816789505">This pass allows you to travel to a safe area near the objective for the The First Commando's Call quest on Voss.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141006065679795604" Status="Changed">
+    <Fqn NodeId="16141006065679795604">abl.quest.location.voss.bronze.republic.cyber_mercenaries.heroic_transport</Fqn>
+    <Name Id="3645744334503936">Heroic Transport</Name>
+    <Description Id="3645744334503937">This pass allows you to travel to a safe area near the objective for the Cyber Mercenaries quest on Voss.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141008869629472670" Status="Changed">
+    <Fqn NodeId="16141008869629472670">abl.quest.location.voss.bronze.republic.not_afraid_enough.heroic_transport</Fqn>
+    <Name Id="3646070752018432">Heroic Transport</Name>
+    <Description Id="3646070752018433">This pass allows you to travel to a safe area near the objective for the Not Afraid Enough quest on Voss.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16140970282292467177" Status="Changed">
+    <Fqn NodeId="16140970282292467177">abl.quest.location.voss.bronze.republic.savage_connections.heroic_transport</Fqn>
+    <Name Id="3646075046985728">Heroic Transport</Name>
+    <Description Id="3646075046985729">This pass allows you to travel to a safe area near the objective for the Savage Connections quest on Voss.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141158325897341038" Status="Changed">
+    <Fqn NodeId="16141158325897341038">abl.quest.location.voss.bronze.republic.trail_of_the_first.heroic_transport</Fqn>
+    <Name Id="3646079341953024">Heroic Transport</Name>
+    <Description Id="3646079341953025">This pass allows you to travel to a safe area near the objective for the Trail of the First quest on Voss.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141151781008444971" Status="Changed">
+    <Fqn NodeId="16141151781008444971">abl.racials.twilek.social</Fqn>
+    <Name Id="2446005349908480">Parlor Dance</Name>
+    <Description Id="2446005349908481">Social ability. Perform a unique dance.</Description>
+    <ChannelingTime OldValue="9999">600</ChannelingTime>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="16141010231170334810" Status="Changed">
+    <Fqn NodeId="16141010231170334810">abl.sith_inquisitor.assassinate</Fqn>
+    <Name Id="2295741624090624">Assassinate</Name>
+    <Description Id="2295741624090625">Attempts to assassinate the target, dealing &lt;&lt;1&gt;&gt; weapon damage. Only usable on targets at or below 30% max health.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.266">0.254</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.266">0.254</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="0.77">0.7</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="2.657">2.54</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="25">20</ForceCost>
+  </Ability>
+  <Ability Id="16140994506364826220" Status="Changed">
+    <Fqn NodeId="16140994506364826220">abl.sith_inquisitor.lacerate</Fqn>
+    <Name Id="975129374883840">Lacerate</Name>
+    <Description Id="975129374883841">Deals &lt;&lt;1&gt;&gt; weapon damage to up to 8 targets within 5 meters. Requires a double-bladed lightsaber or electrostaff.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.078">0.072</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.078">0.072</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="-0.48">-0.52</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="0.78">0.72</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="25">20</ForceCost>
+  </Ability>
+  <Ability Id="16141078985118687640" Status="Changed">
+    <Fqn NodeId="16141078985118687640">abl.sith_inquisitor.skill.deception.ball_lightning</Fqn>
+    <Name Id="3408941312638976">Ball Lightning</Name>
+    <Description Id="3408941312638977">Blasts the target with a ball of lightning for &lt;&lt;1&gt;&gt; energy damage. Standard and weak targets are additionally stunned for 3 seconds.
+
+Replaces Shock.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.226">0.214</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.186">0.174</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="2.06">1.94</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141163913446222441" Status="Changed">
+    <Fqn NodeId="16141163913446222441">abl.sith_inquisitor.skill.deception.voltaic_slash</Fqn>
+    <Name Id="975584641417216">Voltaic Slash</Name>
+    <Description Id="975584641417217">Strikes the target twice, dealing &lt;&lt;1&gt;&gt; weapon damage with each hit. Each use of this ability builds Voltage, which gives Shock and Ball Lightning a 50% chance to automatically trigger your Surging Charge off of its normal rate limit. Stacks up to 2 times. Requires a double-bladed lightsaber or electrostaff.
+
+Replaces Thrash.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.081">0.075</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.081">0.075</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="-0.46">-0.5</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="0.81">0.75</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="25">20</ForceCost>
+  </Ability>
+  <Ability Id="16141120432552565877" Status="Changed">
+    <Fqn NodeId="16141120432552565877">abl.sith_inquisitor.thrash</Fqn>
+    <Name Id="3413184740327424">Thrash</Name>
+    <Description Id="3413184740327425">Strikes the target twice. Each hit deals &lt;&lt;1&gt;&gt; weapon damage.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.0775">0.072</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0775">0.072</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="-0.48">-0.52</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="0.775">0.72</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+    <ForceCost OldValue="25">20</ForceCost>
+  </Ability>
+  <Ability Id="16141113152532997283" Status="Changed">
+    <Fqn NodeId="16141113152532997283">abl.sith_warrior.skill.annihilation.force_gash</Fqn>
+    <Name Id="3361615068004352">Force Rend</Name>
+    <Description Id="3361615068004353">Summons dark Force power to build 3 rage and rend the target, causing it to bleed for &lt;&lt;1&gt;&gt; internal damage over 9 seconds.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.045">0.042</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.045">0.042</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="0.45">0.42</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141141473538576040" Status="Changed">
+    <Fqn NodeId="16141141473538576040">abl.sith_warrior.skill.carnage.devastating_blast</Fqn>
+    <Name Id="3361602183102464">Devastating Blast</Name>
+    <Description Id="3361602183102465">Unleashes a powerful blast of Force energy at the target, dealing &lt;&lt;1&gt;&gt; energy damage. The blast stuns standard and weak enemies for 5 seconds.
+
+Replaces Force Scream.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.249">0.235</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.209">0.195</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="2.29">2.15</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141104608609665137" Status="Changed">
+    <Fqn NodeId="16141104608609665137">abl.smuggler.skill.sharpshooter.penetrating_rounds</Fqn>
+    <Name Id="3404435891945472">Penetrating Rounds</Name>
+    <Description Id="3404435891945473">Unleashes a number of rounds that deal &lt;&lt;1&gt;&gt; weapon damage and sunder the target for 45 seconds. Sundered targets have their armor rating reduced by 20%. Consumes 20 energy over the duration of the channel. Requires both blasters.
+
+Replaces Speed Shot.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.085">0.08</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.085">0.08</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="-0.44">-0.47</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="0.847">0.8</effParam_Coefficient>
+          </Action>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IgnoreDualWieldModifier OldValue="True">False</effParam_IgnoreDualWieldModifier>
+            <effParam_StandardHealthPercentMax OldValue="0.085">0</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.085">0</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="-0.44">-0.47</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="0.847">0</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140982044672824399" Status="Changed">
+    <Fqn NodeId="16140982044672824399">abl.trooper.skill.shield_specialist.ion_storm</Fqn>
+    <Name Id="3389987621961728">Ion Storm</Name>
+    <Description Id="3389987621961729">Sprays waves of ionizing energy in a 10-meter cone, depleting 28 energy cells and dealing &lt;&lt;1&gt;&gt; elemental damage to up to 8 enemy targets over the duration. Affected targets are impaired for 45 seconds, reducing the Force and tech damage they deal by 5%.
+
+Replaces Pulse Cannon.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.111">0.0985</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.111">0.0985</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="1.11">0.985</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141096757855080985" Status="New">
+    <Fqn NodeId="16141096757855080985">abl.companion.unique.mtx.nexu_cat.dps.aoe_attack</Fqn>
+    <Base62Id>6L8fQVB</Base62Id>
+    <Name Id="3813256648982528">Body Slam</Name>
+    <Description Id="3813256648982529">Your creature slams into an enemy hitting all hostiles 4m around the enemy target dealing &lt;&lt;1&gt;&gt; kinetic damage to up to 5 targets.</Description>
+    <DBURL>https://torcommunity.com/database/ability/6L8fQVB/body+slam</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>1</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.101</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.101</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>1.01</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>thunderfist</Icon>
+    <MaxRange>4</MaxRange>
+    <CooldownTime>22.5</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141096757855080985</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141000953300981463" Status="New">
+    <Fqn NodeId="16141000953300981463">abl.companion.unique.mtx.nexu_cat.dps.execution_attack</Fqn>
+    <Base62Id>rnQzbcP</Base62Id>
+    <Name Id="3813260943949824">Go for the Throat</Name>
+    <Description Id="3813260943949825">Your creature leaps at a target with less than 30% health and sinks in, dealing &lt;&lt;1&gt;&gt; internal damage.</Description>
+    <DBURL>https://torcommunity.com/database/ability/rnQzbcP/go+for+the+throat</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>4</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.428</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.428</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>4.27</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>choke</Icon>
+    <MaxRange>4</MaxRange>
+    <CooldownTime>61</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141000953300981463</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141141062484376425" Status="New">
+    <Fqn NodeId="16141141062484376425">abl.companion.unique.mtx.nexu_cat.dps.single_stun</Fqn>
+    <Base62Id>QJlQua6</Base62Id>
+    <Name Id="3813265238917120">Headbutt</Name>
+    <Description Id="3813265238917121">Your creature uses its head, stunning the target for 5 seconds. </Description>
+    <DBURL>https://torcommunity.com/database/ability/QJlQua6/headbutt</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>5</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>horn</Icon>
+    <MaxRange>4</MaxRange>
+    <CooldownTime>45</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141141062484376425</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141140724070072663" Status="New">
+    <Fqn NodeId="16141140724070072663">abl.companion.unique.mtx.nexu_cat.dps.single_target_attack</Fqn>
+    <Base62Id>Ly3aYzu</Base62Id>
+    <Name Id="3813269533884416">Power Bite</Name>
+    <Description Id="3813269533884417">Your creature lunges at the target and delivers a powerful bite, dealing &lt;&lt;1&gt;&gt; internal damage and causes the target to become immobilized.</Description>
+    <DBURL>https://torcommunity.com/database/ability/Ly3aYzu/power+bite</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>1</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>3</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.229</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.229</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>2.29</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>1</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>3</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.229</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.229</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>2.29</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>animaltalon</Icon>
+    <MaxRange>4</MaxRange>
+    <CooldownTime>7</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141140724070072663</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141087911670868319" Status="New">
+    <Fqn NodeId="16141087911670868319">abl.companion.unique.mtx.nexu_cat.dps.single_target_dot</Fqn>
+    <Base62Id>NsbzNzl</Base62Id>
+    <Name Id="3813329663426560">Cutting Swipe</Name>
+    <Description Id="3813329663426561">Your creature cuts the target by dealing &lt;&lt;1&gt;&gt; internal damage over a 10 second duration.</Description>
+    <DBURL>https://torcommunity.com/database/ability/NsbzNzl/cutting+swipe</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>1</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.042</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.042</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>0.42</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>animaltaloncolorvariant1</Icon>
+    <MaxRange>4</MaxRange>
+    <CooldownTime>12</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141087911670868319</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140975589879104032" Status="New">
+    <Fqn NodeId="16140975589879104032">abl.companion.unique.mtx.nexu_cat.healer.channel_heal</Fqn>
+    <Base62Id>8CBzPM7</Base62Id>
+    <Name Id="3813273828851712">Kolto Collar Scan</Name>
+    <Description Id="3813273828851713">Your creature uses its Kolto Collar to heal a friendly target for &lt;&lt;1&gt;&gt; over 3 seconds.</Description>
+    <DBURL>https://torcommunity.com/database/ability/8CBzPM7/kolto+collar+scan</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.03</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.03</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>0.59</effParam_HealingPowerCoefficient>
+            <ablDescriptionTokenMultiplier>3</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>3</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>emergencystimpak</Icon>
+    <MaxRange>30</MaxRange>
+    <ChannelingTime>3</ChannelingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141023577806485466" Status="New">
+    <Fqn NodeId="16141023577806485466">abl.companion.unique.mtx.nexu_cat.healer.single_target_heal</Fqn>
+    <Base62Id>sZTSscC</Base62Id>
+    <Name Id="3813278123819008">Kolto Collar Dart</Name>
+    <Description Id="3813278123819009">Your creature fires a Kolto Dart from its collar, healing the target for &lt;&lt;1&gt;&gt;.</Description>
+    <DBURL>https://torcommunity.com/database/ability/sZTSscC/kolto+collar+dart</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.071</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>1.63</effParam_HealingPowerCoefficient>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>koltodart</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>8</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141023577806485466</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141130777563865023" Status="New">
+    <Fqn NodeId="16141130777563865023">abl.companion.unique.mtx.nexu_cat.healer.single_target_hot</Fqn>
+    <Base62Id>lvzedlC</Base62Id>
+    <Name Id="3813282418786304">Affectionate Hairball</Name>
+    <Description Id="3813282418786305">Your creature shows its affection by lavishing slobber on the target healing and cleansing it of mental and physical effects for &lt;&lt;1&gt;&gt; for 10 seconds. What an incredible smell!</Description>
+    <DBURL>https://torcommunity.com/database/ability/lvzedlC/affectionate+hairball</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_Heal">
+            <effParam_SpellType>2</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.031</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.031</effParam_StandardHealthPercentMin>
+            <effParam_HealingPowerCoefficient>0.61</effParam_HealingPowerCoefficient>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>mucus</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>12</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141130777563865023</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141050513484718991" Status="New">
+    <Fqn NodeId="16141050513484718991">abl.companion.unique.mtx.nexu_cat.healer.single_target_mez</Fqn>
+    <Base62Id>ZwFaJUC</Base62Id>
+    <Name Id="3813286713753600">Deafening Roar</Name>
+    <Description Id="3813286713753601">Your creature unleashes a mighty roar that dazes the target for up to 8 seconds. Damage to the target causes this effect to end prematurely. Targets may only be affected by Deafening Roar once every 30 seconds. Target must not be suffering from periodic damage and have greater than 90% max health.</Description>
+    <DBURL>https://torcommunity.com/database/ability/ZwFaJUC/deafening+roar</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>deafened</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>45</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141050513484718991</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141097347789509253" Status="New">
+    <Fqn NodeId="16141097347789509253">abl.companion.unique.mtx.nexu_cat.healer.single_target_shield</Fqn>
+    <Base62Id>XLBzOS4</Base62Id>
+    <Name Id="3813291008720896">Collar Kolto Shield</Name>
+    <Description Id="3813291008720897">Your creature uses its collar to place a Kolto-powered shield around the target, preventing a moderate amount of damage for up to 20 seconds.</Description>
+    <DBURL>https://torcommunity.com/database/ability/XLBzOS4/collar+kolto+shield</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>recuperativenanotech</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>37</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141097347789509253</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Grouped</TargetRule>
+    <AbsorbCoEfficients>
+      <AbsorbCoEfficient Id="0">
+        <effParam_AmountMax>0</effParam_AmountMax>
+        <effParam_AmountMin>0</effParam_AmountMin>
+        <effParam_AmountPercent>1</effParam_AmountPercent>
+        <effParam_StandardHealthPercentMax>0.1225</effParam_StandardHealthPercentMax>
+        <effParam_StandardHealthPercentMin>0.1225</effParam_StandardHealthPercentMin>
+        <effParam_MaxDamageAbsorbed>0</effParam_MaxDamageAbsorbed>
+        <effParam_HealingPowerCoefficient>2.45</effParam_HealingPowerCoefficient>
+      </AbsorbCoEfficient>
+    </AbsorbCoEfficients>
+    <References />
+  </Ability>
+  <Ability Id="16141104035632478076" Status="New">
+    <Fqn NodeId="16141104035632478076">abl.companion.unique.mtx.nexu_cat.tamed_passive</Fqn>
+    <Base62Id>V7TzyQP</Base62Id>
+    <Name Id="3813295303688192">tamed_passive</Name>
+    <Description Id="3813295303688193"></Description>
+    <DBURL>https://torcommunity.com/database/ability/V7TzyQP/tamed_passive</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Icon>stimpack</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141135764409044213" Status="New">
+    <Fqn NodeId="16141135764409044213">abl.companion.unique.mtx.nexu_cat.tank.aoe_attack</Fqn>
+    <Base62Id>ygPwAZL</Base62Id>
+    <Name Id="3813299598655488">Overcharge Collar</Name>
+    <Description Id="3813299598655489">Your creature's collar overcharges unleashing an electric discharge dealing &lt;&lt;1&gt;&gt; internal damage to up to 5 enemies 5m around the impact. Generates a moderate amount of threat and reduces incoming damage by 50% for 10 seconds. Does not hit sleeping, lifted, or incapacitated enemies.</Description>
+    <DBURL>https://torcommunity.com/database/ability/ygPwAZL/overcharge+collar</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>4</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>3</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0.5</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.106</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.106</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>1.06</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>utilitybeltwithmanyslots</Icon>
+    <MaxRange>4</MaxRange>
+    <CooldownTime>15</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141135764409044213</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141071952688865027" Status="New">
+    <Fqn NodeId="16141071952688865027">abl.companion.unique.mtx.nexu_cat.tank.aoe_pull</Fqn>
+    <Base62Id>0ry50JC</Base62Id>
+    <Name Id="3813303893622784">Multi-Grapple</Name>
+    <Description Id="3813303893622785">Fires a multi-grapple line from your creature's collar that fires in a wide cone in front of the Akk Dog and pulls the closest three targets and generates a high amount of threat. Cannot be used on targets in cover or on targets with Boss Immunity.</Description>
+    <DBURL>https://torcommunity.com/database/ability/0ry50JC/multi-grapple</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>grapple</Icon>
+    <MinRange>4</MinRange>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>45</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141071952688865027</SharedCooldown>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141073110772573907" Status="New">
+    <Fqn NodeId="16141073110772573907">abl.companion.unique.mtx.nexu_cat.tank.aoe_taunt</Fqn>
+    <Base62Id>qsOrfN9</Base62Id>
+    <Name Id="3813308188590080">Unleashed Roar</Name>
+    <Description Id="3813308188590081">Your creature taunts attacking enemies forcing them to attack your creature and generates a moderate amount of threat.</Description>
+    <DBURL>https://torcommunity.com/database/ability/qsOrfN9/unleashed+roar</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>disengage</Icon>
+    <MaxRange>4</MaxRange>
+    <CooldownTime>20</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141073110772573907</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141074075569947021" Status="New">
+    <Fqn NodeId="16141074075569947021">abl.companion.unique.mtx.nexu_cat.tank.single_target_attack</Fqn>
+    <Base62Id>ZG6THrA</Base62Id>
+    <Name Id="3813312483557376">Power Charge</Name>
+    <Description Id="3813312483557377">Your creature lunges at the target and delivers a powerful headswipe, dealing &lt;&lt;1&gt;&gt; weapon damage, heals for 25% of damage dealt and generates a moderate amount of threat.</Description>
+    <DBURL>https://torcommunity.com/database/ability/ZG6THrA/power+charge</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>1</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>3</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0.5</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.178</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.178</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>1.78</effParam_Coefficient>
+            <effParam_HealthStealPercentage>1</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+          <Action Name="effAction_SpellDamage">
+            <effParam_DamageType>1</effParam_DamageType>
+            <effParam_Slot>1</effParam_Slot>
+            <effParam_SpellType>3</effParam_SpellType>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_AmountMax>0</effParam_AmountMax>
+            <effParam_AmountMin>0</effParam_AmountMin>
+            <effParam_AmountPercent>0</effParam_AmountPercent>
+            <effParam_ThreatPercent>0.5</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.178</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.178</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent>0</effParam_AmountModifierPercent>
+            <effParam_Coefficient>1.78</effParam_Coefficient>
+            <effParam_HealthStealPercentage>1</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>horn</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>7</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141074075569947021</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140918176104648750" Status="New">
+    <Fqn NodeId="16140918176104648750">abl.companion.unique.mtx.nexu_cat.tank.single_target_taunt</Fqn>
+    <Base62Id>BX1T6v0</Base62Id>
+    <Name Id="3813316778524672">Prideful Taunt</Name>
+    <Description Id="3813316778524673">Taunts the target, forcing it to attack your creature for 6 seconds. Also reinforces your creature by placing an absorb shield that absorbs a moderate amount of damage.</Description>
+    <DBURL>https://torcommunity.com/database/ability/BX1T6v0/prideful+taunt</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>abl_jk_gu_inspiring_force</Icon>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>12</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140918176104648750</SharedCooldown>
+    <TargetArc>270</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <AbsorbCoEfficients>
+      <AbsorbCoEfficient Id="0">
+        <effParam_AmountMax>0</effParam_AmountMax>
+        <effParam_AmountMin>0</effParam_AmountMin>
+        <effParam_AmountPercent>1</effParam_AmountPercent>
+        <effParam_StandardHealthPercentMax>0.243</effParam_StandardHealthPercentMax>
+        <effParam_StandardHealthPercentMin>0.243</effParam_StandardHealthPercentMin>
+        <effParam_MaxDamageAbsorbed>0</effParam_MaxDamageAbsorbed>
+        <effParam_HealingPowerCoefficient>4.863</effParam_HealingPowerCoefficient>
+      </AbsorbCoEfficient>
+    </AbsorbCoEfficients>
+    <References />
+  </Ability>
+  <Ability Id="16141170016090336741" Status="New">
+    <Fqn NodeId="16141170016090336741">abl.companion.unique.mtx.nexu_cat.trick_play_dead</Fqn>
+    <Base62Id>vIr0B9C</Base62Id>
+    <Name Id="3813321073491968">Trick: Play Dead</Name>
+    <Description Id="3813321073491969">Your creature plays dead at your 'command'. No creatures were hurt while performing this trick.</Description>
+    <DBURL>https://torcommunity.com/database/ability/vIr0B9C/trick%3a+play+dead</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>shotgunproficiency</Icon>
+    <ChannelingTime>8</ChannelingTime>
+    <CooldownTime>10</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141170016090336741</SharedCooldown>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141076067595831219" Status="New">
+    <Fqn NodeId="16141076067595831219">abl.companion.unique.mtx.nexu_cat.trick_preen</Fqn>
+    <Base62Id>iyFDYfA</Base62Id>
+    <Name Id="3813325368459264">Trick: Preen</Name>
+    <Description Id="3813325368459265">Your creature cleans and further grooms its vicious claws and fur.</Description>
+    <DBURL>https://torcommunity.com/database/ability/iyFDYfA/trick%3a+preen</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>severed_tongue</Icon>
+    <ChannelingTime>8</ChannelingTime>
+    <CooldownTime>10</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141076067595831219</SharedCooldown>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140905519628849333" Status="New">
+    <Fqn NodeId="16140905519628849333">abl.mtx.toy.holiday_2015.snowball_cannon</Fqn>
+    <Base62Id>jP2UIWD</Base62Id>
+    <Name Id="3810482100109312">Life Day Snowball Cannon</Name>
+    <Description Id="3810482100109313">Fire a Life Day Snowball Bomb at your target within 30 meters, which explodes in a cloud of snow. Targets will trail snow for a short time after being hit.</Description>
+    <DBURL>https://torcommunity.com/database/ability/jP2UIWD/life+day+snowball+cannon</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_toy_snowball_cannon</Icon>
+    <MinRange>1</MinRange>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>7</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16140905519628849333</SharedCooldown>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140915776483480736" Status="New">
+    <Fqn NodeId="16140915776483480736">abl.player.mount.mtx.czerka.z3b</Fqn>
+    <Base62Id>eDJBPc1</Base62Id>
+    <Name Id="3814227311591424">Czerka Z-3B</Name>
+    <Description Id="3814227311591425">Activates the Czerka Z-3B, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.  
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%
+</Description>
+    <DBURL>https://torcommunity.com/database/ability/eDJBPc1/czerka+z-3b</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_czerka_z3b</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140990007833479774" Status="New">
+    <Fqn NodeId="16140990007833479774">abl.player.mount.mtx.dasta.colossus</Fqn>
+    <Base62Id>NaeBlE4</Base62Id>
+    <Name Id="3809455602925568">Dasta Colossus</Name>
+    <Description Id="3809455602925569">Activates the Dasta Colossus, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.  
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%
+</Description>
+    <DBURL>https://torcommunity.com/database/ability/NaeBlE4/dasta+colossus</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_dasta_colossus</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140964543599159381" Status="New">
+    <Fqn NodeId="16140964543599159381">abl.player.mount.mtx.gundark.jungle</Fqn>
+    <Base62Id>LIXduRB</Base62Id>
+    <Name Id="3810353251090432">Jungle Gundark</Name>
+    <Description Id="3810353251090433">Calls your Jungle Gundark mount. Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <DBURL>https://torcommunity.com/database/ability/LIXduRB/jungle+gundark</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_gundark_jungle</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140993697951906918" Status="New">
+    <Fqn NodeId="16140993697951906918">abl.player.mount.mtx.tank.snowstorm</Fqn>
+    <Base62Id>PlmyyWz</Base62Id>
+    <Name Id="3808128458031104">Snowstorm Assault Speeder</Name>
+    <Description Id="3808128458031105">Activates the Snowstorm Assault Speeder, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill. Use the Mount Flourish Key binding to activate this mount's flourish.  
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%
+</Description>
+    <DBURL>https://torcommunity.com/database/ability/PlmyyWz/snowstorm+assault+speeder</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_tank_snowstorm</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141173136010486415" Status="New">
+    <Fqn NodeId="16141173136010486415">abl.qa.gameplay_persistence.string_test.force_leap</Fqn>
+    <Base62Id>ZwBxbN2</Base62Id>
+    <Name Id="3306398968446976">Force Leap</Name>
+    <Description Id="3306398968446977">Jumps to a distant target, dealing &lt;&lt;1&gt;&gt; damage with the main-hand weapon, immoblizing the target for 2 seconds and interrupting the target's current action. Builds 3 focus. Cannot be used against targets in cover.</Description>
+    <DBURL>https://torcommunity.com/database/ability/ZwBxbN2/force+leap</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IsSpecialAbility>True</effParam_IsSpecialAbility>
+            <effParam_IgnoreDualWieldModifier>True</effParam_IgnoreDualWieldModifier>
+            <effParam_FlurryBlowsMin>1</effParam_FlurryBlowsMin>
+            <effParam_FlurryBlowsMax>1</effParam_FlurryBlowsMax>
+            <effParam_LevelCap>0</effParam_LevelCap>
+            <effParam_ThreatPercent>0</effParam_ThreatPercent>
+            <effParam_StandardHealthPercentMax>0.091</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin>0.091</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierFixedMax>0</effParam_AmountModifierFixedMax>
+            <effParam_AmountModifierFixedMin>0</effParam_AmountModifierFixedMin>
+            <effParam_AmountModifierPercent>-0.39</effParam_AmountModifierPercent>
+            <effParam_Coefficient>0.91</effParam_Coefficient>
+            <effParam_HealthStealPercentage>0</effParam_HealthStealPercentage>
+            <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+          </Action>
+        </ablCoefficients>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>2</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken>2</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDuration</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>3</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>forceLeap</Icon>
+    <MinRange>10</MinRange>
+    <MaxRange>30</MaxRange>
+    <CooldownTime>15</CooldownTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <SharedCooldown>16141173136010486415</SharedCooldown>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Attackable</TargetRule>
+    <References />
+  </Ability>
+</Abilities>

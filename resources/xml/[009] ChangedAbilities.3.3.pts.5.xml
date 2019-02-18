@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="16141124664572085544" Status="Changed">
+    <Fqn NodeId="16141124664572085544">abl.jedi_consular.skill.seer.resplendence</Fqn>
+    <Name Id="812985769525248">Resplendence</Name>
+    <Description Id="812985769525249" OldValue="Healing Trance critical hits grant 1 charge of Resplendence, which improves the effectiveness of your next Vindicate or Salvation.&#xA;Vindicate: Restores 10 additional Force and consumes 1 charge.&#xA;Salvation: Consumes 10 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.">Healing Trance critical hits grant 1 charge of Resplendence, which improves the effectiveness of your next Vindicate or Salvation.
+Vindicate: Restores 10 additional Force and consumes 1 charge. Vindicate does not make you Weary when used with Resplendence. 
+Salvation: Consumes 10 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.</Description>
+  </Ability>
+  <Ability Id="16141016677326372106" Status="Changed">
+    <Fqn NodeId="16141016677326372106">abl.jedi_consular.vindicate</Fqn>
+    <Name Id="3613175597498368">Vindicate</Name>
+    <Description Id="3613175597498369" OldValue="Calls upon the light energy surrounding you, restoring 50 Force.">Calls upon the light energy surrounding you, restoring 50 Force. Utilizing Vindicate makes you Weary, reducing your Force regeneration rate by 2 for 10 seconds. This effect can stack up to 4 times.</Description>
+  </Ability>
+  <Ability Id="16141072108466099380" Status="Changed">
+    <Fqn NodeId="16141072108466099380">abl.sith_inquisitor.consuming_darkness</Fqn>
+    <Name Id="3613119762923520">Consuming Darkness</Name>
+    <Description Id="3613119762923521" OldValue="Consumes the dark energy around you, restoring 50 Force.">Consumes the dark energy around you, restoring 50 Force. Utilizing Consuming Darkness makes you Weary, reducing your Force regeneration rate by 2 for 10 seconds. This effect can stack up to 4 times.</Description>
+  </Ability>
+  <Ability Id="16141061930666388872" Status="Changed">
+    <Fqn NodeId="16141061930666388872">abl.sith_inquisitor.skill.corruption.force_surge</Fqn>
+    <Name Id="808677917327360">Force Surge</Name>
+    <Description Id="808677917327361" OldValue="Innervate critical heals grant 1 charge of Force Surge, which improves the effectiveness of your next Consuming Darkness or Revivification.&#xA;Consuming Darkness: Restores 10 additional Force and consumes 1 charge.&#xA;Revivification: Consumes 10 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.">Innervate critical heals grant 1 charge of Force Surge, which improves the effectiveness of your next Consuming Darkness or Revivification.
+Consuming Darkness: Restores 10 additional Force and consumes 1 charge. Consuming Darkness does not make you Weary when used with Force Surge. 
+Revivification: Consumes 10 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.</Description>
+    <CastingTime Status="New">7.5</CastingTime>
+  </Ability>
+  <Ability Id="16141139083859236468" Status="New">
+    <Fqn NodeId="16141139083859236468">abl.test.jjary.new_consuming_darkness</Fqn>
+    <Name Id="3671033101942784">Consuming Darkness</Name>
+    <Description Id="3671033101942785">Consumes the dark energy around you, restoring 50 Force.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients />
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablCoefficients />
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>consumption</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+</Abilities>

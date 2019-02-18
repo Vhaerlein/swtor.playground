@@ -1,15 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatOptimizer", "StatOptimizer\StatOptimizer.csproj", "{2355247D-CBE1-4373-B409-66D7E71B1F69}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swtor.Dps.StatOptimizer", "src\Swtor.Dps.StatOptimizer\Swtor.Dps.StatOptimizer.csproj", "{2355247D-CBE1-4373-B409-66D7E71B1F69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DamageModel", "DamageModel\DamageModel.csproj", "{F36D2B70-0426-402E-8CF8-15887180B962}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swtor.Dps.DamageModel", "src\Swtor.Dps.DamageModel\Swtor.Dps.DamageModel.csproj", "{F36D2B70-0426-402E-8CF8-15887180B962}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatDistributions", "StatDistributions\StatDistributions.csproj", "{781D34A5-6810-4E35-AB1A-C898722A1AED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swtor.Dps.Resources", "src\Swtor.Dps.Resources\Swtor.Dps.Resources.csproj", "{890CE87B-F727-40C6-9D14-758C687F625B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources\Resources.csproj", "{890CE87B-F727-40C6-9D14-758C687F625B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swtor.Dps.LogParser", "src\Swtor.Dps.LogParser\Swtor.Dps.LogParser.csproj", "{8D112C09-EA2F-4211-A432-424668CB1534}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogParser", "LogParser\LogParser.csproj", "{8D112C09-EA2F-4211-A432-424668CB1534}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swtor.Dps.ClassAbilityXmlMerger", "src\Swtor.Dps.ClassAbilitiesMerger\Swtor.Dps.ClassAbilityXmlMerger.csproj", "{4F777BEE-3F46-4285-8AC4-1A82231E44AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{19B635EF-D49B-4397-97F3-C147E1B8783E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +29,6 @@ Global
 		{F36D2B70-0426-402E-8CF8-15887180B962}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F36D2B70-0426-402E-8CF8-15887180B962}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F36D2B70-0426-402E-8CF8-15887180B962}.Release|Any CPU.Build.0 = Release|Any CPU
-		{781D34A5-6810-4E35-AB1A-C898722A1AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{781D34A5-6810-4E35-AB1A-C898722A1AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{781D34A5-6810-4E35-AB1A-C898722A1AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{781D34A5-6810-4E35-AB1A-C898722A1AED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{890CE87B-F727-40C6-9D14-758C687F625B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{890CE87B-F727-40C6-9D14-758C687F625B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{890CE87B-F727-40C6-9D14-758C687F625B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,8 +37,19 @@ Global
 		{8D112C09-EA2F-4211-A432-424668CB1534}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D112C09-EA2F-4211-A432-424668CB1534}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D112C09-EA2F-4211-A432-424668CB1534}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F777BEE-3F46-4285-8AC4-1A82231E44AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F777BEE-3F46-4285-8AC4-1A82231E44AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F777BEE-3F46-4285-8AC4-1A82231E44AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F777BEE-3F46-4285-8AC4-1A82231E44AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2355247D-CBE1-4373-B409-66D7E71B1F69} = {19B635EF-D49B-4397-97F3-C147E1B8783E}
+		{4F777BEE-3F46-4285-8AC4-1A82231E44AE} = {19B635EF-D49B-4397-97F3-C147E1B8783E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC7DB034-6588-4A40-8EDF-AB4010268020}
 	EndGlobalSection
 EndGlobal

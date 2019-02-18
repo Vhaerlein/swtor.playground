@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="832219" Status="Changed">
+    <Fqn NodeId="16141160815491319349">abl.itm.vanity_pet.rancor.rancor_a01v01b</Fqn>
+    <Name Id="3574353388109824" OldValue="Juvenile Dathomirian Rancor">Juvenile Savannah Rancor</Name>
+    <Description Id="3574353388109825">Summons a small rancor which will follow and passively observe you on your adventures. </Description>
+  </Ability>
+  <Ability Id="832220" Status="Changed">
+    <Fqn NodeId="16140914628278983930">abl.itm.vanity_pet.rancor.rancor_a01v02</Fqn>
+    <Name Id="3574357683077120" OldValue="Juvenile Caridan Rancor">Juvenile Canyon Rancor</Name>
+    <Description Id="3574357683077121">Summons a small rancor which will follow and passively observe you on your adventures. </Description>
+  </Ability>
+  <Ability Id="832221" Status="Changed">
+    <Fqn NodeId="16140915727790612021">abl.itm.vanity_pet.rancor.rancor_a01v03</Fqn>
+    <Name Id="3574361978044416" OldValue="Juvenile Chrysalis Rancor">Juvenile Marsh Rancor</Name>
+    <Description Id="3574361978044417">Summons a small rancor which will follow and passively observe you on your adventures. </Description>
+  </Ability>
+  <Ability Id="832222" Status="Changed">
+    <Fqn NodeId="16140916827302238304">abl.itm.vanity_pet.rancor.rancor_a01v04</Fqn>
+    <Name Id="3574366273011712" OldValue="Juvenile Ottethan Rancor">Juvenile Mountain Rancor</Name>
+    <Description Id="3574366273011713">Summons a small rancor which will follow and passively observe you on your adventures. </Description>
+  </Ability>
+  <Ability Id="832223" Status="Changed">
+    <Fqn NodeId="16140917926813866963">abl.itm.vanity_pet.rancor.rancor_a01v05</Fqn>
+    <Name Id="3574370567979008" OldValue="Juvenile Lehonian Rancor">Juvenile Nocturnal Rancor</Name>
+    <Description Id="3574370567979009">Summons a small rancor which will follow and passively observe you on your adventures. </Description>
+  </Ability>
+  <Ability Id="832099" Status="Changed">
+    <Fqn NodeId="16140920125837121401">abl.itm.vanity_pet.rancor.rancor_a01v07</Fqn>
+    <Name Id="3573837992034304" OldValue="Giradda's Juvenile Rancor">Juvenile Irradiated Rancor</Name>
+    <Description Id="3573837992034305">Summons a small rancor which will follow and passively observe you on your adventures. </Description>
+  </Ability>
+  <Ability Id="832102" Status="Changed">
+    <Fqn NodeId="16141059763814042278">abl.itm.vanity_pet.rancor.rancor_a01v10</Fqn>
+    <Name Id="3573850876936192" OldValue="Juvenile Felucian Rancor">Juvenile War Rancor</Name>
+    <Description Id="3573850876936193">Summons a small rancor which will follow and passively observe you on your adventures. </Description>
+  </Ability>
+  <Ability Id="456895" Status="Changed">
+    <Fqn NodeId="16141171851558004879">abl.jedi_consular.skill.infiltration.low_slash</Fqn>
+    <Name Id="1962349082705920">Low Slash</Name>
+    <Description Id="1962349082705921">Slashes the target low, dealing &lt;&lt;1&gt;&gt; weapon damage and incapacitating the target for &lt;&lt;2&gt;&gt; seconds. Damage causes this effect to end prematurely. Requires a double-bladed lightsaber or electrostaff.</Description>
+    <Tokens>
+      <Token Id="2">
+        <ablParsedDescriptionToken OldValue="1.5">4</ablParsedDescriptionToken>
+        <ablDescriptionTokenEffect OldValue="2">4</ablDescriptionTokenEffect>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="577610" Status="Changed">
+    <Fqn NodeId="16141108812303504448">abl.jedi_knight.rebuke</Fqn>
+    <Name Id="2480816059842560">Rebuke</Name>
+    <Description Id="2480816059842561" OldValue="Reduces all damage taken by 20% and deals &lt;&lt;1&gt;&gt; energy damage to attackers. This effect cannot occur more than once every 1.5 seconds. Lasts &lt;&lt;2[%d/%d/%d]&gt;&gt; seconds. Rebuke refreshes to its full duration when attacked, but this effect cannot last more than &lt;&lt;3[%d/%d/%d]&gt;&gt; seconds in total.">Reduces all damage taken by 20% and deals &lt;&lt;1&gt;&gt; energy damage to attackers. This effect cannot occur more than once every second. Lasts &lt;&lt;2[%d/%d/%d]&gt;&gt; seconds. Rebuke refreshes to its full duration when attacked, but this effect cannot last more than &lt;&lt;3[%d/%d/%d]&gt;&gt; seconds in total.</Description>
+  </Ability>
+  <Ability Id="835510" Status="Changed">
+    <Fqn NodeId="16141115942778833453">abl.jedi_knight.skill.utility.unremitting</Fqn>
+    <Name Id="3588488125480960">Unremitting</Name>
+    <Description Id="3588488125480961" OldValue="Force Leap grants Unremitting, granting immunity to interrupts and all controlling effects for &lt;&lt;1&gt;&gt; seconds.">Force Leap grants Unremitting, granting immunity to movement-impairing effects and effects that push and pull you around for &lt;&lt;1&gt;&gt; seconds.</Description>
+  </Ability>
+  <Ability Id="835508" Status="Changed">
+    <Fqn NodeId="16141086327475905947">abl.jedi_knight.skill.vigilance.robust</Fqn>
+    <Name Id="3588479535546368">Robust</Name>
+    <Description Id="3588479535546369" OldValue="While in Shien Form, Force Leap grants Robust, reducing all damage taken by 20% for &lt;&lt;1&gt;&gt; seconds.">While in Shien Form, Force Leap grants Robust, granting immunity to interrupts, stuns, knockdowns, and incapacitating effects for &lt;&lt;1&gt;&gt; seconds. Additionally, during this time, damage reduction is increased by 20%.</Description>
+  </Ability>
+  <Ability Id="293875" Status="Changed">
+    <Fqn NodeId="16141042451807214230">abl.jedi_knight.skill.watchman.burning_focus</Fqn>
+    <Name Id="1262183514112000">Burning Focus</Name>
+    <Description Id="1262183514112001" OldValue="Your direct damage attacks that critically hit a burning target build 1 focus. This effect cannot occur more than once 4 seconds. In addition, Merciless Slash makes its target assailable for &lt;&lt;1&gt;&gt; seconds. Assailable targets take 7% more elemental and internal damage.">Your direct damage attacks that critically hit a burning target build 1 focus. This effect cannot occur more than once 3 seconds. In addition, Merciless Slash makes its target assailable for &lt;&lt;1&gt;&gt; seconds. Assailable targets take 7% more elemental and internal damage.</Description>
+  </Ability>
+  <Ability Id="805790" Status="Changed">
+    <Fqn NodeId="16140916556896222352">abl.jedi_knight.skill.watchman.cauterize</Fqn>
+    <Name Id="3460841697443840">Cauterize</Name>
+    <Description Id="3460841697443841">Strikes the target for &lt;&lt;1&gt;&gt; weapon damage and deals an additional &lt;&lt;2&gt;&gt; elemental damage over &lt;&lt;3[%d seconds/%d second/%d seconds]&gt;&gt;. Requires two lightsabers.</Description>
+    <Tokens>
+      <Token Id="2">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.027">0.034</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.027">0.034</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="0.27">0.34</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+      <Token Id="3">
+        <ablParsedDescriptionToken OldValue="12">9</ablParsedDescriptionToken>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="793770" Status="Changed">
+    <Fqn NodeId="16140933611231527384">abl.jedi_knight.skill.watchman.force_melt</Fqn>
+    <Name Id="3409216190545920">Force Melt</Name>
+    <Description Id="3409216190545921">Calls on the power of the Force to melt the target, causing it to burn for &lt;&lt;1&gt;&gt; elemental damage over &lt;&lt;2[%d seconds/%d second/%d seconds]&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.045">0.047</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.045">0.047</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="0.452">0.47</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken OldValue="18">15</ablParsedDescriptionToken>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="293878" Status="Changed">
+    <Fqn NodeId="16140976044315413484">abl.jedi_knight.skill.watchman.plasma_blades</Fqn>
+    <Name Id="1262196399013888">Plasma Blades</Name>
+    <Description Id="1262196399013889" OldValue="Your burn effects have a 20% chance to build 1 focus when dealing damage. This effect cannot occur more than once every 4 seconds.">Your burn effects have a 20% chance to build 1 focus when dealing damage. This effect cannot occur more than once every 3 seconds.</Description>
+  </Ability>
+  <Ability Id="588728" Status="Changed">
+    <Fqn NodeId="16141079751098477384">abl.jedi_knight.transcendence</Fqn>
+    <Name Id="2528567506239488">Transcendence</Name>
+    <Description Id="2528567506239489">Requires and converts 30 stacks of Centering to issue Transcendence to you and your group members within 40 meters, increasing movement speed by 50% and melee and ranged defense by 10%. Lasts &lt;&lt;1[%d/%d/%d]&gt;&gt; seconds.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="832273" Status="Changed">
+    <Fqn NodeId="16141075416772533521">abl.mtx.toy.vanity_droid</Fqn>
+    <Name Id="3574585316343808" OldValue="Vanity Droid">HY-G9 Vanity Chamber</Name>
+    <Description Id="3574585316343809" OldValue="Summons a droid to assist you in looking good! You regenerate health and your class' energy pool while primping yourself.">Summons a vanity chamber and droids to assist you in looking good! You regenerate health and your class' energy pool while primping yourself.</Description>
+  </Ability>
+  <Ability Id="829807" Status="Changed">
+    <Fqn NodeId="16140923070447871478">abl.player.mount.mtx.koensayr.monocycle</Fqn>
+    <Name Id="3563993926991872">Koensayr Monocyle</Name>
+    <Description Id="3563993926991873" OldValue="Activates the Koensayr Monocycle, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.  &#xA;&#xA;Speeder Piloting Rank 1:  90%&#xA;Speeder Piloting Rank 2:  100%&#xA;Speeder Piloting Rank 3:  110%&#xA;">Activates the Koensayr Monocycle, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill. Use the Mount Flourish Key binding to activate this mount's flourish. 
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%
+</Description>
+  </Ability>
+  <Ability Id="823373" Status="Changed">
+    <Fqn NodeId="16140986786583294195">abl.quest.daily_area.ziost.world.escape_route.droid_pet</Fqn>
+    <Name Id="3536360107409408" OldValue="Emergency Facilitator Droid">Evacuation Droid</Name>
+    <Description Id="3536360107409409"></Description>
+  </Ability>
+  <Ability Id="456880" Status="Changed">
+    <Fqn NodeId="16140901987158582354">abl.sith_inquisitor.skill.deception.low_slash</Fqn>
+    <Name Id="1962284658196480">Low Slash</Name>
+    <Description Id="1962284658196481">Slashes the target low, dealing &lt;&lt;1&gt;&gt; weapon damage and incapacitating the target for &lt;&lt;2&gt;&gt; seconds. Damage causes this effect to end prematurely. Requires a double-bladed lightsaber or electrostaff.</Description>
+    <Tokens>
+      <Token Id="2">
+        <ablParsedDescriptionToken OldValue="1.5">4</ablParsedDescriptionToken>
+        <ablDescriptionTokenEffect OldValue="2">4</ablDescriptionTokenEffect>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="575903" Status="Changed">
+    <Fqn NodeId="16140945593416948208">abl.sith_warrior.cloak_of_pain</Fqn>
+    <Name Id="2473484550668288">Cloak of Pain</Name>
+    <Description Id="2473484550668289" OldValue="Reduces all damage taken by 20% and deals &lt;&lt;1&gt;&gt; energy damage to attackers. This effect cannot occur more than once every 1.5 seconds. Lasts &lt;&lt;2[%d/%d/%d]&gt;&gt; seconds. Cloak of Pain refreshes to its full duration when attacked, but this effect cannot last more than &lt;&lt;3[%d/%d/%d]&gt;&gt; seconds in total.">Reduces all damage taken by 20% and deals &lt;&lt;1&gt;&gt; energy damage to attackers. This effect cannot occur more than once every second. Lasts &lt;&lt;2[%d/%d/%d]&gt;&gt; seconds. Cloak of Pain refreshes to its full duration when attacked, but this effect cannot last more than &lt;&lt;3[%d/%d/%d]&gt;&gt; seconds in total.</Description>
+  </Ability>
+  <Ability Id="585991" Status="Changed">
+    <Fqn NodeId="16141121801328593651">abl.sith_warrior.predation</Fqn>
+    <Name Id="2516812180750336">Predation</Name>
+    <Description Id="2516812180750337">Requires and converts 30 stacks of Fury to issue Predation to you and your Operation group members within 40 meters, increasing movement speed by 50% and melee and ranged defense by 10%. Lasts &lt;&lt;1[%d/%d/%d]&gt;&gt; seconds.</Description>
+    <IgnoresAlacrity OldValue="false">true</IgnoresAlacrity>
+  </Ability>
+  <Ability Id="743006" Status="Changed">
+    <Fqn NodeId="16140992950007871625">abl.sith_warrior.skill.annihilation.bloodlust</Fqn>
+    <Name Id="3191186470731776">Bloodlust</Name>
+    <Description Id="3191186470731777" OldValue="Your direct damage attacks that critically hit a bleeding target build 1 rage. This effect cannot occur more than once every 4 seconds. In addition, Annihilate makes its target assailable for &lt;&lt;1&gt;&gt; seconds. Assailable targets take 7% more elemental and internal damage.">Your direct damage attacks that critically hit a bleeding target build 1 rage. This effect cannot occur more than once every 3 seconds. In addition, Annihilate makes its target assailable for &lt;&lt;1&gt;&gt; seconds. Assailable targets take 7% more elemental and internal damage.</Description>
+  </Ability>
+  <Ability Id="782687" Status="Changed">
+    <Fqn NodeId="16141113152532997283">abl.sith_warrior.skill.annihilation.force_gash</Fqn>
+    <Name Id="3361615068004352">Force Rend</Name>
+    <Description Id="3361615068004353">Summons dark Force power to rend the target, causing it to bleed for &lt;&lt;1&gt;&gt; internal damage over &lt;&lt;2[%d seconds/%d second/%d seconds]&gt;&gt;.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.045">0.047</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.045">0.047</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="0.452">0.47</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+      <Token Id="2">
+        <ablParsedDescriptionToken OldValue="18">15</ablParsedDescriptionToken>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="293634" Status="Changed">
+    <Fqn NodeId="16141123064075961971">abl.sith_warrior.skill.annihilation.hemmorhage</Fqn>
+    <Name Id="1261148426993664">Hemorrhage</Name>
+    <Description Id="1261148426993665" OldValue="Your bleed effects have a 20% chance to build 1 rage when dealing damage. This effect cannot occur more than once every 4 seconds.">Your bleed effects have a 20% chance to build 1 rage when dealing damage. This effect cannot occur more than once every 3 seconds.</Description>
+  </Ability>
+  <Ability Id="804556" Status="Changed">
+    <Fqn NodeId="16141103997558890260">abl.sith_warrior.skill.annihilation.rupture</Fqn>
+    <Name Id="3455541707800576">Rupture</Name>
+    <Description Id="3455541707800577">Stabs the target for &lt;&lt;1&gt;&gt; weapon damage and deals an additional &lt;&lt;2&gt;&gt; internal damage over &lt;&lt;3[%d seconds/%d second/%d seconds]&gt;&gt;. Requires two lightsabers.</Description>
+    <Tokens>
+      <Token Id="2">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.027">0.034</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.027">0.034</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="0.27">0.34</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+      <Token Id="3">
+        <ablParsedDescriptionToken OldValue="12">9</ablParsedDescriptionToken>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="834866" Status="Changed">
+    <Fqn NodeId="16140999959220785415">abl.sith_warrior.skill.utility.unstoppable</Fqn>
+    <Name Id="3585722166542336">Unstoppable</Name>
+    <Description Id="3585722166542337" OldValue="Force Charge grants Unstoppable, granting immunity to interrupts and all controlling effects for &lt;&lt;1&gt;&gt; seconds.">Force Charge grants Unstoppable, granting immunity to movement-impairing effects and effects that push and pull you around for &lt;&lt;1&gt;&gt; seconds.</Description>
+  </Ability>
+  <Ability Id="834908" Status="Changed">
+    <Fqn NodeId="16140964959928110854">abl.sith_warrior.skill.vengeance.brawn</Fqn>
+    <Name Id="3585902555168768">Brawn</Name>
+    <Description Id="3585902555168769" OldValue="While in Shien Form, Force Charge grants Brawn, increasing damage reduction by 20% for &lt;&lt;1&gt;&gt; seconds.">While in Shien Form, Force Charge grants Brawn, granting immunity to interrupts, stuns, knockdowns, and incapacitating effects for &lt;&lt;1&gt;&gt; seconds. Additionally, during this time, damage reduction is increased by 20%.</Description>
+  </Ability>
+  <Ability Id="187931" Status="Changed">
+    <Fqn NodeId="16140959110981312911">abl.smuggler.charged_burst</Fqn>
+    <Name Id="807157498904576">Charged Burst</Name>
+    <Description Id="807157498904577">Fires a series of powerful blasts for &lt;&lt;1&gt;&gt; weapon damage. Fires both blasters if dual wielding.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.194">0.174</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.194">0.174</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="0.29">0.16</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="1.94">1.74</effParam_Coefficient>
+          </Action>
+          <Action Name="effAction_WeaponDamage">
+            <effParam_IgnoreDualWieldModifier OldValue="True">False</effParam_IgnoreDualWieldModifier>
+            <effParam_StandardHealthPercentMax OldValue="0.194">0</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.194">0</effParam_StandardHealthPercentMin>
+            <effParam_AmountModifierPercent OldValue="0.29">0.16</effParam_AmountModifierPercent>
+            <effParam_Coefficient OldValue="1.94">0</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="836170" Status="New">
+    <Fqn NodeId="16140979404364906148">abl.mtx.pack.explorer.deep_core_platinum</Fqn>
+    <Name Id="3591322803896320">Opening Pack</Name>
+    <Description Id="3591322803896321">Right-click to open this Deep Core Platinum Pack. This pack contains 1 Extra Rare or better Bonus Item from the Deep Core Explorer's Packs.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="834738" Status="New">
+    <Fqn NodeId="16141000390118226876">abl.mtx.pack.superpack.kotor</Fqn>
+    <Name Id="3585172410728448">Opening Pack</Name>
+    <Description Id="3585172410728449">Right-click to open this Grand KOTOR Pack. This pack contains 1 random complete armor set.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_kotor_superpack</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="835610" Status="New">
+    <Fqn NodeId="16141180626062102552">abl.mtx.toy.sparring_droid</Fqn>
+    <Name Id="3588917622210560">Sparring Droid</Name>
+    <Description Id="3588917622210561">Summons a sparring droid to help you stay up in your game. You regenerate health and your class' energy pool while sparring.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_toy_sparring_droid</Icon>
+    <ChannelingTime>15</ChannelingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="834228" Status="New">
+    <Fqn NodeId="16140970986611173659">abl.mtx.toy.supply_pack</Fqn>
+    <Name Id="3582981977407488">Supply Pack</Name>
+    <Description Id="3582981977407489">Take a second for yourself. You regenerate health and your class' energy pool while resting up.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_toy_supply_pack</Icon>
+    <ChannelingTime>15</ChannelingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="837855" Status="New">
+    <Fqn NodeId="16140965570543172289">abl.test.dstaats.sprint150</Fqn>
+    <Name Id="3598559823790080">Sprint</Name>
+    <Description Id="3598559823790081">Increase movement speed by 50% while not in combat.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>sprint</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>-879267690697531627</ModalGroup>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="835716" Status="New">
+    <Fqn NodeId="16141037112242523204">abl.test.qa.emulkey.stationary_log_mount2</Fqn>
+    <Name Id="3589372888743936"></Name>
+    <Description Id="3589372888743937"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_pocket_sarlacc</Icon>
+    <ChannelingTime>15</ChannelingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="294050" Status="Removed">
+    <Fqn NodeId="16140999409297639991">abl.jedi_knight.skill.combat.debilitation</Fqn>
+    <Name Id="1262935133388800">Debilitation</Name>
+    <Description Id="1262935133388801">Master Strike has a &lt;&lt;1&gt;&gt;% chance to immobilize the target for the duration of the ability.</Description>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>50</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>50</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>masterstrike</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="774108" Status="Removed">
+    <Fqn NodeId="16140996378020915608">abl.jedi_knight.skill.vigilance.debilitation</Fqn>
+    <Name Id="3324768543571968">Debilitation</Name>
+    <Description Id="3324768543571969">Master Strike has a &lt;&lt;1&gt;&gt;% chance to immobilize the target for the duration of the ability.</Description>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>50</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>50</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>immobilized</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="475498" Status="Removed">
+    <Fqn NodeId="16141130631887108495">abl.trooper.skill.assault_specialist.cell_phase_generator</Fqn>
+    <Name Id="2042248359313408">Parallactic Combat Stims</Name>
+    <Description Id="2042248359313409">You have a &lt;&lt;1&gt;&gt;% chance to recharge 8 energy cells when stunned, immobilized, knocked down or otherwise incapacitated.</Description>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablParsedDescriptionToken>50</ablParsedDescriptionToken>
+        <ablDescriptionTokenMultiplier>50</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeRank</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>-1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>stimulants</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+</Abilities>

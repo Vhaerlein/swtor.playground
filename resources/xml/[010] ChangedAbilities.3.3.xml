@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="16141049782532073482" Status="Changed">
+    <Fqn NodeId="16141049782532073482">abl.itm.vanity_pet.dog.kathhound_a01v02</Fqn>
+    <Name Id="3513669795184640">Force Hound</Name>
+    <Description Id="3513669795184641">Summons a small Force Hound which will follow and passively observe you on your adventures. </Description>
+    <Icon OldValue="pet.dog.akk.01">pet.dog.kathound.a01_v01</Icon>
+  </Ability>
+  <Ability Id="16141124664572085544" Status="Changed">
+    <Fqn NodeId="16141124664572085544">abl.jedi_consular.skill.seer.resplendence</Fqn>
+    <Name Id="812985769525248">Resplendence</Name>
+    <Description Id="812985769525249" OldValue="Healing Trance critical hits grant 1 charge of Resplendence, which improves the effectiveness of your next Vindicate or Salvation.&#xA;Vindicate: Restores 10 additional Force and consumes 1 charge.&#xA;Salvation: Consumes 10 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.">Healing Trance critical hits grant 1 charge of Resplendence, which improves the effectiveness of your next Vindicate or Salvation.
+Vindicate: Restores 10 additional Force and consumes 1 charge. Vindicate does not make you Weary when used with Resplendence. 
+Salvation: Consumes 10 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.</Description>
+  </Ability>
+  <Ability Id="16141016677326372106" Status="Changed">
+    <Fqn NodeId="16141016677326372106">abl.jedi_consular.vindicate</Fqn>
+    <Name Id="3613175597498368">Vindicate</Name>
+    <Description Id="3613175597498369" OldValue="Calls upon the light energy surrounding you, restoring 50 Force.">Calls upon the light energy surrounding you, restoring 50 Force. Utilizing Vindicate makes you Weary, reducing your Force regeneration rate by 2 for 10 seconds. This effect can stack up to 4 times.</Description>
+  </Ability>
+  <Ability Id="16140992544931925288" Status="Changed">
+    <Fqn NodeId="16140992544931925288">abl.mtx.pack.nightlife.superpack</Fqn>
+    <Name Id="3488046020296704">Opening Pack</Name>
+    <Description Id="3488046020296705" OldValue="Right-click to open this Grand Nightlife Pack. This pack contains 4 items: 1 Super Rare or better bonus item, 1 Rare or better bonus item, 1 Fortuitous Dye Kit, and 1 Major or Minor XP Boost. This pack contains boxes of complete Armor sets, Mounts, Weapons, Color Crystals and Toys from the Nightlife Shipment.">Right-click to open this Grand Nightlife Pack. This pack contains 4 items: 1 Super Rare or better bonus item, 1 Rare or better bonus item, 1 Expanded Dye Kit, and 1 Major or Minor XP Boost. This pack contains boxes of complete Armor sets, Mounts, Weapons, Color Crystals or Toys from the Nightlife Shipment.</Description>
+  </Ability>
+  <Ability Id="16140983605411272190" Status="Changed">
+    <Fqn NodeId="16140983605411272190">abl.placeables.pvp.voidstar.defuse_bomb</Fqn>
+    <Name Id="2694052596154368">Defusing the Bomb</Name>
+    <Description Id="2694052596154369"></Description>
+    <CastingTime OldValue="6">3</CastingTime>
+  </Ability>
+  <Ability Id="16141180040611708977" Status="Changed">
+    <Fqn NodeId="16141180040611708977">abl.placeables.qtr.1x2.raid.denova.enemy.boss.puzzle.activate_probe_scanner</Fqn>
+    <Name Id="2835876711235584">Launching Probe</Name>
+    <Description Id="2835876711235585"></Description>
+    <Icon OldValue="remotecontrol">genericdatadisc</Icon>
+    <CastingTime Status="New">7</CastingTime>
+    <CooldownTime Status="Removed">1.5</CooldownTime>
+    <SharedCooldown Status="Removed">16141180040611708977</SharedCooldown>
+  </Ability>
+  <Ability Id="16140940702921509100" Status="Changed">
+    <Fqn NodeId="16140940702921509100">abl.placeables.stronghold.technological.imperial_command_center</Fqn>
+    <Name Id="3623410504564736">Issuing Orders to the Empire</Name>
+    <Description Id="3623410504564737"></Description>
+  </Ability>
+  <Ability Id="16141046379699251460" Status="Changed">
+    <Fqn NodeId="16141046379699251460">abl.player.mount.grant_mount</Fqn>
+    <Name Id="1797435223441408">Grant Vehicle</Name>
+    <Description Id="1797435223441409"></Description>
+    <Icon OldValue="mount.speederbike.anteater.02">bravado</Icon>
+    <CastingTime OldValue="1">3</CastingTime>
+  </Ability>
+  <Ability Id="16141013461689081304" Status="Changed">
+    <Fqn NodeId="16141013461689081304">abl.player.mount.mtx.chemilizard.regal</Fqn>
+    <Name Id="3564788495941632">Regal Chemilizard</Name>
+    <Description Id="3564788495941633" OldValue="Summons the Regal Chemilizard creature mount. Movement speed increases based on the rank of your Speeder Piloting skill.&#xA;&#xA;Speeder Piloting Rank 1:  90%&#xA;Speeder Piloting Rank 2:  100%&#xA;Speeder Piloting Rank 3:  110%">Calls your Regal Chemilizard mount. Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+  </Ability>
+  <Ability Id="16141000612686815812" Status="Changed">
+    <Fqn NodeId="16141000612686815812">abl.player.mount.mtx.orlean.scoundrel</Fqn>
+    <Name Id="3564075531370496" OldValue="Orlean Scoundrel">Dasta Titan</Name>
+    <Description Id="3564075531370497" OldValue="Activates the Orlean Scoundrel, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.  &#xA;&#xA;Speeder Piloting Rank 1:  90%&#xA;Speeder Piloting Rank 2:  100%&#xA;Speeder Piloting Rank 3:  110%&#xA;">Activates the Dasta Titan, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.  
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%
+</Description>
+    <Icon OldValue="mtx_mount_orlean_scoundrel">mtx_mount_dasta_titan</Icon>
+  </Ability>
+  <Ability Id="16141087803787521049" Status="Changed">
+    <Fqn NodeId="16141087803787521049">abl.quest.exp.02.rishi.world.hub_1.beasts_burden.beast_collar</Fqn>
+    <Name Id="3379340398034944">Collar</Name>
+    <Description Id="3379340398034945">Once applied, the collared beast obeys basic commands, including directing the beast to a home location.</Description>
+    <Icon Status="New">device</Icon>
+  </Ability>
+  <Ability Id="16141072108466099380" Status="Changed">
+    <Fqn NodeId="16141072108466099380">abl.sith_inquisitor.consuming_darkness</Fqn>
+    <Name Id="3613119762923520">Consuming Darkness</Name>
+    <Description Id="3613119762923521" OldValue="Consumes the dark energy around you, restoring 50 Force.">Consumes the dark energy around you, restoring 50 Force. Utilizing Consuming Darkness makes you Weary, reducing your Force regeneration rate by 2 for 10 seconds. This effect can stack up to 4 times.</Description>
+  </Ability>
+  <Ability Id="16141061930666388872" Status="Changed">
+    <Fqn NodeId="16141061930666388872">abl.sith_inquisitor.skill.corruption.force_surge</Fqn>
+    <Name Id="808677917327360">Force Surge</Name>
+    <Description Id="808677917327361" OldValue="Innervate critical heals grant 1 charge of Force Surge, which improves the effectiveness of your next Consuming Darkness or Revivification.&#xA;Consuming Darkness: Restores 10 additional Force and consumes 1 charge.&#xA;Revivification: Consumes 10 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.">Innervate critical heals grant 1 charge of Force Surge, which improves the effectiveness of your next Consuming Darkness or Revivification.
+Consuming Darkness: Restores 10 additional Force and consumes 1 charge. Consuming Darkness does not make you Weary when used with Force Surge. 
+Revivification: Consumes 10 less Force per charge and reduces activation time by 0.25 seconds for each of the first two charges, or makes it activate instantly with the third charge. Consumes all charges.</Description>
+  </Ability>
+  <Ability Id="16141002760491448206" Status="Changed">
+    <Fqn NodeId="16141002760491448206">abl.trooper.medical_probe</Fqn>
+    <Name Id="996904859074560" OldValue="Medical Probe"></Name>
+    <Description Id="996904859074561" OldValue="Summons a probe that heals for &lt;&lt;1&gt;&gt;."></Description>
+  </Ability>
+  <Ability Id="16140952257753990220" Status="Changed">
+    <Fqn NodeId="16140952257753990220">abl.trooper.skill.gunnery.charged_barrel</Fqn>
+    <Name Id="998219119067136">Charged Barrel</Name>
+    <Description Id="998219119067137" OldValue="Grav Round grants Charged Barrel, increasing the damage dealt by the next High Impact Bolt by 6% and reducing the activation time of the next Medical Probe by 20%. Stacks up to 5 times.">Grav Round grants Charged Barrel, increasing the damage dealt by the next High Impact Bolt by 6% or reducing the activation time and increasing the healing dealt by the next Medical Probe by 20%. Stacks up to 5 times.</Description>
+  </Ability>
+  <Ability Id="16141103479159235523" Status="New">
+    <Fqn NodeId="16141103479159235523">abl.mtx.pack.explorer.outer_rim_platinum</Fqn>
+    <Name Id="3635298974040064">Opening Pack</Name>
+    <Description Id="3635298974040065">Right-click to open this Outer Rim Platinum Pack. This pack contains 1 select Super Rare or better Bonus Item from the Outer Rim Explorer's Packs.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141041877199786046" Status="New">
+    <Fqn NodeId="16141041877199786046">abl.mtx.pack.explorer.wild_space_platinum</Fqn>
+    <Name Id="3635320448876544">Opening Pack</Name>
+    <Description Id="3635320448876545">Right-click to open this Wild Space Platinum Pack. This pack contains 1 select Super Rare or better Bonus Item from the Wild Space Explorer's Packs.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140940152819249669" Status="New">
+    <Fqn NodeId="16140940152819249669">abl.mtx.pack.superpack.decorations</Fqn>
+    <Name Id="3663216261464064">Opening Pack</Name>
+    <Description Id="3663216261464065">Right-click to open this Grand Decorations Pack.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_superpack_decorations</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140930633757712690" Status="New">
+    <Fqn NodeId="16140930633757712690">abl.mtx.pack.superpack.grand_starfighter</Fqn>
+    <Name Id="3662288548528128">Opening Pack</Name>
+    <Description Id="3662288548528129">Right-click to open this Grand Starfighter's Pack. This pack contains 4 items, including 1 boost item, 1 reputation item, 1 complete armor set, and 1 rare bonus item.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_superpack_starfighter</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141048062193429638" Status="New">
+    <Fqn NodeId="16141048062193429638">abl.mtx.pack.superpack.grand_stronghold</Fqn>
+    <Name Id="3672922887553024">Opening Pack</Name>
+    <Description Id="3672922887553025">Right-click to open this Grand Stronghold Pack. This pack contains 4 items, including 1 boost item, 1 reputation item, 1 complete armor set, and 1 rare bonus item.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_superpack_stronghold</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141147965173029407" Status="New">
+    <Fqn NodeId="16141147965173029407">abl.mtx.pack.superpack.weapons_2</Fqn>
+    <Name Id="3643437937065984">Opening Pack</Name>
+    <Description Id="3643437937065985">Right-click to open this Grand Weapons Pack. Contains one Weapon, drawn randomly from the Starfighter, Stronghold, and Shadow Packs found on the Cartel Market.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx01_iconpack3</Icon>
+    <CastingTime>2.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141109501818723061" Status="New">
+    <Fqn NodeId="16141109501818723061">abl.mtx.toy.gree_hypergate</Fqn>
+    <Name Id="3645177398820864">Gree Hypergate</Name>
+    <Description Id="3645177398820865">You regenerate health and your class' energy pool while harnessing the power of the Gree.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_toy_gree_hypergate</Icon>
+    <ChannelingTime>15</ChannelingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141078832299759184" Status="New">
+    <Fqn NodeId="16141078832299759184">abl.mtx.unlock.unlock_mount</Fqn>
+    <Name Id="3631626777001984">Grant Vehicle</Name>
+    <Description Id="3631626777001985"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>bravado</Icon>
+    <CastingTime>3</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141145309662339306" Status="New">
+    <Fqn NodeId="16141145309662339306">abl.placeables.test.dstaats.nh_datapad</Fqn>
+    <Name Id="3671922160173056">Researching Nerfs</Name>
+    <Description Id="3671922160173057"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>glass</Icon>
+    <CastingTime>13</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+  </Ability>
+  <Ability Id="16140921136808277197" Status="New">
+    <Fqn NodeId="16140921136808277197">abl.player.mount.creature.nexu.nexu_mount_s5</Fqn>
+    <Name Id="3648484523638784">Gladatorial Nexu </Name>
+    <Description Id="3648484523638785">Summons the Gladatorial Nexu creature mount. Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>cat_nexu_mount_a01</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141157772215938972" Status="New">
+    <Fqn NodeId="16141157772215938972">abl.player.mount.mtx.hutt_skiff.cantina</Fqn>
+    <Name Id="3662052325326848">Hutt Cantina Skiff</Name>
+    <Description Id="3662052325326849">Activates the Hutt Cantina Skiff, increasing movement speed and offering excellent protection against being knocked off.  Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Use the Mount Flourish Key binding to activate this mount's flourish.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_hutt_cantina_skiff</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141165889031453415" Status="New">
+    <Fqn NodeId="16141165889031453415">abl.player.mount.mtx.jetpack.j37</Fqn>
+    <Name Id="3670895662989312">MSM J-37 Jetpack</Name>
+    <Description Id="3670895662989313">Activates the MSM J-37 Jetpack, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill.  
+
+Use the Mount Flourish Key binding to activate this mount's flourish.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%
+</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_msm_j37</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140990751516776207" Status="New">
+    <Fqn NodeId="16140990751516776207">abl.player.mount.mtx.tank.landslide</Fqn>
+    <Name Id="3644541743661056">Landslide Assault Speeder</Name>
+    <Description Id="3644541743661057">Activates the Landslide Assault Speeder, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill. Use the Mount Flourish Key binding to activate this mount's flourish.  
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%
+</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_tank_landslide</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141069566978079561" Status="New">
+    <Fqn NodeId="16141069566978079561">abl.player.mount.mtx.vectron.ranger</Fqn>
+    <Name Id="3629401983942656">Vectron Ranger</Name>
+    <Description Id="3629401983942657">Activates the Vectron Ranger, increasing movement speed and offering excellent protection against being knocked off. Movement speed increases based on the rank of your Speeder Piloting skill. Use the Mount Flourish Key binding to activate this mount's flourish.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110% </Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_vectron_ranger</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16140982882126091977" Status="New">
+    <Fqn NodeId="16140982882126091977">abl.player.mount.mtx.vorantikus.cybernetic</Fqn>
+    <Name Id="3660918453960704">Cyberclaw Vorantikus</Name>
+    <Description Id="3660918453960705">Calls your Cyberclaw Vorantikus mount. Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>mtx_mount_vorantikus_cybernetic</Icon>
+    <CastingTime>0.5</CastingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <ModalGroup>770866528425270106</ModalGroup>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141162033473179128" Status="New">
+    <Fqn NodeId="16141162033473179128">abl.pvp.ilum.kill_imp_bomber</Fqn>
+    <Name Id="2814474889199616"></Name>
+    <Description Id="2814474889199617"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+  </Ability>
+  <Ability Id="16141109781418180381" Status="New">
+    <Fqn NodeId="16141109781418180381">abl.pvp.ilum.kill_rep_bomber</Fqn>
+    <Name Id="2814479184166912"></Name>
+    <Description Id="2814479184166913"></Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+  </Ability>
+  <Ability Id="16141072180122166105" Status="New">
+    <Fqn NodeId="16141072180122166105">abl.racials.togruta.social</Fqn>
+    <Name Id="3675916479758336">Traditional Storytelling</Name>
+    <Description Id="3675916479758337">Social ability. Tell a traditional Togruta story.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Icon>togruta_species</Icon>
+    <ChannelingTime>600</ChannelingTime>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>true</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetArc>180</TargetArc>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+  <Ability Id="16141139083859236468" Status="New">
+    <Fqn NodeId="16141139083859236468">abl.test.jjary.new_consuming_darkness</Fqn>
+    <Name Id="3671033101942784">Consuming Darkness</Name>
+    <Description Id="3671033101942785">Consumes the dark energy around you, restoring 50 Force.</Description>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients />
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeDamage</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>2</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+      <Token Id="2">
+        <ablCoefficients />
+        <ablDescriptionTokenMultiplier>1</ablDescriptionTokenMultiplier>
+        <ablDescriptionTokenType>ablDescriptionTokenTypeHealing</ablDescriptionTokenType>
+        <ablDescriptionTokenEffect>1</ablDescriptionTokenEffect>
+        <ablDescriptionTokenSubEffect>-1</ablDescriptionTokenSubEffect>
+      </Token>
+    </Tokens>
+    <Icon>consumption</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetArc>360</TargetArc>
+    <TargetRule>Self</TargetRule>
+  </Ability>
+</Abilities>

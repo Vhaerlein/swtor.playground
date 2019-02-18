@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="16141093161776728152" Status="Changed">
+    <Fqn NodeId="16141093161776728152">abl.exp.seasons.02_uprisings.portn.enc_2.flame_burst</Fqn>
+    <Name Id="3954230360539136">Flame Burst</Name>
+    <Description Id="3954230360539137">Fires a burst of flame at the target that deals &lt;&lt;1&gt;&gt; elemental damage.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.09">0.07</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.09">0.07</effParam_StandardHealthPercentMin>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141142641740416167" Status="Changed">
+    <Fqn NodeId="16141142641740416167">abl.exp.seasons.02_uprisings.tat.dust.boss_3.atst.mortar_round</Fqn>
+    <Name Id="4023250484985856">Mortar Round</Name>
+    <Description Id="4023250484985857">Fires a heavy round that deals &lt;&lt;1&gt;&gt; kinetic damage to the primary target and &lt;&lt;2&gt;&gt; kinetic damage to up to 3 targets within 5 meters. If the primary target is a weak or standard enemy, it is knocked to the ground.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.6">0.42</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.6">0.42</effParam_StandardHealthPercentMin>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16141178627548303159" Status="Changed">
+    <Fqn NodeId="16141178627548303159">abl.player.mount.creature.fyrnock.royal</Fqn>
+    <Name Id="4014660550393856">Royal Fyrnock</Name>
+    <Description Id="4014660550393857">Summons the Royal Fyrnock creature mount. Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <Icon OldValue="mtx.mount.fyrnock.royal">mtx.store.royal_fyrnock</Icon>
+  </Ability>
+  <Ability Id="16140924037260175959" Status="Changed">
+    <Fqn NodeId="16140924037260175959">abl.player.mount.mtx.dewback.dewbackmount_a01_v06</Fqn>
+    <Name Id="4052215744430080">Scorched Dewback</Name>
+    <Description Id="4052215744430081">Calls your Scorched Dewback mount. Movement speed increases based on the rank of your Speeder Piloting skill.
+
+Speeder Piloting Rank 1:  90%
+Speeder Piloting Rank 2:  100%
+Speeder Piloting Rank 3:  110%</Description>
+    <Icon OldValue="mtx_mount_dewback_scorched">mtx.store.scorched_dewback</Icon>
+  </Ability>
+  <Ability Id="16140982044672824399" Status="Changed">
+    <Fqn NodeId="16140982044672824399">abl.trooper.skill.shield_specialist.ion_storm</Fqn>
+    <Name Id="3389987621961728">Ion Storm</Name>
+    <Description Id="3389987621961729">Sprays waves of ionizing energy in a 10-meter cone, dealing &lt;&lt;1&gt;&gt; elemental damage to up to 8 enemy targets. Affected targets are impaired for 45 seconds, reducing the Force and tech damage they deal by 5%.
+
+Replaces Pulse Cannon.</Description>
+    <Tokens>
+      <Token Id="1">
+        <ablCoefficients>
+          <Action Name="effAction_SpellDamage">
+            <effParam_StandardHealthPercentMax OldValue="0.0985">0.197</effParam_StandardHealthPercentMax>
+            <effParam_StandardHealthPercentMin OldValue="0.0985">0.157</effParam_StandardHealthPercentMin>
+            <effParam_Coefficient OldValue="0.985">1.77</effParam_Coefficient>
+          </Action>
+        </ablCoefficients>
+      </Token>
+    </Tokens>
+  </Ability>
+  <Ability Id="16140925175815873537" Status="Changed">
+    <Fqn NodeId="16140925175815873537">abl.trooper.skill.shield_specialist.pulse_engine</Fqn>
+    <Name Id="3172602147241984">Pulse Engine</Name>
+    <Description Id="3172602147241985" OldValue="Direct damage attacks have a 50% chance to trigger Pulse Engine, which finishes the cooldown on Ion Wave or Ion Storm and causes your next Ion Wave or Ion Storm to generate no heat and deal 100% more damage. This effect cannot occur more than once every 15 seconds.">Direct damage attacks have a 50% chance to trigger Pulse Engine, which finishes the cooldown on Ion Wave or Ion Storm and causes your next Ion Wave or Ion Storm to deplete no energy cells and deal 100% more damage. This effect cannot occur more than once every 15 seconds.</Description>
+  </Ability>
+  <Ability Id="16140997496263767025" Status="New">
+    <Fqn NodeId="16140997496263767025">abl.mtx.mount.vfx.festive_taun.passive</Fqn>
+    <Base62Id>yBcYejK</Base62Id>
+    <Name Id="4061136391503872">mtx.mount.vfx.festive_taun.passive</Name>
+    <Description Id="4061136391503873"></Description>
+    <DBURL>https://torcommunity.com/database/ability/yBcYejK/mtx.mount.vfx.festive_taun.passive</DBURL>
+    <IsPassive>true</IsPassive>
+    <IsHidden>true</IsHidden>
+    <Icon>stimpack</Icon>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Self</TargetRule>
+    <References />
+  </Ability>
+</Abilities>

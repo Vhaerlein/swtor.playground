@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Abilities>
+  <Ability Id="16140958331095047854" Status="New">
+    <Fqn NodeId="16140958331095047854">abl.pvp.warzone.odessen.control_point_atk_burst_a</Fqn>
+    <Base62Id>hbvDQn5</Base62Id>
+    <Name Id="3859719605190656">control_point_atk_burst_a</Name>
+    <Description Id="3859719605190657"></Description>
+    <DBURL>https://torcommunity.com/database/ability/hbvDQn5/control_point_atk_burst_a</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16140959430606672091" Status="New">
+    <Fqn NodeId="16140959430606672091">abl.pvp.warzone.odessen.control_point_atk_burst_b</Fqn>
+    <Base62Id>sr1DQn5</Base62Id>
+    <Name Id="3859723900157952">control_point_atk_burst_b</Name>
+    <Description Id="3859723900157953"></Description>
+    <DBURL>https://torcommunity.com/database/ability/sr1DQn5/control_point_atk_burst_b</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141007172908548893" Status="New">
+    <Fqn NodeId="16141007172908548893">abl.pvp.warzone.odessen.control_point_atk_points_a</Fqn>
+    <Base62Id>7GCzfK1</Base62Id>
+    <Name Id="3859711015256064">control_point_atk_points_a</Name>
+    <Description Id="3859711015256065"></Description>
+    <DBURL>https://torcommunity.com/database/ability/7GCzfK1/control_point_atk_points_a</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+  <Ability Id="16141010471443432564" Status="New">
+    <Fqn NodeId="16141010471443432564">abl.pvp.warzone.odessen.control_point_atk_points_b</Fqn>
+    <Base62Id>T0GzfK1</Base62Id>
+    <Name Id="3859715310223360">control_point_atk_points_b</Name>
+    <Description Id="3859715310223361"></Description>
+    <DBURL>https://torcommunity.com/database/ability/T0GzfK1/control_point_atk_points_b</DBURL>
+    <IsPassive>false</IsPassive>
+    <IsHidden>false</IsHidden>
+    <GCD>-1</GCD>
+    <OverridesGCD>false</OverridesGCD>
+    <UsesPushback>true</UsesPushback>
+    <IgnoresAlacrity>false</IgnoresAlacrity>
+    <LoSCheck>true</LoSCheck>
+    <TargetRule>Any</TargetRule>
+    <References />
+  </Ability>
+</Abilities>

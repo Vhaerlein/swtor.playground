@@ -1,0 +1,16 @@
+<Project>
+	<PropertyGroup>
+		<Authors>Vhaerlein</Authors>
+		<Copyright>Copyright © Vhaerlein 2019</Copyright>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<LangVersion>latest</LangVersion>
+		<OutputPath>..\..\bin\$(Configuration)</OutputPath>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Version>1.0.82</Version>
+	</PropertyGroup>
+</Project>

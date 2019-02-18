@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<Title>Log parser</Title>
+		<Description>SWtOR log parsing utils</Description>
+	</PropertyGroup>
+</Project>
