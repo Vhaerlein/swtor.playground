@@ -107,7 +107,7 @@ namespace Swtor.Dps.DamageModel
 						a => GetAbilityDamage(configuration, a, session.EnergyKineticDamageReduction, session.ElementalInternalDamageReduction, session.DefenseChance)
 							* a.Activations
 							* a.DamageMultiplier
-							* (a.Ability.IgnoresAlacrity ? 1 : 1 + configuration.Alacrity)
+							* (a.Ability.IgnoresAlacrity ? 1 : 1 + configuration.GcdRoundedAlacrity)
 					)
 					/ session.Duration;
 			}

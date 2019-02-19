@@ -115,6 +115,7 @@
 			<controls:LabeledTextBox Text="{Binding BaseAccuracy, Mode=TwoWay}" Label="Base accuracy:" DataType="Double" MaxLength="4" />
 			<controls:LabeledTextBox Text="{Binding BaseOffHandAccuracy, Mode=TwoWay}" Label="Base OH accuracy:" DataType="Double" MaxLength="4" />
 			<Separator Height="2" Margin="0,3"></Separator>
+			<controls:LabeledTextBox Text="{Binding BaseAlacrity, Mode=TwoWay}" Label="Base alacrity:" DataType="Double" MaxLength="4" />
 			<controls:LabeledTextBox Text="{Binding BaseCritical, Mode=TwoWay}" Label="Base critical:" DataType="Double" MaxLength="4" />
 			<controls:LabeledTextBox Text="{Binding BaseSurge, Mode=TwoWay}" Label="Base surge:" DataType="Double" MaxLength="4" />
 			<Separator Height="2" Margin="0,3"></Separator>

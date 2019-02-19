@@ -1,9 +1,16 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 
 namespace Swtor.Dps.DamageModel
 {
 	public partial class Configuration
 	{
+		/// <summary>
+		/// GCD is rounded to the highest 0.1s fraction, e.g. for 13% alacrity GCD will be 1,3274 and it will be rounded up to 1.4s
+		/// </summary>
+		[JsonIgnore]
+		public double GcdRoundedAlacrity => 15 / Math.Ceiling(15 / (1 + Alacrity)) - 1;
+
 		[JsonIgnore]
 		public double Alacrity
 		{

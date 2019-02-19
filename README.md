@@ -1,12 +1,13 @@
 # swtor.playground
 SWtOR related stuff (stat optimization, log reader, etc...)
 
--- 
+--
 
 **StatOptimizer**
 
 Application for searching optimal stat distribution for any dps class.
 
+- Alacrity is now GCD rounding aware (GCD is rounded to the highest 0.1s fraction, e.g. for 13% alacrity GCD will be 1,3274 and it will be rounded up to 1.4s)
 - Adrenals/relics are not included in dps mathematical model.
 - All parameters can be changed from UI (mastery, power, etc...).
 - Save/Load profile (app will remember last used profile).

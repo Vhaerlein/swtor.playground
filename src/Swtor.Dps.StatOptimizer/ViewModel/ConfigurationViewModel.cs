@@ -71,6 +71,17 @@ namespace Swtor.Dps.StatOptimizer.ViewModel
 			}
 		}
 
+		public double BaseAlacrity
+		{
+			get => _configuration.BaseAlacrity;
+			set
+			{
+				_configuration.BaseAlacrity = value;
+				OnPropertyChanged();
+				RaiseUpdateOnCalculatedProperties();
+			}
+		}
+
 		public double BaseCritical
 		{
 			get => _configuration.BaseCritical;
