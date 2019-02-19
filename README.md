@@ -11,7 +11,7 @@ Application for searching optimal stat distribution for any dps class.
 - All parameters can be changed from UI (mastery, power, etc...).
 - Save/Load profile (app will remember last used profile).
 - Profile is Json file, if needed can be edited outside application (and for some parameters it's the only way).
-- Load combat session data from combat log allowing you can do calculations for any dps class (ability name tooltip will show basic session information about this ability).
+- Load combat session data from combat log allowing you can do calculations theoretically for any dps class (ability name tooltip will show basic session information about this ability).
 - Option to optimize stats vs single session and vs all sessions.
 - SWtOR 5.2 actual abilities database (ability icon tooltip will show some of DB information).
 - Stat formulas are located in App.config.
