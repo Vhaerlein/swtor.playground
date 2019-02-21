@@ -30,7 +30,7 @@ namespace Swtor.Dps.Resources.Abilities
 		public bool IsHidden { get; set; }
 
 		[XmlArray]
-		[XmlArrayItem(ElementName="Token")]
+		[XmlArrayItem(ElementName = "Token")]
 		public List<Token> Tokens { get; set; }
 
 		public Bitmap Icon => _icon ?? (_icon = DataManager.GetIcon(IconName));
@@ -67,10 +67,10 @@ namespace Swtor.Dps.Resources.Abilities
 		public double ChannelingTime { get; set; }
 
 		[XmlElement]
-		public double GCD { get; set; }
+		public double Gcd { get; set; }
 
 		[XmlElement]
-		public bool OverridesGCD { get; set; }
+		public bool OverridesGcd { get; set; }
 
 		[XmlElement]
 		public bool UsesPushback { get; set; }
@@ -91,7 +91,7 @@ namespace Swtor.Dps.Resources.Abilities
 		public TargetRule TargetRule { get; set; }
 
 		[XmlArray]
-		[XmlArrayItem(ElementName="AbsorbCoefficient")]
+		[XmlArrayItem(ElementName = "AbsorbCoefficient")]
 		public List<AbsorbCoefficient> AbsorbCoefficients { get; set; }
 
 		[XmlElement]

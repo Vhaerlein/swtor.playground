@@ -11,6 +11,8 @@ namespace Swtor.Dps.LogParser.Combat
 		public DateTime EndTime { get; private set; }
 		public Character Player { get; }
 
+		public string Description { get; }
+
 		/// <summary>
 		/// Combat duration in seconds.
 		/// </summary>
@@ -48,9 +50,10 @@ namespace Swtor.Dps.LogParser.Combat
 
 		private readonly List<CombatAbility> _abilitiesInternal = new List<CombatAbility>();
 
-		internal Combat(Character player)
+		internal Combat(Character player, string description)
 		{
 			Player = player;
+			Description = description;
 		}
 
 		internal override void OnLogEntryAdded(LogEntry entry)

@@ -13,6 +13,12 @@ namespace Swtor.Dps.StatOptimizer.ViewModel
 			set => Session.Name = value;
 		}
 
+		public string Description
+		{
+			get => Session.Description;
+			set => Session.Description = value;
+		}
+
 		public double Duration
 		{
 			get => Session.Duration;
@@ -55,7 +61,7 @@ namespace Swtor.Dps.StatOptimizer.ViewModel
 
 		public ObservableCollection<SessionAbilityViewModel> Abilities { get; }
 
-		public bool Active 
+		public bool Active
 		{
 			get => Session.Active;
 			set => Session.Active = value;

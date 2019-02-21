@@ -13,7 +13,7 @@ namespace Swtor.Dps.DamageModel
 
 		public int Power
 		{
-			get { return _power; }
+			get => _power;
 			set
 			{
 				if (_power != value)
@@ -29,11 +29,11 @@ namespace Swtor.Dps.DamageModel
 
 		public DamageType DamageType
 		{
-			get { return _damageType; }
-			set 
-			{
-				_damageType = value == DamageType.Weapon ? DamageType.Energy : value;
-			}
+			get => _damageType;
+			set => _damageType =
+				value == DamageType.Weapon
+					? DamageType.Energy
+					: value;
 		}
 		private DamageType _damageType = DamageType.Energy;
 

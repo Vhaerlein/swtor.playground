@@ -74,7 +74,8 @@ namespace Swtor.Dps.DamageModel.Data
 				{58, 12900},
 				{59, 13740},
 				{60, 14520},
-				{65, 27510}
+				{65, 27510},
+				{70, 40495}
 			};
 
 			var standardDamage = new Dictionary<int, int>
@@ -139,7 +140,8 @@ namespace Swtor.Dps.DamageModel.Data
 				{58, 2507},
 				{59, 2806},
 				{60, 3185},
-				{65, 4465}
+				{65, 4465},
+				{70, 7520}
 			};
 			StandardDamage = new ReadOnlyDictionary<int, int>(standardDamage);
 			StandardHealth = new ReadOnlyDictionary<int, int>(standardHealth);

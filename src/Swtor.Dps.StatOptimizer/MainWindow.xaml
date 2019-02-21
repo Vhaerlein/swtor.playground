@@ -123,7 +123,7 @@
 				<ComboBox ItemsSource="{Binding SessionViewModels}" SelectedItem="{Binding ActiveSessionViewModel}">
 					<ComboBox.ItemTemplate>
 						<DataTemplate>
-							<TextBlock Text="{Binding Name}" />
+							<TextBlock Text="{Binding Name}" ToolTip="{Binding Description}" />
 						</DataTemplate>
 					</ComboBox.ItemTemplate>
 				</ComboBox>

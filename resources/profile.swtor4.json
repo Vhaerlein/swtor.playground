@@ -18,11 +18,11 @@
     },
     "StandardDamage": 7520,
     "StandardHealth": 40495,
-    "BaseMasteryPoints": 6372,
-    "BasePowerPoints": 4321,
+    "BaseMasteryPoints": 6514,
+    "BasePowerPoints": 4464,
     "ExtraMasteryPoints": 240,
-    "AlacrityPoints": 1340,
-    "CriticalPoints": 1698,
+    "AlacrityPoints": 1450,
+    "CriticalPoints": 1672,
     "AccuracyPoints": 768,
     "ExtraPowerPoints": 99,
     "MasteryMultiplier": 1.05,
@@ -34,126 +34,6 @@
     "BaseCritical": 0.11
   },
   "Sessions": [
-    {
-      "Name": "Operation training dummy (10817.56 dps, https://parsely.io/parser/view/411036/0)",
-      "Active": true,
-      "Duration": 231.307,
-      "EnergyKineticDamageReduction": 0.39,
-      "ElementalInternalDamageReduction": 0.0,
-      "Abilities": [
-        {
-          "Id": "16141100652300965629",
-          "Activations": 1,
-          "DamageMultiplier": 1.0,
-          "Autocrit": 0.0,
-          "SurgeBonus": 0.0,
-          "ForceOffHand": false,
-          "Info": "Force Leap",
-          "ArmorReduction": 0.0
-        },
-        {
-          "Id": "16141118772211673815",
-          "Activations": 12,
-          "DamageMultiplier": 1.0,
-          "Autocrit": 0.0,
-          "SurgeBonus": 0.0,
-          "ForceOffHand": false,
-          "Info": "Twin Saber Throw",
-          "ArmorReduction": 0.0
-        },
-        {
-          "Id": "16141058824530033616",
-          "Activations": 20,
-          "DamageMultiplier": 1.0,
-          "Autocrit": 0.0,
-          "SurgeBonus": 0.0,
-          "ForceOffHand": false,
-          "Info": "Strike",
-          "ArmorReduction": 0.0
-        },
-        {
-          "Id": "16140915566810767149",
-          "Activations": 25,
-          "DamageMultiplier": 1.0,
-          "Autocrit": 0.0,
-          "SurgeBonus": 0.0,
-          "ForceOffHand": false,
-          "Info": "Zealous Strike",
-          "ArmorReduction": 0.0
-        },
-        {
-          "Id": "16140902513039667652",
-          "Activations": 13,
-          "DamageMultiplier": 1.0,
-          "Autocrit": 0.0,
-          "SurgeBonus": 0.0,
-          "ForceOffHand": false,
-          "Info": "Blade Barrage",
-          "ArmorReduction": 0.5
-        },
-        {
-          "Id": "16140965019692980555",
-          "Activations": 130,
-          "DamageMultiplier": 1.05,
-          "Autocrit": 0.0,
-          "SurgeBonus": 0.0,
-          "ForceOffHand": false,
-          "Info": "Ataru Form",
-          "ArmorReduction": 0.0
-        },
-        {
-          "Id": "16141178794058541793",
-          "Activations": 13,
-          "DamageMultiplier": 1.0,
-          "Autocrit": 0.0,
-          "SurgeBonus": 0.0,
-          "ForceOffHand": false,
-          "Info": "Lance",
-          "ArmorReduction": 0.5
-        },
-        {
-          "Id": "16141016320264526909",
-          "Activations": 16,
-          "DamageMultiplier": 1.0,
-          "Autocrit": 0.5,
-          "SurgeBonus": 0.0,
-          "ForceOffHand": false,
-          "Info": "Dispatch",
-          "ArmorReduction": 1.0
-        },
-        {
-          "Id": "16141115856787288008",
-          "Activations": 62,
-          "DamageMultiplier": 1.0,
-          "Autocrit": 0.0,
-          "SurgeBonus": 0.15,
-          "ForceOffHand": false,
-          "Info": "Blade Rush",
-          "ArmorReduction": 0.0
-        },
-        {
-          "Id": "16141164140889618336",
-          "Activations": 25,
-          "DamageMultiplier": 1.05,
-          "Autocrit": 1.0,
-          "SurgeBonus": 0.15,
-          "ForceOffHand": false,
-          "Info": "Clashing Blast",
-          "ArmorReduction": 1.0
-        },
-        {
-          "Id": "2480816059842560",
-          "Activations": 9,
-          "DamageMultiplier": 1.0,
-          "Autocrit": 0.0,
-          "SurgeBonus": 0.0,
-          "ForceOffHand": false,
-          "Info": "Rebuke",
-          "ArmorReduction": 0.0
-        }
-      ],
-      "DefenseChance": 0.1
-    },
     {
       "Name": "Operation training dummy",
       "Active": false,

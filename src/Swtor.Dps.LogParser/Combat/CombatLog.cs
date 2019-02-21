@@ -22,7 +22,7 @@ namespace Swtor.Dps.LogParser.Combat
 			{
 				if (entry.Type == EntryType.Event && entry.Action == LogEntry.EnterCombatAction)
 				{
-					combat = new Combat(entry.Who);
+					combat = new Combat(entry.Who, entry.Description);
 					combats.Add(combat);
 				}
 

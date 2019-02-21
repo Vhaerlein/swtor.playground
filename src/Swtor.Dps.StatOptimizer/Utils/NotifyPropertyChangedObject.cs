@@ -8,7 +8,7 @@ namespace Swtor.Dps.StatOptimizer.Utils
 		public event PropertyChangedEventHandler PropertyChanged;
 
 		[TorSimulator.StatOptimizer.Annotations.NotifyPropertyChangedInvocator]
-		protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+		protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
 		{
 			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 		}

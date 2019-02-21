@@ -8,7 +8,6 @@ namespace Swtor.Dps.LogParser.Combat
 	{
 		public string Name { get; internal set; }
 		public string Id { get; internal set; }
-		public string NameId { get; internal set; }
 
 		public IReadOnlyList<AbilityActivation> Activations
 		{

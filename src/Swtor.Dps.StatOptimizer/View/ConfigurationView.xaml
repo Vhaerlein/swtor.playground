@@ -88,6 +88,8 @@
 							<MenuItem Header="Set to 216" Command="{Binding SetMainHandCommand}" CommandParameter="216"></MenuItem>
 							<MenuItem Header="Set to 220" Command="{Binding SetMainHandCommand}" CommandParameter="220"></MenuItem>
 							<MenuItem Header="Set to 224" Command="{Binding SetMainHandCommand}" CommandParameter="224"></MenuItem>
+							<MenuItem Header="Set to 246" Command="{Binding SetMainHandCommand}" CommandParameter="246"></MenuItem>
+							<MenuItem Header="Set to 252" Command="{Binding SetMainHandCommand}" CommandParameter="252"></MenuItem>
 						</ContextMenu>
 					</TextBlock.ContextMenu>
 				</TextBlock>
@@ -103,6 +105,8 @@
 							<MenuItem Header="Set to 216" Command="{Binding SetOffHandCommand}" CommandParameter="216"></MenuItem>
 							<MenuItem Header="Set to 220" Command="{Binding SetOffHandCommand}" CommandParameter="220"></MenuItem>
 							<MenuItem Header="Set to 224" Command="{Binding SetOffHandCommand}" CommandParameter="224"></MenuItem>
+							<MenuItem Header="Set to 246" Command="{Binding SetOffHandCommand}" CommandParameter="246"></MenuItem>
+							<MenuItem Header="Set to 252" Command="{Binding SetOffHandCommand}" CommandParameter="252"></MenuItem>
 						</ContextMenu>
 					</TextBlock.ContextMenu>
 				</TextBlock>

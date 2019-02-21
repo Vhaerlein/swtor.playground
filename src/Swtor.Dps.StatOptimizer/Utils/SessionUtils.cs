@@ -18,12 +18,12 @@ namespace Swtor.Dps.StatOptimizer.Utils
 			Session session = new Session
 			{
 				Duration = combat.Duration,
-				Name = $"{target}{(additionalTargetNumber > 0 ? $" (+{additionalTargetNumber})" : "")}, {combat.Duration.ToString("0.###", CultureInfo.InvariantCulture)}s, {combat.Dps.ToString("0.###", CultureInfo.InvariantCulture)}dps"
+				Name = $"{(!string.IsNullOrEmpty(combat.Description) ? $"[{combat.Description}] " : "")}{target}{(additionalTargetNumber > 0 ? $" (+{additionalTargetNumber})" : "")}, {combat.Duration.ToString("0.###", CultureInfo.InvariantCulture)}s, {combat.Dps.ToString("0.###", CultureInfo.InvariantCulture)}dps"
 			};
 
 			foreach (var ability in combat.Abilities.Where(a => a.Targets.Any(t => t.DamageDone > 0 && t.Character != combat.Player)))
 			{
-				var sessionAbility = new SessionAbility { Id = ability.Id };
+				var sessionAbility = new SessionAbility {Id = ability.Id};
 
 				// not in db
 				if (sessionAbility.Ability == null)
@@ -36,27 +36,27 @@ namespace Swtor.Dps.StatOptimizer.Utils
 				int minimum = hittingActions.Count > 0 ? hittingActions.Min(aa => aa.Amount) : 0;
 				int average = hittingActions.Count > 0 ? (int) hittingActions.Average(aa => aa.Amount) : 0;
 				double surge = maximum > 0 && maximumCritical > 0 ? (maximumCritical - maximum) / (double) maximum : 0;
-				
+
 				sessionAbility.Activations = ability.Activations.Count;
 				sessionAbility.Info =
-						$"Activations: {ability.Activations.Count}\n" +
-						$"Total hits: {ability.Activations.Sum(a => a.Actions.Count)}\n" +
-						$"Hits per activation: {(double) ability.Activations.Sum(a => a.Actions.Count)/ability.Activations.Count} [{string.Join("/", ability.Activations.Select(a => a.Actions.Count).Distinct().OrderBy(n => n))}]\n" +
-						$"Maximum critical hit damage: {maximumCritical}\n" +
-						$"Surge: {surge:P}\n" +
-						$"Maximum hit damage: {maximum}\n" +
-						$"Minimum hit damage: {minimum}\n" +
-						$"Average hit damage: {average}\n" +
-						$"Total Damage: {ability.Targets.Sum(t => t.DamageDone)}";
+					$"Activations: {ability.Activations.Count}\n" +
+					$"Total hits: {ability.Activations.Sum(a => a.Actions.Count)}\n" +
+					$"Hits per activation: {(double) ability.Activations.Sum(a => a.Actions.Count) / ability.Activations.Count} [{string.Join("/", ability.Activations.Select(a => a.Actions.Count).Distinct().OrderBy(n => n))}]\n" +
+					$"Maximum critical hit damage: {maximumCritical}\n" +
+					$"Surge: {surge:P}\n" +
+					$"Maximum hit damage: {maximum}\n" +
+					$"Minimum hit damage: {minimum}\n" +
+					$"Average hit damage: {average}\n" +
+					$"Total Damage: {ability.Targets.Sum(t => t.DamageDone)}";
 
-				var abilityDefauls = defaultValues?.Abilities.FirstOrDefault(a => a.Id == ability.Id);
-				if (abilityDefauls != null)
+				var abilityDefaults = defaultValues?.Abilities.FirstOrDefault(a => a.Id == ability.Id);
+				if (abilityDefaults != null)
 				{
-					sessionAbility.SurgeBonus = abilityDefauls.SurgeBonus;
-					sessionAbility.Autocrit = abilityDefauls.Autocrit;
-					sessionAbility.DamageMultiplier = abilityDefauls.DamageMultiplier;
-					sessionAbility.ArmorReduction = abilityDefauls.ArmorReduction;
-					sessionAbility.ForceOffHand = abilityDefauls.ForceOffHand;
+					sessionAbility.SurgeBonus = abilityDefaults.SurgeBonus;
+					sessionAbility.Autocrit = abilityDefaults.Autocrit;
+					sessionAbility.DamageMultiplier = abilityDefaults.DamageMultiplier;
+					sessionAbility.ArmorReduction = abilityDefaults.ArmorReduction;
+					sessionAbility.ForceOffHand = abilityDefaults.ForceOffHand;
 				}
 
 				session.Abilities.Add(sessionAbility);

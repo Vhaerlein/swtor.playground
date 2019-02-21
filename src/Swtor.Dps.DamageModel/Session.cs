@@ -5,6 +5,7 @@ namespace Swtor.Dps.DamageModel
 	public class Session
 	{
 		public string Name { get; set; }
+		public string Description { get; set; }
 		public bool Active { get; set; }
 		public double Duration { get; set; }
 		public double EnergyKineticDamageReduction { get; set; }

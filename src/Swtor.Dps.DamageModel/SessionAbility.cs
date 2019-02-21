@@ -24,7 +24,7 @@ namespace Swtor.Dps.DamageModel
 		public bool HasOffHandActions => Ability.Tokens.Any(t => t.Type == TokenType.Damage && t.Coefficients.Any(a => a.Type == ActionType.WeaponDamage && !a.IgnoreDualWieldModifier || a.Type == ActionType.SpellDamage));
 
 		/// <summary>
-		/// Basic target armor rating multiplier is 1 - 39% = 0.61. 
+		/// Basic target armor rating multiplier is 1 - 39% = 0.61.
 		/// If ability ignores 20% armor, set it to .2, if ignores completely set it to 1.
 		/// </summary>
 		public double ArmorReduction { get; set; }

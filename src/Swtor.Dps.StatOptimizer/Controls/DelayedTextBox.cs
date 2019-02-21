@@ -5,19 +5,18 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
-using TorSimulator.StatOptimizer.Annotations;
 
 namespace Swtor.Dps.StatOptimizer.Controls
 {
 	/// <summary>
 	/// Delayed text box, updates its value with specified delay.
 	/// </summary>
-	public class DelayedTextBox : TextBox, INotifyPropertyChanged
+	public class DelayedTextBox : TextBox
 	{
 		private static readonly Regex IntegerRegex = new Regex("^[0-9]*$", RegexOptions.Compiled);
 		private static readonly Regex DoubleRegex = new Regex(@"^[0-9]*(\.)?[0-9]*$", RegexOptions.Compiled);
 
-		public const int DefaultDelayTime = 500;
+		private const int DefaultDelayTime = 500;
 
 		private readonly Timer _delayTimer;
 		private bool _timerElapsed;
@@ -30,8 +29,8 @@ namespace Swtor.Dps.StatOptimizer.Controls
 		/// </summary>
 		public int Timer
 		{
-			get { return (int) GetValue(TimerProperty); }
-			set { SetValue(TimerProperty, value); }
+			get => (int) GetValue(TimerProperty);
+			set => SetValue(TimerProperty, value);
 		}
 		public static readonly DependencyProperty TimerProperty =
 			DependencyProperty.Register("Timer", typeof(int), typeof(DelayedTextBox), new UIPropertyMetadata(DefaultDelayTime));
@@ -39,11 +38,11 @@ namespace Swtor.Dps.StatOptimizer.Controls
 
 		public DataType DataType
 		{
-			get { return (DataType) GetValue(DataTypeProperty); }
-			set { SetValue(DataTypeProperty, value); }
+			get => (DataType) GetValue(DataTypeProperty);
+			set => SetValue(DataTypeProperty, value);
 		}
-		public static readonly DependencyProperty DataTypeProperty = 
-			DependencyProperty.Register("DataType", typeof (DataType), typeof (DelayedTextBox), new UIPropertyMetadata (DataType.String));
+		public static readonly DependencyProperty DataTypeProperty =
+			DependencyProperty.Register("DataType", typeof(DataType), typeof(DelayedTextBox), new UIPropertyMetadata(DataType.String));
 
 		public DelayedTextBox()
 		{
@@ -100,9 +99,6 @@ namespace Swtor.Dps.StatOptimizer.Controls
 				BindingExpression bindingExpression = GetBindingExpression(TextProperty);
 				if (bindingExpression != null && bindingExpression.Status == BindingStatus.Active)
 					bindingExpression.UpdateSource();
-
-				var handler = ValueIsUpdated;
-				handler?.Invoke();
 			}
 
 			_previousTextChangedEventArgs = e;
@@ -115,35 +111,17 @@ namespace Swtor.Dps.StatOptimizer.Controls
 		}
 
 		private bool ValidateInput(string input)
-		{
-			return !(DataType == DataType.Double && !DoubleRegex.IsMatch(input) || DataType == DataType.Integer && !IntegerRegex.IsMatch(input));
-		}
+			=> !(DataType == DataType.Double && !DoubleRegex.IsMatch(input) || DataType == DataType.Integer && !IntegerRegex.IsMatch(input));
 
 		private void OnPasting(object sender, DataObjectPastingEventArgs e)
 		{
-			if (e.DataObject.GetDataPresent(typeof (string)))
+			if (e.DataObject.GetDataPresent(typeof(string)))
 			{
-				if (!ValidateInput((string) e.DataObject.GetData(typeof (string))))
+				if (!ValidateInput((string) e.DataObject.GetData(typeof(string))))
 					e.CancelCommand();
 			}
 			else
 				e.CancelCommand();
 		}
-
-		#region INotifyPropertyChanged
-
-		public delegate void ValueIsUpdatedEventHandler();
-		public event ValueIsUpdatedEventHandler ValueIsUpdated;
-
-		public event PropertyChangedEventHandler PropertyChanged;
-
-		[NotifyPropertyChangedInvocator]
-		protected virtual void OnPropertyChanged(string propertyName)
-		{
-			PropertyChangedEventHandler handler = PropertyChanged;
-			handler?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-		}
-
-		#endregion
 	}
 }

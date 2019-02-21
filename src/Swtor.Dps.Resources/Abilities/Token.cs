@@ -11,7 +11,7 @@ namespace Swtor.Dps.Resources.Abilities
 		public int Id { get; set; }
 
 		[XmlArray]
-		[XmlArrayItem(ElementName="Action")]
+		[XmlArrayItem(ElementName = "Action")]
 		public List<Action> Coefficients { get; set; }
 
 		[XmlElement]
@@ -22,7 +22,7 @@ namespace Swtor.Dps.Resources.Abilities
 
 		[XmlElement]
 		public TokenType Type { get; set; }
-	
+
 		[XmlElement]
 		public int Effect { get; set; }
 

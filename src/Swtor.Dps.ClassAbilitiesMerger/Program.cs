@@ -9,7 +9,7 @@ using System.Xml;
 
 namespace Swtor.Dps.ClassAbilityXmlMerger
 {
-	static class Program
+	internal static class Program
 	{
 		private static bool _debugMode;
 
@@ -156,11 +156,11 @@ namespace Swtor.Dps.ClassAbilityXmlMerger
 							throw new Exception($"Can't find single matching node to update. (status: {(singleChangeNode.Attributes["Status"] != null ? singleChangeNode.Attributes["Status"].Value : "none")}, node: {singleChangeNode.Name})");
 						}
 
-						var matchedChildren = GetMatchedChilds(childNodesToUpdate, singleChangeNode);
+						var matchedChildren = GetMatchedChildren(childNodesToUpdate, singleChangeNode);
 
 						if (matchedChildren.Count != 1)
 						{
-							var changedNodes = GetMatchedChilds(nodes, singleChangeNode);
+							var changedNodes = GetMatchedChildren(nodes, singleChangeNode);
 							if (changedNodes.Count != matchedChildren.Count)
 							{
 								throw new Exception($"Update nodes count doesn't match. ({singleChangeNode.Name})");
@@ -201,7 +201,7 @@ namespace Swtor.Dps.ClassAbilityXmlMerger
 			}
 		}
 
-		private static List<XmlElement> GetMatchedChilds(List<XmlElement> childNodes, XmlElement child)
+		private static List<XmlElement> GetMatchedChildren(List<XmlElement> childNodes, XmlElement child)
 		{
 			var matchedChildren = new List<XmlElement>();
 			foreach (XmlElement childToUpdate in childNodes)

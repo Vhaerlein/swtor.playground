@@ -43,7 +43,7 @@ namespace Swtor.Dps.Resources.Abilities
 
 		[XmlEnum]
 		SelfStunned,
-	
+
 		[XmlEnum]
 		LootHopper,
 

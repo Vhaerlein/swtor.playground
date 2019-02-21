@@ -12,18 +12,14 @@ namespace Swtor.Dps.DamageModel
 
 		public static ConfigurationCorrection FindHighestDpsCorrection(Profile profile)
 		{
-			return FindHighestDpsCorrection(profile, profile.Configuration.Budget);
+			var budget = profile.Configuration.Budget;
+			return FindHighestDpsCorrection(profile.ActiveSession, profile.Configuration.Clone(), new ConfigurationCorrection(), budget, budget / 10, budget);
 		}
 
 		public static ConfigurationCorrection FindHighestDpsCorrection(Profile profile, Session session)
 		{
 			var budget = profile.Configuration.Budget;
 			return FindHighestDpsCorrection(session, profile.Configuration.Clone(), new ConfigurationCorrection(), budget, budget / 10, budget);
-		}
-
-		public static ConfigurationCorrection FindHighestDpsCorrection(Profile profile, int budget)
-		{
-			return FindHighestDpsCorrection(profile.ActiveSession, profile.Configuration.Clone(), new ConfigurationCorrection(), budget, budget / 10, budget);
 		}
 
 		private static ConfigurationCorrection FindHighestDpsCorrection(Session session, Configuration configuration, ConfigurationCorrection correction, int budget, int step, int lastStep)
@@ -91,9 +87,7 @@ namespace Swtor.Dps.DamageModel
 		}
 
 		public static double CalculateDps(Profile profile)
-		{
-			return CalculateDps(profile.ActiveSession, profile.Configuration);
-		}
+			=> CalculateDps(profile.ActiveSession, profile.Configuration);
 
 		public static double CalculateDps(Session session, Configuration configuration)
 		{
@@ -114,19 +108,13 @@ namespace Swtor.Dps.DamageModel
 		}
 
 		public static double GetAbilityDamageMin(this Ability ability, Configuration configuration, bool forceOffhand = false)
-		{
-			return ability?.GetAbilityTokenDamageList(configuration, DamageRange.Minimum, forceOffhand).Sum(d => d.Sum(t => t.Damage) * d.Multiplier) ?? 0;
-		}
+			=> ability?.GetAbilityTokenDamageList(configuration, DamageRange.Minimum, forceOffhand).Sum(d => d.Sum(t => t.Damage) * d.Multiplier) ?? 0;
 
 		public static double GetAbilityDamageMax(this Ability ability, Configuration configuration, bool forceOffhand = false)
-		{
-			return ability?.GetAbilityTokenDamageList(configuration, DamageRange.Maximum, forceOffhand).Sum(d => d.Sum(t => t.Damage) * d.Multiplier) ?? 0;
-		}
+			=> ability?.GetAbilityTokenDamageList(configuration, DamageRange.Maximum, forceOffhand).Sum(d => d.Sum(t => t.Damage) * d.Multiplier) ?? 0;
 
 		public static double GetAbilityDamageAvg(this SessionAbility ability, Configuration configuration, Session session)
-		{
-			return GetAbilityDamage(configuration, ability, session.EnergyKineticDamageReduction, session.ElementalInternalDamageReduction, session.DefenseChance);
-		}
+			=> GetAbilityDamage(configuration, ability, session.EnergyKineticDamageReduction, session.ElementalInternalDamageReduction, session.DefenseChance);
 
 		private static List<TokenDamage> GetAbilityTokenDamageList(this Ability ability, Configuration configuration, DamageRange range, bool forceOffhand = false)
 		{
@@ -163,6 +151,7 @@ namespace Swtor.Dps.DamageModel
 						var offHandActions = token.Coefficients.Where(a => !a.IgnoreDualWieldModifier && a.Type == ActionType.WeaponDamage).ToList();
 
 						if (offHandActions.Count > 0)
+						{
 							tokenDamage.AddRange
 							(
 								offHandActions.Select
@@ -174,6 +163,7 @@ namespace Swtor.Dps.DamageModel
 									)
 								)
 							);
+						}
 						else if (forceOffhand)
 						{
 							tokenDamage.AddRange
@@ -209,9 +199,9 @@ namespace Swtor.Dps.DamageModel
 					* hand.Multiplier
 					* (range == DamageRange.Minimum
 						? hand.DamageMin
-						: (range == DamageRange.Maximum
+						: range == DamageRange.Maximum
 							? hand.DamageMax
-							: hand.DamageAvg));
+							: hand.DamageAvg);
 			}
 
 			if (!forcedOffhand)
@@ -219,9 +209,9 @@ namespace Swtor.Dps.DamageModel
 				damage += action.Coefficient * (action.Type == ActionType.WeaponDamage ? configuration.BonusDamage : configuration.SpellBonusDamage)
 					+ (range == DamageRange.Minimum
 						? action.StandardHealthPercentMin
-						: (range == DamageRange.Maximum
+						: range == DamageRange.Maximum
 							? action.StandardHealthPercentMax
-							: action.StandardHealthPercentAvg))
+							: action.StandardHealthPercentAvg)
 					* configuration.StandardDamage;
 			}
 
@@ -239,9 +229,11 @@ namespace Swtor.Dps.DamageModel
 					{
 						var modifier = Math.Min(1 - internalElementalReduction, 1);
 						if (action.DamageType == DamageType.Kinetic || action.DamageType == DamageType.Energy)
+						{
 							modifier = Math.Min(1, action.IsOffHand ? configuration.OffHandAccuracy : configuration.Accuracy)
 								* Math.Min(1 - Math.Min(defenseChance, 1 + defenseChance - (action.IsOffHand ? configuration.OffHandAccuracy : configuration.Accuracy)), 1)
 								* Math.Min(1 + ability.ArmorReduction - energyKineticReduction, 1);
+						}
 
 						return action.Damage * modifier;
 					}

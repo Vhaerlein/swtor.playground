@@ -54,37 +54,37 @@ namespace Swtor.Dps.Resources
 		public static Ability GetAbility(string id)
 		{
 			if (!Cache.ContainsKey(id))
-				Cache[id] = Abilities.Descendants("Ability").FirstOrDefault(a => a.Attribute("Id").Value == id || a.Attribute("NameId").Value == id || a.Attribute("Sid").Value == id);
+				Cache[id] = Abilities.Descendants("Ability").FirstOrDefault(a => a.Attribute("Id")?.Value == id || a.Attribute("NameId")?.Value == id || a.Attribute("Sid")?.Value == id);
 			if (Cache[id] != null)
-				return (Ability) new XmlSerializer(typeof (Ability)).Deserialize(Cache[id].CreateReader());
+				return (Ability) new XmlSerializer(typeof(Ability)).Deserialize(Cache[id].CreateReader());
 
 			return null;
 		}
 
 		public static Ability GetAbilityById(string id)
 		{
-			var node = Abilities.Descendants("Ability").FirstOrDefault(a => a.Attribute("Id").Value == id);
+			var node = Abilities.Descendants("Ability").FirstOrDefault(a => a.Attribute("Id")?.Value == id);
 			if (node != null)
-				return (Ability) new XmlSerializer(typeof (Ability)).Deserialize(node.CreateReader());
+				return (Ability) new XmlSerializer(typeof(Ability)).Deserialize(node.CreateReader());
 
 			return null;
 		}
 
 		public static Ability GetAbilityByNameId(string id)
 		{
-			var node = Abilities.Descendants("Ability").FirstOrDefault(a => a.Attribute("NameId").Value == id);
+			var node = Abilities.Descendants("Ability").FirstOrDefault(a => a.Attribute("NameId")?.Value == id);
 			if (node != null)
-				return (Ability) new XmlSerializer(typeof (Ability)).Deserialize(node.CreateReader());
+				return (Ability) new XmlSerializer(typeof(Ability)).Deserialize(node.CreateReader());
 
 			return null;
 		}
 
 		public static Ability GetAbilityBySid(string sid)
 		{
-			var node = Abilities.Descendants("Ability").FirstOrDefault(a => a.Attribute("Sid").Value == sid);
+			var node = Abilities.Descendants("Ability").FirstOrDefault(a => a.Attribute("Sid")?.Value == sid);
 
 			if (node != null)
-				return (Ability) new XmlSerializer(typeof (Ability)).Deserialize(node.CreateReader());
+				return (Ability) new XmlSerializer(typeof(Ability)).Deserialize(node.CreateReader());
 
 			return null;
 		}

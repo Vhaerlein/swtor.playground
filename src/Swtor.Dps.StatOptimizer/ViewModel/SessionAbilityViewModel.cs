@@ -14,7 +14,7 @@ namespace Swtor.Dps.StatOptimizer.ViewModel
 
 		public int Activations
 		{
-			get { return _sessionAbility.Activations; }
+			get => _sessionAbility.Activations;
 			set
 			{
 				if (_sessionAbility.Activations != value)
@@ -27,7 +27,7 @@ namespace Swtor.Dps.StatOptimizer.ViewModel
 
 		public double DamageMultiplier
 		{
-			get { return _sessionAbility.DamageMultiplier; }
+			get => _sessionAbility.DamageMultiplier;
 			set
 			{
 				_sessionAbility.DamageMultiplier = value;
@@ -37,7 +37,7 @@ namespace Swtor.Dps.StatOptimizer.ViewModel
 
 		public double Autocrit
 		{
-			get { return _sessionAbility.Autocrit; }
+			get => _sessionAbility.Autocrit;
 			set
 			{
 				_sessionAbility.Autocrit = value;
@@ -47,7 +47,7 @@ namespace Swtor.Dps.StatOptimizer.ViewModel
 
 		public double ArmorReduction
 		{
-			get { return _sessionAbility.ArmorReduction; }
+			get => _sessionAbility.ArmorReduction;
 			set
 			{
 				_sessionAbility.ArmorReduction = value;
@@ -57,7 +57,7 @@ namespace Swtor.Dps.StatOptimizer.ViewModel
 
 		public double SurgeBonus
 		{
-			get { return _sessionAbility.SurgeBonus; }
+			get => _sessionAbility.SurgeBonus;
 			set
 			{
 				_sessionAbility.SurgeBonus = value;
@@ -67,7 +67,7 @@ namespace Swtor.Dps.StatOptimizer.ViewModel
 
 		public bool ForceOffHand
 		{
-			get { return _sessionAbility.ForceOffHand; }
+			get => _sessionAbility.ForceOffHand;
 			set
 			{
 				_sessionAbility.ForceOffHand = value;
@@ -77,10 +77,10 @@ namespace Swtor.Dps.StatOptimizer.ViewModel
 
 		public bool CanForceOffHand
 		{
-			get { return _canForceOffHand; }
+			get => _canForceOffHand;
 			set
 			{
-				_canForceOffHand = value; 
+				_canForceOffHand = value;
 				OnPropertyChanged();
 			}
 		}
@@ -88,10 +88,10 @@ namespace Swtor.Dps.StatOptimizer.ViewModel
 
 		public bool DualWield
 		{
-			get { return _dualWield; }
+			get => _dualWield;
 			set
 			{
-				_dualWield = value; 
+				_dualWield = value;
 				OnPropertyChanged();
 			}
 		}
@@ -99,7 +99,6 @@ namespace Swtor.Dps.StatOptimizer.ViewModel
 
 		public double PlainDamageMin => _sessionAbility.Ability.GetAbilityDamageMin(_configuration);
 		public double PlainDamageMax => _sessionAbility.Ability.GetAbilityDamageMax(_configuration);
-		public double PlainDamageAvg => (PlainDamageMax + PlainDamageMin) / 2.0;
 		public double SessionDamageAvg => _sessionAbility.GetAbilityDamageAvg(_configuration, _session);
 
 		public ImageSource Icon => _sessionAbility.Ability.Icon.ToImageSource();
@@ -111,20 +110,20 @@ namespace Swtor.Dps.StatOptimizer.ViewModel
 				if (string.IsNullOrEmpty(_info))
 				{
 					var sb = new StringBuilder("Type: ");
-					sb.Append(string.Join(", ", 
-					(
-						from token in _sessionAbility.Ability.Tokens.Where(t => t.Type == TokenType.Damage)
-						from action in token.Coefficients
-						select action.Type
-					).Distinct()));
+					sb.Append(string.Join(", ",
+						(
+							from token in _sessionAbility.Ability.Tokens.Where(t => t.Type == TokenType.Damage)
+							from action in token.Coefficients
+							select action.Type
+						).Distinct()));
 
 					sb.Append("\nDamage type: ");
-					sb.Append(string.Join(", ", 
-					(
-						from token in _sessionAbility.Ability.Tokens.Where(t => t.Type == TokenType.Damage)
-						from action in token.Coefficients
-						select action.DamageType
-					).Distinct()));
+					sb.Append(string.Join(", ",
+						(
+							from token in _sessionAbility.Ability.Tokens.Where(t => t.Type == TokenType.Damage)
+							from action in token.Coefficients
+							select action.DamageType
+						).Distinct()));
 
 					if (_sessionAbility.Ability.CooldownTime.HasValue)
 						sb.AppendFormat("\nCooldown: {0:0.#}", _sessionAbility.Ability.CooldownTime);
