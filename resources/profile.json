@@ -10,21 +10,21 @@
       "DamageType": 2
     },
     "OffHand": {
-      "DamageMin": 1169,
-      "DamageMax": 1754,
-      "Power": 2339,
+      "DamageMin": 1270,
+      "DamageMax": 1904,
+      "Power": 2540,
       "Multiplier": 0.55,
       "DamageType": 2
     },
     "StandardDamage": 7520,
     "StandardHealth": 40495,
-    "BaseMasteryPoints": 6514,
-    "BasePowerPoints": 4464,
-    "ExtraMasteryPoints": 240,
-    "AlacrityPoints": 1450,
-    "CriticalPoints": 1672,
-    "AccuracyPoints": 768,
-    "ExtraPowerPoints": 99,
+    "BaseMasteryPoints": 6792,
+    "BasePowerPoints": 4643,
+    "ExtraMasteryPoints": 82,
+    "AlacrityPoints": 1376,
+    "CriticalPoints": 2138,
+    "AccuracyPoints": 746,
+    "ExtraPowerPoints": 0,
     "MasteryMultiplier": 1.05,
     "BonusDamageMultiplier": 1.05,
     "BaseAccuracy": 1.01,
@@ -90,7 +90,7 @@
           "SurgeBonus": 0.0,
           "ForceOffHand": false,
           "Info": "Blade Barrage",
-          "ArmorReduction": 0.5
+          "ArmorReduction": 0.75
         },
         {
           "Id": "16140965019692980555",
@@ -110,7 +110,7 @@
           "SurgeBonus": 0.0,
           "ForceOffHand": false,
           "Info": "Lance",
-          "ArmorReduction": 0.5
+          "ArmorReduction": 0.75
         },
         {
           "Id": "16141016320264526909",
@@ -158,6 +158,7 @@
   ],
   "DefaultValues": {
     "Name": null,
+    "Description": null,
     "Active": false,
     "Duration": -1.0,
     "EnergyKineticDamageReduction": 0.39,
